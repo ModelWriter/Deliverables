@@ -570,7 +570,7 @@ Work Package 7
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [31]  | D7.3.1 Newsletter - International Conference Announcement | Doc. | Public | VUB
+| [M31]  | D7.3.1 Newsletter - International Conference Announcement | Doc. | Public | VUB
 
 **T7.4 - ModelWriter-ITEA Consortium Website** `(SA)`
 

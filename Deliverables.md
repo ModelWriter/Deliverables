@@ -69,9 +69,9 @@
 | [M19] | D4.6.2-2 Software: Proof-of-concept semantic comparison engine (release 2) | SW | Public | OBEO
 | [M31] | D4.6.2-3 Software: Proof-of-concept semantic comparison engine (release 3) | SW | Public | OBEO
 | [M10] | D4.7.1 Report: Future ModelWriter-Enabled Use Cases | Doc. | Public | SA
-| [M13] | D5.1.1-1 Management reports and cost statements (confidential) (release 1) | Doc. | Public | UNIT
-| [M25] | D5.1.1-2 Management reports and cost statements (confidential) (release 2) | Doc. | Public | UNIT
-| [M37] | D5.1.1-3 Management reports and cost statements (confidential) (release 3) | Doc. | Public | UNIT
+| [M13] | D5.1.1-1 Management reports and cost statements (confidential) (release 1) | Doc. | Confidential | UNIT
+| [M25] | D5.1.1-2 Management reports and cost statements (confidential) (release 2) | Doc. | Confidential | UNIT
+| [M37] | D5.1.1-3 Management reports and cost statements (confidential) (release 3) | Doc. | Confidential | UNIT
 | [M2]  | D5.2.1 Project Controls | Doc. | Public | UNIT
 | [M12] | D5.2.1-1 Project and Next Management Stage Plan (release 1) | Doc. | Public | UNIT
 | [M24] | D5.2.1-2 Project and Next Management Stage Plan (release 2) | Doc. | Public | UNIT

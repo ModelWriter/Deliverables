@@ -423,9 +423,9 @@ Work Package 5
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M13] | D5.1.1-1 Management reports and cost statements (confidential) (release 1) | Doc. | Public | UNIT
-| [M25] | D5.1.1-2 Management reports and cost statements (confidential) (release 2) | Doc. | Public | UNIT
-| [M37] | D5.1.1-3 Management reports and cost statements (confidential) (release 3) | Doc. | Public | UNIT
+| [M13] | D5.1.1-1 Management reports and cost statements (confidential) (release 1) | Doc. | Confidential | UNIT
+| [M25] | D5.1.1-2 Management reports and cost statements (confidential) (release 2) | Doc. | Confidential | UNIT
+| [M37] | D5.1.1-3 Management reports and cost statements (confidential) (release 3) | Doc. | Confidential | UNIT
 
 **T5.3 - Project Controls** `(UNIT + WP Leaders)`
 

@@ -50,6 +50,7 @@ Country | Partner | Primary Contact | Secondary Contact | Group Email
 Project Consortium - Email Group Members
 ---
 **consortium@modelwriter.eu**
+
 Company Email | Gmail
 :---- |:----
 anne.monceaux@airbus.com | anne.monceaux@gmail.com

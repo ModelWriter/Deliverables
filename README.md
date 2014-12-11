@@ -47,34 +47,6 @@ Country | Partner | Primary Contact | Secondary Contact | Group Email
 [Turkey](README.md#) | MANTIS | Güven Köse | Erhan Mengüsoğlu | turkey@modelwriter.eu
 [Belgium](README.md#) | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
 
-Project Consortium - Email Group Members
----
-**consortium@modelwriter.eu**
-
-Company Email | Gmail
-:---- |:----
-anne.monceaux@airbus.com | anne.monceaux@gmail.com
-claire.gardent@loria.fr | claire.gardent@gmail.com 
-etienne.juliot@obeo.fr | etienne.juliot@gmail.com
-marwa.rostren@obeo.fr | rostren.marwa@gmail.com
-samuel.cruz-lara@loria.fr | samuel.cruzlara@gmail.com
-- | -
-erhanmengusoglu@mantis.com.tr | mengusoglu@gmail.com
-guvenkose@mantis.com.tr | 
-ferhat.erata@unitbilisim.com | ferhat@computer.org
-emil.khamitov@unitbilisim.com | emil.khamitov@unitbilisim.com
-moharram.challenger@unitbilisim.com | moharram.challenger@unitbilisim.com
-furkan.tanriverdi@unitbilisim.com | furkan.tanriverdi@unitbilisim.com 
-geylani.kardas@ege.edu.tr | geylani@gmail.com
-hale.gezgen@kocsistem.com.tr | hale.gezgen@gmail.com
-mehmet.onat@kocsistem.com.tr | mehmetonat70@gmail.com
-ersan@hisbim.com | 
-taskin@hisbim.com |
-hans.vangheluwe@uantwerp.be |
-- | -
-monique.snoeck@kuleuven.be |
-sien.moens@cs.kuleuven.be |
-
 French Consortium - Email Group Members
 ---
 **france@modelwriter.eu**

@@ -78,7 +78,7 @@ ersan@hisbim.com |
 taskin@hisbim.com | 
 hans.vangheluwe@uantwerp.be |
 
-Belgian Consortium Email Group Members (france@modelwriter.eu)
+Belgian Consortium - Email Group Members
 ---
 **belgium@modelwriter.eu**
 

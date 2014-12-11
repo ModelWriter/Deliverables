@@ -37,14 +37,83 @@ tcc@modelwriter.eu
 | [WP6](README.md#work-package-6) (OBEO)	| Etienne Juliot | Marwa Rostren |
 | [WP7](README.md#work-package-7) (OBEO)	| Etienne Juliot | Marwa Rostren |
 
-Country Coordinators
+Coordination
 ----
 
 Country | Partner | Primary Contact | Secondary Contact | Group Email
 :----   |:-----   |:---------       |:----- |:-----
-France | OBEO | Etienne Juliot | Marwa Rostren | france@modelwriter.eu
-Turkey | MANTIS | Güven Köse | Erhan Mengüsoğlu | turkey@modelwriter.eu
-Belgium | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
+[Project](README.md#) | UNIT | Ferhat Erata | Moharram Challenger | consortium@modelwriter.eu
+[France](README.md#) | OBEO | Etienne Juliot | Marwa Rostren | france@modelwriter.eu
+[Turkey](README.md#) | MANTIS | Güven Köse | Erhan Mengüsoğlu | turkey@modelwriter.eu
+[Belgium](README.md#) | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
+
+Project Consortium - Email Group Members
+---
+**consortium@modelwriter.eu**
+Company Email | Gmail
+:---- |:----
+anne.monceaux@airbus.com | anne.monceaux@gmail.com
+claire.gardent@loria.fr | claire.gardent@gmail.com 
+etienne.juliot@obeo.fr | etienne.juliot@gmail.com
+marwa.rostren@obeo.fr | rostren.marwa@gmail.com
+samuel.cruz-lara@loria.fr | samuel.cruzlara@gmail.com
+- | -
+erhanmengusoglu@mantis.com.tr | mengusoglu@gmail.com
+guvenkose@mantis.com.tr | 
+ferhat.erata@unitbilisim.com | ferhat@computer.org
+emil.khamitov@unitbilisim.com | emil.khamitov@unitbilisim.com
+moharram.challenger@unitbilisim.com | moharram.challenger@unitbilisim.com
+furkan.tanriverdi@unitbilisim.com | furkan.tanriverdi@unitbilisim.com 
+geylani.kardas@ege.edu.tr | geylani@gmail.com
+hale.gezgen@kocsistem.com.tr | hale.gezgen@gmail.com
+mehmet.onat@kocsistem.com.tr | mehmetonat70@gmail.com
+ersan@hisbim.com | 
+taskin@hisbim.com |
+hans.vangheluwe@uantwerp.be |
+- | -
+monique.snoeck@kuleuven.be |
+sien.moens@cs.kuleuven.be |
+
+French Consortium - Email Group Members
+---
+**france@modelwriter.eu**
+
+Company Email | Gmail
+:---- |:----
+anne.monceaux@airbus.com | anne.monceaux@gmail.com
+claire.gardent@loria.fr | claire.gardent@gmail.com 
+etienne.juliot@obeo.fr | etienne.juliot@gmail.com
+marwa.rostren@obeo.fr | rostren.marwa@gmail.com
+samuel.cruz-lara@loria.fr | samuel.cruzlara@gmail.com
+
+Turkish Consortium - Email Group Members
+---
+**turkey@modelwriter.eu**
+
+Company Email | Gmail
+:---- |:----
+erhanmengusoglu@mantis.com.tr | mengusoglu@gmail.com
+guvenkose@mantis.com.tr | 
+ferhat.erata@unitbilisim.com | ferhat@computer.org
+emil.khamitov@unitbilisim.com | emil.khamitov@unitbilisim.com
+moharram.challenger@unitbilisim.com | moharram.challenger@unitbilisim.com
+furkan.tanriverdi@unitbilisim.com | furkan.tanriverdi@unitbilisim.com 
+geylani.kardas@ege.edu.tr | geylani@gmail.com
+hale.gezgen@kocsistem.com.tr | hale.gezgen@gmail.com
+mehmet.onat@kocsistem.com.tr | mehmetonat70@gmail.com
+ersan@hisbim.com | 
+taskin@hisbim.com | 
+hans.vangheluwe@uantwerp.be |
+
+Belgian Consortium Email Group Members (france@modelwriter.eu)
+---
+**belgium@modelwriter.eu**
+
+Company Email | Gmail
+:---- |:----
+monique.snoeck@kuleuven.be |
+sien.moens@cs.kuleuven.be |
+hans.vangheluwe@uantwerp.be |
 
 [UNIT](https://github.com/orgs/ModelWriter/teams/unit)
 ----
@@ -102,7 +171,7 @@ Belgium | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
 |:--- |:--- |:---|
 |Mehmet Önat |mehmet.onat@kocsistem.com.tr |@MehmetOnat |
 |Hale Gezgen |hale.gezgen@kocsistem.com.tr |@ |
-|Prof. Geylani Kardaş |geylani.kardas@ege.edu.tr |@ |
+|Prof. Geylani Kardaş |geylani.kardas@ege.edu.tr |@geylani |
 
 [HISBIM](https://github.com/orgs/ModelWriter/teams/hisbim)
 ----

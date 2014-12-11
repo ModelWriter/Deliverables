@@ -42,10 +42,10 @@ Coordination
 
 Country | Partner | Primary Contact | Secondary Contact | Group Email
 :----   |:-----   |:---------       |:----- |:-----
-[Project](README.md#) | UNIT | Ferhat Erata | Moharram Challenger | consortium@modelwriter.eu
-[France](README.md#) | OBEO | Etienne Juliot | Marwa Rostren | france@modelwriter.eu
-[Turkey](README.md#) | MANTIS | Güven Köse | Erhan Mengüsoğlu | turkey@modelwriter.eu
-[Belgium](README.md#) | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
+Project | UNIT | Ferhat Erata | Moharram Challenger | consortium@modelwriter.eu
+[France](README.md#french-consortium---email-group-members) | OBEO | Etienne Juliot | Marwa Rostren | france@modelwriter.eu
+[Turkey](README.md#turkish-consortium---email-group-members) | MANTIS | Güven Köse | Erhan Mengüsoğlu | turkey@modelwriter.eu
+[Belgium](README.md#belgian-consortium---email-group-members) | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
 
 French Consortium - Email Group Members
 ---

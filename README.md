@@ -12,12 +12,12 @@ consortium@modelwriter.eu
 ----
 pcc@modelwriter.eu
 
-| Partner    	                       | Primary Contact        | Secondary Contact      | 
+| Partner    	                       | Primary Contact        | Secondary Contact      |
 |:-------------------------------------|:---------------------- |:---------------------- |
-| [UNIT](README.md#unit) |Ferhat Erata |Moharram Challenger | 
+| [UNIT](README.md#unit) |Ferhat Erata |Moharram Challenger |
 | [OBEO](README.md#obeo) |Etienne Juliot |Marwa Rostren |
 | [MANTIS](README.md#mantis) |Erhan Mengüsoğlu |Güven Köse |
-| [EADS](README.md#eads) |Anne Monceaux |? |
+| [AIRBUS](README.md#AIRBUS) |Anne Monceaux |? |
 | [LORIA](README.md#loria) |Claire Gardent |Samuel Cruz-Lara |
 | [KOCSISTEM](README.md#kocsistem) |Mehmet Önat |Hale Gezgen |
 | [HISBIM](README.md#hisbim) |Ersan Gürdoğan |Taskin Kızıl |
@@ -27,11 +27,11 @@ pcc@modelwriter.eu
 ----
 tcc@modelwriter.eu
 
-| Work Package | Primary Contact        | Secondary Contact      | 
+| Work Package | Primary Contact        | Secondary Contact      |
 |:------------	|:---------------------- |:---------------------- |
-| [WP1](README.md#work-package-1) (EADS) | Anne Monceaux | ? | 
-| [WP2](README.md#work-package-2) (LORIA)| Claire Gardent | Samuel Cruz-Lara |                               	
-| [WP3](README.md#work-package-3) (UNIT) | Ferhat Erata | Moharram Challenger |                	
+| [WP1](README.md#work-package-1) (AIRBUS) | Anne Monceaux | ? |
+| [WP2](README.md#work-package-2) (LORIA)| Claire Gardent | Samuel Cruz-Lara |
+| [WP3](README.md#work-package-3) (UNIT) | Ferhat Erata | Moharram Challenger |
 | [WP4](README.md#work-package-4) (MANTIS) | Erhan Mengüsoğlu | Güven Köse |
 | [WP5](README.md#work-package-5) (UNIT) | Ferhat Erata | Moharram Challenger |
 | [WP6](README.md#work-package-6) (OBEO)	| Etienne Juliot | Marwa Rostren |
@@ -54,7 +54,7 @@ French Consortium - Email Group Members
 Company Email | Gmail
 :---- |:----
 anne.monceaux@airbus.com | anne.monceaux@gmail.com
-claire.gardent@loria.fr | claire.gardent@gmail.com 
+claire.gardent@loria.fr | claire.gardent@gmail.com
 etienne.juliot@obeo.fr | etienne.juliot@gmail.com
 marwa.rostren@obeo.fr | rostren.marwa@gmail.com
 samuel.cruz-lara@loria.fr | samuel.cruzlara@gmail.com
@@ -66,16 +66,16 @@ Turkish Consortium - Email Group Members
 Company Email | Gmail
 :---- |:----
 erhanmengusoglu@mantis.com.tr | mengusoglu@gmail.com
-guvenkose@mantis.com.tr | 
+guvenkose@mantis.com.tr |
 ferhat.erata@unitbilisim.com | ferhat@computer.org
 emil.khamitov@unitbilisim.com | emil.khamitov@unitbilisim.com
 moharram.challenger@unitbilisim.com | moharram.challenger@unitbilisim.com
-furkan.tanriverdi@unitbilisim.com | furkan.tanriverdi@unitbilisim.com 
+furkan.tanriverdi@unitbilisim.com | furkan.tanriverdi@unitbilisim.com
 geylani.kardas@ege.edu.tr | geylani@gmail.com
 hale.gezgen@kocsistem.com.tr | hale.gezgen@gmail.com
 mehmet.onat@kocsistem.com.tr | mehmetonat70@gmail.com
-ersan@hisbim.com | 
-taskin@hisbim.com | 
+ersan@hisbim.com |
+taskin@hisbim.com |
 hans.vangheluwe@uantwerp.be |
 
 Belgian Consortium - Email Group Members
@@ -119,9 +119,9 @@ hans.vangheluwe@uantwerp.be |
 |Claire Gardent |claire.gardent@loria.fr |@ |
 |Samuel Cruz-Lara |Samuel.Cruz-Lara@loria.fr |@scruzlara |
 
-[EADS](https://github.com/orgs/ModelWriter/teams/eads)
+[AIRBUS](https://github.com/orgs/ModelWriter/teams/AIRBUS)
 ----
-**EADS France Départment Innovation Works**
+**AIRBUS France Départment Innovation Works**
 
 |Contact |Corporate Email |GitHub |
 |:--- |:--- |:---|
@@ -196,9 +196,9 @@ Make sure deliverable titles (descriptions) are self-explanatory
 
 Work Package 1
 ---
-**WP1 - Industrial Use Cases and Requirements (EADS)**
+**WP1 - Industrial Use Cases and Requirements (AIRBUS)**
 ***
-**T1.1 - Evaluation Methods & Tools** `[UNIT + KOCSISTEM + EADS + SA + OBEO + HISBIM + MANTIS]`
+**T1.1 - Evaluation Methods & Tools** `[UNIT + KOCSISTEM + AIRBUS + SA + OBEO + HISBIM + MANTIS]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -208,11 +208,11 @@ Work Package 1
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.2.1 Report: Industrial Use Cases for Belgian Consortium | Doc. | Public | EADS
-| [M3]  | D1.2.2 Data: Corpus for D1.1.1 (public part) | SW | Public | EADS
-| [M3]  | D1.2.3 Data: Corpus for D1.1.1 (confidential part) | SW | Confidential | EADS
+| [M3]  | D1.2.1 Report: Industrial Use Cases for Belgian Consortium | Doc. | Public | AIRBUS
+| [M3]  | D1.2.2 Data: Corpus for D1.1.1 (public part) | SW | Public | AIRBUS
+| [M3]  | D1.2.3 Data: Corpus for D1.1.1 (confidential part) | SW | Confidential | AIRBUS
 
-**T1.3 - Industrial Use Cases for French Consortium** `[OBEO + EADS]`
+**T1.3 - Industrial Use Cases for French Consortium** `[OBEO + AIRBUS]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -228,37 +228,37 @@ Work Package 1
 | [M3]  | D1.4.2 Data: Corpus for D1.4.1 (public part) | SW | Public | MANTIS
 | [M3]  | D1.4.3 Data: Corpus for D1.4.1 (confidential part)| SW | Confidential | MANTIS
 
-**T1.5 - Consolidated User Requirements** `(EADS + OBEO + MANTIS + SA)`
+**T1.5 - Consolidated User Requirements** `(AIRBUS + OBEO + MANTIS + SA)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.5.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | EADS
+| [M3]  | D1.5.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | AIRBUS
 
-**T1.6 - User Requirements Review** `(EADS + UNIT+ KOCSISTEM + KUL + ALL)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.6.1 Report: Minutes of the User Requirements Review meeting | Doc. | Public | EADS
-
-**T1.7 - Software Requirements** `(EADS + WP2 to WP7 leaders)`
+**T1.6 - User Requirements Review** `(AIRBUS + UNIT+ KOCSISTEM + KUL + ALL)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D1.7.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | EADS
+| [M3]  | D1.6.1 Report: Minutes of the User Requirements Review meeting | Doc. | Public | AIRBUS
 
-**T1.8 - Software Requirements Review** `(EADS + UNIT + KOCSISTEM + KUL + ALL)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D1.8.1 Report: Minutes of the Software Requirements Review meeting | Doc. | Public | EADS
-
-**T1.9 - Annual Product Review** `(EADS + Country Coordinators)`
+**T1.7 - Software Requirements** `(AIRBUS + WP2 to WP7 leaders)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M13] | D1.9.1-1 Report: Annual Product Owner Review | Doc. | Public | EADS
-| [M25] | D1.9.1-2 Report: Annual Product Owner Review | Doc. | Public | EADS
-| [M37] | D1.9.1-3 Report: Annual Product Owner Review | Doc. | Public | EADS
+| [M5]  | D1.7.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | AIRBUS
+
+**T1.8 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + KUL + ALL)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M5]  | D1.8.1 Report: Minutes of the Software Requirements Review meeting | Doc. | Public | AIRBUS
+
+**T1.9 - Annual Product Review** `(AIRBUS + Country Coordinators)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M13] | D1.9.1-1 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+| [M25] | D1.9.1-2 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+| [M37] | D1.9.1-3 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
 
 **T1.10 - Technical Risk Assessment and Management** `(OBEO + UNIT + KOCSISTEM + ALL)`
 
@@ -282,19 +282,19 @@ Work Package 2
 |:----- |:----------- |:------- |:------- |:-------
 | [M4]  | D2.2.1 Report: Overview and comparison of existing deep semantic parsers | Doc. | Public | KUL
 
-**T2.3 - Hybrid approaches to Natural Language Generation** `(LORIA + KUL)` 
+**T2.3 - Hybrid approaches to Natural Language Generation** `(LORIA + KUL)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
 | [M5]  | D2.3.1 Report: Overview and comparison of existing generators | Doc. | Public | LORIA
 
-**T2.4 - Definition of the target semantic representation language** `(LORIA + KUL + EADS)`
+**T2.4 - Definition of the target semantic representation language** `(LORIA + KUL + AIRBUS)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
 | [M6]  | D2.4.1 Data: Corpora (Text, Knowledge, Bi-Texts) and Report: Documentation of the corpora | SW | Public | LORIA
 
-**T2.5 - Development of the semantic parser and of the generator** `(LORIA + KUL + MANTIS + VUB + EADS)`
+**T2.5 - Development of the semantic parser and of the generator** `(LORIA + KUL + MANTIS + VUB + AIRBUS)`
 
   * Specification of the Knowledge Representation Language(s) `[VUB + KUL + LORIA]`
 
@@ -598,17 +598,17 @@ Work Package 7
 |:----- |:----------- |:------- |:------- |:-------
 | [M4]  | D7.1.1 Dissemination Plan | Doc. | Public | OBEO
 
-**T7.2 - Business Model & Exploitation Plan** `(EADS + SA + OBEO + all industrial partners)`
+**T7.2 - Business Model & Exploitation Plan** `(AIRBUS + SA + OBEO + all industrial partners)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M7]  | D7.2.1-1 Exploitation Plan (release 1) | Doc. | Public | EADS
-| [M22] | D7.2.1-2 Exploitation Plan (release 2) | Doc. | Public | EADS
-| [M34] | D7.2.1-3 Exploitation Plan (release 3) | Doc. | Public | EADS
-| [M7]  | D7.2.2 Marketing Plan| Doc. | Public | EADS
-| [M34] | D7.2.3 Roadmap for future exploitation and pre-competition survey| Doc. | Public | EADS 
+| [M7]  | D7.2.1-1 Exploitation Plan (release 1) | Doc. | Public | AIRBUS
+| [M22] | D7.2.1-2 Exploitation Plan (release 2) | Doc. | Public | AIRBUS
+| [M34] | D7.2.1-3 Exploitation Plan (release 3) | Doc. | Public | AIRBUS
+| [M7]  | D7.2.2 Marketing Plan| Doc. | Public | AIRBUS
+| [M34] | D7.2.3 Roadmap for future exploitation and pre-competition survey| Doc. | Public | AIRBUS
 
-**T7.3 - Workshops & Events** `(VUB + UNIT + OBEO + KS + EADS + ALL)`
+**T7.3 - Workshops & Events** `(VUB + UNIT + OBEO + KS + AIRBUS + ALL)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -626,7 +626,7 @@ Work Package 7
 |:----- |:----------- |:------- |:------- |:-------
 | [M10] | D7.5.1 Technical-oriented talk about the principles and benefits of the ModelWriter-ITEA approach and tooling | Doc. | Public | VUB
 | [M10] | D7.5.2 Research-oriented talk about the principles and benefits of the ModelWriter-ITEA approach and tooling| Doc.  | Public | VUB
- 
+
 **T7.6 - Social Networks** `(UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader

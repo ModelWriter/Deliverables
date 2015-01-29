@@ -76,7 +76,7 @@ hale.gezgen@kocsistem.com.tr | hale.gezgen@gmail.com
 mehmet.onat@kocsistem.com.tr | mehmetonat70@gmail.com
 ersan@hisbim.com |
 taskin@hisbim.com |
-hans.vangheluwe@uantwerp.be |
+hans.vangheluwe@uantwerp.be | vangheluwe.hans@gmail.com
 
 Belgian Consortium - Email Group Members
 ---

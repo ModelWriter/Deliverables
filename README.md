@@ -99,7 +99,7 @@ hans.vangheluwe@uantwerp.be |
 |Emil Khamitov |emil.khamitov@unitbilisim.com |@emilkhamitov |
 |Yiğitcan Şener |yigitcan.sener@unitbilisim.com |@ycansener
 |Furkan Tanrıverdi |furkan.tanriverdi@unitbilisim.com |@furkAn
-|Prof. Hans Vangheluwe |hans.vangheluwe@uantwerpen.be |@
+|Prof. Hans Vangheluwe |hans.vangheluwe@uantwerpen.be |@HansVangheluwe
 
 [OBEO](https://github.com/orgs/ModelWriter/teams/obeo)
 ----
@@ -116,7 +116,7 @@ hans.vangheluwe@uantwerp.be |
 
 |Contact |Corporate Email |GitHub |
 |:--- |:--- |:---|
-|Claire Gardent |claire.gardent@loria.fr |@ |
+|Claire Gardent |claire.gardent@loria.fr |@ClaireEMG |
 |Samuel Cruz-Lara |Samuel.Cruz-Lara@loria.fr |@scruzlara |
 
 [AIRBUS](https://github.com/orgs/ModelWriter/teams/AIRBUS)
@@ -125,7 +125,7 @@ hans.vangheluwe@uantwerp.be |
 
 |Contact |Corporate Email |GitHub |
 |:--- |:--- |:---|
-|Anne Monceaux |anne.monceaux@airbus.com |@ |
+|Anne Monceaux |anne.monceaux@airbus.com |@annemonceaux |
 
 [MANTIS](https://github.com/orgs/ModelWriter/teams/mantis)
 ----
@@ -143,7 +143,7 @@ hans.vangheluwe@uantwerp.be |
 |Contact |Corporate Email |GitHub |
 |:--- |:--- |:---|
 |Mehmet Önat |mehmet.onat@kocsistem.com.tr |@MehmetOnat |
-|Hale Gezgen |hale.gezgen@kocsistem.com.tr |@ |
+|Hale Gezgen |hale.gezgen@kocsistem.com.tr |@halegezgen |
 |Prof. Geylani Kardaş |geylani.kardas@ege.edu.tr |@geylani |
 
 [HISBIM](https://github.com/orgs/ModelWriter/teams/hisbim)

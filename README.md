@@ -198,7 +198,7 @@ Work Package 1
 ---
 **WP1 - Industrial Use Cases and Requirements (AIRBUS)**
 ***
-**T1.1 - Evaluation Methods & Tools** `[UNIT + KOCSISTEM + AIRBUS + SA + OBEO + HISBIM + MANTIS]`
+**T1.1 - Evaluation Methods & Tools** `[UNIT + KOCSISTEM + AIRBUS + OBEO + HISBIM + MANTIS]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -220,7 +220,7 @@ Work Package 1
 | [M5]  | D1.3.2 Data: Corpus for D1.3.1 (public part) | SW | Public | MANTIS
 | [M5]  | D1.3.3 Data: Corpus for D1.3.1 (confidential part)| SW | Confidential | MANTIS
 
-**T1.4 - Consolidated User Requirements** `(AIRBUS + OBEO + MANTIS + SA)`
+**T1.4 - Consolidated User Requirements** `(AIRBUS + OBEO + MANTIS)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -238,7 +238,7 @@ Work Package 1
 |:----- |:----------- |:------- |:------- |:-------
 | [M7]  | D1.6.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | AIRBUS
 
-**T1.7 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + KUL + ALL)`
+**T1.7 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + ALL)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------

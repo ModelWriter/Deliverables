@@ -171,7 +171,7 @@ Work Packages, Tasks and Deliverables
 The exhaustive list of deliverables `D\<x\>.\<y\>.\<z\>` associated to each Task `T\<x\>.\<y\>` of each `WP\<x\>`.
 
 Conventions for WP start date and end date:
-* M\<i\> always means start of the month \<i\>.
+* **M\<i\> always means start of the month \<i\>.**
 * Q\<i\> always means start of quarter \<i\>
 * Y\<1\> always means start of year \<1\>
 * First month is M1, first quarter is Q1, first year is Y1.
@@ -202,69 +202,61 @@ Work Package 1
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.1.1 Report: Evaluation Methods & Tools | Doc. | Public | UNIT
+| [M5]  | D1.1.1 Report: Evaluation Methods & Tools | Doc. | Public | UNIT
 
-**T1.2 - Industrial Use Cases for Belgian Consortium** `[SA]`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.2.1 Report: Industrial Use Cases for Belgian Consortium | Doc. | Public | AIRBUS
-| [M3]  | D1.2.2 Data: Corpus for D1.1.1 (public part) | SW | Public | AIRBUS
-| [M3]  | D1.2.3 Data: Corpus for D1.1.1 (confidential part) | SW | Confidential | AIRBUS
-
-**T1.3 - Industrial Use Cases for French Consortium** `[OBEO + AIRBUS]`
+**T1.2 - Industrial Use Cases for French Consortium** `[OBEO + AIRBUS]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.3.1 Report: Industrial Use Cases for French Consortium | Doc. | Public | OBEO
-| [M3]  | D1.3.2 Data: Corpus for D1.2.1 (public part) | SW | Public | OBEO
-| [M3]  | D1.3.3 Data: Corpus for D1.2.1 (confidential part) | SW | Confidential | OBEO
+| [M5]  | D1.2.1 Report: Industrial Use Cases for French Consortium | Doc. | Public | AIRBUS
+| [M5]  | D1.2.2 Data: Corpus for D1.2.1 (public part) | SW | Public | AIRBUS
+| [M5]  | D1.2.3 Data: Corpus for D1.2.1 (confidential part) | SW | Confidential | AIRBUS
 
-**T1.4 - Industrial Use Cases for Turkish Consortium** `[MANTIS + UNIT + KOCSISTEM + HISBIM]`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.4.1 Report: Industrial Use Cases for Turkish Consortium | Doc. | Public | MANTIS
-| [M3]  | D1.4.2 Data: Corpus for D1.4.1 (public part) | SW | Public | MANTIS
-| [M3]  | D1.4.3 Data: Corpus for D1.4.1 (confidential part)| SW | Confidential | MANTIS
-
-**T1.5 - Consolidated User Requirements** `(AIRBUS + OBEO + MANTIS + SA)`
+**T1.3 - Industrial Use Cases for Turkish Consortium** `[MANTIS + UNIT + KOCSISTEM + HISBIM]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.5.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | AIRBUS
+| [M5]  | D1.3.1 Report: Industrial Use Cases for Turkish Consortium | Doc. | Public | MANTIS
+| [M5]  | D1.3.2 Data: Corpus for D1.3.1 (public part) | SW | Public | MANTIS
+| [M5]  | D1.3.3 Data: Corpus for D1.3.1 (confidential part)| SW | Confidential | MANTIS
 
-**T1.6 - User Requirements Review** `(AIRBUS + UNIT+ KOCSISTEM + KUL + ALL)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D1.6.1 Report: Minutes of the User Requirements Review meeting | Doc. | Public | AIRBUS
-
-**T1.7 - Software Requirements** `(AIRBUS + WP2 to WP7 leaders)`
+**T1.4 - Consolidated User Requirements** `(AIRBUS + OBEO + MANTIS + SA)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D1.7.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | AIRBUS
+| [M5]  | D1.4.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | UNIT
 
-**T1.8 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + KUL + ALL)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D1.8.1 Report: Minutes of the Software Requirements Review meeting | Doc. | Public | AIRBUS
-
-**T1.9 - Annual Product Review** `(AIRBUS + Country Coordinators)`
+**T1.5 - User Requirements Review** `(AIRBUS + UNIT+ KOCSISTEM + KUL + ALL)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M13] | D1.9.1-1 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
-| [M25] | D1.9.1-2 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
-| [M37] | D1.9.1-3 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+| [M6]  | D1.5.1 Report: Minutes of the User Requirements Review meeting | Doc. | Public | AIRBUS
 
-**T1.10 - Technical Risk Assessment and Management** `(OBEO + UNIT + KOCSISTEM + ALL)`
+**T1.6 - Software Requirements** `(AIRBUS + WP2 to WP7 leaders)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D1.10.1 Technical Risk Assessment Document | Doc. | Public | OBEO
+| [M6]  | D1.6.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | AIRBUS
+
+**T1.7 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + KUL + ALL)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M5]  | D1.7.1 Report: Minutes of the Software Requirements Review meeting | Doc. | Public | AIRBUS
+
+**T1.8 - Annual Product Review** `(AIRBUS + Country Coordinators)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M13] | D1.8.1-1 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+| [M25] | D1.8.1-2 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+| [M37] | D1.8.1-3 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+
+**T1.9 - Technical Risk Assessment and Management** `(OBEO + UNIT + KOCSISTEM + ALL)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M5]  | D1.9.1 Technical Risk Assessment Document | Doc. | Public | OBEO
 
 Work Package 2
 ---

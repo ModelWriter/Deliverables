@@ -224,7 +224,7 @@ Work Package 1
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M6]  | D1.4.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | UNIT
+| [M6]  | D1.4.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | AIRBUS
 
 **T1.5 - User Requirements Review** `(AIRBUS + UNIT+ KOCSISTEM + KUL + ALL)`
 
@@ -236,7 +236,7 @@ Work Package 1
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M7]  | D1.6.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | AIRBUS
+| [M7]  | D1.6.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | UNIT
 
 **T1.7 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + ALL)`
 

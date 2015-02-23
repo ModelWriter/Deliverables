@@ -202,13 +202,13 @@ Work Package 1
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3->M5]  | D1.1.1 Report: Evaluation Methods & Tools | Doc. | Public | UNIT
+| [M3->M5]  | D1.1.1 Report: Evaluation Methods & Tools | Doc. | Public | UNIT -> HISBIM
 
-**T1.2 - Industrial Use Cases for Belgium Consortium** `[Sogeti]`
+**T1.2 - Industrial Use Cases for Belgium Consortium** `[SA -> Sogeti]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3->M7]  | D1.2.1 Report: Industrial Use Cases for Belfian Consortium | Doc. | Public | Sogeti
+| [M3->M7]  | D1.2.1 Report: Industrial Use Cases for Belgian Consortium | Doc. | Public | Sogeti
 | [M3->M7]  | D1.2.2 Data: Corpus for D1.2.1 (public part) | SW | Public | Sogeti
 | [M3->M7]  | D1.2.3 Data: Corpus for D1.2.1 (confidential part) | SW | Confidential | Sogeti
 
@@ -228,37 +228,37 @@ Work Package 1
 | [M3->M7]  | D1.4.2 Data: Corpus for D1.3.1 (public part) | SW | Public | MANTIS
 | [M3->M7]  | D1.4.3 Data: Corpus for D1.3.1 (confidential part)| SW | Confidential | MANTIS
 
-**T1.5 - Consolidated User Requirements** `(UNIT + AIRBUS + OBEO + MANTIS)`
+**T1.5 - Consolidated User Requirements** `[SA -> AIRBUS + OBEO + MANTIS ++ Sogeti]`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3->M7]  | D1.5.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | UNIT
+| [M3->M7]  | D1.5.1 Report: User Requirements Document (URD) for ModelWriter | Doc. | Public | SA -> UNIT
 
-**T1.6 - User Requirements Review** `(AIRBUS + UNIT+ KOCSISTEM + KUL + ALL)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M3->M7]  | D1.6.1 Report: Minutes of the User Requirements Review meeting | Doc. | Public | AIRBUS
-
-**T1.7 - Software Requirements** `(AIRBUS + WP2 to WP7 leaders)`
+**T1.6 - User Requirements Review** `(SA -> AIRBUS + UNIT + KOCSISTEM + KUL + ALL)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M5->M9]  | D1.7.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | UNIT
+| [M3->M7]  | D1.6.1 Report: Minutes of the User Requirements Review meeting | Doc. | Public | SA -> AIRBUS
 
-**T1.8 - Software Requirements Review** `(AIRBUS + UNIT + KOCSISTEM + ALL)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M5->M9]  | D1.8.1 Report: Minutes of the Software Requirements Review meeting | Doc. | Public | AIRBUS
-
-**T1.9 - Annual Product Review** `(AIRBUS + Country Coordinators - "Product Review Comittee")`
+**T1.7 - Software Requirements** `(SA -> AIRBUS + LORIA + UNIT + MANTIS + OBEO)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M13->M15] | D1.9.1-1 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
-| [M25->M26] | D1.9.1-2 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
-| [M37] | D1.9.1-3 Report: Annual Product Owner Review | Doc. | Public | AIRBUS
+| [M5->M9]  | D1.7.1 Report: Software Requirements Document (SRD) for ModelWriter | Doc. | Public | SA -> KOCSISTEM
+
+**T1.8 - Software Requirements Review** `(SA -> AIRBUS + UNIT + KOCSISTEM + ALL)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M5->M9]  | D1.8.1 Report: Minutes of the Software Requirements Review meeting | Doc. | Public | SA -> AIRBUS
+
+**T1.9 - Annual Product Review** `(SA -> AIRBUS + Country Coordinators - "Product Review Comittee")`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M13->M15] | D1.9.1-1 Report: Annual Product Owner Review | Doc. | Public | SA -> AIRBUS
+| [M25->M26] | D1.9.1-2 Report: Annual Product Owner Review | Doc. | Public | SA -> AIRBUS
+| [M37] | D1.9.1-3 Report: Annual Product Owner Review | Doc. | Public | SA -> AIRBUS
 
 **T1.10 - Technical Risk Assessment and Management** `(OBEO + UNIT + KOCSISTEM + ALL)`
 
@@ -270,61 +270,50 @@ Work Package 2
 ---
 **WP2 - Semantic Parsing and Generation of Documents and Documents Components (LORIA)**
 ***
-**T2.1 - Data Collection** `(LORIA + KUL)`
+**T2.1 - Data Collection** `(LORIA + KUL ++ OBEO ++ AIRBUS -SA ++Sogeti)`
 
-| Month | Deliverable | Type    | Access  | Leader
+| Month | Deliverable | Type    | Access  | Leader (Members)
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D2.1.1 Report: Software Requirements - Evaluation of the natural language processing requirements set by the use cases | Doc. | Public | LORIA
+| [M3->M7->M8]  | D2.1.1 Report: Software Requirements - Evaluation of the natural language processing requirements set by the use cases | Doc. | Public | LORIA (KUL)
+| [M6->M8]  | D2.1.2 Data: Corpora (Text, Knowledge, Bi-Texts) and Report: Documentation of the corpora | Doc. | Public | LORIA (OBEO, AIRBUS, KUL)
 
 **T2.2 - Hybrid approaches to semantic parsing** `(KUL + LORIA)`
 
-| Month | Deliverable | Type    | Access  | Leader
+| Month | Deliverable | Type    | Access  | Leader (Members)
 |:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D2.2.1 Report: Overview and comparison of existing deep semantic parsers | Doc. | Public | KUL
+| [M4->M6]  | D2.2.1 Report: Overview and comparison of existing deep semantic parsers | Doc. | Public | KUL -> LORIA (KUL)
 
-**T2.3 - Hybrid approaches to Natural Language Generation** `(LORIA + KUL)`
+**T2.3 - Hybrid approaches to Natural Language Generation** `(LORIA - VUB + KUL)`
 
-| Month | Deliverable | Type    | Access  | Leader
+| Month | Deliverable | Type    | Access  | Leader (Members)
 |:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D2.3.1 Report: Overview and comparison of existing generators | Doc. | Public | LORIA
+| [M5->M7]  | D2.3.1 Report: Overview and comparison of existing generators | Doc. | Public | LORIA (KUL)
 
-**T2.4 - Definition of the target semantic representation language** `(LORIA + KUL + AIRBUS)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M6]  | D2.4.1 Data: Corpora (Text, Knowledge, Bi-Texts) and Report: Documentation of the corpora | SW | Public | LORIA
-
-**T2.5 - Development of the semantic parser and of the generator** `(LORIA + KUL + MANTIS + VUB + AIRBUS)`
-
-  * Specification of the Knowledge Representation Language(s) `[VUB + KUL + LORIA]`
+**T2.4 - Definition of the target semantic representation language** `(- VUB + KUL + LORIA ++ OBEO ++ AIRBUS)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M8]  | D2.5.1	Report: Specification of the Knowledge Representation Language(s) output by the parser and input to the generator | Doc. | Public | VUB
+| [M8->M10]  | D2.5.1	Report: Specification of the Knowledge Representation Language(s) output by the parser and input to the generator | Doc. | Public | VUB -> LORIA (OBEO, AIRBUS)
 
-  * Semantic Parser and Software Documentation `[KUL + LORIA]`
+**T2.5 - Development of the semantic parser and of the generator** `(LORIA + KUL + MANTIS - VUB + AIRBUS ++ OBEO)`
 
-| Month | Deliverable | Type    | Access  | Leader
+| Month | Deliverable | Type    | Access  | Leader (Members)
 |:----- |:----------- |:------- |:------- |:-------
-| [M8]  | D2.5.2-1 Software: Semantic Parser and Report: Software Documentation (release 1) | SW | Public | KUL
-| [M20] | D2.5.2-2 Software: Semantic Parser and Report: Software Documentation (release 2) | SW | Public | KUL
-| [M28] | D2.5.2-3 Software: Semantic Parser and Report: Software Documentation (release 3) | SW | Public | KUL
+| [M8->M10]  | D2.5.2-1 Software: Semantic Parser and Report: Software Documentation (release 1) | SW | Public | KUL -> LORIA (KUL, MANTIS)
+| [M20->M22] | D2.5.2-2 Software: Semantic Parser and Report: Software Documentation (release 2) | SW | Public | KUL -> LORIA (KUL, MANTIS)
+| [M28->M30] | D2.5.2-3 Software: Semantic Parser and Report: Software Documentation (release 3) | SW | Public | KUL -> LORIA (KUL, MANTIS)
 
-  * Natural Language Generator and Software Documentation `[LORIA + KUL]`
-
-| Month | Deliverable | Type    | Access  | Leader
+| Month | Deliverable | Type    | Access  | Leader (Members)
 |:----- |:----------- |:------- |:------- |:-------
-| [M8]  | D2.5.3-1 Software: Natural Language Generator and Report: Software Documentation (release 1) | SW | Public | LORIA
-| [M20] | D2.5.3-2 Software: Natural Language Generator and Report: Software Documentation (release 2) | SW | Public | LORIA
-| [M28] | D2.5.3-3 Software: Natural Language Generator and Report: Software Documentation (release 3) | SW | Public | LORIA
+| [M8->M10]  | D2.5.3-1 Software: Natural Language Generator and Report: Software Documentation (release 1) | SW | Public | LORIA (KUL, MANTIS)
+| [M20->M22] | D2.5.3-2 Software: Natural Language Generator and Report: Software Documentation (release 2) | SW | Public | LORIA (KUL, MANTIS)
+| [M28->M30] | D2.5.3-3 Software: Natural Language Generator and Report: Software Documentation (release 3) | SW | Public | LORIA (KUL, MANTIS)
 
-  * Integration in ModelWriter and Software Documentation `[SA]`
-
-| Month | Deliverable | Type    | Access  | Leader
+| Month | Deliverable | Type    | Access  | Leader (Members)
 |:----- |:----------- |:------- |:------- |:-------
-| [M10] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation (release 1) | SW | Public | SA
-| [M22] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation (release 2) | SW | Public | SA
-| [M30] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation  (release 3) | SW | Public | SA
+| [M10->M12] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation (release 1) | SW | Public | SA -> OBEO
+| [M22->M24] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation (release 2) | SW | Public | SA -> OBEO
+| [M30->M32] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation  (release 3) | SW | Public | SA -> OBEO
 
 Work Package 3
 ---
@@ -334,96 +323,98 @@ Work Package 3
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M3]  | D3.1.1 Review of model-to-model transformation approaches and technologies | Doc. | Public | UNIT
+| [M3->M5]  | D3.1.1 Review of model-to-model transformation approaches and technologies | Doc. | Public | UNIT
 
 **T3.2 - Specification and design of the M2M Transformation Framework** `(UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D3.2.1 M2M Transformation Framework architectural design document | Doc. | Public | UNIT
+| [M4->M6]  | D3.2.1 M2M Transformation Framework architectural design document | Doc. | Public | UNIT
 
-**T3.3 - Development of the Transformation Manager component** `(UNIT)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D3.3.1 Transformation Manager architectural (TRAM) design document | Doc. | Public | UNIT
-| [M8]  | D3.3.2-1 Software: Transformation Manager component (release 1) | SW | Public | UNIT
-| [M20] | D3.3.2-2 Software: Transformation Manager component (release 2) | SW | Public | UNIT
-| [M30] | D3.3.2-3 Software: Transformation Manager component (release 3) | SW | Public | UNIT
-
-**T3.4 - Development of the Configuration Manager (COM) component** `(UNIT)`
+**T3.3 - Development of the Transformation Manager component** `(UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M6]  | D3.4.1 Configuration Manager architectural design document | Doc. | Public | UNIT
-| [M8]  | D3.4.2-1 Software: Configuration Manager component (release 1) | SW | Public | UNIT
-| [M20] | D3.4.2-2 Software: Configuration Manager component (release 2) | SW | Public | UNIT
-| [M30] | D3.4.2-3 Software: Configuration Manager component (release 3) | SW | Public | UNIT
+| [M5->M7]  | D3.3.1 Transformation Manager architectural (TRAM) design document | Doc. | Public | UNIT
+| [M8->M10]  | D3.3.2-1 Software: Transformation Manager component (release 1) | SW | Public | UNIT
+| [M20->M22] | D3.3.2-2 Software: Transformation Manager component (release 2) | SW | Public | UNIT
+| [M30->M32] | D3.3.2-3 Software: Transformation Manager component (release 3) | SW | Public | UNIT
 
-**T3.5 - Development of the Traceability Manager component** `(UNIT)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M7]  | D3.5.1 Traceability Manager architectural design document | Doc. | Public | UNIT
-| [M8]  | D3.5.2-1 Software: Traceability Manager component (release 1) | SW | Public | UNIT
-| [M20] | D3.5.2-2 Software: Traceability Manager component (release 2) | SW | Public | UNIT
-| [M30] | D3.5.2-3 Software: Traceability Manager component (release 3) | SW | Public | UNIT
-
-**T3.6 - Development of the Synchronization Manager component** `(UNIT)`
+**T3.4 - Development of the Configuration Manager (COM) component** `(UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M8]  | D3.6.1 Synchronization Manager architectural design document | Doc. | Public | UNIT
-| [M8]  | D3.6.2-1 Software: Synchronization Manager component (release 1) | SW | Public | UNIT
-| [M20] | D3.6.2-2 Software: Synchronization Manager component (release 2) | SW | Public | UNIT
-| [M30] | D3.6.2-3 Software: Synchronization Manager component (release 3) | SW | Public | UNIT
+| [M6->M8]  | D3.4.1 Configuration Manager architectural design document | Doc. | Public | UNIT
+| [M8->M10]  | D3.4.2-1 Software: Configuration Manager component (release 1) | SW | Public | UNIT
+| [M20->M22] | D3.4.2-2 Software: Configuration Manager component (release 2) | SW | Public | UNIT
+| [M30->M32] | D3.4.2-3 Software: Configuration Manager component (release 3) | SW | Public | UNIT
 
-**T3.7 - Design of the model-to-model transformations** `(UNIT + MANTIS + VUB)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M18] | D3.7.1 Model-to-model transformations (from user-visible models to KB-stored models) design document | SW | Public | UNIT
-
-**T3.8 - Implementation of the model-to-model transformations** `(UNIT + VUB)`
+**T3.5 - Development of the Traceability Manager component** `(UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M11] | D3.8.1-1 Software: Source and binary code of each model-to-model transformation (release 1) | SW | Public | UNIT
-| [M21] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 2) | SW | Public | UNIT
-| [M31] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 3) | SW | Public | UNIT
+| [M7->M9]  | D3.5.1 Traceability Manager architectural design document | Doc. | Public | UNIT
+| [M8->M10]  | D3.5.2-1 Software: Traceability Manager component (release 1) | SW | Public | UNIT
+| [M20->M22] | D3.5.2-2 Software: Traceability Manager component (release 2) | SW | Public | UNIT
+| [M30->M32] | D3.5.2-3 Software: Traceability Manager component (release 3) | SW | Public | UNIT
 
-**T3.9 - Validation of the M2M Transformation Framework** `(UNIT + MANTIS + VUB + KOCSISTEM)`
+**T3.6 - Development of the Synchronization Manager component** `(UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M32] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | UNIT
-| [M33] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT
+| [M8->M10]  | D3.6.1 Synchronization Manager architectural design document | Doc. | Public | UNIT
+| [M8->M10]  | D3.6.2-1 Software: Synchronization Manager component (release 1) | SW | Public | UNIT
+| [M20->M22] | D3.6.2-2 Software: Synchronization Manager component (release 2) | SW | Public | UNIT
+| [M30->M32] | D3.6.2-3 Software: Synchronization Manager component (release 3) | SW | Public | UNIT
+
+**T3.7 - Design of the model-to-model transformations** `(UNIT + MANTIS - VUB)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M18->M10] | D3.7.1 Model-to-model transformations (from user-visible models to KB-stored models) design document | Doc. | Public | UNIT -> MANTIS
+
+**T3.8 - Implementation of the model-to-model transformations** `(UNIT - VUB)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M11->M13] | D3.8.1-1 Software: Source and binary code of each model-to-model transformation (release 1) | SW | Public | UNIT
+| [M21->M23] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 2) | SW | Public | UNIT
+| [M31->M33] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 3) | SW | Public | UNIT
+
+**T3.9 - Validation of the M2M Transformation Framework** `(UNIT + MANTIS - VUB + KOCSISTEM)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M32->M34] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | UNIT -> MANTIS
+| [M33->M35] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT
 
 Work Package 4
 ---
 **WP4 - Knowledge Base Design and Implementation (Mantis)**
 ***
-**T4.1 - Design of the Knowledge Base** `(VUB + SA + OBEO + MANTIS + UNIT + KOCSISTEM)`
+**T4.1 - Design of the Knowledge Base** `( - VUB - SA + OBEO + MANTIS + UNIT + KOCSISTEM)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M6]  | D4.1.1 Report: Knowledge Base Design document | Doc. | Public | VUB
+| [M6]  | D4.1.1 Report: Knowledge Base Design document | Doc. | Public | VUB -> OBEO
 
-**T4.2 - API of the Knowledge Base** `(VUB + KS + OBEO + UNIT)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M6]  | D4.2.1 Report: Interface Control Document (ICD) |Doc. | Public | VUB
-
-**T4.3 - Implementation of the Knowledge Base** `(VUB)`
+**T4.2 - API of the Knowledge Base** `(- VUB + KOCSISTEM + OBEO + UNIT)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [11]  | D4.3.1-1 Software: Knowledge Base (release 1) | SW | Public | VUB
-| [19]  | D4.3.1-2 Software: Knowledge Base (release 2) | SW | Public | VUB
-| [31]  | D4.3.1-3 Software: Knowledge Base (release 3) | SW | Public | VUB
+| [M6]  | D4.2.1 Report: Interface Control Document (ICD) |Doc. | Public | VUB -> KOCSISTEM
 
-**T4.4 - Plug-in #1: ModelWriter-assisted requirements review** `(VUB + SA)`
+**T4.3 - Implementation of the Knowledge Base** `( - VUB)`
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M11->M13]  | D4.3.1-1 Software: Knowledge Base (release 1) | SW | Public | VUB -> MANTIS
+| [M19->M23]  | D4.3.1-2 Software: Knowledge Base (release 2) | SW | Public | VUB -> MANTIS
+| [M31->M33]  | D4.3.1-3 Software: Knowledge Base (release 3) | SW | Public | VUB -> MANTIS
+
+**T4.4 - Plug-in #1: ModelWriter-assisted requirements review** `( - VUB - SA)`
+
+  > This plug-in and associated deliverables were suggested by VUB.
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -434,16 +425,16 @@ Work Package 4
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M11] | D4.5.1 Report: Technical Note for KB serialization and reuse | Doc. | Public | MANTIS
+| [M11->M13] | D4.5.1 Report: Technical Note for KB serialization and reuse | Doc. | Public | MANTIS
 
 **T4.6 - Plug-in #3: ModelWriter-assisted semantic comparison of 2 documents** `(OBEO + MANTIS)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
 | [M20] | D4.6.1 Report: Technical Note for ModelWriter-assisted Comparison of 2 Documents | Doc. | Public | OBEO
-| [M11] | D4.6.2-1 Software: Proof-of-concept semantic comparison engine (release 1) | SW | Public | OBEO
-| [M19] | D4.6.2-2 Software: Proof-of-concept semantic comparison engine (release 2) | SW | Public | OBEO
-| [M31] | D4.6.2-3 Software: Proof-of-concept semantic comparison engine (release 3) | SW | Public | OBEO
+| [M11->M13] | D4.6.2-1 Software: Proof-of-concept semantic comparison engine (release 1) | SW | Public | OBEO
+| [M19->M23] | D4.6.2-2 Software: Proof-of-concept semantic comparison engine (release 2) | SW | Public | OBEO
+| [M31->M33] | D4.6.2-3 Software: Proof-of-concept semantic comparison engine (release 3) | SW | Public | OBEO
 
 **T4.7 - Plug-in #2: ModelWriter-assisted compliance review** `(SA)`
 
@@ -459,56 +450,29 @@ Work Package 5
 ---
 **WP5 - Project Management (UNIT)**
 ***
-**T5.1 – European and National Coordination and Reporting** `(SA + Country Coordinators + WP Leaders)`
 
-**T5.2 - Project and Stage Plans** `(UNIT + WP Leaders)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M13] | D5.1.1-1 Management reports and cost statements (confidential) (release 1) | Doc. | Confidential | UNIT
-| [M25] | D5.1.1-2 Management reports and cost statements (confidential) (release 2) | Doc. | Confidential | UNIT
-| [M37] | D5.1.1-3 Management reports and cost statements (confidential) (release 3) | Doc. | Confidential | UNIT
-
-**T5.3 - Project Controls** `(UNIT + WP Leaders)`
+**T5.1 - Communication Management and Infrastructure** `(UNIT + WP7 leader)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M2]  | D5.2.1 Project Controls | Doc. | Public | UNIT
-| [M12] | D5.2.1-1 Project and Next Management Stage Plan (release 1) | Doc. | Public | UNIT
-| [M24] | D5.2.1-2 Project and Next Management Stage Plan (release 2) | Doc. | Public | UNIT
+| [M1]  | D5.1.1 Project Kick-Off Report and Project Management Plan | Doc. | Public | UNIT
 
-**T5.4 - Project Monitoring** `(UNIT + WP Leaders)`
-
-**T5.5 - Communication Management and Infrastructure** `(UNIT + WP7 leader)`
+**T5.2 – Project Coordination and Reporting** `(UNIT - SA + Country Coordinators + WP Leaders)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D5.4.1 Communication Management Strategy (A4) | Doc. | Public | UNIT
+| [M7]  | D5.2.1 Project Progress Report (first half year) | Doc. | Confidential | UNIT
+| [M13] | D5.2.2 Project Progress Report (second half year) | Doc. | Confidential | UNIT
+| [M19] | D5.2.3 Project Progress Report (third half year) | Doc. | Confidential | UNIT
+| [M25] | D5.2.4 Project Progress Report (fourth half year) | Doc. | Confidential | UNIT
+| [M31] | D5.2.5 Project Progress Report (fifth half year) | Doc. | Confidential | UNIT
 
-**T5.6 - Risk Management and Infrastructure** `(UNIT + WP Leaders)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D5.5.1 Risk Management Strategy (A24) | Doc. | Public | UNIT
-
-**T5.7 - Configuration Management and Infrastructure** `(UNIT + WP Leaders)`
+**T5.3 - Closing Project** `(UNIT + WP Leaders)`
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D5.6.1 Configuration Management Strategy (A6) | Doc. | Public | UNIT
-
-**T5.8 - Quality Management and Infrastructure** `(UNIT + WP Leaders)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D5.7.1 Quality Management Strategy (A22) | Doc. | Public | UNIT
-
-**T5.9 - Closing Project** `(UNIT + WP Leaders)`
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [37]  | D5.8.1 Final project report (Public Deliverable) | Doc. | Public | UNIT
-| [37]  | D5.8.2 Updated State-of-the-art (Public Deliverable) | Doc. | Public | UNIT
+| [M37] | D5.3.1 Final Project Report | Doc. | Confidential | UNIT
+| [M37] | D5.3.2 Updated State-of-the-art (Public Deliverable) | Doc. | Public | UNIT
 
 Work Package 6
 ---

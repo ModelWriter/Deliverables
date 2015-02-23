@@ -173,12 +173,12 @@ The exhaustive list of deliverables `D\<x\>.\<y\>.\<z\>` associated to each Task
 Conventions for WP start date and end date:
 * **M\<i\> always means start of the month \<i\>.**
 * Q\<i\> always means start of quarter \<i\>
-* Y\<1\> always means start of year \<1\>
+* Y\<i\> always means start of year \<i\>
 * First month is M1, first quarter is Q1, first year is Y1.
 
 Therefore:
 * First day of project is M1.
-* End of a 3-year project is expressed as M37
+* End of the 3-years project is expressed as M37
 
 For each Work Package (WP), describe:
 * the timeline;

@@ -180,7 +180,7 @@ Therefore:
 * First day of project is M1.
 * End of the 3-years project is expressed as M37
 
-For each Work Package (WP), describe:
+For each Work Package (WP), the follwoings are described:
 * the timeline;
 * the starting point, objectives and expected results;
 * the WP tasks;

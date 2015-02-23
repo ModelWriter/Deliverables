@@ -503,7 +503,7 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ### T6.4 - User Interfaces Implementation [- SA + OBEO]
 
-* User Interface for the Writer part [- SA]
+#### User Interface for the Writer part [- SA]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
@@ -512,7 +512,7 @@ Deliverable titles (descriptions) are self-explanatory.
 | [M20] | D6.4.2-2 Software: User Interface for the Writer part (release 2) | SW | Public | SA -> ?
 | [M34] | D6.4.2-3 Software: User Interface for the Writer part (release 3) | SW | Public | SA -> ?
 
-* Software: IDE-integrated User Interface to handle Synchronization  [Obeo]
+#### Software: IDE-integrated User Interface to handle Synchronization  [Obeo]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------

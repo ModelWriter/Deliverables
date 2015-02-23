@@ -196,6 +196,8 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ## WP1 - Industrial Use Cases and Requirements (AIRBUS)
 
+![WP1 - Cost & Efforts](https://github.com/ModelWriter/Project-Management/blob/master/figures/wp1.png)
+
 ### T1.1 - Evaluation Methods & Tools [UNIT + KOCSISTEM + AIRBUS + OBEO + HISBIM + MANTIS]
 
 | Month | Deliverable | Type    | Access  | Leader
@@ -348,40 +350,40 @@ Deliverable titles (descriptions) are self-explanatory.
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M7-> M9]  | D3.5.1 Traceability Manager architectural design document | Doc. | Public | UNIT
-| [M8->M10]  | D3.5.2-1 Software: Traceability Manager component (release 1) | SW | Public | UNIT
-| [M20->M22] | D3.5.2-2 Software: Traceability Manager component (release 2) | SW | Public | UNIT
-| [M30->M32] | D3.5.2-3 Software: Traceability Manager component (release 3) | SW | Public | UNIT
+| [M7 -> M9]   | D3.5.1 Traceability Manager architectural design document | Doc. | Public | UNIT
+| [M8 -> M10]  | D3.5.2-1 Software: Traceability Manager component (release 1) | SW | Public | UNIT
+| [M20 -> M22] | D3.5.2-2 Software: Traceability Manager component (release 2) | SW | Public | UNIT
+| [M30 -> M32] | D3.5.2-3 Software: Traceability Manager component (release 3) | SW | Public | UNIT
 
 ### T3.6 - Development of the Synchronization Manager component [UNIT + KOCSISTEM]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M8->M10]  | D3.6.1 Synchronization Manager architectural design document | Doc. | Public | UNIT
-| [M8->M10]  | D3.6.2-1 Software: Synchronization Manager component (release 1) | SW | Public | UNIT
-| [M20->M22] | D3.6.2-2 Software: Synchronization Manager component (release 2) | SW | Public | UNIT
-| [M30->M32] | D3.6.2-3 Software: Synchronization Manager component (release 3) | SW | Public | UNIT
+| [M8 -> M10]  | D3.6.1 Synchronization Manager architectural design document | Doc. | Public | UNIT
+| [M8 -> M10]  | D3.6.2-1 Software: Synchronization Manager component (release 1) | SW | Public | UNIT
+| [M20 -> M22] | D3.6.2-2 Software: Synchronization Manager component (release 2) | SW | Public | UNIT
+| [M30 -> M32] | D3.6.2-3 Software: Synchronization Manager component (release 3) | SW | Public | UNIT
 
 ### T3.7 - Design of the model-to-model transformations [UNIT + MANTIS - VUB]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M18->M10] | D3.7.1 Model-to-model transformations (from user-visible models to KB-stored models) design document | Doc. | Public | UNIT -> MANTIS
+| [M18 -> M10] | D3.7.1 Model-to-model transformations (from user-visible models to KB-stored models) design document | Doc. | Public | UNIT -> MANTIS
 
 ### T3.8 - Implementation of the model-to-model transformations [UNIT - VUB]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M11->M13] | D3.8.1-1 Software: Source and binary code of each model-to-model transformation (release 1) | SW | Public | UNIT
-| [M21->M23] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 2) | SW | Public | UNIT
-| [M31->M33] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 3) | SW | Public | UNIT
+| [M11 -> M13] | D3.8.1-1 Software: Source and binary code of each model-to-model transformation (release 1) | SW | Public | UNIT
+| [M21 -> M23] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 2) | SW | Public | UNIT
+| [M31 -> M33] | D3.8.1-3 Software: Source and binary code of each model-to-model transformation (release 3) | SW | Public | UNIT
 
 ### T3.9 - Validation of the M2M Transformation Framework [UNIT + MANTIS - VUB + KOCSISTEM]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M32->M34] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | UNIT -> MANTIS
-| [M33->M35] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT
+| [M32 -> M34] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | UNIT -> MANTIS
+| [M33 -> M35] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT
 
 
 ## WP4 - Knowledge Base Design and Implementation (Mantis)
@@ -402,9 +404,9 @@ Deliverable titles (descriptions) are self-explanatory.
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M11->M13]  | D4.3.1-1 Software: Knowledge Base (release 1) | SW | Public | VUB -> MANTIS
-| [M19->M23]  | D4.3.1-2 Software: Knowledge Base (release 2) | SW | Public | VUB -> MANTIS
-| [M31->M33]  | D4.3.1-3 Software: Knowledge Base (release 3) | SW | Public | VUB -> MANTIS
+| [M11 -> M13]  | D4.3.1-1 Software: Knowledge Base (release 1) | SW | Public | VUB -> MANTIS
+| [M19 -> M23]  | D4.3.1-2 Software: Knowledge Base (release 2) | SW | Public | VUB -> MANTIS
+| [M31 -> M33]  | D4.3.1-3 Software: Knowledge Base (release 3) | SW | Public | VUB -> MANTIS
 
 ### T4.4 - Plug-in #1: ModelWriter-assisted requirements review [- VUB - SA]
 
@@ -412,31 +414,31 @@ Deliverable titles (descriptions) are self-explanatory.
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M35] | D4.4.1 Report: Technical Note for ModelWriter-assisted Quality Review of Requirements | Doc. | Public | VUB
-| [M35] | D4.4.2 Software: Proof-of-concept model checker | SW | Public | VUB
+| [M35] | D4.4.1 Report: Technical Note for ModelWriter-assisted Quality Review of Requirements | Doc. | Public | VUB -> ?
+| [M35] | D4.4.2 Software: Proof-of-concept model checker | SW | Public | VUB -> ?
 
 ### T4.5 - Knowledge Base serialization and reuse plug-in [MANTIS]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M11->M13] | D4.5.1 Report: Technical Note for KB serialization and reuse | Doc. | Public | MANTIS
+| [M11 -> M13] | D4.5.1 Report: Technical Note for KB serialization and reuse | Doc. | Public | MANTIS
 
 ### T4.6 - Plug-in #3: ModelWriter-assisted semantic comparison of 2 documents [OBEO + MANTIS]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
 | [M20] | D4.6.1 Report: Technical Note for ModelWriter-assisted Comparison of 2 Documents | Doc. | Public | OBEO
-| [M11->M13] | D4.6.2-1 Software: Proof-of-concept semantic comparison engine (release 1) | SW | Public | OBEO
-| [M19->M23] | D4.6.2-2 Software: Proof-of-concept semantic comparison engine (release 2) | SW | Public | OBEO
-| [M31->M33] | D4.6.2-3 Software: Proof-of-concept semantic comparison engine (release 3) | SW | Public | OBEO
+| [M11 -> M13] | D4.6.2-1 Software: Proof-of-concept semantic comparison engine (release 1) | SW | Public | OBEO
+| [M19 -> M23] | D4.6.2-2 Software: Proof-of-concept semantic comparison engine (release 2) | SW | Public | OBEO
+| [M31 -> M33] | D4.6.2-3 Software: Proof-of-concept semantic comparison engine (release 3) | SW | Public | OBEO
 
-### T4.7 - Plug-in #2: ModelWriter-assisted compliance review [SA]
+### T4.7 - Plug-in #2: ModelWriter-assisted compliance review [-SA]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M10] | D4.7.1 Report: Future ModelWriter-Enabled Use Cases | Doc. | Public | SA
+| [M10] | D4.7.1 Report: Future ModelWriter-Enabled Use Cases | Doc. | Public | SA -> ?
 
-### T4.9 - Internal bi-directional synchronization mechanism `(OBEO + UNIT)`
+### T4.9 - Internal bi-directional synchronization mechanism [OBEO + UNIT]
 
 ### T4.10 – External synchronization mechanism for collaborating ModelWriters [SA]
 
@@ -449,15 +451,15 @@ Deliverable titles (descriptions) are self-explanatory.
 |:----- |:----------- |:------- |:------- |:-------
 | [M1]  | D5.1.1 Project Kick-Off Report and Project Management Plan | Doc. | Public | UNIT
 
-### T5.2 – Project Coordination and Reporting [UNIT - SA + Country Coordinators + WP Leaders]
+### T5.2 - Project Coordination and Reporting [UNIT - SA + Country Coordinators + WP Leaders]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M7]  | D5.2.1 Project Progress Report (first half year) | Doc. | Confidential | UNIT
+| [M7]  | D5.2.1 Project Progress Report (first half year)  | Doc. | Confidential | UNIT
 | [M13] | D5.2.2 Project Progress Report (second half year) | Doc. | Confidential | UNIT
-| [M19] | D5.2.3 Project Progress Report (third half year) | Doc. | Confidential | UNIT
+| [M19] | D5.2.3 Project Progress Report (third half year)  | Doc. | Confidential | UNIT
 | [M25] | D5.2.4 Project Progress Report (fourth half year) | Doc. | Confidential | UNIT
-| [M31] | D5.2.5 Project Progress Report (fifth half year) | Doc. | Confidential | UNIT
+| [M31] | D5.2.5 Project Progress Report (fifth half year)  | Doc. | Confidential | UNIT
 
 ### T5.3 - Closing Project [UNIT + WP Leaders]
 
@@ -469,36 +471,36 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ## WP6 - ModelWriter Architecture, Integration and Evaluation (OBEO)
 
-### T6.1 - Experimental Prototyping [OBEO + SA +  VUB]
+### T6.1 - Experimental Prototyping [OBEO - SA - VUB]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D6.1.1 Software: Prototype Core ModelWriter (OBEO, SA, VUB) | SW | Public | OBEO
+| [M5 -> M6]  | D6.1.1 Software: Prototype Core ModelWriter (OBEO, SA, VUB) | SW | Public | OBEO
 
-### T6.2 - Architectural Design [OBEO + SA + VUB + MANTIS + UNIT + technological WP Leaders]
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M5]  | D6.2.1 Report: Architectural Design Document (ADD) (OBEO, SA, VUB, Mantis) | Doc. | Public | OBEO
-
-### T6.3 - Writer Part enhancements [SA]
+### T6.2 - Architectural Design [OBEO - SA - VUB + MANTIS + UNIT + technological WP Leaders]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M10] | D6.3.1-1 Software: Writer enhancements (release 1) | SW | Public | SA
-| [M20] | D6.3.1-2 Software: Writer enhancements (release 2) | SW | Public | SA
-| [M34] | D6.3.1-3 Software: Writer enhancements (release 3) | SW | Public | SA
+| [M5 -> M6]  | D6.2.1 Report: Architectural Design Document (ADD) (OBEO, SA, VUB, Mantis) | Doc. | Public | OBEO
 
-### T6.4 User Interfaces Implementation [SA + OBEO]
-
-* User Interface for the Writer part [SA]
+### T6.3 - Writer Part enhancements [- SA]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M7]  | D6.4.1 Report: Ergonomics Guidelines document for the Writer Part | Doc. | Public | SA
-| [M10] | D6.4.2-1 Software: User Interface for the Writer part (release 1) | SW | Public | SA
-| [M20] | D6.4.2-2 Software: User Interface for the Writer part (release 2) | SW | Public | SA
-| [M34] | D6.4.2-3 Software: User Interface for the Writer part (release 3) | SW | Public | SA
+| [M10] | D6.3.1-1 Software: Writer enhancements (release 1) | SW | Public | SA -> ?
+| [M20] | D6.3.1-2 Software: Writer enhancements (release 2) | SW | Public | SA -> ?
+| [M34] | D6.3.1-3 Software: Writer enhancements (release 3) | SW | Public | SA -> ?
+
+### T6.4 - User Interfaces Implementation [- SA + OBEO]
+
+* User Interface for the Writer part [- SA]
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M7]  | D6.4.1 Report: Ergonomics Guidelines document for the Writer Part | Doc. | Public | SA -> ?
+| [M10] | D6.4.2-1 Software: User Interface for the Writer part (release 1) | SW | Public | SA -> ?
+| [M20] | D6.4.2-2 Software: User Interface for the Writer part (release 2) | SW | Public | SA -> ?
+| [M34] | D6.4.2-3 Software: User Interface for the Writer part (release 3) | SW | Public | SA -> ?
 
 * Software: IDE-integrated User Interface to handle Synchronization  [Obeo]
 
@@ -508,24 +510,24 @@ Deliverable titles (descriptions) are self-explanatory.
 | [M20] | D6.4.3-2 Software: IDE-integrated User Interface to handle Synchronization issues major release (release 2) | SW | Public | OBEO
 | [M34] | D6.4.3-3 Software: IDE-integrated User Interface to handle Synchronization issues major release (release 3) | SW | Public | OBEO
 
-### T6.5 - Acceptance Test Plan [SA + UNIT + KS + ALL]
+### T6.5 - Acceptance Test Plan [- SA + UNIT + KS + ALL]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M10] | D6.5.1-1 Report: Acceptance Test Plan (release 1) (SA + all) | Doc. | Public | SA
-| [M20] | D6.5.1-2 Report: Acceptance Test Plan (release 2) (SA + all) | Doc. | Public | SA
-| [M34] | D6.5.1-3 Report: Acceptance Test Plan (release 3) (SA + all) | Doc. | Public | SA
-| [M10] | D6.5.2-1 Software: Automated Acceptance Tests (release 1) (SA + all | SW | Public | SA
-| [M20] | D6.5.2-2 Software: Automated Acceptance Tests (release 2) (SA + all) | SW | Public | SA
-| [M34] | D6.5.2-3 Software: Automated Acceptance Tests (release 3) (SA + all) | SW | Public | SA
+| [M10] | D6.5.1-1 Report: Acceptance Test Plan (release 1) (SA + all) | Doc. | Public | SA -> ?
+| [M20] | D6.5.1-2 Report: Acceptance Test Plan (release 2) (SA + all) | Doc. | Public | SA -> ?
+| [M34] | D6.5.1-3 Report: Acceptance Test Plan (release 3) (SA + all) | Doc. | Public | SA -> ?
+| [M10] | D6.5.2-1 Software: Automated Acceptance Tests (release 1) (SA + all | SW | Public | SA -> ?
+| [M20] | D6.5.2-2 Software: Automated Acceptance Tests (release 2) (SA + all) | SW | Public | SA -> ?
+| [M34] | D6.5.2-3 Software: Automated Acceptance Tests (release 3) (SA + all) | SW | Public | SA -> ?
 
-### T6.6 - Acceptance Test Procedures [SA + UNIT + KS + ALL]
+### T6.6 - Acceptance Test Procedures [- SA + UNIT + KS + ALL]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M10] | D6.6.1-1 Report: Acceptance Test Procedures (release 1) (SA + all) | Doc. | Public | SA
-| [M20] | D6.6.1-2 Report: Acceptance Test Procedures (release 2) (SA + all) | Doc. | Public | SA
-| [M34] | D6.6.1-3 Report: Acceptance Test Procedures (release 3) (SA + all) | Doc. | Public | SA
+| [M10] | D6.6.1-1 Report: Acceptance Test Procedures (release 1) (SA + all) | Doc. | Public | SA -> ?
+| [M20] | D6.6.1-2 Report: Acceptance Test Procedures (release 2) (SA + all) | Doc. | Public | SA -> ?
+| [M34] | D6.6.1-3 Report: Acceptance Test Procedures (release 3) (SA + all) | Doc. | Public | SA -> ?
 
 ### T6.7 - ModelWriter Integration [OBEO + UNIT + ALL]
 
@@ -535,13 +537,13 @@ Deliverable titles (descriptions) are self-explanatory.
 | [M23] | D6.7.1-2 Software: ModelWriter major release (release 2) | SW | Public | OBEO
 | [M35] | D6.7.1-3 Software: ModelWriter major release (release 3) | SW | Public | OBEO
 
-### T6.8 - Cyclic Evaluation of Analysis Performance [SA + OBEO + LORIA + UNIT + KS + ALL]
+### T6.8 - Cyclic Evaluation of Analysis Performance [- SA + OBEO + LORIA + UNIT + KS + ALL]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M12] | D6.8.1-1 Report: Evaluation report (release 1) (All) | Doc. | Public | SA
-| [M24] | D6.8.1-2 Report: Evaluation report (release 2) (All) | Doc. | Public | SA
-| [M36] | D6.8.1-3 Report: Evaluation report (release 3) (All) | Doc. | Public | SA
+| [M12] | D6.8.1-1 Report: Evaluation report (release 1) (All) | Doc. | Public | SA -> ?
+| [M24] | D6.8.1-2 Report: Evaluation report (release 2) (All) | Doc. | Public | SA -> ?
+| [M36] | D6.8.1-3 Report: Evaluation report (release 3) (All) | Doc. | Public | SA -> ?
 
 
 ## WP7 - Dissemination and Exploitation (OBEO)
@@ -550,7 +552,7 @@ Deliverable titles (descriptions) are self-explanatory.
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M4]  | D7.1.1 Dissemination Plan | Doc. | Public | OBEO
+| [M4 -> M6]  | D7.1.1 Dissemination Plan | Doc. | Public | OBEO
 
 ### T7.2 - Business Model & Exploitation Plan [AIRBUS + SA + OBEO + all industrial partners]
 
@@ -559,27 +561,27 @@ Deliverable titles (descriptions) are self-explanatory.
 | [M7]  | D7.2.1-1 Exploitation Plan (release 1) | Doc. | Public | AIRBUS
 | [M22] | D7.2.1-2 Exploitation Plan (release 2) | Doc. | Public | AIRBUS
 | [M34] | D7.2.1-3 Exploitation Plan (release 3) | Doc. | Public | AIRBUS
-| [M7]  | D7.2.2 Marketing Plan| Doc. | Public | AIRBUS
-| [M34] | D7.2.3 Roadmap for future exploitation and pre-competition survey| Doc. | Public | AIRBUS
+| [M7]  | D7.2.2 Marketing Plan | Doc. | Public | AIRBUS
+| [M34] | D7.2.3 Road-map for future exploitation and pre-competition survey| Doc. | Public | AIRBUS
 
-### T7.3 - Workshops & Events [VUB + UNIT + OBEO + KS + AIRBUS + ALL]
-
-| Month | Deliverable | Type    | Access  | Leader
-|:----- |:----------- |:------- |:------- |:-------
-| [M31]  | D7.3.1 Newsletter - International Conference Announcement | Doc. | Public | VUB
-
-### T7.4 - ModelWriter-ITEA Consortium Website [SA]
+### T7.3 - Workshops & Events [- VUB + UNIT + OBEO + KS + AIRBUS + ALL]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M1]  | D7.4.1 ModelWriter-ITEA website including secured intranet | SW | Public | SA
+| [M31]  | D7.3.1 Newsletter - International Conference Announcement | Doc. | Public | VUB -> UNIT
 
-### T7.5 - Community Forum & Open Source Campaig [VUB + OBEO]
+### T7.4 - ModelWriter-ITEA Consortium Website [- SA]
 
 | Month | Deliverable | Type    | Access  | Leader
 |:----- |:----------- |:------- |:------- |:-------
-| [M10] | D7.5.1 Technical-oriented talk about the principles and benefits of the ModelWriter-ITEA approach and tooling | Doc. | Public | VUB
-| [M10] | D7.5.2 Research-oriented talk about the principles and benefits of the ModelWriter-ITEA approach and tooling| Doc.  | Public | VUB
+| [M1]  | D7.4.1 ModelWriter-ITEA website including secured intranet | SW | Public | SA -> OBEO
+
+### T7.5 - Community Forum & Open Source Campaign [- VUB + OBEO]
+
+| Month | Deliverable | Type    | Access  | Leader
+|:----- |:----------- |:------- |:------- |:-------
+| [M10] | D7.5.1 Technical-oriented talk about the principles and benefits of the ModelWriter-ITEA approach and tooling | Doc. | Public | VUB -> OBEO
+| [M10] | D7.5.2 Research-oriented talk about the principles and benefits of the ModelWriter-ITEA approach and tooling| Doc.  | Public | VUB -> UNIT
 
 ### T7.6 - Social Networks [UNIT + KOCSISTEM]
 
@@ -588,7 +590,7 @@ Deliverable titles (descriptions) are self-explanatory.
 | [M10] | D7.6.1 ModelWriter-ITEA's Facebook Group | SW | Public | UNIT
 | [M10] | D7.6.2 ModelWriter-ITEA's LinkedIn Group | SW | Public | UNIT
 | [M10] | D7.6.3 ModelWriter-ITEA's Twitter Group | SW | Public | UNIT
-| [M10] | D7.6.4 ModelWriter-ITEA's Yammer Group | SW | Public | UNIT
+| [M10] | D7.6.4 ModelWriter-ITEA's Google+ Group | SW | Public | UNIT
 
 ### T7.7 - Standardization [LORIA + UNIT + KOCSISTEM]
 

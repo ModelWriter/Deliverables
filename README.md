@@ -191,7 +191,7 @@ Deliverables can be:
 *	either textual deliverables, i.e. documents (pdf, docx, etc.) (cf. “Doc.” in the second column of the deliverable tables);
 *	or software deliverables (executables, packages, libraries, compiled or source code, etc.) (cf. “SW” in the deliverables tables); software deliverables do not have to be uploaded to the ITEA Community website and remain in the hands of the consortium.
 
-Make sure deliverable titles (descriptions) are self-explanatory
+Deliverable titles (descriptions) are self-explanatory.
 
 
 Work Package 1

@@ -196,7 +196,7 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ## WP1 - Industrial Use Cases and Requirements (AIRBUS)
 
-![WP1 - Cost & Efforts](https://github.com/ModelWriter/Project-Management/blob/master/figures/wp1.png)
+![WP1 - Cost & Efforts](figures/wp1.png)
 
 ### T1.1 - Evaluation Methods & Tools [UNIT + KOCSISTEM + AIRBUS + OBEO + HISBIM + MANTIS]
 
@@ -269,6 +269,8 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ## WP2 - Semantic Parsing and Generation of Documents and Documents Components (LORIA)
 
+![WP2 - Cost & Efforts](figures/wp2.png)
+
 ### T2.1 - Data Collection [LORIA + KUL -SA ++ OBEO ++ AIRBUS ++Sogeti]
 
 | Month | Deliverable | Type    | Access  | Leader (Members)
@@ -315,6 +317,8 @@ Deliverable titles (descriptions) are self-explanatory.
 | [M30 -> M32] | D2.5.4-1 Software: Integration in ModelWriter and Report: Software Documentation  (release 3) | SW | Public | SA -> OBEO
 
 ## WP3 - Model to/from Knowledge Base (UNIT)
+
+![WP3 - Cost & Efforts](figures/wp3.png)
 
 ### T3.1 - Review of M2M transformation approaches  [UNIT + KOCSISTEM]
 
@@ -388,6 +392,8 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ## WP4 - Knowledge Base Design and Implementation (Mantis)
 
+![WP4 - Cost & Efforts](figures/wp4.png)
+
 ### T4.1 - Design of the Knowledge Base [- VUB - SA + OBEO + MANTIS + UNIT + KOCSISTEM]
 
 | Month | Deliverable | Type    | Access  | Leader
@@ -445,6 +451,8 @@ Deliverable titles (descriptions) are self-explanatory.
 
 ## WP5 - Project Management (UNIT)
 
+![WP5 - Cost & Efforts](figures/wp5.png)
+
 ### T5.1 - Communication Management and Collaboration Infrastructure [UNIT + WP7 leader]
 
 | Month | Deliverable | Type    | Access  | Leader
@@ -470,6 +478,8 @@ Deliverable titles (descriptions) are self-explanatory.
 
 
 ## WP6 - ModelWriter Architecture, Integration and Evaluation (OBEO)
+
+![WP6 - Cost & Efforts](figures/wp6.png)
 
 ### T6.1 - Experimental Prototyping [OBEO - SA - VUB]
 
@@ -547,6 +557,8 @@ Deliverable titles (descriptions) are self-explanatory.
 
 
 ## WP7 - Dissemination and Exploitation (OBEO)
+
+![WP7 - Cost & Efforts](figures/wp7.png)
 
 ### T7.1 - Dissemination Plan [OBEO + UNIT + SA + LORIA + KS + ALL]
 

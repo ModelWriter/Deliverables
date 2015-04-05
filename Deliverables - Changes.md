@@ -18,7 +18,6 @@
 | D1.9.1-2 | [M27] | D1.7.1-2 Annual Product Owner Review - 2 | Doc. | Public | AIRBUS
 | D1.9.1-3 | [M37] | D1.7.1-3 Annual Product Owner Review - 3 | Doc. | Public | AIRBUS
 | D1.10.1  | [M9]  | D1.8.1 Technical Risk Assessment Document | Doc. | Public | OBEO
-| -        | -     | -                                         | -    | -      | -
 | D2.1.1   | [M10] | D2.1.1 Software Requirements - Evaluation of the NLP requirements set by the use cases | Doc. | Public | LORIA
 | D2.4.1   | [M12] | D2.1.2 Corpora (Text, Knowledge, Bi-Texts) and Documentation | Doc. | Public | LORIA
 | D2.2.1   | [M15] | D2.2.1 Overview and comparison of existing deep semantic parsers | Doc. | Public | LORIA
@@ -30,7 +29,6 @@
 | D2.5.3-1 | [M16] | D2.5.2-1 Natural Language Generator and Documentation (release 1) | SW | Public | LORIA
 | D2.5.3-2 | [M22] | D2.5.2-2 Natural Language Generator and Documentation (release 2) | SW | Public | LORIA
 | D2.5.3-3 | [M30] | D2.5.2-3 Natural Language Generator and Documentation (release 3) | SW | Public | LORIA
-| -        | -     | - | -  | -      | -
 | D3.1.1   | [M8]  | D3.1.1 Review of model-to-model transformation approaches and technologies | Doc. | Public | UNIT
 | D3.2.1   | [M8]  | D3.2.1 M2M Transformation Framework architectural design document | Doc. | Public | UNIT
 | D3.3.1   | [M5]  | DELETE | Doc. | Public | UNIT
@@ -55,7 +53,6 @@
 | D3.8.1-3 | [M33] | D3.8.1-3 Source code of each m2m transformation (release 3) | SW | Public | UNIT
 | D3.9.1   | [M34] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | MANTIS
 | D3.9.2   | [M35] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT
-| -        | -     | -   | -  | -      | -
 | D4.1.1   | [M9]  | D4.1.1 Knowledge Base Design document | Doc. | Public | MANTIS
 | D4.2.1   | [M9]  | D4.2.1 Interface Control Document (ICD) | Doc. | Public | KOCSISTEM
 | D4.3.1-1 | [M13] | D4.3.1-1 Knowledge Base (release 1) | SW | Public | MANTIS
@@ -69,7 +66,6 @@
 | D4.6.2-2 | [M23] | D4.6.2-2 Proof-of-concept semantic comparison engine (release 2) | SW | Public | OBEO
 | D4.6.2-3 | [M33] | D4.6.2-3 Proof-of-concept semantic comparison engine (release 3) | SW | Public | OBEO
 | D4.7.1   | [M14] | D4.7.1 Future ModelWriter-Enabled Use Cases | Doc. | Public | MANTIS
-| -        | -     | -    | -  | -      | -
 | D5.1.1-1 | [M13] | DELETE | Doc. | Private | UNIT
 | D5.1.1-2 | [M25] | DELETE | Doc. | Private | UNIT
 | D5.1.1-3 | [M37] | DELETE | Doc. | Private | UNIT
@@ -82,7 +78,6 @@
 | D5.7.1   | [M4]  | DELETE | Doc. | Public | UNIT
 | D5.8.1   | [37]  | DELETE | Doc. | Public | UNIT
 | D5.8.2   | [37]  | DELETE | Doc. | Public | UNIT
-| -        | -     | -      | -  | -      | -
 | NEW      | [M1]  | D5.1.1 Project Kick-Off Report and Project Management Plan | Doc. | Public | UNIT
 | NEW      | [M8]  | D5.2.1 Project Progress Report (first half year)  | Doc. | Private | UNIT
 | NEW      | [M13] | D5.2.2 Project Progress Report (second half year) | Doc. | Private | UNIT
@@ -91,7 +86,6 @@
 | NEW      | [M31] | D5.2.5 Project Progress Report (fifth half year)  | Doc. | Private | UNIT
 | NEW      | [M37] | D5.3.1 Final Project Report                       | Doc. | Private | UNIT
 | NEW      | [M37] | D5.3.2 Updated State-of-the-art (Public Deliverable) | Doc. | Public | UNIT
-| -        | -     | -     -  | -      | -
 | D6.1.1   | [M7]  | D6.1.1 Prototype Core ModelWriter | SW | Public | OBEO
 | D6.2.1   | [M8]  | D6.2.1 Architectural Design Document (ADD) | Doc. | Public | OBEO
 | D6.3.1-1 | [M10] | D6.3.1-1 Writer enhancements (release 1) | SW | Public | KOCSISTEM
@@ -122,7 +116,6 @@
 | D6.8.1-1 | [M17] | D6.8.1-1 Evaluation report (release 1) | Doc. | Public | KOCSISTEM
 | D6.8.1-2 | [M27] | D6.8.1-2 Evaluation report (release 2) | Doc. | Public | KOCSISTEM
 | D6.8.1-3 | [M37] | D6.8.1-3 Evaluation report (release 3) | Doc. | Public | KOCSISTEM
-| -        | -     | -    | -  | -      | -
 | D7.1.1   | [M6]  | D7.1.1 Dissemination Plan | Doc. | Public | OBEO
 | D7.2.1-1 | [M8]  | D7.2.1-1 Exploitation and Marketing Plan (release 1) | Doc. | Public | AIRBUS, HISBIM
 | D7.2.1-2 | [M22] | D7.2.1-2 Exploitation and Marketing Plan (release 2) | Doc. | Public | AIRBUS, HISBIM

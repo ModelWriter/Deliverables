@@ -1,5 +1,6 @@
 |Origin| Task |
 |:---- |:----
+|      | HAVELSAN
 |T1.1  | T1.1 - Evaluation Methods & Tools
 |T1.2  | T1.2 - Industrial Use Cases for Belgian Consortium
 |T1.3  | T1.3 - Industrial Use Cases for French Consortium
@@ -57,3 +58,8 @@
 |T7.5  | T7.5 - Community Forum & Open Source Campaign  
 |T7.6  | T7.6 - Social Networks  
 |T7.7  | T7.7 - Standardization  
+|EADS  | AIRBUS
+|KUL   | KUL1
+|SA    | SOGETI
+|VUB   | KUL2
+|Confidential | Private

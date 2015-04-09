@@ -2,13 +2,13 @@
 |:----- |:----------- |:------- |:------- |:-------
 | [M9]  | D1.1.1 Evaluation Methods & Tools | Doc. | Public | HISBIM
 | [M13] | D1.2.1 Industrial Use Cases for Belgian Consortium | Doc. | Public | SOGETI
-| [M13] | D1.2.2 Corpus for Belgian Use Cases (public) | SW | Public | SOGETI
+| [M13] | D1.2.2 Corpus for Belgian Use Cases (Public) | SW | Public | SOGETI
 | [M13] | D1.2.3 Corpus for Belgian Use Cases (Private) | SW | Private | SOGETI
 | [M8]  | D1.3.1 Industrial Use Cases for French Consortium | Doc. | Public | AIRBUS
-| [M8]  | D1.3.2 Corpus for French Use Cases (public) | SW | Public | AIRBUS
+| [M8]  | D1.3.2 Corpus for French Use Cases (Public) | SW | Public | AIRBUS
 | [M8]  | D1.3.3 Corpus for French Use Cases (Private) | SW | Private | AIRBUS
 | [M8]  | D1.4.1 Industrial Use Cases for Turkish Consortium | Doc. | Public | MANTIS
-| [M8]  | D1.4.2 Corpus for Turkish Use Cases (public) | SW | Public | MANTIS
+| [M8]  | D1.4.2 Corpus for Turkish Use Cases (Public) | SW | Public | MANTIS
 | [M8]  | D1.4.3 Corpus for Turkish Use Cases (Private) | SW | Private | MANTIS
 | [M9]  | D1.5.1 Minutes of the User Requirements Review meeting | Doc. | Public | HISBIM
 | [M8]  | D1.5.2 User Requirements Document (URD) | Doc. | Public | UNIT
@@ -22,7 +22,7 @@
 | [M12] | D2.1.2 Corpora (Text, Knowledge, Bi-Texts) and Documentation | Doc. | Public | LORIA
 | [M15] | D2.2.1 Overview and comparison of existing deep semantic parsers | Doc. | Public | LORIA
 | [M8]  | D2.3.1 Overview and comparison of existing generators | Doc. | Public | LORIA
-| [M14] | D2.4.1	Specification of the Knowledge Representation Language| Doc. | Public | LORIA
+| [M14] | D2.4.1 Specification of the Knowledge Representation Language| Doc. | Public | LORIA
 | [M18] | D2.5.1-1 Semantic Parser and Documentation (release 1) | SW | Public | LORIA
 | [M27] | D2.5.1-2 Semantic Parser and Documentation (release 2) | SW | Public | LORIA
 | [M33] | D2.5.1-3 Semantic Parser and Documentation (release 3) | SW | Public | LORIA
@@ -45,7 +45,7 @@
 | [M32] | D3.6.1-3 Synchronization Manager component (release 3) | SW | Public | UNIT
 | [M20] | D3.7.1 Model-to-model transformations (from user-visible models to KB-stored models) design document | SW | Public | MANTIS
 | [M13] | D3.8.1-1 Source code of each m2m transformation (release 1) | SW | Public | UNIT
-| [M23] | D3.8.1-3 Source code of each m2m transformation (release 2) | SW | Public | UNIT
+| [M23] | D3.8.1-2 Source code of each m2m transformation (release 2) | SW | Public | UNIT
 | [M33] | D3.8.1-3 Source code of each m2m transformation (release 3) | SW | Public | UNIT
 | [M34] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | MANTIS
 | [M35] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT

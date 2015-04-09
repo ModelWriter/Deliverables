@@ -2,14 +2,14 @@
 |:-------- |:----- |:----------- |:------- |:------- |:-------
 | D1.1.1   | [M9]  | D1.1.1 Evaluation Methods & Tools | Doc. | Public | HISBIM
 | D1.2.1   | [M13] | D1.2.1 Industrial Use Cases for Belgian Consortium | Doc. | Public | SOGETI
-| D1.2.2   | [M13] | D1.2.2 Corpus for Belgian Use Cases (public) | SW | Public | SOGETI
+| D1.2.2   | [M13] | D1.2.2 Corpus for Belgian Use Cases (Public) | SW | Public | SOGETI
 | D1.2.3   | [M13] | D1.2.3 Corpus for Belgian Use Cases (Private) | SW | Private | SOGETI
 | D1.3.1   | [M8]  | D1.3.1 Industrial Use Cases for French Consortium | Doc. | Public | AIRBUS
-| D1.3.2   | [M8]  | D1.3.2 Corpus for French Use Cases (public) | SW | Public | AIRBUS
+| D1.3.2   | [M8]  | D1.3.2 Corpus for French Use Cases (Public) | SW | Public | AIRBUS
 | D1.3.3   | [M8]  | D1.3.3 Corpus for French Use Cases (Private) | SW | Private | AIRBUS
 | D1.4.1   | [M8]  | D1.4.1 Industrial Use Cases for Turkish Consortium | Doc. | Public | MANTIS
-| D1.4.2   | [M8]  | D1.4.2 Corpus for Turkish Use Cases (public) | SW | Public | MANTIS
-| D1.4.2   | [M8]  | D1.4.3 Corpus for Turkish Use Cases (Private) | SW | Private | MANTIS
+| D1.4.2   | [M8]  | D1.4.2 Corpus for Turkish Use Cases (Public) | SW | Public | MANTIS
+| D1.4.3   | [M8]  | D1.4.3 Corpus for Turkish Use Cases (Private) | SW | Private | MANTIS
 | D1.6.1   | [M9]  | D1.5.1 Minutes of the User Requirements Review meeting | Doc. | Public | HISBIM
 | D1.5.1   | [M8]  | D1.5.2 User Requirements Document (URD) | Doc. | Public | UNIT
 | D1.8.1   | [M5]  | D1.6.1 Minutes of the Software Requirements Review meeting | Doc. | Public | AIRBUS
@@ -22,7 +22,7 @@
 | D2.4.1   | [M12] | D2.1.2 Corpora (Text, Knowledge, Bi-Texts) and Documentation | Doc. | Public | LORIA
 | D2.2.1   | [M15] | D2.2.1 Overview and comparison of existing deep semantic parsers | Doc. | Public | LORIA
 | D2.3.1   | [M8]  | D2.3.1 Overview and comparison of existing generators | Doc. | Public | LORIA
-| D2.5.1	 | [M14] | D2.4.1	Specification of the Knowledge Representation Language| Doc. | Public | LORIA
+| D2.5.1   | [M14] | D2.4.1 Specification of the Knowledge Representation Language| Doc. | Public | LORIA
 | D2.5.2-1 | [M18] | D2.5.1-1 Semantic Parser and Documentation (release 1) | SW | Public | LORIA
 | D2.5.2-2 | [M27] | D2.5.1-2 Semantic Parser and Documentation (release 2) | SW | Public | LORIA
 | D2.5.2-3 | [M33] | D2.5.1-3 Semantic Parser and Documentation (release 3) | SW | Public | LORIA
@@ -49,7 +49,7 @@
 | D3.6.2-3 | [M32] | D3.6.1-3 Synchronization Manager component (release 3) | SW | Public | UNIT
 | D3.7.1   | [M20] | D3.7.1 Model-to-model transformations (from user-visible models to KB-stored models) design document | SW | Public | MANTIS
 | D3.8.1-1 | [M13] | D3.8.1-1 Source code of each m2m transformation (release 1) | SW | Public | UNIT
-| D3.8.1-3 | [M23] | D3.8.1-3 Source code of each m2m transformation (release 2) | SW | Public | UNIT
+| D3.8.1-2 | [M23] | D3.8.1-2 Source code of each m2m transformation (release 2) | SW | Public | UNIT
 | D3.8.1-3 | [M33] | D3.8.1-3 Source code of each m2m transformation (release 3) | SW | Public | UNIT
 | D3.9.1   | [M34] | D3.9.1 Test-plan for the M2M Transformation Framework | Doc. | Public | MANTIS
 | D3.9.2   | [M35] | D3.9.2 Field experiment concerning ModelWriter model transformations | SW | Public | UNIT
@@ -111,15 +111,15 @@
 | D6.7.1-2 | [M26] | D6.7.1-2 ModelWriter major release (release 2) | SW | Public | OBEO
 | D6.7.1-3 | [M36] | D6.7.1-3 ModelWriter major release (release 3) | SW | Public | OBEO
 | D2.5.4-1 | [M18] | D6.7.2-1 WP2 Integration in ModelWriter and Documentation (release 1) | SW | Public | OBEO
-| D2.5.4-1 | [M26] | D6.7.2-2 WP2 Integration in ModelWriter and Documentation (release 2) | SW | Public | OBEO
-| D2.5.4-1 | [M31] | D6.7.2-3 WP2 Integration in ModelWriter and Documentation (release 3) | SW | Public | OBEO
+| D2.5.4-2 | [M26] | D6.7.2-2 WP2 Integration in ModelWriter and Documentation (release 2) | SW | Public | OBEO
+| D2.5.4-3 | [M31] | D6.7.2-3 WP2 Integration in ModelWriter and Documentation (release 3) | SW | Public | OBEO
 | D6.8.1-1 | [M17] | D6.8.1-1 Evaluation report (release 1) | Doc. | Public | KOCSISTEM
 | D6.8.1-2 | [M27] | D6.8.1-2 Evaluation report (release 2) | Doc. | Public | KOCSISTEM
 | D6.8.1-3 | [M37] | D6.8.1-3 Evaluation report (release 3) | Doc. | Public | KOCSISTEM
 | D7.1.1   | [M6]  | D7.1.1 Dissemination Plan | Doc. | Public | OBEO
-| D7.2.1-1 | [M8]  | D7.2.1-1 Exploitation and Marketing Plan (release 1) | Doc. | Public | AIRBUS, HISBIM
-| D7.2.1-2 | [M22] | D7.2.1-2 Exploitation and Marketing Plan (release 2) | Doc. | Public | AIRBUS, HISBIM
-| D7.2.1-3 | [M34] | D7.2.1-3 Exploitation and Marketing Plan (release 3) | Doc. | Public | AIRBUS, HISBIM
+| D7.2.1-1 | [M8]  | D7.2.1-1 Exploitation and Marketing Plan (release 1) | Doc. | Public | AIRBUS
+| D7.2.1-2 | [M22] | D7.2.1-2 Exploitation and Marketing Plan (release 2) | Doc. | Public | AIRBUS
+| D7.2.1-3 | [M34] | D7.2.1-3 Exploitation and Marketing Plan (release 3) | Doc. | Public | AIRBUS
 | D7.2.2   | [M7]  | DELETE | Doc. | Public | AIRBUS
 | D7.2.3   | [M34] | D7.2.2 Roadmap for future exploitation and pre-competition survey| Doc. | Public | HISBIM
 | D7.3.1   | [M31] | D7.3.1 Newsletter - International Conference Announcement | Doc. | Public | UNIT

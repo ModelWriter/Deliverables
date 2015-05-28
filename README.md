@@ -15,7 +15,7 @@ pcc@modelwriter.eu
 | Partner    	                       | Primary Contact        | Secondary Contact      |
 |:-------------------------------------|:---------------------- |:---------------------- |
 | [UNIT](README.md#unit) |Ferhat Erata |Moharram Challenger |
-| [OBEO](README.md#obeo) |Etienne Juliot |Marwa Rostren |
+| [OBEO](README.md#obeo) |Etienne Juliot |Yvan Lussaud |
 | [MANTIS](README.md#mantis) |Erhan Mengüsoğlu |Güven Köse |
 | [AIRBUS](README.md#AIRBUS) |Anne Monceaux |? |
 | [LORIA](README.md#loria) |Claire Gardent |Samuel Cruz-Lara |
@@ -34,8 +34,8 @@ tcc@modelwriter.eu
 | [WP3](README.md#work-package-3) (UNIT) | Ferhat Erata | Moharram Challenger |
 | [WP4](README.md#work-package-4) (MANTIS) | Erhan Mengüsoğlu | Güven Köse |
 | [WP5](README.md#work-package-5) (UNIT) | Ferhat Erata | Moharram Challenger |
-| [WP6](README.md#work-package-6) (OBEO)	| Etienne Juliot | Marwa Rostren |
-| [WP7](README.md#work-package-7) (OBEO)	| Etienne Juliot | Marwa Rostren |
+| [WP6](README.md#work-package-6) (OBEO)	| Etienne Juliot | Yvan Lussaud |
+| [WP7](README.md#work-package-7) (OBEO)	| Etienne Juliot | Yvan Lussaud |
 
 Coordination
 ----
@@ -43,7 +43,7 @@ Coordination
 Country | Partner | Primary Contact | Secondary Contact | Group Email
 :----   |:-----   |:---------       |:----- |:-----
 Project | UNIT | Ferhat Erata | Moharram Challenger | consortium@modelwriter.eu
-[France](README.md#french-consortium---email-group-members) | OBEO | Etienne Juliot | Marwa Rostren | france@modelwriter.eu
+[France](README.md#french-consortium---email-group-members) | OBEO | Etienne Juliot | Yvan Lussaud | france@modelwriter.eu
 [Turkey](README.md#turkish-consortium---email-group-members) | MANTIS | Güven Köse | Erhan Mengüsoğlu | turkey@modelwriter.eu
 [Belgium](README.md#belgian-consortium---email-group-members) | KUL | Monique Snoeck | Marie-Francine Moens | belgium@modelwriter.eu
 
@@ -108,7 +108,7 @@ hans.vangheluwe@uantwerp.be |
 |Contact |Corporate Email |GitHub |
 |:--- |:--- |:---|
 |Etienne Juliot |etienne.juliot@obeo.fr |@ejuliot |
-|Marwa Rostren |marwa.rostren@obeo.fr |@mrostren |
+|Yvan Lussaud |yvan.lussaud@obeo.fr |@ylussaud |
 
 [LORIA](https://github.com/orgs/ModelWriter/teams/loria)
 ----

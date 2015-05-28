@@ -56,7 +56,7 @@ Company Email | Gmail
 anne.monceaux@airbus.com | anne.monceaux@gmail.com
 claire.gardent@loria.fr | claire.gardent@gmail.com
 etienne.juliot@obeo.fr | etienne.juliot@gmail.com
-marwa.rostren@obeo.fr | rostren.marwa@gmail.com
+yvan.lussaud@obeo.fr | yvan.lussaud@obeo.fr
 samuel.cruz-lara@loria.fr | samuel.cruzlara@gmail.com
 
 Turkish Consortium - Email Group Members

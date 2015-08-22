@@ -1,8 +1,8 @@
-[Project-Management](https://waffle.io/modelwriter/product-management)
+[Project-Management](https://waffle.io/modelwriter/deliverables)
 ==================
 **Project Monitoring, Tracking, Communication Management and Infrastructure**
 
-Project Management Scrum Board: [`https://waffle.io/modelwriter/project-management`](https://waffle.io/modelwriter/project-management) which is integrated into [`issue tracker`](https://github.com/modelwriter/project-management/issues) of this repository.
+Project Management Scrum Board: [`https://waffle.io/modelwriter/deliverables`](https://waffle.io/modelwriter/deliverables) which is integrated into [`issue tracker`](https://github.com/modelwriter/deliverables/issues) of this repository.
 
 [Project Teams](https://github.com/orgs/ModelWriter/teams)
 =============

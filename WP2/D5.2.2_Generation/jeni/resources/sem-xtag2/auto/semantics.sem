@@ -1,0 +1,353 @@
+
+#
+# This file contains a sequence of patterns that select trees if a semantic pattern is found in the input.
+# The set of trees that are anchored by a given anchor ?A is defined by the traces of all patterns that match the same ?A.
+# Patterns that do not define an anchor are processed independently. The semantics of the trees themselves is defined
+# by the union of all what is matched in the input by the patterns. However, for some literals we do not want to
+# include them in the trees semantics, they are called "selectional" and are prefixed with the "~" character.
+#
+# warning: ?A means anchor, ?L lemma, ?S0..?Sn substitutions, ?F foot, ?1..?n have a clash constraint
+# warning: the order is important for equations, latter equations *overwrite* former equations, we may add a special keyword "override" instead
+#
+# assumption and rewriting patterns are pre-processed before any other pattern is tested
+#
+
+# assume tense, mode, number and person if not found:
+EventAssumption:
+for [event(?1)]
+	assume [tense(?1 present) mode(?1 indicative) number(?1 singular) person(?1 3)]
+	rewrite [tense(?1 present)] by [tense(?1 pres)]
+	
+ParticipantAssumption:
+for [participant(?1)]
+	assume [number(?1 singular) person(?1 3)]
+	#rewrite [number(?1 singular)] by [number(?1 sg)]
+	#rewrite [number(?1 plural)] by [number(?1 pl)]
+
+# an event assigns ?A as the idx and ?L as the lemma of the main anchor
+# we could have the values defined in a separate file, maybe as the lemma in morph file ??
+EventAnchoring:
+for [event(?A) evttype(?A ?L)]
+	select n0V when ?L:{sleep, snore, speak, dance}
+	select n0Vn1 when ?L:{chase, bake, eat, fascinate, like, love}
+	select n0vs1 when ?L:{want}
+	select n0VPn1 when ?L:{disapprove}
+		set P1.top=[lemma=of]
+
+# a participant selects alphaNXN (a np family)
+ParticipantAnchoring:
+for [participant(?A) objtype(?A ?L) number(?A ?num) person(?A ?pers)]
+	#set anchor.top=[num=?num]
+ 	select alphaNXN
+
+Pronoun:
+for [reftype(?F pronoun) participant(?1) person(?1 ?pers) number(?1 ?num)]
+	select alphaPronoun with "he"
+	
+InterrogativePronoun:
+for [participant(?A) animacy(?A ?animacy) reftype(?A interrogative) number(?A singular) person(?A 3)]
+	select alphaInterrogativePronoun with "who" when ?animacy:true
+	select alphaInterrogativePronoun with "what" when ?animacy:false
+	
+# "who" in "the man who sleeps", selected when a participant ?A is the target of two relations
+RelativePronoun:
+for [~participant(?A) ~relation(agent ?1 ?A) ~relation(?2 ?3 ?A)]
+	select alphaRelativePronoun with "who"
+
+# "which" in "the house in which bill sleeps"
+RelativePronounPreposition:
+for [~event(?4) ~relation(agent ?4 ?1) ~relation(in ?4 ?A)]
+	select alphaRelativePronoun with "which"
+
+	
+### active ###
+
+# means if we find an agent of ?A as a first subst node ?S0, select the active subject
+ActiveSubject:
+for [relation(agent ?A ?S0)]
+	select active, CanSubject				# "the man sleeps"
+	select active, RelativeOvertSubject		# "the man who sleeps"
+	
+#RelativeOvertSubject:
+#for [relation(agent ?A ?S0)]
+#	select active, RelativeOvertSubject		# "the man who sleeps"
+	
+	
+# wh-subject, note that the reftype is "selectional" since it's not part of the semantics of the selection	
+WhSubject:
+for [relation(agent ?A ?S0) ~reftype(?S0 interrogative)]
+	select active, WhSubject
+
+
+ActiveComplement:
+for [relation(patient ?A ?S1)]
+	select active, CanObject
+	select active, CanComplement
+
+
+# "the house in which bill sleeps"
+# we exclude the ActiveSubject because relation(agent ?A ?S1) and relation(agent ?A ?S0) could be both matched
+PiedPipingOnS:
+exclude ActiveSubject
+for [relation(agent ?A ?S1) relation(in ?A ?F)]
+	select active, CanSubject, RelativeAdjunctPied-Piping, RelativeOvertExtractedWH
+
+# "the cake whose cherries bill likes"
+# the adjunct is on np
+PiedPipingOnNP:
+exclude ActiveSubject
+for [relation(agent ?A ?S1) relation(patient ?A ?S0) relation(of ?S0 ?F)]
+	select active, CanSubject, RelativeOvertExtractedWH
+
+### passive ###
+
+# default passive
+PassiveCanSubject:
+for [relation(agent ?A ?S1) relation(patient ?A ?S0)]
+	select passive, CanSubject
+
+# since there is no agent in the imperative mode this one would be matched, hence the "indicative" mode restriction
+PassiveCanSubjectNoAgent:
+for [relation(patient ?A ?S0) ~mode(?A indicative)]
+	select passive, CanSubject
+
+# "what was baked by bill"
+PassiveWhSubject:
+for [relation(agent ?A ?S1) relation(patient ?A ?S0) tense(?A ?tense)]
+	select passive, WhSubject, CanByAgent
+	
+# "what was baked"
+PassiveWhSubjectNoAgent:
+for [relation(patient ?A ?S0) tense(?A ?tense)]
+	select passive, WhSubject
+
+
+
+### modifiers
+
+
+# catches also the number/person/tense since the prepended gerund is not a normal VerbalTop	
+PrependedGerund:
+for [relation(agent ?A ?S0) mode(?A gerund) number(?A ?num) person(?A ?pers) tense(?A ?tense)]
+	select betaVn
+	
+
+# some pattern may have no anchor node (meaning we do not want yet to consider an anchor with an idx)
+Reftype:
+for [reftype(?F ?type)]
+ 	select betaDnx with "a" when ?type:indefinite
+ 	select betaDnx with "the" when ?type:definite
+
+Modifier:
+for [modifier(?F ?L)]
+	select betaAn 
+
+# "the house in which bill sleeps" (selectional because relation already captured by PiedPiping)
+RelativePreposition:
+for [~relation(?L ?F ?S0)]
+	select alphaPXPnx when ?L:in 
+		set NP_s.top=[wh=+] 
+
+# "bill sleeps in the house", the wh=- has been added otherwise "in which" can be adjunct on a vp
+PrepositionVP:
+for [relation(?L ?F ?S0)]
+	select betavxPnx when ?L:{in}
+		set NP_s.top=[wh=-] 
+
+# "the cherry of the cake"
+PrepositionNP:
+for [relation(?L ?F ?S0)]
+	select betanxPnx when ?L:{of}
+		set NP_s.top=[wh=-] 
+
+
+# "the day bill sleeps"
+VerbPhraseAdjunct:
+for [relation(agent ?A ?S0) relation(time ?A ?F)]
+	select active, CanSubject, RelativeAdjunctCovert, RelativeCovertExtractedWH
+
+
+### questions
+
+WhMovedObject:
+for [relation(agent ?A ?S1) relation(patient ?A ?S0) ~reftype(?S0 interrogative)]
+	select active, CanSubject, WhObject
+
+WhMovedSubject:
+for [relation(agent ?A ?S0) ~reftype(?S0 interrogative)]
+	select active, WhSubject
+
+# "by who was the cake baked"
+WhByAgent:
+for [relation(agent ?A ?S0) relation(patient ?A ?S1) ~reftype(?S0 interrogative)]
+	select passive, WhByAgent
+
+# "who was the cake baked by"
+WhAgentBy:
+for [relation(agent ?A ?S0) relation(patient ?A ?S1) ~reftype(?S0 interrogative)]
+	select passive, WhAgentBy
+
+
+### features
+
+# set root top by default to be tense=pres
+EventPresent:
+for [event(?A) tense(?A pres) number(?A ?num) person(?A ?pers)]
+	set anchor.top=[tense=pres]
+	select VerbalTop
+	
+	
+# set root top by default to be tense=pres
+EventPast:
+for [event(?A) tense(?A past) number(?A ?num) person(?A ?pers)]
+	set anchor.top=[tense=past]
+	select VerbalTop
+
+
+# consumes tense, number and person that may be captured by shallow patterns
+EventFeatures:
+for [tense(?A ?tense) number(?A ?num) person(?A ?pers) mode(?A ?mode)]
+	select VerbalTop
+
+
+# all the modes rewriting
+EventMode:
+for [event(?A) mode(?A ?mode)]
+	set anchor.top=[mode=ind] when ?mode:indicative
+	set anchor.top=[mode=ger] when ?mode:gerund
+	set anchor.top=[mode=imp] when ?mode:imperative
+	set anchor.top=[mode=ppart] when ?mode:ppart
+
+
+### auxiliaries in complex tenses ###
+
+# note that number and person are "selectional" that is they are not part of the semantics but only help to select the pattern
+# the order is important, these patterns must occur at the end since they rewrite the anchor.top mode which is indicative by default
+
+# "bill is sleeping"
+PresentProgressive:
+for [tense(?A present-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=ger]
+
+
+# "bill was sleeping"
+PastProgressive:
+for [tense(?A past-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=past, num=?num, pers=?pers] foot.top=[mode=ger]
+
+		
+# "bill has spoken"
+PresentPerfect:
+for [tense(?A present-perfect) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ppart]
+	coselect betaVvx with "have"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers]
+
+		
+# "bill had spoken"
+PastPerfect:
+for [tense(?A past-perfect) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ppart]
+	coselect betaVvx with "have"
+		set anchor.top=[mode=ind, tense=past, num=?num, pers=?pers]
+
+
+# "bill has been sleeping"
+PresentPerfectProgressive:
+for [tense(?A present-perfect-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger] root.top=[mode=ind]
+	coselect betaVvx with "have" 
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=ppart]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ppart] foot.top=[mode=ger]
+		
+		
+# "bill had been sleeping"
+PastPerfectProgressive:
+for [tense(?A past-perfect-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger] root.top=[mode=ind]
+	coselect betaVvx with "have" 
+		set anchor.top=[mode=ind, tense=past, num=?num, pers=?pers] foot.top=[mode=ppart]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ppart] foot.top=[mode=ger]
+
+
+# "bill will sleep"
+Future:
+for [tense(?A future) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=inf]
+	coselect betaVvx with "will"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=inf]
+
+
+# "bill is going to sleep"
+FutureGoingTo:
+for [tense(?A future-going-to) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=base]
+	coselect betaVvx with "to"
+		set anchor.top=[mode=inf] anchor.bot=[mode=inf] foot.bot=[mode=base]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.bot=[mode=ger]
+	coselect betaVvx with "go"
+		set anchor.top=[mode=ger] foot.bot=[mode=inf]
+
+
+### other auxiliaries ###
+
+
+## passive auxiliary
+
+# note that in all cases it selects the passive, this is to ensure that these auxiliaries are only selected in passive mode
+
+# "a cake is baked by bill"
+# the auxiliary for the passive form (the two coselects are because present->pres)
+# note that it is optional in the general case but mandatory in the inverted case
+PassiveAuxiliaryOptional:
+for [~relation(patient ?A ?S0) ~tense(?A ?tense)]
+	select passive
+	coselect optional betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	
+# when there is a question, "what was baked by bill", the auxiliary has to be present (not optional)
+PassiveAuxiliaryForcedOnVP:
+exclude PassiveAuxiliaryOptional
+for [~relation(patient ?A ?S0) ~tense(?A ?tense) ~reftype(?S0 interrogative)]
+	select passive
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]	
+		
+# also in "by whom was the cake baked" it also has to be present (this time with betaVs)
+PassiveAuxiliaryForcedOnS:
+exclude PassiveAuxiliaryOptional
+for [~relation(agent ?A ?S0) ~tense(?A ?tense) ~reftype(?S0 interrogative) ~relation(patient ?A ?S1)]
+	select passive
+	coselect betaVs with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+		
+
+## "want to"	
+	
+# "bill wants to sleep"
+# this is quite slow! check what is the problem
+WantTo:
+for [~event(?A) ~event(?1) ~evttype(?1 want) ~relation(patient ?1 ?A)]
+	set anchor.top=[mode=base]
+	coselect betaVvx with "to"
+		set anchor.top=[mode=inf] anchor.bot=[mode=inf] foot.bot=[mode=base]
+	
+	
+## question auxiliary
+	
+# "what does bill bake" (the two coselects are because present->pres)
+# the exclusion prevents selecting both passive and interrogative auxiliaries
+InterrogativeAuxiliary:
+exclude PassiveAuxiliaryForcedOnVP
+for [event(?A) tense(?A ?tense) relation(patient ?A ?1) ~reftype(?1 interrogative)]
+	set anchor.top=[mode=base]
+	coselect betaVs with "do"
+		set anchor.top=[mode=ind, tense=?tense] foot.bot=[mode=base] root.top=[extracted=-]
+

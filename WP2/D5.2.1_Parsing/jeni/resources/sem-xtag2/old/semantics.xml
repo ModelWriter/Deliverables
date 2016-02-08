@@ -1,0 +1,268 @@
+
+<!--
+	* General idea
+	This file is meant to associate the semantics to a family described in terms of trace. For a given tree,
+	its semantics is composed of the most specific traces that match. For instance if "CanSubject, active" matches and "CanSubject,
+	active, WhObject" matches, only the latter one is retained. We use here the term family in the wide sense of "set of trees
+	matched by a trace". This file is used mainly to produce and modify resources, it is not used in the generation per se.
+
+	* Variables
+	The semantics follow the given convention with regards to variable naming: ?A is the anchor, ?F the foot, ?S0..?Sn
+	the substitutions, ?L the lemma, ?1..?n are numeral variables whose instantiation val must be different, and any other
+	names are free to use
+
+	* Lemmas
+	The format also enables to define the syntactic lexicon by associating family traces to lemmas.
+	It is possible either to setup lists of lemmas or individual lemmas. The semantics of the lemma is the same than the semantics
+	of the matched trees, but it is possible to specify lemma-specific instantiations, and lemma-specific anchoring equations.
+	It is also possible to specify family-wide anchoring equations, that are equations for all lemmas that anchor trees of the
+	family (see VerbalTop).
+
+	* Patterns
+	A pattern=true feature warns that the semantics should not be associated to the family
+	but only to the lemmas. As a result, if a family is only matched by a pattern its semantics is empty. However an empty semantics
+	entry is systematically ignored from selection, and the entry must be forced by having a sem=no feature in the interface
+	to be selected. This is typically used for function words such as the relative pronoun which does not have a semantics per
+	se but still needs to be selected as an independent entry.
+-->
+<semantics>
+
+	<!-- Preprocessing -->
+
+	<assume for="event(?1)" sem="tense(?1 present) mode(?1 indicative) number(?1 singular) person(?1 3)"/>
+
+	<assume for="participant(?1)" sem="number(?1 singular) person(?1 3)"/>
+
+	<rewrite sem="tense(?1 present)" by="tense(?1 pres)"/>
+
+
+
+	<!--#####################################################################
+		####################### LEMMATIZED FAMILIES #########################
+		##################################################################### -->
+
+	<!-- speak is not n0V, it is just temporarily -->
+	<family trace="n0V">
+		<lemma val="sleep, snore, dance, speak"/>
+	</family>
+
+
+	<family trace="s0V">
+		<lemma val="fascinate"/>
+	</family>
+
+	<family trace="s0Vn1">
+		<lemmas val="fascinate"/>
+	</family>
+
+	<family trace="n0Vn1">
+		<lemma val="eat, chase, bake, like"/>
+	</family>
+
+	<!-- "bill wants to sleep" -->
+	<family trace="n0Vs1">
+		<lemma val="want"/>
+	</family>
+
+	<family trace="n0VPn1">
+		<lemma val="disapprove" coanchors="of"/>
+	</family>
+
+	<family trace="betaAn">
+		<semantics>modifier(?F ?L)</semantics>
+		<lemma val="small, black, white"/>
+	</family>
+
+	<family trace="betavxPnx">
+		<semantics>relation(?L ?F ?S0)</semantics>
+		<lemma val="in"/>
+	</family>
+
+	<family trace="alphaNXN">
+		<semantics>participant(?A) objtype(?A ?L)</semantics>
+		<lemma val="dog, cat, man, bill, lisa, house, day, cake"/>
+	</family>
+
+	<family trace="alphaPXPnx" pattern="true">
+		<semantics>relation(?L ?F ?A)</semantics>
+		<lemma val="in" eq="NP_s.top=[wh=+]"/> <!-- "in which" (equation at the lemma level) -->
+	</family>
+
+	<family trace="alphaPronoun">
+		<semantics>participant(?A) reftype(?A pronoun)</semantics>
+		<lemma val="he"/>
+	</family>
+
+	<!-- to handle "who" and "what" in "who/what sleeps" -->
+	<family trace="alphaInterrogativePronoun">
+		<semantics>participant(?A) animacy(?A ?animacy) reftype(?A interrogative)</semantics>
+		<lemma val="who" when="?animacy=true"/>
+		<lemma val="what" when="?animacy=false"/>
+	</family>
+
+
+	<!-- to handle "which" in "the house in which the man sleeps" -->
+	<family trace="alphaRelativePronoun" pattern="true">
+		<semantics>event(?A) relation(agent ?A ?1) relation(?2 ?A ?3)</semantics>
+		<lemma val="which"/>
+	</family>
+
+	<!-- in the Det Gerund -->
+	<family trace="alphaD">
+		<semantics>participant(?A) reftype(?A pronoun)</semantics>
+		<lemma val="his"/>
+	</family>
+
+
+	<!-- determiners -->
+	<family trace="betaDnx">
+		<semantics>refType(?F ?L)</semantics>
+		<lemma val="a" when="?L=indefinite"/>
+		<lemma val="the" when="?L=definite"/>
+	</family>
+
+
+
+	<!--#####################################################################
+		####################### FRAGMENT FAMILIES ###########################
+		##################################################################### -->
+
+	<family trace="VerbalTop" eq="anchor.top=[mode=?mode, tense=?tense]">
+		<semantics>event(?A) evttype(?A ?L) mode(?A ?mode) tense(?A ?tense)</semantics>
+	</family>
+
+	<!-- "the sleeping man", it does not inherit from VerbalTop, the mode and tense are ignored, and are here only to fake selection -->
+	<family trace="n0V, betaVn">
+		<semantics>event(?A) evttype(?A ?L) mode(?A ger) tense(?A ?t) relation(agent ?A ?F)</semantics>
+	</family>
+
+
+	<family trace="CanSubject, active">
+		<semantics>relation(agent ?A ?S0)</semantics>
+	</family>
+
+	<family trace="CanSubject, passive">
+		<semantics>relation(agent ?A ?S1)</semantics>
+	</family>
+
+	<family trace="passive">
+		<semantics>relation(patient ?A ?S0)</semantics>
+	</family>
+
+	<!-- "the house in which bill sleep" -->
+	<family trace="CanSubject, RelativeAdjunctPied-Piping, RelativeOvertExtractedWH, active">
+		<semantics>relation(agent ?A ?S1) relation(in ?A ?F)</semantics>
+	</family>
+
+	<!-- "the day bill sleep" -->
+	<family trace="CanSubject, RelativeAdjunctCovert, RelativeCovertExtractedWH, active">
+		<semantics>relation(agent ?A ?S0) relation(time ?A ?F)</semantics>
+	</family>
+
+	<!-- "what did bill bake" -->
+	<family trace="CanSubject, WhObject, active">
+		<semantics>relation(agent ?A ?S1) relation(patient ?A ?S0)</semantics>
+	</family>
+
+	<!-- "what was baked by bill" -->
+	<family trace="CanByAgent, WhSubject, passive">
+		<semantics>relation(agent ?A ?S1) relation(patient ?A ?S0)</semantics>
+	</family>
+
+	<!-- "by whom was the cake baked" -->
+	<family trace="WhByAgent, CanSubject, passive">
+		<semantics>relation(agent ?A ?S0) relation(patient ?A ?S1)</semantics>
+	</family>
+
+	<family trace="CanObject, CanComplement, active">
+		<semantics>relation(patient ?A ?S1)</semantics>
+	</family>
+
+	<family trace="CanComplement, active">
+		<semantics>relation(patient ?A ?S1)</semantics>
+	</family>
+
+	<family trace="CanByAgent, RelativeCovertSubject, passive">
+		<semantics>relation(agent ?A ?S0) relation(patient ?A ?F)</semantics>
+	</family>
+
+	<family trace="RelativeOvertSubject, active">
+		<semantics>relation(agent ?A ?S0)</semantics>
+	</family>
+
+	<family trace="WhSubject, active">
+		<semantics>relation(agent ?A ?S0)</semantics>
+	</family>
+
+	<family trace="DeterminerGerundSubject, active">
+		<semantics>relation(agent ?A ?S0)</semantics>
+	</family>
+
+	<family trace="NPGerundSubject, active">
+		<semantics>relation(agent ?A ?S0)</semantics>
+	</family>
+
+	<family trace="SententialSubject, active">
+		<semantics>relation(agent ?A ?S0)</semantics>
+	</family>
+
+
+
+	<!--#####################################################################
+		####################### PATTERN FAMILIES ############################
+		##################################################################### -->
+
+
+
+	<!-- "bill has been sleeping" -->
+	<pattern id="PresentPerfectProgressive">
+		<semantics>tense(?A present-perfect-progressive) relation(agent ?A ?1) number(?1 ?num) person(?1 ?pers)</semantics>
+		<override eq="anchor.top=[mode=ger] root.top=[mode=ind]"/>
+		<family trace="betaVvx">
+			<lemma val="be" equ="anchor.top=[mode=ppart] foot.top=[mode=ger]"/>
+		</family>
+		<family trace="betaVvx">
+			<lemma val="have" equ="anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=ppart]"/>
+		</family>
+	</pattern>
+
+
+	<!-- "the cake is baked by bill" -->
+	<!-- the auxiliary is not forced to be present, since we need to also produce "the cake baked by bill"
+		however it needs to be forced in "what is baked" ! -->
+	<family pattern="true" trace="betaVvxBe" eq="anchor.top=[mode=ind, tense=?tense] root.top=[mode=ppart]">
+		<semantics>event(?E) relation(patient ?E ?1) mode(?E ind|ppart) tense(?E ?tense)</semantics>
+		<lemma vals="be"/>
+	</family>
+
+	<family pattern="true" trace="betaIVs" eq="anchor.top=[mode=ind, tense=?tense]">
+		<semantics>event(?E) relation(patient ?E ?1) mode(?E ind|ppart) tense(?E ?tense)</semantics>
+		<lemma vals="be"/>
+	</family>
+
+
+	<!-- "what does bill bake" -->
+	<family trace="betaVs" eq="anchor.top=[mode=?mode, tense=?tense]">
+		<semantics>event(?A) evttype(?A do) modifier(?F ?A) tense(?A ?tense) mode(?A ?mode)</semantics>
+		<lemma val="do" eq="root.top=[extracted=-]"/>
+	</family>
+
+
+	<!-- to handle "to" in "bill wants to sleep" -->
+	<pattern id="To">
+		<semantics>event(?1) evttype(?1 want) relation(patient ?1 ?F)</semantics>
+		<family trace="betaVvxTo">
+			<lemma val="to"/>
+		</family>
+	</pattern>
+
+
+	<!-- to handle "who" in "the man who sleeps" -->
+	<pattern id="RelativePronoun">
+		<semantics>participant(?A) relation(agent ?1 ?A) relation(?2 ?3 ?A)</semantics>
+		<family trace="alphaRelativePronoun">
+			<lemma val="who"/>
+		</family>
+	</pattern>
+
+</semantics>

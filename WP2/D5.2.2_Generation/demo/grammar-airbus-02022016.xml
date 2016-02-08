@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE grammar SYSTEM "xmg-tag.dtd,xml">
+<grammar>
+  <entry name="TalphaNX-1">
+    <family>alphaNX</family>
+    <trace>
+      <class>alphaNX</class>
+      <class>nx</class>
+      <class>unaryRel</class>
+    </trace>
+    <tree id="TalphaNX-1">
+      <node type="std">
+        <narg>
+          <fs>
+            <f name="bot">
+              <fs coref="@B0">
+                <f name="label">
+                  <sym varname="@A0"/>
+                </f>
+              </fs>
+            </f>
+            <f name="cat">
+              <sym value="np"/>
+            </f>
+          </fs>
+        </narg>
+        <node type="anchor">
+          <narg>
+            <fs>
+              <f name="cat">
+                <sym value="n"/>
+              </f>
+            </fs>
+          </narg>
+        </node>
+      </node>
+    </tree>
+    <semantics>
+      <literal negated="no">
+        <label>
+          <sym varname="@A0"/>
+        </label>
+        <predicate>
+          <sym varname="@C0"/>
+        </predicate>
+        <arg>
+          <sym varname="@D0"/>
+        </arg>
+      </literal>
+    </semantics>
+    <interface>
+      <fs>
+        <f name="label">
+          <sym varname="@A0"/>
+        </f>
+        <f name="rel">
+          <sym varname="@C0"/>
+        </f>
+      </fs>
+    </interface>
+  </entry>
+  <entry name="Tn0Vpn1-2">
+    <family>n0Vpn1</family>
+    <trace>
+      <class>CanonicalSubject</class>
+      <class>ModalPassive</class>
+      <class>PrepositionalObject</class>
+      <class>VerbalSpine</class>
+      <class>binaryRel</class>
+      <class>n0Vpn1</class>
+    </trace>
+    <tree id="Tn0Vpn1-2">
+      <node type="std">
+        <narg>
+          <fs>
+            <f name="cat">
+              <sym value="s"/>
+            </f>
+          </fs>
+        </narg>
+        <node type="subst">
+          <narg>
+            <fs>
+              <f name="cat">
+                <sym value="np"/>
+              </f>
+              <f name="top">
+                <fs coref="@B0">
+                  <f name="label">
+                    <sym varname="@A0"/>
+                  </f>
+                </fs>
+              </f>
+            </fs>
+          </narg>
+        </node>
+        <node type="std">
+          <narg>
+            <fs>
+              <f name="cat">
+                <sym value="vp"/>
+              </f>
+            </fs>
+          </narg>
+          <node type="coanchor" name="Aux1">
+            <narg>
+              <fs>
+                <f name="cat">
+                  <sym value="v"/>
+                </f>
+              </fs>
+            </narg>
+          </node>
+          <node type="coanchor" name="Aux2">
+            <narg>
+              <fs>
+                <f name="cat">
+                  <sym value="v"/>
+                </f>
+              </fs>
+            </narg>
+          </node>
+          <node type="anchor">
+            <narg>
+              <fs>
+                <f name="cat">
+                  <sym value="v"/>
+                </f>
+              </fs>
+            </narg>
+          </node>
+          <node type="nadj">
+            <narg>
+              <fs>
+                <f name="cat">
+                  <sym value="pp"/>
+                </f>
+              </fs>
+            </narg>
+            <node type="coanchor" name="P1">
+              <narg>
+                <fs>
+                  <f name="cat">
+                    <sym value="prep"/>
+                  </f>
+                </fs>
+              </narg>
+            </node>
+            <node type="subst">
+              <narg>
+                <fs>
+                  <f name="cat">
+                    <sym value="np"/>
+                  </f>
+                  <f name="top">
+                    <fs coref="@D0">
+                      <f name="label">
+                        <sym varname="@C0"/>
+                      </f>
+                    </fs>
+                  </f>
+                </fs>
+              </narg>
+            </node>
+          </node>
+        </node>
+      </node>
+    </tree>
+    <semantics>
+      <literal negated="no">
+        <label>
+          <sym varname="@F0"/>
+        </label>
+        <predicate>
+          <sym value="subset"/>
+        </predicate>
+        <arg>
+          <sym varname="@A0"/>
+        </arg>
+        <arg>
+          <sym varname="@E0"/>
+        </arg>
+      </literal>
+      <literal negated="no">
+        <label>
+          <sym varname="@E0"/>
+        </label>
+        <predicate>
+          <sym value="exists"/>
+        </predicate>
+        <arg>
+          <sym varname="@G0"/>
+        </arg>
+        <arg>
+          <sym varname="@H0"/>
+        </arg>
+      </literal>
+      <literal negated="no">
+        <label>
+          <sym varname="@H0"/>
+        </label>
+        <predicate>
+          <sym value="and"/>
+        </predicate>
+        <arg>
+          <sym varname="@I0"/>
+        </arg>
+        <arg>
+          <sym varname="@J0"/>
+        </arg>
+      </literal>
+      <literal negated="no">
+        <label>
+          <sym varname="@J0"/>
+        </label>
+        <predicate>
+          <sym value="exists"/>
+        </predicate>
+        <arg>
+          <sym varname="@K0"/>
+        </arg>
+        <arg>
+          <sym varname="@C0"/>
+        </arg>
+      </literal>
+    </semantics>
+    <interface>
+      <fs>
+        <f name="arg1">
+          <sym varname="@A0"/>
+        </f>
+        <f name="arg2">
+          <sym varname="@C0"/>
+        </f>
+        <f name="rel">
+          <sym varname="@I0"/>
+        </f>
+        <f name="relArg1">
+          <sym varname="@G0"/>
+        </f>
+        <f name="relArg2">
+          <sym varname="@K0"/>
+        </f>
+      </fs>
+    </interface>
+  </entry>
+</grammar>

@@ -1,0 +1,12 @@
+PJeni GUI doesn't check for existance of macros.mac. It should and report error if the file doesn't exist. PJeni  Client, on the other hand, ensures this. Base Jeni reports this and gives output of 0 sentences. 
+Put a notice on PJeni to say that output has been written to the file. 
+Put a notice on base GenI to say where the log file is.
+On JenI (and PJeni), when the argument for .mph file is absent, the <missing: indicator should not be shown, instead use the word itself.
+Put log message of PJeni to some file other than the jeni.log file itself.
+
+
+
+PGen (Parser) :
+1. New test cases - big grammar and more input. (For now : Airbus Data -- Generation and Parsing)
+2. Check word order before final generation.
+

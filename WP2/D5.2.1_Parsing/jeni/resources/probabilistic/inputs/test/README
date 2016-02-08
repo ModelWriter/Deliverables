@@ -1,0 +1,22 @@
+02/07/2015
+C. Gardent
+
+This directory contains a very small grammar, lexicon and testsuite for testing probabilistic Jeni.
+
+There is one entry in the testsuite. 
+
+The lexicon contains 2 entries for the property mentioned in that testsuite, one with probability 0.75 the other with probability 0.25. 
+
+The probability of the nouns is 1. 
+
+Hence when testing the output should be :
+
+Rank 1 (highest probability):  Yuri_Usachov was born in Russia
+Test resources for testing probabilistic PJeni
+
+Rank 2 (second highest probability):  Yuri_Usachov started at Russia
+
+where the probability of a derived tree is simply the product of the probability of each lexicalised tree ie
+
+1 * 1 * 0.75 for the first solution
+1 * 1 * 0.25 for the second solution

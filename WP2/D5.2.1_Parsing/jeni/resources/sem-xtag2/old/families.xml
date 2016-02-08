@@ -1,0 +1,72 @@
+
+<semantics>
+
+	<!-- Preprocessing -->
+
+	<assume for="event(?1)" sem="tense(?1 present) mode(?1 indicative) number(?1 singular) person(?1 3)"/>
+
+	<assume for="participant(?1)" sem="number(?1 singular) person(?1 3)"/>
+
+	<rewrite sem="tense(?1 present)" by="tense(?1 pres)"/>
+
+
+	<!-- Anchoring -->
+
+	<family id="ParticipantAnchoring" trace="alphaNXN" sem="participant(?A) objtype(?A ?L) number(?A ?num) person(?A ?pers)"/>
+
+	<family id="PronounAnchoring" trace="alphaPronoun" sem="participant(?A) reftype(?A pronoun) person(?1 ?pers) number(?1 ?num)"/>
+
+	<family id="EventAnchoring" trace="VerbalTop" sem="event(?A) evttype(?A ?L)"/>
+
+	<family id="n0V" trace="n0V" sem="event(?A) evttype(?A ?L)">
+		<lemma val="sleep"/>
+	</family>
+
+	<family id="n0Vn1" trace="n0Vn1" sem="event(?A) evttype(?A ?L)">
+		<lemma val="eat, bake"/>
+	</family>
+
+
+	<family id="n0VPn1" trace="n0VPn1" sem="event(?A) evttype(?A ?L)">
+		<lemma val="disapprove" eq="P1.top=[lemma=of]"/>
+	</family>
+
+
+	<family id="InterrogativePronounAnchoring" trace="alphaInterrogativePronoun"
+		sem="participant(?A) animacy(?A ?animacy) reftype(?A interrogative) number(?A singular) person(?A 3)">
+		<lemma val="who" when="?animacy=true"/>
+		<lemma val="what" when="?animacy=false"/>
+	</family>
+
+	<family id="DeterminerAnchoring" trace="betaDnx" sem="reftype(?F ?type)">
+		<lemma val="a" when="?type=indefinite"/>
+		<lemma val="the" when="?type=definite"/>
+	</family>
+
+
+	<!-- Roles -->
+
+
+	<family id="ActiveSubject" trace="active, CanSubject" sem="relation(agent ?A ?S0)"/>
+
+	<family id="WhSubject" trace="active, WhSubject" sem="relation(agent ?A ?S0) ~reftype(?S0 interrogative)"/>
+
+	<family id="VerbPhraseAdjunct" trace="active, CanSubject, RelativeAdjunctCovert, RelativeCovertExtractedWH" sem="relation(agent ?A ?S0) relation(time ?A ?F)"/>
+
+
+
+
+	<!-- Patterns -->
+
+
+	<pattern id="RelativePronoun" sem="participant(?A) relation(agent ?1 ?A) relation(?2 ?3 ?A)">
+		<select trace="alphaRelativePronoun" with="who"/>
+	</pattern>
+
+	<pattern id="PresentProgressiveAuxiliary" sem="tense(?A present-progressive) relation(agent ?A ?1) number(?1 ?num) person(?1 ?pers)">
+		<override eq="anchor.top=[mode=ger]"/>
+		<select trace="betaVvx" with="be" eq="anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=ger]"/>
+	</pattern>
+
+
+</semantics>

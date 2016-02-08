@@ -1,0 +1,38 @@
+
+
+1. How to run Jeni (The Generation module)
+	An executable jar file named jeni/jars/Jeni_7_Feb.jar has been created as of 7th Feb, 2016.
+	
+	Run it as java -jar Jeni_7_Feb.jar -g grammarFileName -l lexiconFileName -s testsuiteFileName -m morphologyFileName -o OutputFileName
+	
+	The last argument is optional. When absent, the output is displayed in the console. When present, the output is written both to the console and the OutputFileName.
+	
+	Example Usage : java -jar Jeni_7_Feb.jar -g /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/valuation.xml -l /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/koda-lexicon.lex -s /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/test.geni -m /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/morph.mph -o /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/genOutput.txt
+
+Note : To execute this jar, the file configuration.xml and log4j.xml also need to be at the same folder as the jar itself. So, if copying this jar to other folder, do copy the configuration.xml and the log4j.xml files too.
+	
+	
+
+
+
+2. How to run PGen (The Parser module)
+	An executable jar has been created as of 1st Feb, 2016 named jeni/jars/PGen_5_Feb.jar.
+	
+	Run it as java -jar PGen_5_Feb.jar grammarFileName lexiconFileName SentencesFileName OutputFileName
+	
+	The last argument is optional. When absent, the output is displayed in the console. When present, the output is written both to the console and the OutputFileName.
+	
+	Input :
+		GrammarFile and LexiconFile -- the usual .xml and .lex files
+		SentencesFile : 
+			should be a text file with one input sentence per line
+			The words are separated by a dash.
+			For now, the words are the anchor words in the lexicon.
+			An example sentence in the SentencesFile looks like : 
+			Yury_Usachov-born-Russia
+
+	Example Usage : java -jar PGen_1_Feb.jar /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/valuation.xml /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/koda-lexicon.lex /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/test.sentence /home/bikash/git/pjeni/jeni/resources/probabilistic/inputs/test/parseOutput.txt
+	
+
+	Output :
+		Displayed in the console as well as in the OutputFileName. If the file exists, it gets overwritten. 

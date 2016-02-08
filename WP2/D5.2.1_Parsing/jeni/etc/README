@@ -1,0 +1,22 @@
+* Some useful files to work with Eclipse
+
+Working under Eclipse 3.7:
+
+- coding-style.xml : imports this file in Preferences > Java > Code Style > Formatter > Import...
+
+- cbg.editor_1.2.6.jar : a plugin that provides some highlighting support for the Jeni test suite format, based on the ColorEditor plugin.
+	(we should find a way to change the name).
+	- copy the plugin to the directory "plugins" of your Eclipse installation
+	- restart Eclipse
+	- you can now either do: Right click on a .jeni file > Open With > Other > Internal Editors > Syntax Coloring Editor
+	- or you can set the association of .jeni files to this editor: Preferences > General > Editors > File Associations > Add... > enter *.jeni and 
+	  add the editor Internal Editors > Syntax Coloring Editor
+	- the color scheme is the default one, you'd better change it to your preferences: Preferences > Coloring Editor > Colors 
+
+- jeni-syntax-highlighting : contains the sources of the ColorEditor plugin, including a jeni basic syntax file.
+	- the jeni syntax file is located in jeni-syntax-highlighting/modes/jeni.xml
+	- the format is described on http://www.jedit.org/users-guide/writing-modes-part.html (the Jedit Edit Mode format),
+	  get ColorEditor full sources to have examples of the format. 
+	- to compile, first cd etc/jeni-syntax-highlighting
+	- ./build.sh (builds the plugin to etc/cbg.editor_1.2.6.jar), 
+

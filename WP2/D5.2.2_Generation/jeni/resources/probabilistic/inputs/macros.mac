@@ -1,0 +1,164 @@
+cardinalQuantifierDetSem[]
+	 semantics:[?A0:card(?B0,?C0,?D0) ?E0:qeq(?F0,?A0) ?G0:udef_q(?C0,?F0,?H0) ]
+	 interface:[arg0=?C0,argL=?A0,num=?D0]
+
+possessiveDetSem[]
+	 semantics:[?A0:qeq(?B0,?C0) ?C0:pron(?D0) ?E0:pronoun_q(?D0,?B0,?F0) ?G0:qeq(?H0,?I0) ?I0:poss(?J0,?K0,?D0) ?L0:def_explicit_q(?K0,?H0,?M0) ]
+	 interface:[]
+
+pronounQuantifierSem[]
+	 semantics:[?A0:qeq(?B0,?C0) ?C0:indiv(?D0,?E0,?F0,?G0) ?C0:pron(?D0) ?H0:pronoun_q(?D0,?B0,?I0) ]
+	 interface:[arg0=?D0,gen=?E0,num=?F0,pers=?G0]
+
+prepSem[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0,?E0) ]
+	 interface:[arg0=?C0,arg1=?D0,arg2=?E0,label=?A0,rel=?B0]
+
+possessiveQuantifierSem[]
+	 semantics:[?A0:pron(?B0,?C0) ?D0:qeq(?E0,?A0) ?F0:pronoun_q(?B0,?E0,?G0) ?H0:poss(?I0,?J0,?B0) ?H0:indiv(?J0,?K0,?L0) ?H0:generic_entity(?J0) ]
+	 interface:[gen=?K0,idx=?J0,label=?H0,num=?L0,person=?C0]
+
+nounProperty[rel=?E0]
+	 semantics:[?A0:indiv(?B0,?C0,?D0) ?A0:?E0(?B0) ]
+	 interface:[arg0=?B0,gen=?C0,label0=?A0,num=?D0,rel=?E0,vbI=?B0,vbL=?A0]
+
+adjectiveProperty[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0) ]
+	 interface:[arg0=?D0,label0=?A0,rel=?B0]
+
+state[rel=?F0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?A0:?F0(?B0) ]
+	 interface:[arg0=?B0,aspect=?D0,label0=?A0,mode=?E0,rel=?F0,tense=?C0,vbI=?B0,vbL=?A0]
+
+copulaRel[]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?A0:be(?B0,?F0,?G0) ]
+	 interface:[arg0=?B0,arg1=?F0,arg2=?G0,aspect=?D0,label0=?A0,mode=?E0,tense=?C0,vbI=?B0,vbL=?A0]
+
+modalRel[rel=?E0]
+	 semantics:[?A0:qeq(?B0,?C0) ?D0:?E0(?F0,?B0) ]
+	 interface:[arg0=?F0,label0=?D0,rel=?E0,sobjectL=?C0,vbI=?F0,vbL=?D0]
+
+tensedModalRel[rel=?I0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?F0:qeq(?G0,?H0) ?A0:?I0(?B0,?G0) ]
+	 interface:[arg0=?B0,aspect=?D0,label0=?A0,mode=?E0,rel=?I0,sobjectL=?H0,tense=?C0,vbI=?B0,vbL=?A0]
+
+unaryRel[rel=?F0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?A0:?F0(?B0,?G0) ]
+	 interface:[arg0=?B0,arg1=?G0,aspect=?D0,label0=?A0,mode=?E0,rel=?F0,tense=?C0,vbI=?B0,vbL=?A0]
+
+scopalBinaryRel[rel=?I0]
+	 semantics:[?A0:qeq(?B0,?C0) ?D0:event(?E0,?F0,?G0,?H0) ?D0:?I0(?E0,?J0,?B0) ]
+	 interface:[arg0=?E0,arg1=?J0,arg2=?C0,aspect=?G0,label0=?D0,mode=?H0,rel=?I0,tense=?F0,vbI=?E0,vbL=?D0]
+
+binaryRel[rel=?F0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?A0:?F0(?B0,?G0,?H0) ]
+	 interface:[arg0=?B0,arg1=?G0,arg2=?H0,aspect=?D0,label0=?A0,mode=?E0,reflI=?G0,rel=?F0,tense=?C0,vbI=?B0,vbL=?A0]
+
+whSubjectPronounQuantifierSem[noun=?D0,quant=?G0]
+	 semantics:[?A0:qeq(?B0,?C0) ?C0:?D0(?E0) ?F0:?G0(?E0,?B0,?H0) ]
+	 interface:[idx=?E0,label=?F0,noun=?D0,quant=?G0]
+
+unaryRelBase[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0) ]
+	 interface:[arg0=?C0,arg1=?D0,label0=?A0,rel=?B0]
+
+binaryRelBase[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0,?E0) ]
+	 interface:[arg0=?C0,arg1=?D0,arg2=?E0,label0=?A0,rel=?B0,vbI=?C0,vbL=?A0]
+
+whNonSubjectPronounQuantifierSem[noun=?D0,quant=?G0]
+	 semantics:[?A0:qeq(?B0,?C0) ?C0:?D0(?E0) ?F0:?G0(?E0,?B0,?H0) ]
+	 interface:[noun=?D0,quant=?G0]
+
+nounSem[rel=?E0]
+	 semantics:[?A0:indiv(?B0,?C0,?D0) ?A0:?E0(?B0) ]
+	 interface:[arg0=?B0,gen=?C0,label0=?A0,num=?D0,rel=?E0,vbI=?B0,vbL=?A0]
+
+questionSem[]
+	 semantics:[?A0:question(?B0) ]
+	 interface:[arg0=?B0,label0=?A0,topL=?A0,vbI=?B0]
+
+basicProperty[rel=?B0]
+	 semantics:[?A0:?B0(?C0) ]
+	 interface:[arg0=?C0,label0=?A0,rel=?B0,vbI=?C0,vbL=?A0]
+
+questionCliticSem[]
+	 semantics:[?A0:qeq(?B0,?C0) ?C0:indiv(?D0,?E0,?F0) ?C0:pron(?D0) ?G0:pronoun_q(?D0,?B0,?H0) ?I0:ques(?J0) ]
+	 interface:[arg0=?D0,gen=?E0,num=?F0,pers=?K0,vbI=?J0,vbL=?I0]
+
+unaryState[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0) ]
+	 interface:[arg0=?C0,arg1=?D0,label0=?A0,rel=?B0]
+
+dummyBe[]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ]
+	 interface:[aspect=?D0,label0=?A0,mode=?E0,tense=?C0]
+
+binaryState[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0,?E0) ]
+	 interface:[arg0=?C0,arg1=?D0,arg2=?E0,label0=?A0,rel=?B0]
+
+eventSem[]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ]
+	 interface:[aspect=?D0,label0=?A0,mode=?E0,tense=?C0]
+
+ternaryState[rel=?B0]
+	 semantics:[?A0:?B0(?C0,?D0,?E0,?F0) ]
+	 interface:[arg0=?C0,arg1=?D0,arg2=?E0,arg3=?F0,label0=?A0,rel=?B0]
+
+quantifierWhDetSem[quant=?G0]
+	 semantics:[?A0:ques(?B0) ?C0:qeq(?D0,?E0) ?F0:?G0(?H0,?D0,?I0) ]
+	 interface:[arg0=?H0,argL=?E0,quant=?G0]
+
+ternaryRel[rel=?F0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?A0:?F0(?B0,?G0,?H0,?I0) ]
+	 interface:[arg0=?B0,arg1=?G0,arg2=?H0,arg3=?I0,aspect=?D0,label0=?A0,mode=?E0,rel=?F0,tense=?C0,vbI=?B0,vbL=?A0]
+
+questionmarkSem[]
+	 semantics:[?A0:ques(?B0) ]
+	 interface:[]
+
+raisingSem[rel=?I0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?F0:qeq(?G0,?H0) ?A0:?I0(?B0,?G0) ]
+	 interface:[arg0=?B0,aspect=?D0,label0=?A0,mode=?E0,rel=?I0,scopeLabel=?H0,tense=?C0]
+
+qtilSem[]
+	 semantics:[?A0:ques(?B0) ]
+	 interface:[vbI=?B0,vbL=?A0]
+
+coordSem[rel=?G0]
+	 semantics:[?A0:indiv(?B0,?C0,?D0,?E0) ?F0:?G0(?B0,?H0,?I0) ?J0:qeq(?K0,?F0) ?A0:udef_q(?B0,?K0,?L0) ]
+	 interface:[arg0=?B0,arg1=?H0,arg2=?I0,gen=?C0,num=?D0,pers=?E0,rel=?G0]
+
+scopalQuestionRel[rel=?J0]
+	 semantics:[?A0:ques(?B0) ?C0:qeq(?D0,?A0) ?E0:event(?F0,?G0,?H0,?I0) ?E0:?J0(?F0,?K0,?D0) ]
+	 interface:[arg0=?F0,arg1=?K0,arg2=?A0,aspect=?H0,label0=?E0,mode=?I0,rel=?J0,sinterrogativeI=?B0,tense=?G0,vbI=?F0,vbL=?E0]
+
+quantifierSem[noun=?G0,quant=?I0]
+	 semantics:[?A0:indiv(?B0,?C0,?D0) ?E0:qeq(?F0,?A0) ?A0:?G0(?B0) ?H0:?I0(?B0,?F0,?J0) ]
+	 interface:[arg0=?B0,gen=?C0,label=?H0,noun=?G0,num=?D0,quant=?I0,rlabel=?A0]
+
+properNounQuantifierSem[noun=?E0]
+	 semantics:[?A0:indiv(?B0,?C0,?D0) ?A0:named(?B0,?E0) ?F0:qeq(?G0,?A0) ?H0:proper_q(?B0,?G0,?I0) ]
+	 interface:[arg0=?B0,gen=?C0,label0=?H0,label1=?A0,noun=?E0,num=?D0]
+
+genericPronounQuantifierSem[]
+	 semantics:[?A0:qeq(?B0,?C0) ?C0:indiv(?D0,?E0,?F0,?G0) ?C0:generic_entity(?D0) ?H0:this_q_dem(?D0,?B0,?I0) ]
+	 interface:[arg0=?D0,gen=?E0,num=?F0,pers=?G0]
+
+negationSem[rel=?E0]
+	 semantics:[?A0:qeq(?B0,?C0) ?D0:?E0(?F0,?B0) ]
+	 interface:[arg1=?C0,rel=?E0]
+
+quantifierDetSem[quant=?E0]
+	 semantics:[?A0:qeq(?B0,?C0) ?D0:?E0(?F0,?B0,?G0) ]
+	 interface:[arg0=?F0,argL=?C0,quant=?E0]
+
+measureSem[rel=?H0]
+	 semantics:[?A0:event(?B0,?C0,?D0,?E0) ?A0:measure(?B0,?F0,?G0) ?A0:?H0(?F0,?I0) ]
+	 interface:[arg1=?I0,arg3=?G0,aspect=?D0,label=?A0,mode=?E0,rel=?H0,tense=?C0]
+
+indivSem[]
+	 semantics:[?A0:indiv(?B0,?C0,?D0) ]
+	 interface:[arg0=?B0,gen=?C0,num=?D0,rlabel=?A0]
+

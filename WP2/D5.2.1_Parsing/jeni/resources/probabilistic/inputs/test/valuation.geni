@@ -1,0 +1,1021 @@
+
+% ------------------------- Tn0NPn1-11
+n0NPn1:Tn0NPn1-11 ( ! arg0:?I1 arg1:?L0 arg2:?E1 label:?J1 ppanchorargnpI:?E1 ppanchorargnpL:?F1 rel:?H1 scopeL:?N0 subjectI:?L0 subjectL:?M0 vbI:?I1) initial
+n0 [cat:"s"]![assign-case:"nom" assign-comp:?A0 cat:"s" comp:"nil" control:?B0 extracted:"-" inv:"-" mainv:?C0 mode:?D0 num:?E0 pass:?F0 perf:?G0 pers:?H0 progress:?I0 tense:?J0 wh:"-"]{
+ NP_subj type:subst [case:"nom" cat:"np" control:?B0 dep:"subj" idx:?L0 label:?M0 num:?E0 pers:?H0 scopeL:?N0 wh:"-"]![cat:"np"]
+ n2 [assign-case:"nom" assign-comp:?A0 cat:"vp" mainv:?C0 mode:?D0 num:?E0 pass:?F0 perf:?G0 pers:?H0 progress:?I0 tense:?J0]![assign-case:?P0 assign-comp:?Q0 cat:"vp" compar:"-" mainv:?R0 mode:?S0 num:?T0 pass:?U0 pers:?V0 tense:?W0]{
+  V_a [assign-case:?P0 assign-comp:?Q0 cat:"v" mainv:?R0 mode:?S0 num:?T0 pass:?U0 pers:?V0 punct-struct:"nil" tense:?W0]![cat:"v"]
+  n4 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?A1]{
+   n5 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+    n6 type:anchor [cat:"n"]![cat:"n"]
+    P2 [cat:"prep"]![cat:"prep"]
+   }
+   n8 type:subst [case:"acc" cat:"np" dep:"pmod" idx:?E1 label:?F1 scopeL:?N0 wh:?A1]![cat:"np"]
+  }
+ }
+}
+semantics:[?J1:?H1(?I1 ?L0 ?E1)]
+trace:[ArgumentNodeSemantics CanComplement CanSubject Dian0NPn1 PPAnchorArgument PPAnchorArgumentN PPAnchorArgumentNCan PPAnchorArgumentNPSem PPAnchorArgumentNParg2Linking PPAnchorArgumentXP PPAnchorTop PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-12
+n0NPn1:Tn0NPn1-12 ( ! arg0:?W2 arg1:?C2 arg2:?X2 label:?Y2 ppanchorargnpI:?X2 rel:?V2 scopeL:?E2 subjectI:?C2 subjectL:?D2 vbI:?W2) auxiliary
+n0 [cat:"np"]![case:?A1 cat:"np" compar:?B1 num:?C1 pers:?D1 pron:?E1 rel-clause:"+"]{
+ n1 type:foot [case:?A1 cat:"np" compar:?B1 num:?C1 pers:?D1 pron:?E1]![case:?G1/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J1 pass:?K1 tense:?L1 wh:"+"]{
+  n3 type:subst [case:"acc" cat:"np" num:?J1 pers:?N1 rmode:"ind" trace:?O1 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K1 tense:?L1]![assign-case:"nom" assign-comp:?Q1 cat:"s" comp:"nil" control:?R1 extracted:"-" inv:"-" mainv:?S1 mode:?T1 num:?U1 pass:?V1 perf:?W1 pers:?X1 progress:?Y1 tense:?Z1 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?R1 dep:"subj" idx:?C2 label:?D2 num:?U1 pers:?X1 scopeL:?E2 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?Q1 cat:"vp" mainv:?S1 mode:?T1 num:?U1 pass:?V1 perf:?W1 pers:?X1 progress:?Y1 tense:?Z1]![assign-case:?G2 assign-comp:?H2 cat:"vp" compar:"-" mainv:?I2 mode:?J2 num:?K2 pass:?L2 pers:?M2 tense:?N2]{
+    V_a [assign-case:?G2 assign-comp:?H2 cat:"v" mainv:?I2 mode:?J2 num:?K2 pass:?L2 pers:?M2 punct-struct:"nil" tense:?N2]![cat:"v"]
+    n8 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+     n9 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+      n10 type:anchor [cat:"n"]![cat:"n"]
+      P2 [cat:"prep"]![cat:"prep"]
+     }
+     n12 [case:"acc" cat:"np" num:?J1 pers:?N1 trace:?O1 wh:"+"]![cat:"np" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[?Y2:?V2(?W2 ?C2 ?X2)]
+trace:[ArgumentNodeSemantics CanSubject Dian0NPn1 ExtractedArgument MovementAgreement PPAnchorArgumentN PPAnchorArgumentNParg2Linking PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertPPAnchor-PPArg RelativeOvertPPAnchorArgumentN RelativeOvertPPAnchorArgumentNP RelativeOvertPPAnchorArgumentXP Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-13
+n0NPn1:Tn0NPn1-13 ( ! arg0:?Y3 arg1:?E3 arg2:?Z3 label:?A4 ppanchorargnpI:?Z3 rel:?X3 scopeL:?G3 subjectI:?E3 subjectL:?F3 vbI:?Y3) auxiliary
+n0 [cat:"np"]![case:?A2 cat:"np" compar:?B2 num:?C2 pers:?D2 pron:?E2 rel-clause:"+"]{
+ n1 type:foot [case:?A2 cat:"np" compar:?B2 num:?C2 pers:?D2 pron:?E2]![case:?G2/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J2 num:?K2 pass:?L2 tense:?M2 wh:"-"]{
+  n3 aconstr:noadj [case:"acc" cat:"np" num:?K2 pers:?P2 trace:?Q2 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J2/"ind"|"inf"|"ger" pass:?L2 tense:?M2]![assign-case:"nom" assign-comp:?S2 cat:"s" comp:"nil" control:?T2 extracted:"-" inv:"-" mainv:?U2 mode:?V2 num:?W2 pass:?X2 perf:?Y2 pers:?Z2 progress:?A3 tense:?B3 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?T2 dep:"subj" idx:?E3 label:?F3 num:?W2 pers:?Z2 scopeL:?G3 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?S2/"for"|"that"|"ecm"|"inf_nil"|"ind_nil" cat:"vp" mainv:?U2 mode:?V2 num:?W2 pass:?X2 perf:?Y2 pers:?Z2 progress:?A3 tense:?B3]![assign-case:?I3 assign-comp:?J3 cat:"vp" compar:"-" mainv:?K3 mode:?L3 num:?M3 pass:?N3 pers:?O3 tense:?P3]{
+    V_a [assign-case:?I3 assign-comp:?J3 cat:"v" mainv:?K3 mode:?L3 num:?M3 pass:?N3 pers:?O3 punct-struct:"nil" tense:?P3]![cat:"v"]
+    n8 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"-"]{
+     n9 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+      n10 type:anchor [cat:"n"]![cat:"n"]
+      P2 [cat:"prep"]![cat:"prep"]
+     }
+     n12 [case:"acc" cat:"np" num:?K2 pers:?P2 trace:?Q2 wh:"-"]![cat:"np" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[?A4:?X3(?Y3 ?E3 ?Z3)]
+trace:[ArgumentNodeSemantics CanSubject Dian0NPn1 ExtractedArgument MovementAgreement PPAnchorArgumentN PPAnchorArgumentNParg2Linking PrepCaseAssigner RelativeClause RelativeCovertExtractedWH RelativeCovertPPAnchor-PPArg RelativeCovertPPAnchorArgumentN RelativeCovertPPAnchorArgumentNP RelativeCovertPPAnchorArgumentXP Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-14
+n0NPn1:Tn0NPn1-14 ( ! arg0:?Z5 arg1:?H5 arg2:?A6 label:?B6 ppanchorargnpI:?A6 rel:?Y5 scopeL:?J5 subjectI:?H5 subjectL:?I5 vbI:?Z5) auxiliary
+n0 [cat:"np"]![case:?A4 cat:"np" compar:?B4 num:?C4 pers:?D4 pron:?E4 rel-clause:"+"]{
+ n1 type:foot [case:?A4 cat:"np" compar:?B4 num:?C4 pers:?D4 pron:?E4]![case:?G4/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J4 pass:?K4 tense:?L4 wh:"+"]{
+  n3 [case:?P4 cat:"pp" num:?J4 pers:?Q4 rmode:"ind" trace:?R4 wh:"+"]![assign-case:"acc" cat:"pp" wh:?N4]{
+   n4 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+    n5 type:anchor [cat:"n"]![cat:"n"]
+    P2 [cat:"prep"]![cat:"prep"]
+   }
+   n7 type:subst [case:"acc" cat:"np" wh:?N4]![cat:"np"]
+  }
+  n8 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K4 tense:?L4]![assign-case:"nom" assign-comp:?V4 cat:"s" comp:"nil" control:?W4 extracted:"-" inv:"-" mainv:?X4 mode:?Y4 num:?Z4 pass:?A5 perf:?B5 pers:?C5 progress:?D5 tense:?E5 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?W4 dep:"subj" idx:?H5 label:?I5 num:?Z4 pers:?C5 scopeL:?J5 wh:"-"]![cat:"np"]
+   n10 [assign-case:"nom" assign-comp:?V4 cat:"vp" mainv:?X4 mode:?Y4 num:?Z4 pass:?A5 perf:?B5 pers:?C5 progress:?D5 tense:?E5]![assign-case:?L5 assign-comp:?M5 cat:"vp" compar:"-" mainv:?N5 mode:?O5 num:?P5 pass:?Q5 pers:?R5 tense:?S5]{
+    V_a [assign-case:?L5 assign-comp:?M5 cat:"v" mainv:?N5 mode:?O5 num:?P5 pass:?Q5 pers:?R5 punct-struct:"nil" tense:?S5]![cat:"v"]
+    n12 [case:?P4 cat:"pp" num:?J4 pers:?Q4 trace:?R4 wh:"+"]![cat:"pp" phon:"e"]
+   }
+  }
+ }
+}
+semantics:[?B6:?Y5(?Z5 ?H5 ?A6)]
+trace:[ArgumentNodeSemantics CanSubject Dian0NPn1 ExtractedArgument MovementAgreement PPAnchorArgumentN PPAnchorArgumentNParg2Linking PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertPPAnchorArgumentNP RelativeOvertPPAnchorPied-Piping-N RelativeOvertPPAnchorPied-PipingTop Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-15
+n0NPn1:Tn0NPn1-15 ( ! arg0:?O7 arg1:?U6 arg2:?P7 label:?Q7 ppanchorargnpI:?P7 rel:?N7 scopeL:?W6 subjectI:?U6 subjectL:?V6 vbI:?O7) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A6 num:?B6 pass:?C6 tense:?D6 wh:"+"]{
+ n1 type:subst [case:"acc" cat:"np" dep:"obj" num:?B6 pers:?F6 trace:?G6 wh:"+"]![cat:"np"]
+ n2 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A6 pass:?C6 tense:?D6]![assign-case:"nom" assign-comp:?I6 cat:"s" comp:"nil" control:?J6 extracted:"-" inv:"-" mainv:?K6 mode:?L6 num:?M6 pass:?N6 perf:?O6 pers:?P6 progress:?Q6 tense:?R6 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?J6 dep:"subj" idx:?U6 label:?V6 num:?M6 pers:?P6 scopeL:?W6 wh:"-"]![cat:"np"]
+  n4 [assign-case:"nom" assign-comp:?I6 cat:"vp" mainv:?K6 mode:?L6 num:?M6 pass:?N6 perf:?O6 pers:?P6 progress:?Q6 tense:?R6]![assign-case:?Y6 assign-comp:?Z6 cat:"vp" compar:"-" mainv:?A7 mode:?B7 num:?C7 pass:?D7 pers:?E7 tense:?F7]{
+   V_a [assign-case:?Y6 assign-comp:?Z6 cat:"v" mainv:?A7 mode:?B7 num:?C7 pass:?D7 pers:?E7 punct-struct:"nil" tense:?F7]![cat:"v"]
+   n6 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+    n7 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+     n8 type:anchor [cat:"n"]![cat:"n"]
+     P1 [cat:"prep"]![cat:"prep"]
+    }
+    n10 aconstr:noadj [case:"acc" cat:"np" num:?B6 pers:?F6 trace:?G6 wh:"+"]![cat:"np" phon:"e"]
+   }
+  }
+ }
+}
+semantics:[?Q7:?N7(?O7 ?U6 ?P7)]
+trace:[ArgumentNodeSemantics CanSubject Dian0NPn1 ExtractedArgument Inversion MovementAgreement PPAnchorArgumentN PPAnchorArgumentNParg2Linking PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop WhAnchorPArgument WhAnchorPPN WhComplementTop WhExtraction WhPObject binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-16
+n0NPn1:Tn0NPn1-16 ( ! arg0:?R8 arg1:?Z7 arg2:?S8 label:?T8 ppanchorargnpI:?S8 rel:?Q8 scopeL:?B8 subjectI:?Z7 subjectL:?A8 vbI:?R8) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A7 num:?B7 pass:?C7 tense:?D7 wh:"+"]{
+ n1 [case:?H7 cat:"pp" num:?B7 pers:?I7 trace:?J7 wh:"+"]![assign-case:"acc" cat:"pp" wh:?F7]{
+  n2 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+   n3 type:anchor [cat:"n"]![cat:"n"]
+   P1 [cat:"prep"]![cat:"prep"]
+  }
+  n5 type:subst [case:"acc" cat:"np" wh:?F7]![cat:"np"]
+ }
+ n6 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A7 pass:?C7 tense:?D7]![assign-case:"nom" assign-comp:?N7 cat:"s" comp:"nil" control:?O7 extracted:"-" inv:"-" mainv:?P7 mode:?Q7 num:?R7 pass:?S7 perf:?T7 pers:?U7 progress:?V7 tense:?W7 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?O7 dep:"subj" idx:?Z7 label:?A8 num:?R7 pers:?U7 scopeL:?B8 wh:"-"]![cat:"np"]
+  n8 [assign-case:"nom" assign-comp:?N7 cat:"vp" mainv:?P7 mode:?Q7 num:?R7 pass:?S7 perf:?T7 pers:?U7 progress:?V7 tense:?W7]![assign-case:?D8 assign-comp:?E8 cat:"vp" compar:"-" mainv:?F8 mode:?G8 num:?H8 pass:?I8 pers:?J8 tense:?K8]{
+   V_a [assign-case:?D8 assign-comp:?E8 cat:"v" mainv:?F8 mode:?G8 num:?H8 pass:?I8 pers:?J8 punct-struct:"nil" tense:?K8]![cat:"v"]
+   n10 aconstr:noadj [case:?H7 cat:"pp" num:?B7 pers:?I7 trace:?J7 wh:"+"]![cat:"pp" phon:"e"]
+  }
+ }
+}
+semantics:[?T8:?Q8(?R8 ?Z7 ?S8)]
+trace:[ArgumentNodeSemantics CanSubject Dian0NPn1 ExtractedArgument Inversion MovementAgreement PPAnchorArgumentN PPAnchorArgumentNParg2Linking PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop WhAnchorPPArgumentN WhAnchorPPArgumentXP WhComplementTop WhExtraction WhPPIObject WhPPTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-17
+n0NPn1:Tn0NPn1-17 ( ! arg0:?V9 arg1:?I8 arg2:?R9 label:?W9 ppanchorargnpI:?R9 ppanchorargnpL:?S9 rel:?U9 scopeL:?K8 subjectI:?I8 subjectL:?J8 vbI:?V9) auxiliary
+n0 [cat:"np"]![case:?A8 cat:"np" compar:?B8 num:?C8 pers:?D8 pron:?E8 rel-clause:"+"]{
+ n1 type:foot [case:?A8 cat:"np" compar:?B8 idx:?I8 label:?J8 num:?C8 pers:?D8 pron:?E8 scopeL:?K8]![case:?G8/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?M8 pass:?N8 tense:?O8 wh:"+"]{
+  NP1 [case:?Q8 cat:"np" num:?M8 pers:?R8 rmode:"ind" trace:?S8 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?N8 tense:?O8]![assign-case:?Q8 assign-comp:?U8 cat:"s" comp:"nil" extracted:"-" inv:"-" mode:?V8 num:?M8 pass:?W8 pers:?R8 tense:?X8 wh:"+"]{
+   n5 [case:?Q8 cat:"np" dep:"subj" num:?M8 pers:?R8 trace:?S8 wh:"+"]![cat:"np" phon:"e" rel-clause:"-"]
+   n6 [assign-case:?Q8 assign-comp:?U8 cat:"vp" mode:?V8 num:?M8 pass:?W8 pers:?R8 tense:?X8]![assign-case:?C9 assign-comp:?D9 cat:"vp" compar:"-" mainv:?E9 mode:?F9 num:?G9 pass:?H9 pers:?I9 tense:?J9]{
+    V_a [assign-case:?C9 assign-comp:?D9 cat:"v" mainv:?E9 mode:?F9 num:?G9 pass:?H9 pers:?I9 punct-struct:"nil" tense:?J9]![cat:"v"]
+    n8 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?N9]{
+     n9 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+      n10 type:anchor [cat:"n"]![cat:"n"]
+      P2 [cat:"prep"]![cat:"prep"]
+     }
+     n12 type:subst [case:"acc" cat:"np" dep:"pmod" idx:?R9 label:?S9 scopeL:?K8 wh:?N9]![cat:"np"]
+    }
+   }
+  }
+ }
+}
+semantics:[?W9:?U9(?V9 ?I8 ?R9)]
+trace:[ArgumentNodeSemantics CanComplement Dian0NPn1 ExtractedArgument MovementAgreement PPAnchorArgument PPAnchorArgumentN PPAnchorArgumentNCan PPAnchorArgumentNPSem PPAnchorArgumentNParg2Linking PPAnchorArgumentXP PPAnchorTop PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertSubject Subject SubjectAgreement SubjectArg1Linking SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-18
+n0NPn1:Tn0NPn1-18 ( ! arg0:?A11 arg1:?D10 arg2:?W10 label:?B11 ppanchorargnpI:?W10 ppanchorargnpL:?X10 rel:?Z10 scopeL:?F10 subjectI:?D10 subjectL:?E10 vbI:?A11) auxiliary
+n0 [cat:"np"]![case:?A9 cat:"np" compar:?B9 num:?C9 pers:?D9 pron:?E9 rel-clause:"+"]{
+ n1 type:foot [case:?A9 cat:"np" compar:?B9 num:?C9 pers:?D9 pron:?E9]![case:?G9/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J9 pass:?K9 tense:?L9 wh:"+"]{
+  n3 type:subst [case:?N9 cat:"pp" num:?J9 pers:?O9 rmode:"ind" trace:?P9 wh:"+"]![cat:"pp"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K9 tense:?L9]![assign-case:"nom" assign-comp:?R9 cat:"s" comp:"nil" control:?S9 extracted:"-" inv:"-" mainv:?T9 mode:?U9 num:?V9 pass:?W9 perf:?X9 pers:?Y9 progress:?Z9 tense:?A10 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?S9 dep:"subj" idx:?D10 label:?E10 num:?V9 pers:?Y9 scopeL:?F10 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?R9 cat:"vp" mainv:?T9 mode:?U9 num:?V9 pass:?W9 perf:?X9 pers:?Y9 progress:?Z9 tense:?A10]![assign-case:?H10 assign-comp:?I10 cat:"vp" compar:"-" mainv:?J10 mode:?K10 num:?L10 pass:?M10 pers:?N10 tense:?O10]{
+    V_a [assign-case:?H10 assign-comp:?I10 cat:"v" mainv:?J10 mode:?K10 num:?L10 pass:?M10 pers:?N10 punct-struct:"nil" tense:?O10]![cat:"v"]
+    n8 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?S10]{
+     n9 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+      n10 type:anchor [cat:"n"]![cat:"n"]
+      P2 [cat:"prep"]![cat:"prep"]
+     }
+     n12 type:subst [case:"acc" cat:"np" dep:"pmod" idx:?W10 label:?X10 scopeL:?F10 wh:?S10]![cat:"np"]
+    }
+   }
+  }
+ }
+}
+semantics:[?B11:?Z10(?A11 ?D10 ?W10)]
+trace:[ArgumentNodeSemantics CanComplement CanSubject Dian0NPn1 ExtractedArgument MovementAgreement PPAnchorArgument PPAnchorArgumentN PPAnchorArgumentNCan PPAnchorArgumentNPSem PPAnchorArgumentNParg2Linking PPAnchorArgumentXP PPAnchorTop PrepCaseAssigner RelativeAdjunct RelativeAdjunctPied-Piping RelativeClause RelativeOvertExtractedWH Reln0NPn1 Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tn0NPn1-19
+n0NPn1:Tn0NPn1-19 ( ! arg0:?D13 arg1:?G12 arg2:?Z12 label:?E13 ppanchorargnpI:?Z12 ppanchorargnpL:?A13 rel:?C13 scopeL:?I12 subjectI:?G12 subjectL:?H12 vbI:?D13) auxiliary
+n0 [cat:"np"]![case:?A11 cat:"np" compar:?B11 num:?C11 pers:?D11 pron:?E11 rel-clause:"+"]{
+ n1 type:foot [case:?A11 cat:"np" compar:?B11 num:?C11 pers:?D11 pron:?E11]![case:?G11/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J11 num:?K11 pass:?L11 tense:?M11 wh:"-"]{
+  n3 aconstr:noadj [case:?P11 cat:"np" num:?K11 pers:?Q11 trace:?R11 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J11/"ind"|"inf" nocomp-mode:?E12/"ind"|"inf" pass:?L11 tense:?M11]![assign-case:"nom" assign-comp:?T11 cat:"s" comp:"nil" control:?U11 extracted:"-" inv:"-" mainv:?V11 mode:?W11 num:?X11 pass:?Y11 perf:?Z11 pers:?A12 progress:?B12 tense:?C12 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?U11 dep:"subj" idx:?G12 label:?H12 num:?X11 pers:?A12 scopeL:?I12 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?T11/"for"|"that"|"ind_nil" cat:"vp" mainv:?V11 mode:?W11 num:?X11 pass:?Y11 perf:?Z11 pers:?A12 progress:?B12 tense:?C12]![assign-case:?K12 assign-comp:?L12 cat:"vp" compar:"-" mainv:?M12 mode:?N12 num:?O12 pass:?P12 pers:?Q12 tense:?R12]{
+    V_a [assign-case:?K12 assign-comp:?L12 cat:"v" mainv:?M12 mode:?N12 num:?O12 pass:?P12 pers:?Q12 punct-struct:"nil" tense:?R12]![cat:"v"]
+    n8 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?V12]{
+     n9 [assign-case:"acc" cat:"prep"]![cat:"prep"]{
+      n10 type:anchor [cat:"n"]![cat:"n"]
+      P2 [cat:"prep"]![cat:"prep"]
+     }
+     n12 type:subst [case:"acc" cat:"np" dep:"pmod" idx:?Z12 label:?A13 scopeL:?I12 wh:?V12]![cat:"np"]
+    }
+   }
+  }
+ }
+}
+semantics:[?E13:?C13(?D13 ?G12 ?Z12)]
+trace:[ArgumentNodeSemantics CanComplement CanSubject Dian0NPn1 ExtractedArgument MovementAgreement PPAnchorArgument PPAnchorArgumentN PPAnchorArgumentNCan PPAnchorArgumentNPSem PPAnchorArgumentNParg2Linking PPAnchorArgumentXP PPAnchorTop PrepCaseAssigner RelativeAdjunct RelativeAdjunctCovert RelativeClause RelativeCovertExtractedWH Reln0NPn1 Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n0NPn1 verbless]
+
+% ------------------------- Tbetanx1CONJnx2-10
+betanx1CONJnx2:Tbetanx1CONJnx2-10 ( ! arg0:?V13 arg1:?N13 arg2:?R13 argI:?R13 argL:?S13 footI:?N13 footL:?O13 label:?W13 rel:?U13) auxiliary
+NP_r [cat:"np"]![card:?A13 case:?B13 cat:"np" compar:?C13 conj:?D13 const:?E13 decreas:?F13 definite:?G13 equiv:?H13 gen:?I13 quan:?J13 wh:?K13]{
+ NP_f type:foot [card:?A13 case:?B13 cat:"np" const:?E13 decreas:?F13 definite:?G13 gen:?I13 idx:?N13 label:?O13 quan:?J13 wh:?K13]![cat:"np" dep:"coord"]
+ Conj_a type:anchor [cat:"cj" conj:?D13]![cat:"cj"]
+ NP_s type:subst [case:?B13 cat:"np" compar:?C13 dep:"conj" equiv:?H13 idx:?R13 label:?S13 wh:?K13]![cat:"np"]
+}
+semantics:[?W13:?U13(?V13 ?N13 ?R13)]
+trace:[CJ-fs-wh CJ-rfN-const-gen-definite-quan-card-decreas CJ-rfN-wh-case CJ-rs-case CJ-rs-compar CJ-rs-equiv CJ-rx0-conj CON CON1 TopLevelClass argArg2Linking argSem betanx1CONJnx2 binaryRel footArg1Linking footSem]
+
+% ------------------------- Tn0VPn1-25
+n0VPn1:Tn0VPn1-25 ( ! arg0:?I14 arg1:?L13 arg2:?E14 label:?J14 ppiobjectanchorI:?E14 ppiobjectanchorL:?F14 rel:?H14 scopeL:?N13 subjectI:?L13 subjectL:?M13 vbI:?I14) initial
+n0 [cat:"s"]![assign-case:"nom" assign-comp:?A13 cat:"s" comp:"nil" control:?B13 extracted:"-" inv:"-" mainv:?C13 mode:?D13 num:?E13 pass:?F13 perf:?G13 pers:?H13 progress:?I13 tense:?J13 wh:"-"]{
+ NP_subj type:subst [case:"nom" cat:"np" control:?B13 dep:"subj" idx:?L13 label:?M13 num:?E13 pers:?H13 scopeL:?N13 wh:"-"]![cat:"np"]
+ n2 [assign-case:"nom" assign-comp:?A13 cat:"vp" mainv:?C13 mode:?D13 num:?E13 pass:?F13 perf:?G13 pers:?H13 progress:?I13 tense:?J13]![assign-case:?P13 assign-comp:?Q13 cat:"vp" compar:"-" mainv:?R13 mode:?S13 num:?T13 pass:"-" pers:?U13 tense:?V13]{
+  V_a type:anchor [assign-case:?P13 assign-comp:?Q13 cat:"v" mainv:?R13 mode:?S13 num:?T13 pass:"-" pers:?U13 punct-struct:"nil" tense:?V13]![cat:"v"]
+  n4 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+   n5 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+   n6 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:?B14]{
+    P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+    n8 type:subst [case:"acc" cat:"np" idx:?E14 label:?F14 scopeL:?N13 wh:?B14]![cat:"np"]
+   }
+  }
+ }
+}
+semantics:[?J14:?H14(?I14 ?L13 ?E14)]
+trace:[ArgumentNodeSemantics CanComplement CanPPCoanchor CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 PPIObjectAnchor PPIObjectAnchorArg2Linking PPIObjectAnchorSem PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-26
+n0VPn1:Tn0VPn1-26 ( ! arg0:?R15 arg1:?Z14 arg2:?S15 label:?T15 ppiobjectanchorI:?S15 rel:?Q15 scopeL:?B15 subjectI:?Z14 subjectL:?A15 vbI:?R15) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A14 num:?B14 pass:?C14 tense:?D14 wh:"+"]{
+ n1 [case:?H14 cat:"pp" num:?B14 pers:?I14 trace:?J14 wh:"+"]![assign-case:"acc" cat:"pp" wh:?F14]{
+  P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+  n3 type:subst [case:"acc" cat:"np" wh:?F14]![cat:"np"]
+ }
+ n4 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A14 pass:?C14 tense:?D14]![assign-case:"nom" assign-comp:?N14 cat:"s" comp:"nil" control:?O14 extracted:"-" inv:"-" mainv:?P14 mode:?Q14 num:?R14 pass:?S14 perf:?T14 pers:?U14 progress:?V14 tense:?W14 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?O14 dep:"subj" idx:?Z14 label:?A15 num:?R14 pers:?U14 scopeL:?B15 wh:"-"]![cat:"np"]
+  n6 [assign-case:"nom" assign-comp:?N14 cat:"vp" mainv:?P14 mode:?Q14 num:?R14 pass:?S14 perf:?T14 pers:?U14 progress:?V14 tense:?W14]![assign-case:?D15 assign-comp:?E15 cat:"vp" compar:"-" mainv:?F15 mode:?G15 num:?H15 pass:"-" pers:?I15 tense:?J15]{
+   V_a type:anchor [assign-case:?D15 assign-comp:?E15 cat:"v" mainv:?F15 mode:?G15 num:?H15 pass:"-" pers:?I15 punct-struct:"nil" tense:?J15]![cat:"v"]
+   n8 [cat:"vp"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-" mode:"base"]{
+    n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+    n10 aconstr:noadj [case:?H14 cat:"pp" num:?B14 pers:?I14 trace:?J14 wh:"+"]![cat:"pp" phon:"e"]
+   }
+  }
+ }
+}
+semantics:[?T15:?Q15(?R15 ?Z14 ?S15)]
+trace:[ArgumentNodeSemantics CanSubject Dian0VPn1 ExtractedArgument Inversion MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop WhComplementTop WhExtraction WhPPCoanchor WhPPIObjectVPE WhPPTopVPE active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-27
+n0VPn1:Tn0VPn1-27 ( ! arg0:?O16 arg1:?U15 arg2:?P16 label:?Q16 ppiobjectanchorI:?P16 rel:?N16 scopeL:?W15 subjectI:?U15 subjectL:?V15 vbI:?O16) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A15 num:?B15 pass:?C15 tense:?D15 wh:"+"]{
+ n1 type:subst [case:"acc" cat:"np" num:?B15 pers:?F15 trace:?G15 wh:"+"]![cat:"np"]
+ n2 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A15 pass:?C15 tense:?D15]![assign-case:"nom" assign-comp:?I15 cat:"s" comp:"nil" control:?J15 extracted:"-" inv:"-" mainv:?K15 mode:?L15 num:?M15 pass:?N15 perf:?O15 pers:?P15 progress:?Q15 tense:?R15 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?J15 dep:"subj" idx:?U15 label:?V15 num:?M15 pers:?P15 scopeL:?W15 wh:"-"]![cat:"np"]
+  n4 [assign-case:"nom" assign-comp:?I15 cat:"vp" mainv:?K15 mode:?L15 num:?M15 pass:?N15 perf:?O15 pers:?P15 progress:?Q15 tense:?R15]![assign-case:?Y15 assign-comp:?Z15 cat:"vp" compar:"-" mainv:?A16 mode:?B16 num:?C16 pass:"-" pers:?D16 tense:?E16]{
+   V_a type:anchor [assign-case:?Y15 assign-comp:?Z15 cat:"v" mainv:?A16 mode:?B16 num:?C16 pass:"-" pers:?D16 punct-struct:"nil" tense:?E16]![cat:"v"]
+   n6 [cat:"vp"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-" mode:"base"]{
+    n7 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+    n8 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+     P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+     n10 aconstr:noadj [case:"acc" cat:"np" num:?B15 pers:?F15 trace:?G15 wh:"+"]![cat:"np" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[?Q16:?N16(?O16 ?U15 ?P16)]
+trace:[ArgumentNodeSemantics CanSubject Dian0VPn1 ExtractedArgument Inversion MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop WhComplementTop WhExtraction WhPObjectCoanchor WhPObjectVPE active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-28
+n0VPn1:Tn0VPn1-28 ( ! arg0:?V17 arg1:?C17 arg2:?W17 label:?X17 ppiobjectanchorI:?W17 rel:?U17 scopeL:?E17 subjectI:?C17 subjectL:?D17 vbI:?V17) auxiliary
+n0 [cat:"np"]![case:?A16 cat:"np" compar:?B16 num:?C16 pers:?D16 pron:?E16 rel-clause:"+"]{
+ n1 type:foot [case:?A16 cat:"np" compar:?B16 num:?C16 pers:?D16 pron:?E16]![case:?G16/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J16 pass:?K16 tense:?L16 wh:"+"]{
+  n3 type:subst [case:"acc" cat:"np" num:?J16 pers:?N16 rmode:"ind" trace:?O16 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K16 tense:?L16]![assign-case:"nom" assign-comp:?Q16 cat:"s" comp:"nil" control:?R16 extracted:"-" inv:"-" mainv:?S16 mode:?T16 num:?U16 pass:?V16 perf:?W16 pers:?X16 progress:?Y16 tense:?Z16 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?R16 dep:"subj" idx:?C17 label:?D17 num:?U16 pers:?X16 scopeL:?E17 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?Q16 cat:"vp" mainv:?S16 mode:?T16 num:?U16 pass:?V16 perf:?W16 pers:?X16 progress:?Y16 tense:?Z16]![assign-case:?G17 assign-comp:?H17 cat:"vp" compar:"-" mainv:?I17 mode:?J17 num:?K17 pass:"-" pers:?L17 tense:?M17]{
+    V_a type:anchor [assign-case:?G17 assign-comp:?H17 cat:"v" mainv:?I17 mode:?J17 num:?K17 pass:"-" pers:?L17 punct-struct:"nil" tense:?M17]![cat:"v"]
+    n8 [cat:"vp"]![cat:"vp"]{
+     n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n10 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+      P2 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n12 [case:"acc" cat:"np" num:?J16 pers:?N16 trace:?O16 wh:"+"]![cat:"np" phon:"e"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?X17:?U17(?V17 ?C17 ?W17)]
+trace:[ArgumentNodeSemantics CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertPPAnchor RelativeOvertPPObject-VPE Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-29
+n0VPn1:Tn0VPn1-29 ( ! arg0:?Y18 arg1:?E18 arg2:?Z18 label:?A19 ppiobjectanchorI:?Z18 rel:?X18 scopeL:?G18 subjectI:?E18 subjectL:?F18 vbI:?Y18) auxiliary
+n0 [cat:"np"]![case:?A17 cat:"np" compar:?B17 num:?C17 pers:?D17 pron:?E17 rel-clause:"+"]{
+ n1 type:foot [case:?A17 cat:"np" compar:?B17 num:?C17 pers:?D17 pron:?E17]![case:?G17/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J17 num:?K17 pass:?L17 tense:?M17 wh:"-"]{
+  n3 aconstr:noadj [case:"acc" cat:"np" num:?K17 pers:?P17 trace:?Q17 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J17/"ind"|"inf"|"ger" pass:?L17 tense:?M17]![assign-case:"nom" assign-comp:?S17 cat:"s" comp:"nil" control:?T17 extracted:"-" inv:"-" mainv:?U17 mode:?V17 num:?W17 pass:?X17 perf:?Y17 pers:?Z17 progress:?A18 tense:?B18 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?T17 dep:"subj" idx:?E18 label:?F18 num:?W17 pers:?Z17 scopeL:?G18 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?S17/"for"|"that"|"ecm"|"inf_nil"|"ind_nil" cat:"vp" mainv:?U17 mode:?V17 num:?W17 pass:?X17 perf:?Y17 pers:?Z17 progress:?A18 tense:?B18]![assign-case:?I18 assign-comp:?J18 cat:"vp" compar:"-" mainv:?K18 mode:?L18 num:?M18 pass:"-" pers:?N18 tense:?O18]{
+    V_a type:anchor [assign-case:?I18 assign-comp:?J18 cat:"v" mainv:?K18 mode:?L18 num:?M18 pass:"-" pers:?N18 punct-struct:"nil" tense:?O18]![cat:"v"]
+    n8 [cat:"vp"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n10 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"-"]{
+      P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n12 [case:"acc" cat:"np" num:?K17 pers:?P17 trace:?Q17 wh:"-"]![cat:"np" phon:"e"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?A19:?X18(?Y18 ?E18 ?Z18)]
+trace:[ArgumentNodeSemantics CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner RelativeClause RelativeCovertExtractedWH RelativeCovertPPAnchor RelativeCovertPPObject-VPE Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-30
+n0VPn1:Tn0VPn1-30 ( ! arg0:?Z20 arg1:?H20 arg2:?A21 label:?B21 ppiobjectanchorI:?A21 rel:?Y20 scopeL:?J20 subjectI:?H20 subjectL:?I20 vbI:?Z20) auxiliary
+n0 [cat:"np"]![case:?A19 cat:"np" compar:?B19 num:?C19 pers:?D19 pron:?E19 rel-clause:"+"]{
+ n1 type:foot [case:?A19 cat:"np" compar:?B19 num:?C19 pers:?D19 pron:?E19]![case:?G19/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J19 pass:?K19 tense:?L19 wh:"+"]{
+  n3 [case:?P19 cat:"pp" num:?J19 pers:?Q19 rmode:"ind" trace:?R19 wh:"+"]![assign-case:"acc" cat:"pp" wh:?N19]{
+   P2 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+   n5 type:subst [case:"acc" cat:"np" wh:?N19]![cat:"np"]
+  }
+  n6 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K19 tense:?L19]![assign-case:"nom" assign-comp:?V19 cat:"s" comp:"nil" control:?W19 extracted:"-" inv:"-" mainv:?X19 mode:?Y19 num:?Z19 pass:?A20 perf:?B20 pers:?C20 progress:?D20 tense:?E20 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?W19 dep:"subj" idx:?H20 label:?I20 num:?Z19 pers:?C20 scopeL:?J20 wh:"-"]![cat:"np"]
+   n8 [assign-case:"nom" assign-comp:?V19 cat:"vp" mainv:?X19 mode:?Y19 num:?Z19 pass:?A20 perf:?B20 pers:?C20 progress:?D20 tense:?E20]![assign-case:?L20 assign-comp:?M20 cat:"vp" compar:"-" mainv:?N20 mode:?O20 num:?P20 pass:"-" pers:?Q20 tense:?R20]{
+    V_a type:anchor [assign-case:?L20 assign-comp:?M20 cat:"v" mainv:?N20 mode:?O20 num:?P20 pass:"-" pers:?Q20 punct-struct:"nil" tense:?R20]![cat:"v"]
+    n10 [cat:"vp"]![cat:"vp"]{
+     n11 aconstr:noadj [cat:"v"]![cat:"v" phon:"e"]
+     n12 [case:?P19 cat:"pp" num:?J19 pers:?Q19 trace:?R19 wh:"+"]![cat:"pp" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[?B21:?Y20(?Z20 ?H20 ?A21)]
+trace:[ArgumentNodeSemantics CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativePPAnchor RelativePPIObject-VPE RelativePied-Piping Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-31
+n0VPn1:Tn0VPn1-31 ( ! arg0:?V22 arg1:?I21 arg2:?R22 label:?W22 ppiobjectanchorI:?R22 ppiobjectanchorL:?S22 rel:?U22 scopeL:?K21 subjectI:?I21 subjectL:?J21 vbI:?V22) auxiliary
+n0 [cat:"np"]![case:?A21 cat:"np" compar:?B21 num:?C21 pers:?D21 pron:?E21 rel-clause:"+"]{
+ n1 type:foot [case:?A21 cat:"np" compar:?B21 idx:?I21 label:?J21 num:?C21 pers:?D21 pron:?E21 scopeL:?K21]![case:?G21/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?M21 pass:?N21 tense:?O21 wh:"+"]{
+  NP1 [case:?Q21 cat:"np" num:?M21 pers:?R21 rmode:"ind" trace:?S21 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?N21 tense:?O21]![assign-case:?Q21 assign-comp:?U21 cat:"s" comp:"nil" extracted:"-" inv:"-" mode:?V21 num:?M21 pass:?W21 pers:?R21 tense:?X21 wh:"+"]{
+   n5 [case:?Q21 cat:"np" dep:"subj" num:?M21 pers:?R21 trace:?S21 wh:"+"]![cat:"np" phon:"e" rel-clause:"-"]
+   n6 [assign-case:?Q21 assign-comp:?U21 cat:"vp" mode:?V21 num:?M21 pass:?W21 pers:?R21 tense:?X21]![assign-case:?C22 assign-comp:?D22 cat:"vp" compar:"-" mainv:?E22 mode:?F22 num:?G22 pass:"-" pers:?H22 tense:?I22]{
+    V_a type:anchor [assign-case:?C22 assign-comp:?D22 cat:"v" mainv:?E22 mode:?F22 num:?G22 pass:"-" pers:?H22 punct-struct:"nil" tense:?I22]![cat:"v"]
+    n8 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n10 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:?O22]{
+      P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n12 type:subst [case:"acc" cat:"np" idx:?R22 label:?S22 scopeL:?K21 wh:?O22]![cat:"np"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?W22:?U22(?V22 ?I21 ?R22)]
+trace:[ArgumentNodeSemantics CanComplement CanPPCoanchor CanPPCoanchorExhaustive CanPPIObject-VPE Dian0VPn1 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PPIObjectAnchorSem PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertSubject Subject SubjectAgreement SubjectArg1Linking SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-32
+n0VPn1:Tn0VPn1-32 ( ! scopeL:?N22 subjectI:?L22 subjectL:?M22) initial
+n0 [cat:"s"]![assign-case:"nom" assign-comp:?A22 cat:"s" comp:"nil" control:?B22 extracted:"-" inv:"-" mainv:?C22 mode:?D22 num:?E22 pass:?F22 perf:?G22 pers:?H22 progress:?I22 tense:?J22 wh:"-"]{
+ NP_subj type:subst [case:"nom" cat:"np" control:?B22 dep:"subj" idx:?L22 label:?M22 num:?E22 pers:?H22 scopeL:?N22 wh:"-"]![cat:"np"]
+ n2 [assign-case:"nom" assign-comp:?A22 cat:"vp" mainv:?C22 mode:?D22 num:?E22 pass:?F22 perf:?G22 pers:?H22 progress:?I22 tense:?J22]![assign-case:?P22 assign-comp:?Q22 cat:"vp" compar:"-" mainv:?R22 mode:?S22 num:?T22 pass:?U22 pers:?V22 tense:?W22]{
+  n3 aconstr:noadj [assign-case:?P22 assign-comp:?Q22 cat:"v" mainv:?R22 mode:?S22 num:?T22 pass:?U22 pers:?V22 punct-struct:"nil" tense:?W22]![cat:"v" mode:"ind" pass:"+"]{
+   V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+   n5 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+  }
+  n6 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+   n7 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+   n8 [cat:"pp"]![cat:"pp"]{
+    P1 [cat:"prep"]![cat:"prep"]
+   }
+  }
+  n10 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?F23]{
+   n11 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+   n12 type:subst [case:"acc" cat:"np" wh:?F23]![cat:"np"]
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanPPTop CanSubject Dian0VPn1 PrepCaseAssigner Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-33
+n0VPn1:Tn0VPn1-33 ( ! scopeL:?B24 subjectI:?Z23 subjectL:?A24) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A23 num:?B23 pass:?C23 tense:?D23 wh:"+"]{
+ n1 [case:?H23 cat:"pp" num:?B23 pers:?I23 trace:?J23 wh:"+"]![assign-case:"acc" cat:"pp" wh:?F23]{
+  n2 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+  n3 type:subst [case:"acc" cat:"np" wh:?F23]![cat:"np"]
+ }
+ n4 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A23 pass:?C23 tense:?D23]![assign-case:"nom" assign-comp:?N23 cat:"s" comp:"nil" control:?O23 extracted:"-" inv:"-" mainv:?P23 mode:?Q23 num:?R23 pass:?S23 perf:?T23 pers:?U23 progress:?V23 tense:?W23 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?O23 dep:"subj" idx:?Z23 label:?A24 num:?R23 pers:?U23 scopeL:?B24 wh:"-"]![cat:"np"]
+  n6 [assign-case:"nom" assign-comp:?N23 cat:"vp" mainv:?P23 mode:?Q23 num:?R23 pass:?S23 perf:?T23 pers:?U23 progress:?V23 tense:?W23]![assign-case:?D24 assign-comp:?E24 cat:"vp" compar:"-" mainv:?F24 mode:?G24 num:?H24 pass:?I24 pers:?J24 tense:?K24]{
+   n7 aconstr:noadj [assign-case:?D24 assign-comp:?E24 cat:"v" mainv:?F24 mode:?G24 num:?H24 pass:?I24 pers:?J24 punct-struct:"nil" tense:?K24]![cat:"v" mode:"ind" pass:"+"]{
+    V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+    n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+   }
+   n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+    n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+    n12 [cat:"pp"]![cat:"pp"]{
+     P1 [cat:"prep"]![cat:"prep"]
+    }
+   }
+   n14 aconstr:noadj [case:?H23 cat:"pp" num:?B23 pers:?I23 trace:?J23 wh:"+"]![cat:"pp" phon:"e"]
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument Inversion MovementAgreement PrepCaseAssigner Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop WhByAgent WhComplementTop WhExtraction WhPPIObject WhPPTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-34
+n0VPn1:Tn0VPn1-34 ( ! scopeL:?W24 subjectI:?U24 subjectL:?V24) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A24 num:?B24 pass:?C24 tense:?D24 wh:"+"]{
+ n1 type:subst [case:"acc" cat:"np" dep:"obj" num:?B24 pers:?F24 trace:?G24 wh:"+"]![cat:"np"]
+ n2 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A24 pass:?C24 tense:?D24]![assign-case:"nom" assign-comp:?I24 cat:"s" comp:"nil" control:?J24 extracted:"-" inv:"-" mainv:?K24 mode:?L24 num:?M24 pass:?N24 perf:?O24 pers:?P24 progress:?Q24 tense:?R24 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?J24 dep:"subj" idx:?U24 label:?V24 num:?M24 pers:?P24 scopeL:?W24 wh:"-"]![cat:"np"]
+  n4 [assign-case:"nom" assign-comp:?I24 cat:"vp" mainv:?K24 mode:?L24 num:?M24 pass:?N24 perf:?O24 pers:?P24 progress:?Q24 tense:?R24]![assign-case:?Y24 assign-comp:?Z24 cat:"vp" compar:"-" mainv:?A25 mode:?B25 num:?C25 pass:?D25 pers:?E25 tense:?F25]{
+   n5 aconstr:noadj [assign-case:?Y24 assign-comp:?Z24 cat:"v" mainv:?A25 mode:?B25 num:?C25 pass:?D25 pers:?E25 punct-struct:"nil" tense:?F25]![cat:"v" mode:"ind" pass:"+"]{
+    V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+    n7 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+   }
+   n8 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+    n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+    n10 [cat:"pp"]![cat:"pp"]{
+     P1 [cat:"prep"]![cat:"prep"]
+    }
+   }
+   n12 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+    n13 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+    n14 aconstr:noadj [case:"acc" cat:"np" num:?B24 pers:?F24 trace:?G24 wh:"+"]![cat:"np" phon:"e"]
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument Inversion MovementAgreement PrepCaseAssigner Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop WhAgentBy WhComplementTop WhExtraction WhPObject dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-35
+n0VPn1:Tn0VPn1-35 ( ! scopeL:?D26 subjectI:?B26 subjectL:?C26) auxiliary
+n0 [cat:"np"]![case:?A25 cat:"np" compar:?B25 num:?C25 pers:?D25 pron:?E25 rel-clause:"+"]{
+ n1 type:foot [case:?A25 cat:"np" compar:?B25 num:?C25 pers:?D25 pron:?E25]![case:?G25/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J25 pass:?K25 tense:?L25 wh:"+"]{
+  n3 type:subst [case:"acc" cat:"np" num:?J25 pers:?N25 rmode:"ind" trace:?O25 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K25 tense:?L25]![assign-case:"nom" assign-comp:?Q25 cat:"s" comp:"nil" control:?R25 extracted:"-" inv:"-" mainv:?S25 mode:"ind" num:?T25 pass:?U25 perf:?V25 pers:?W25 progress:?X25 tense:?Y25 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?R25 dep:"subj" idx:?B26 label:?C26 num:?T25 pers:?W25 scopeL:?D26 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?Q25 cat:"vp" mainv:?S25 mode:"ind" num:?T25 pass:?U25 perf:?V25 pers:?W25 progress:?X25 tense:?Y25]![assign-case:?F26 assign-comp:?G26 cat:"vp" compar:"-" mainv:?H26 mode:?I26 num:?J26 pass:?K26 pers:?L26 tense:?M26]{
+    n7 aconstr:noadj [assign-case:?F26 assign-comp:?G26 cat:"v" mainv:?H26 mode:?I26 num:?J26 pass:?K26 pers:?L26 punct-struct:"nil" tense:?M26]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![cat:"pp"]{
+      P1 [cat:"prep"]![cat:"prep"]
+     }
+    }
+    n14 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+     n15 type:lex "by" [cat:"by"]![cat:"by"]
+     n16 [case:"acc" cat:"np" num:?J25 pers:?N25 trace:?O25 wh:"+"]![cat:"np" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PrepCaseAssigner RelativeClause RelativeOvertByAgent RelativeOvertExtractedWH RelativeOvertPPTop Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-36
+n0VPn1:Tn0VPn1-36 ( ! scopeL:?F27 subjectI:?D27 subjectL:?E27) auxiliary
+n0 [cat:"np"]![case:?A26 cat:"np" compar:?B26 num:?C26 pers:?D26 pron:?E26 rel-clause:"+"]{
+ n1 type:foot [case:?A26 cat:"np" compar:?B26 num:?C26 pers:?D26 pron:?E26]![case:?G26/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J26 num:?K26 pass:?L26 tense:?M26 wh:"-"]{
+  n3 aconstr:noadj [case:"acc" cat:"np" num:?K26 pers:?P26 trace:?Q26 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J26/"ind"|"inf"|"ger" pass:?L26 tense:?M26]![assign-case:"nom" assign-comp:?S26 cat:"s" comp:"nil" control:?T26 extracted:"-" inv:"-" mainv:?U26 mode:"ind" num:?V26 pass:?W26 perf:?X26 pers:?Y26 progress:?Z26 tense:?A27 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?T26 dep:"subj" idx:?D27 label:?E27 num:?V26 pers:?Y26 scopeL:?F27 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?S26/"for"|"that"|"ecm"|"inf_nil"|"ind_nil" cat:"vp" mainv:?U26 mode:"ind" num:?V26 pass:?W26 perf:?X26 pers:?Y26 progress:?Z26 tense:?A27]![assign-case:?H27 assign-comp:?I27 cat:"vp" compar:"-" mainv:?J27 mode:?K27 num:?L27 pass:?M27 pers:?N27 tense:?O27]{
+    n7 aconstr:noadj [assign-case:?H27 assign-comp:?I27 cat:"v" mainv:?J27 mode:?K27 num:?L27 pass:?M27 pers:?N27 punct-struct:"nil" tense:?O27]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![cat:"pp"]{
+      P1 [cat:"prep"]![cat:"prep"]
+     }
+    }
+    n14 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"-"]{
+     n15 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+     n16 [case:"acc" cat:"np" num:?K26 pers:?P26 trace:?Q26 wh:"-"]![cat:"np" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PrepCaseAssigner RelativeClause RelativeCovertByAgent RelativeCovertExtractedWH RelativeCovertPPTop Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-37
+n0VPn1:Tn0VPn1-37 ( ! scopeL:?J29 subjectI:?H29 subjectL:?I29) auxiliary
+n0 [cat:"np"]![case:?A28 cat:"np" compar:?B28 num:?C28 pers:?D28 pron:?E28 rel-clause:"+"]{
+ n1 type:foot [case:?A28 cat:"np" compar:?B28 num:?C28 pers:?D28 pron:?E28]![case:?G28/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J28 pass:?K28 tense:?L28 wh:"+"]{
+  n3 [case:?P28 cat:"pp" num:?J28 pers:?Q28 rmode:"ind" trace:?R28 wh:"+"]![assign-case:"acc" cat:"pp" wh:?N28]{
+   n4 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+   n5 type:subst [case:"acc" cat:"np" wh:?N28]![cat:"np"]
+  }
+  n6 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K28 tense:?L28]![assign-case:"nom" assign-comp:?V28 cat:"s" comp:"nil" control:?W28 extracted:"-" inv:"-" mainv:?X28 mode:?Y28 num:?Z28 pass:?A29 perf:?B29 pers:?C29 progress:?D29 tense:?E29 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?W28 dep:"subj" idx:?H29 label:?I29 num:?Z28 pers:?C29 scopeL:?J29 wh:"-"]![cat:"np"]
+   n8 [assign-case:"nom" assign-comp:?V28 cat:"vp" mainv:?X28 mode:?Y28 num:?Z28 pass:?A29 perf:?B29 pers:?C29 progress:?D29 tense:?E29]![assign-case:?L29 assign-comp:?M29 cat:"vp" compar:"-" mainv:?N29 mode:?O29 num:?P29 pass:?Q29 pers:?R29 tense:?S29]{
+    n9 aconstr:noadj [assign-case:?L29 assign-comp:?M29 cat:"v" mainv:?N29 mode:?O29 num:?P29 pass:?Q29 pers:?R29 punct-struct:"nil" tense:?S29]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n11 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n12 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n13 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n14 [cat:"pp"]![cat:"pp"]{
+      P1 [cat:"prep"]![cat:"prep"]
+     }
+    }
+    n16 [case:?P28 cat:"pp" num:?J28 pers:?Q28 trace:?R28 wh:"+"]![cat:"pp" phon:"e"]
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PrepCaseAssigner RelativeByAgent RelativeClause RelativeOvertExtractedWH RelativePPObjectTop RelativePied-Piping Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-38
+n0VPn1:Tn0VPn1-38 ( ! scopeL:?K30 subjectI:?I30 subjectL:?J30) auxiliary
+n0 [cat:"np"]![case:?A30 cat:"np" compar:?B30 num:?C30 pers:?D30 pron:?E30 rel-clause:"+"]{
+ n1 type:foot [case:?A30 cat:"np" compar:?B30 idx:?I30 label:?J30 num:?C30 pers:?D30 pron:?E30 scopeL:?K30]![case:?G30/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?M30 pass:?N30 tense:?O30 wh:"+"]{
+  NP1 [case:?Q30 cat:"np" num:?M30 pers:?R30 rmode:"ind" trace:?S30 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?N30 tense:?O30]![assign-case:?Q30 assign-comp:?U30 cat:"s" comp:"nil" extracted:"-" inv:"-" mode:?V30 num:?M30 pass:?W30 pers:?R30 tense:?X30 wh:"+"]{
+   n5 [case:?Q30 cat:"np" dep:"subj" num:?M30 pers:?R30 trace:?S30 wh:"+"]![cat:"np" phon:"e" rel-clause:"-"]
+   n6 [assign-case:?Q30 assign-comp:?U30 cat:"vp" mode:?V30 num:?M30 pass:?W30 pers:?R30 tense:?X30]![assign-case:?C31 assign-comp:?D31 cat:"vp" compar:"-" mainv:?E31 mode:?F31 num:?G31 pass:?H31 pers:?I31 tense:?J31]{
+    n7 aconstr:noadj [assign-case:?C31 assign-comp:?D31 cat:"v" mainv:?E31 mode:?F31 num:?G31 pass:?H31 pers:?I31 punct-struct:"nil" tense:?J31]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![cat:"pp"]{
+      P1 [cat:"prep"]![cat:"prep"]
+     }
+    }
+    n14 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?S31]{
+     n15 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+     n16 type:subst [case:"acc" cat:"np" wh:?S31]![cat:"np"]
+    }
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanPPTop Dian0VPn1 ExtractedArgument MovementAgreement PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertSubject Subject SubjectAgreement SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-39
+n0VPn1:Tn0VPn1-39 ( ! arg0:?A33 arg1:?D32 arg2:?W32 label:?B33 ppiobjectanchorI:?W32 ppiobjectanchorL:?X32 rel:?Z32 scopeL:?F32 subjectI:?D32 subjectL:?E32 vbI:?A33) auxiliary
+n0 [cat:"np"]![case:?A31 cat:"np" compar:?B31 num:?C31 pers:?D31 pron:?E31 rel-clause:"+"]{
+ n1 type:foot [case:?A31 cat:"np" compar:?B31 num:?C31 pers:?D31 pron:?E31]![case:?G31/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J31 pass:?K31 tense:?L31 wh:"+"]{
+  n3 type:subst [case:?N31 cat:"pp" num:?J31 pers:?O31 rmode:"ind" trace:?P31 wh:"+"]![cat:"pp"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K31 tense:?L31]![assign-case:"nom" assign-comp:?R31 cat:"s" comp:"nil" control:?S31 extracted:"-" inv:"-" mainv:?T31 mode:?U31 num:?V31 pass:?W31 perf:?X31 pers:?Y31 progress:?Z31 tense:?A32 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?S31 dep:"subj" idx:?D32 label:?E32 num:?V31 pers:?Y31 scopeL:?F32 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?R31 cat:"vp" mainv:?T31 mode:?U31 num:?V31 pass:?W31 perf:?X31 pers:?Y31 progress:?Z31 tense:?A32]![assign-case:?H32 assign-comp:?I32 cat:"vp" compar:"-" mainv:?J32 mode:?K32 num:?L32 pass:"-" pers:?M32 tense:?N32]{
+    V_a type:anchor [assign-case:?H32 assign-comp:?I32 cat:"v" mainv:?J32 mode:?K32 num:?L32 pass:"-" pers:?M32 punct-struct:"nil" tense:?N32]![cat:"v"]
+    n8 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n10 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:?T32]{
+      P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n12 type:subst [case:"acc" cat:"np" idx:?W32 label:?X32 scopeL:?F32 wh:?T32]![cat:"np"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?B33:?Z32(?A33 ?D32 ?W32)]
+trace:[ArgumentNodeSemantics CanComplement CanPPCoanchor CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PPIObjectAnchorSem PrepCaseAssigner RelativeAdjunct RelativeAdjunctPied-Piping RelativeClause RelativeOvertExtractedWH Reln0VPn1 Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-40
+n0VPn1:Tn0VPn1-40 ( ! arg0:?D35 arg1:?G34 arg2:?Z34 label:?E35 ppiobjectanchorI:?Z34 ppiobjectanchorL:?A35 rel:?C35 scopeL:?I34 subjectI:?G34 subjectL:?H34 vbI:?D35) auxiliary
+n0 [cat:"np"]![case:?A33 cat:"np" compar:?B33 num:?C33 pers:?D33 pron:?E33 rel-clause:"+"]{
+ n1 type:foot [case:?A33 cat:"np" compar:?B33 num:?C33 pers:?D33 pron:?E33]![case:?G33/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J33 num:?K33 pass:?L33 tense:?M33 wh:"-"]{
+  n3 aconstr:noadj [case:?P33 cat:"np" num:?K33 pers:?Q33 trace:?R33 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J33/"ind"|"inf" nocomp-mode:?E34/"ind"|"inf" pass:?L33 tense:?M33]![assign-case:"nom" assign-comp:?T33 cat:"s" comp:"nil" control:?U33 extracted:"-" inv:"-" mainv:?V33 mode:?W33 num:?X33 pass:?Y33 perf:?Z33 pers:?A34 progress:?B34 tense:?C34 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?U33 dep:"subj" idx:?G34 label:?H34 num:?X33 pers:?A34 scopeL:?I34 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?T33/"for"|"that"|"ind_nil" cat:"vp" mainv:?V33 mode:?W33 num:?X33 pass:?Y33 perf:?Z33 pers:?A34 progress:?B34 tense:?C34]![assign-case:?K34 assign-comp:?L34 cat:"vp" compar:"-" mainv:?M34 mode:?N34 num:?O34 pass:"-" pers:?P34 tense:?Q34]{
+    V_a type:anchor [assign-case:?K34 assign-comp:?L34 cat:"v" mainv:?M34 mode:?N34 num:?O34 pass:"-" pers:?P34 punct-struct:"nil" tense:?Q34]![cat:"v"]
+    n8 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n10 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:?W34]{
+      P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n12 type:subst [case:"acc" cat:"np" idx:?Z34 label:?A35 scopeL:?I34 wh:?W34]![cat:"np"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?E35:?C35(?D35 ?G34 ?Z34)]
+trace:[ArgumentNodeSemantics CanComplement CanPPCoanchor CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PPIObjectAnchorSem PrepCaseAssigner RelativeAdjunct RelativeAdjunctCovert RelativeClause RelativeCovertExtractedWH Reln0VPn1 Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop active binaryRel dian0VPn1active n0VPn1]
+
+% ------------------------- Tn0VPn1-41
+n0VPn1:Tn0VPn1-41 ( ! scopeL:?F36 subjectI:?D36 subjectL:?E36) auxiliary
+n0 [cat:"np"]![case:?A35 cat:"np" compar:?B35 num:?C35 pers:?D35 pron:?E35 rel-clause:"+"]{
+ n1 type:foot [case:?A35 cat:"np" compar:?B35 num:?C35 pers:?D35 pron:?E35]![case:?G35/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J35 pass:?K35 tense:?L35 wh:"+"]{
+  n3 type:subst [case:?N35 cat:"pp" num:?J35 pers:?O35 rmode:"ind" trace:?P35 wh:"+"]![cat:"pp"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K35 tense:?L35]![assign-case:"nom" assign-comp:?R35 cat:"s" comp:"nil" control:?S35 extracted:"-" inv:"-" mainv:?T35 mode:?U35 num:?V35 pass:?W35 perf:?X35 pers:?Y35 progress:?Z35 tense:?A36 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?S35 dep:"subj" idx:?D36 label:?E36 num:?V35 pers:?Y35 scopeL:?F36 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?R35 cat:"vp" mainv:?T35 mode:?U35 num:?V35 pass:?W35 perf:?X35 pers:?Y35 progress:?Z35 tense:?A36]![assign-case:?H36 assign-comp:?I36 cat:"vp" compar:"-" mainv:?J36 mode:?K36 num:?L36 pass:?M36 pers:?N36 tense:?O36]{
+    n7 aconstr:noadj [assign-case:?H36 assign-comp:?I36 cat:"v" mainv:?J36 mode:?K36 num:?L36 pass:?M36 pers:?N36 punct-struct:"nil" tense:?O36]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![cat:"pp"]{
+      P1 [cat:"prep"]![cat:"prep"]
+     }
+    }
+    n14 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?X36]{
+     n15 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+     n16 type:subst [case:"acc" cat:"np" wh:?X36]![cat:"np"]
+    }
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanPPTop CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PrepCaseAssigner RelativeAdjunct RelativeAdjunctPied-Piping RelativeClause RelativeOvertExtractedWH Reln0VPn1 Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- Tn0VPn1-42
+n0VPn1:Tn0VPn1-42 ( ! scopeL:?I38 subjectI:?G38 subjectL:?H38) auxiliary
+n0 [cat:"np"]![case:?A37 cat:"np" compar:?B37 num:?C37 pers:?D37 pron:?E37 rel-clause:"+"]{
+ n1 type:foot [case:?A37 cat:"np" compar:?B37 num:?C37 pers:?D37 pron:?E37]![case:?G37/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J37 num:?K37 pass:?L37 tense:?M37 wh:"-"]{
+  n3 aconstr:noadj [case:?P37 cat:"np" num:?K37 pers:?Q37 trace:?R37 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J37/"ind"|"inf" nocomp-mode:?E38/"ind"|"inf" pass:?L37 tense:?M37]![assign-case:"nom" assign-comp:?T37 cat:"s" comp:"nil" control:?U37 extracted:"-" inv:"-" mainv:?V37 mode:?W37 num:?X37 pass:?Y37 perf:?Z37 pers:?A38 progress:?B38 tense:?C38 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?U37 dep:"subj" idx:?G38 label:?H38 num:?X37 pers:?A38 scopeL:?I38 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?T37/"for"|"that"|"ind_nil" cat:"vp" mainv:?V37 mode:?W37 num:?X37 pass:?Y37 perf:?Z37 pers:?A38 progress:?B38 tense:?C38]![assign-case:?K38 assign-comp:?L38 cat:"vp" compar:"-" mainv:?M38 mode:?N38 num:?O38 pass:?P38 pers:?Q38 tense:?R38]{
+    n7 aconstr:noadj [assign-case:?K38 assign-comp:?L38 cat:"v" mainv:?M38 mode:?N38 num:?O38 pass:?P38 pers:?Q38 punct-struct:"nil" tense:?R38]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![cat:"pp"]{
+      P1 [cat:"prep"]![cat:"prep"]
+     }
+    }
+    n14 [cat:"pp" wh:"-"]![assign-case:"acc" cat:"pp" wh:?A39]{
+     n15 type:lex "by" [assign-case:"acc" cat:"by"]![cat:"by"]
+     n16 type:subst [case:"acc" cat:"np" wh:?A39]![cat:"np"]
+    }
+   }
+  }
+ }
+}
+semantics:[]
+trace:[ArgumentNodeSemantics ByAgent CanByAgent CanComplement CanPPCoanchorExhaustive CanPPIObject-VPE CanPPTop CanSubject Dian0VPn1 ExtractedArgument MovementAgreement PrepCaseAssigner RelativeAdjunct RelativeAdjunctCovert RelativeClause RelativeCovertExtractedWH Reln0VPn1 Subject SubjectAgreement SubjectArgument SubjectArgumentTop SubjectSem VerbalArgument VerbalTop dian0VPn1passive n0VPn1 passive]
+
+% ------------------------- TalphaNXN-23
+alphaNXN:TalphaNXN-23 ( ! arg1:?C39 label:?D39 rel:?H39 rootI:?C39 rootL:?D39) initial
+NP_r [cat:"np"]![case:?A39/"nom"|"acc" cat:"np" compl:?B39 idx:?C39 label:?D39 refl:?E39]{
+ N_a type:anchor [cat:"n"]![cat:"n" compar:"-" compl:?B39 refl:?E39]
+}
+semantics:[?D39:?H39(?C39)]
+trace:[A0 A1 LX-aN-compar LX-arN-case-refl-compl alphaNXN rootArg1Linking rootSem unaryState]
+
+% ------------------------- Tn0Vn1-2
+n0Vn1:Tn0Vn1-2 ( ! arg0:?D40 arg1:?L39 arg2:?Z39 label:?E40 objectI:?Z39 objectL:?A40 rel:?C40 scopeL:?N39 subjectI:?L39 subjectL:?M39 vbI:?D40) initial
+n0 [cat:"s"]![assign-case:"nom" assign-comp:?A39 cat:"s" comp:"nil" control:?B39 extracted:"-" inv:"-" mainv:?C39 mode:?D39 num:?E39 pass:?F39 perf:?G39 pers:?H39 progress:?I39 tense:?J39 wh:"-"]{
+ NP_subj type:subst [case:"nom" cat:"np" control:?B39 dep:"subj" idx:?L39 label:?M39 num:?E39 pers:?H39 scopeL:?N39 wh:"-"]![cat:"np"]
+ n2 [assign-case:"nom" assign-comp:?A39 cat:"vp" mainv:?C39 mode:?D39 num:?E39 pass:?F39 perf:?G39 pers:?H39 progress:?I39 tense:?J39]![assign-case:?P39 assign-comp:?Q39 cat:"vp" compar:"-" mainv:?R39 mode:?S39 num:?T39 pass:"-" pers:?U39 tense:?V39]{
+  V_a type:anchor [assign-case:?P39 assign-comp:?Q39 cat:"v" mainv:?R39 mode:?S39 num:?T39 pass:"-" pers:?U39 punct-struct:"nil" tense:?V39]![cat:"v"]
+  NP_obj type:subst [case:"acc" cat:"np" dep:"obj" idx:?Z39 label:?A40 scopeL:?N39 wh:"-" xp:"+"]![cat:"np"]
+ }
+}
+semantics:[?E40:?C40(?D40 ?L39 ?Z39)]
+trace:[ArgumentNodeSemantics CanComplement CanObject CanSubject Dian0Vn1 Object ObjectArg2Linking ObjectSem Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop active binaryRel dian0Vn1active n0Vn1]
+
+% ------------------------- Tn0Vn1-3
+n0Vn1:Tn0Vn1-3 ( ! arg0:?Q41 arg1:?I40 arg2:?M41 label:?R41 objectI:?M41 objectL:?N41 rel:?P41 scopeL:?K40 subjectI:?I40 subjectL:?J40 vbI:?Q41) auxiliary
+n0 [cat:"np"]![case:?A40 cat:"np" compar:?B40 num:?C40 pers:?D40 pron:?E40 rel-clause:"+"]{
+ n1 type:foot [case:?A40 cat:"np" compar:?B40 idx:?I40 label:?J40 num:?C40 pers:?D40 pron:?E40 scopeL:?K40]![case:?G40/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?M40 pass:?N40 tense:?O40 wh:"+"]{
+  NP1 [case:?Q40 cat:"np" num:?M40 pers:?R40 rmode:"ind" trace:?S40 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?N40 tense:?O40]![assign-case:?Q40 assign-comp:?U40 cat:"s" comp:"nil" extracted:"-" inv:"-" mode:?V40 num:?M40 pass:?W40 pers:?R40 tense:?X40 wh:"+"]{
+   n5 [case:?Q40 cat:"np" dep:"subj" num:?M40 pers:?R40 trace:?S40 wh:"+"]![cat:"np" phon:"e" rel-clause:"-"]
+   n6 [assign-case:?Q40 assign-comp:?U40 cat:"vp" mode:?V40 num:?M40 pass:?W40 pers:?R40 tense:?X40]![assign-case:?C41 assign-comp:?D41 cat:"vp" compar:"-" mainv:?E41 mode:?F41 num:?G41 pass:"-" pers:?H41 tense:?I41]{
+    V_a type:anchor [assign-case:?C41 assign-comp:?D41 cat:"v" mainv:?E41 mode:?F41 num:?G41 pass:"-" pers:?H41 punct-struct:"nil" tense:?I41]![cat:"v"]
+    NP_obj type:subst [case:"acc" cat:"np" dep:"obj" idx:?M41 label:?N41 scopeL:?K40 wh:"-" xp:"+"]![cat:"np"]
+   }
+  }
+ }
+}
+semantics:[?R41:?P41(?Q41 ?I40 ?M41)]
+trace:[ArgumentNodeSemantics CanComplement CanObject Dian0Vn1 ExtractedArgument MovementAgreement Object ObjectArg2Linking ObjectSem RelativeClause RelativeOvertExtractedWH RelativeOvertSubject Subject SubjectAgreement SubjectArg1Linking SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop active binaryRel dian0Vn1active n0Vn1]
+
+% ------------------------- Tn0Vn1-4
+n0Vn1:Tn0Vn1-4 ( ! pass:?M41 subjectI:?F41 vmode:"ppart") auxiliary
+n0 [cat:"n"]![card:?A41 case:?B41/"nom"|"acc" cat:"n" compar:"-" const:?C41 decrease:?D41 definite:?E41 idx:?F41 num:?G41 pers:?H41 pron:?I41 quan:?J41 wh:?K41]{
+ n1 [cat:"vp"]![cat:"vp" mode:"ppart" pass:?M41]{
+  V_a type:anchor [cat:"v" mode:"ppart" pass:?M41 punct-struct:"nil"]![cat:"v"]
+ }
+ n3 type:foot [card:?A41 case:?B41 cat:"n" compar:"-" const:?C41 decrease:?D41 definite:?E41 idx:?F41 num:?G41 pers:?H41 pron:?I41 quan:?J41 wh:?K41 xp:"-"]![cat:"n"]
+}
+semantics:[]
+trace:[Dian0Vn1 betaVn dian0Vn1active n0Vn1]
+
+% ------------------------- Tn0Vn1-5
+n0Vn1:Tn0Vn1-5 ( ! ) initial
+n0 [cat:"a"]![cat:"a" wh:"-"]{
+ n1 [cat:"vp"]![cat:"vp"]{
+  V_a type:anchor [cat:"v" mode:"ppart" punct-struct:"nil"]![cat:"v"]
+ }
+}
+semantics:[]
+trace:[Dian0Vn1 alphaAV dian0Vn1active n0Vn1]
+
+% ------------------------- Tn0Vn1-6
+n0Vn1:Tn0Vn1-6 ( ! arg0:?V42 arg1:?D42 arg2:?R42 label:?W42 objectI:?R42 objectL:?S42 rel:?U42 scopeL:?F42 subjectI:?D42 subjectL:?E42 vbI:?V42) auxiliary
+n0 [cat:"np"]![case:?A41 cat:"np" compar:?B41 num:?C41 pers:?D41 pron:?E41 rel-clause:"+"]{
+ n1 type:foot [case:?A41 cat:"np" compar:?B41 num:?C41 pers:?D41 pron:?E41]![case:?G41/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J41 pass:?K41 tense:?L41 wh:"+"]{
+  n3 type:subst [case:?N41 cat:"pp" num:?J41 pers:?O41 rmode:"ind" trace:?P41 wh:"+"]![cat:"pp"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K41 tense:?L41]![assign-case:"nom" assign-comp:?R41 cat:"s" comp:"nil" control:?S41 extracted:"-" inv:"-" mainv:?T41 mode:?U41 num:?V41 pass:?W41 perf:?X41 pers:?Y41 progress:?Z41 tense:?A42 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?S41 dep:"subj" idx:?D42 label:?E42 num:?V41 pers:?Y41 scopeL:?F42 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?R41 cat:"vp" mainv:?T41 mode:?U41 num:?V41 pass:?W41 perf:?X41 pers:?Y41 progress:?Z41 tense:?A42]![assign-case:?H42 assign-comp:?I42 cat:"vp" compar:"-" mainv:?J42 mode:?K42 num:?L42 pass:"-" pers:?M42 tense:?N42]{
+    V_a type:anchor [assign-case:?H42 assign-comp:?I42 cat:"v" mainv:?J42 mode:?K42 num:?L42 pass:"-" pers:?M42 punct-struct:"nil" tense:?N42]![cat:"v"]
+    NP_obj type:subst [case:"acc" cat:"np" dep:"obj" idx:?R42 label:?S42 scopeL:?F42 wh:"-" xp:"+"]![cat:"np"]
+   }
+  }
+ }
+}
+semantics:[?W42:?U42(?V42 ?D42 ?R42)]
+trace:[ArgumentNodeSemantics CanComplement CanObject CanSubject Dian0Vn1 ExtractedArgument MovementAgreement Object ObjectArg2Linking ObjectSem RelativeAdjunct RelativeAdjunctPied-Piping RelativeClause RelativeOvertExtractedWH Reln0Vn1 Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop active binaryRel dian0Vn1active n0Vn1]
+
+% ------------------------- Tn0Vn1-7
+n0Vn1:Tn0Vn1-7 ( ! arg0:?Y43 arg1:?G43 arg2:?U43 label:?Z43 objectI:?U43 objectL:?V43 rel:?X43 scopeL:?I43 subjectI:?G43 subjectL:?H43 vbI:?Y43) auxiliary
+n0 [cat:"np"]![case:?A42 cat:"np" compar:?B42 num:?C42 pers:?D42 pron:?E42 rel-clause:"+"]{
+ n1 type:foot [case:?A42 cat:"np" compar:?B42 num:?C42 pers:?D42 pron:?E42]![case:?G42/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J42 num:?K42 pass:?L42 tense:?M42 wh:"-"]{
+  n3 aconstr:noadj [case:?P42 cat:"np" num:?K42 pers:?Q42 trace:?R42 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J42/"ind"|"inf" nocomp-mode:?E43/"ind"|"inf" pass:?L42 tense:?M42]![assign-case:"nom" assign-comp:?T42 cat:"s" comp:"nil" control:?U42 extracted:"-" inv:"-" mainv:?V42 mode:?W42 num:?X42 pass:?Y42 perf:?Z42 pers:?A43 progress:?B43 tense:?C43 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?U42 dep:"subj" idx:?G43 label:?H43 num:?X42 pers:?A43 scopeL:?I43 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?T42/"for"|"that"|"ind_nil" cat:"vp" mainv:?V42 mode:?W42 num:?X42 pass:?Y42 perf:?Z42 pers:?A43 progress:?B43 tense:?C43]![assign-case:?K43 assign-comp:?L43 cat:"vp" compar:"-" mainv:?M43 mode:?N43 num:?O43 pass:"-" pers:?P43 tense:?Q43]{
+    V_a type:anchor [assign-case:?K43 assign-comp:?L43 cat:"v" mainv:?M43 mode:?N43 num:?O43 pass:"-" pers:?P43 punct-struct:"nil" tense:?Q43]![cat:"v"]
+    NP_obj type:subst [case:"acc" cat:"np" dep:"obj" idx:?U43 label:?V43 scopeL:?I43 wh:"-" xp:"+"]![cat:"np"]
+   }
+  }
+ }
+}
+semantics:[?Z43:?X43(?Y43 ?G43 ?U43)]
+trace:[ArgumentNodeSemantics CanComplement CanObject CanSubject Dian0Vn1 ExtractedArgument MovementAgreement Object ObjectArg2Linking ObjectSem RelativeAdjunct RelativeAdjunctCovert RelativeClause RelativeCovertExtractedWH Reln0Vn1 Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop active binaryRel dian0Vn1active n0Vn1]
+
+% ------------------------- TbetanxPnx-1
+betanxPnx:TbetanxPnx-1 ( ! arg0:?D44 arg1:?R43 arg2:?Z43 argI:?Z43 argL:?A44 footI:?R43 footL:?S43 label:?E44 rel:?C44) auxiliary
+NP_r [cat:"np"]![assign-comp:?A43 card:?B43 case:?C43/"nom"|"acc" cat:"np" compar:?D43 conj:?E43 const:?F43 decreas:?G43 definite:?H43 equiv:?I43 gen:?J43 gerund:?K43 num:?L43 pers:?M43 quan:?N43 rel-clause:?O43 wh:?P43]{
+ NP_f type:foot [assign-comp:?A43 card:?B43 case:?C43 cat:"np" compar:?D43 conj:?E43 const:?F43 decreas:?G43 definite:?H43 equiv:?I43 gen:?J43 gerund:?K43 idx:?R43 label:?S43 num:?L43 pers:?M43 quan:?N43 rel-clause:?O43 wh:?P43]![cat:"np"]
+ PP1 [cat:"pp"]![assign-case:?U43 case:?V43 cat:"pp"]{
+  P_a type:anchor [cat:"prep"]![assign-case:?U43 cat:"prep"]
+  NP_s type:subst [assign-case:?Y43 cat:"np" idx:?Z43 label:?A44 wh:"-"]![cat:"np"]
+ }
+}
+semantics:[?E44:?C44(?D44 ?R43 ?Z43)]
+trace:[F1A2S2 PREP-ax-assign-case PREP-rfN PREP-rfN-gerund PREP-sx-assign-case TopLevelClass argArg2Linking argSem betanxPnx binaryRel f1A2S2 f1X1 footArg1Linking footSem]
+
+% ------------------------- Tn1VPn2-43
+n1VPn2:Tn1VPn2-43 ( ! arg0:?M45 arg1:?L44 arg2:?I45 label:?N45 ppiobjectanchorI:?I45 ppiobjectanchorL:?J45 rel:?L45 scopeL:?N44 subjectI:?L44 subjectL:?M44 vbI:?M45) initial
+n0 [cat:"s"]![assign-case:"nom" assign-comp:?A44 cat:"s" comp:"nil" control:?B44 extracted:"-" inv:"-" mainv:?C44 mode:?D44 num:?E44 pass:?F44 perf:?G44 pers:?H44 progress:?I44 tense:?J44 wh:"-"]{
+ NP_subj type:subst [case:"nom" cat:"np" control:?B44 dep:"subj" idx:?L44 label:?M44 num:?E44 pers:?H44 scopeL:?N44 wh:"-"]![cat:"np"]
+ n2 [assign-case:"nom" assign-comp:?A44 cat:"vp" mainv:?C44 mode:?D44 num:?E44 pass:?F44 perf:?G44 pers:?H44 progress:?I44 tense:?J44]![assign-case:?P44 assign-comp:?Q44 cat:"vp" compar:"-" mainv:?R44 mode:?S44 num:?T44 pass:?U44 pers:?V44 tense:?W44]{
+  n3 aconstr:noadj [assign-case:?P44 assign-comp:?Q44 cat:"v" mainv:?R44 mode:?S44 num:?T44 pass:?U44 pers:?V44 punct-struct:"nil" tense:?W44]![cat:"v" mode:"ind" pass:"+"]{
+   V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+   n5 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+  }
+  n6 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+   n7 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+   n8 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:?F45]{
+    P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+    n10 type:subst [case:"acc" cat:"np" idx:?I45 label:?J45 scopeL:?N44 wh:?F45]![cat:"np"]
+   }
+  }
+ }
+}
+semantics:[?N45:?L45(?M45 ?L44 ?I45)]
+trace:[ArgumentNodeSemantics CanComplement CanPPCoanchor CanPPCoanchorExhaustive CanPPIObject-VPE CanSubject Dian1VPn2 PPIObjectAnchor PPIObjectAnchorArg2Linking PPIObjectAnchorSem PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n1VPn2 passive]
+
+% ------------------------- Tn1VPn2-44
+n1VPn2:Tn1VPn2-44 ( ! arg0:?V46 arg1:?Z45 arg2:?W46 label:?X46 ppiobjectanchorI:?W46 rel:?U46 scopeL:?B46 subjectI:?Z45 subjectL:?A46 vbI:?V46) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A45 num:?B45 pass:?C45 tense:?D45 wh:"+"]{
+ n1 [case:?H45 cat:"pp" num:?B45 pers:?I45 trace:?J45 wh:"+"]![assign-case:"acc" cat:"pp" wh:?F45]{
+  P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+  n3 type:subst [case:"acc" cat:"np" wh:?F45]![cat:"np"]
+ }
+ n4 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A45 pass:?C45 tense:?D45]![assign-case:"nom" assign-comp:?N45 cat:"s" comp:"nil" control:?O45 extracted:"-" inv:"-" mainv:?P45 mode:?Q45 num:?R45 pass:?S45 perf:?T45 pers:?U45 progress:?V45 tense:?W45 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?O45 dep:"subj" idx:?Z45 label:?A46 num:?R45 pers:?U45 scopeL:?B46 wh:"-"]![cat:"np"]
+  n6 [assign-case:"nom" assign-comp:?N45 cat:"vp" mainv:?P45 mode:?Q45 num:?R45 pass:?S45 perf:?T45 pers:?U45 progress:?V45 tense:?W45]![assign-case:?D46 assign-comp:?E46 cat:"vp" compar:"-" mainv:?F46 mode:?G46 num:?H46 pass:?I46 pers:?J46 tense:?K46]{
+   n7 aconstr:noadj [assign-case:?D46 assign-comp:?E46 cat:"v" mainv:?F46 mode:?G46 num:?H46 pass:?I46 pers:?J46 punct-struct:"nil" tense:?K46]![cat:"v" mode:"ind" pass:"+"]{
+    V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+    n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+   }
+   n10 [cat:"vp"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-" mode:"base"]{
+    n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+    n12 aconstr:noadj [case:?H45 cat:"pp" num:?B45 pers:?I45 trace:?J45 wh:"+"]![cat:"pp" phon:"e"]
+   }
+  }
+ }
+}
+semantics:[?X46:?U46(?V46 ?Z45 ?W46)]
+trace:[ArgumentNodeSemantics CanSubject Dian1VPn2 ExtractedArgument Inversion MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop WhComplementTop WhExtraction WhPPCoanchor WhPPIObjectVPE WhPPTopVPE binaryRel n1VPn2 passive]
+
+% ------------------------- Tn1VPn2-45
+n1VPn2:Tn1VPn2-45 ( ! arg0:?S47 arg1:?U46 arg2:?T47 label:?U47 ppiobjectanchorI:?T47 rel:?R47 scopeL:?W46 subjectI:?U46 subjectL:?V46 vbI:?S47) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A46 num:?B46 pass:?C46 tense:?D46 wh:"+"]{
+ n1 type:subst [case:"acc" cat:"np" num:?B46 pers:?F46 trace:?G46 wh:"+"]![cat:"np"]
+ n2 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A46 pass:?C46 tense:?D46]![assign-case:"nom" assign-comp:?I46 cat:"s" comp:"nil" control:?J46 extracted:"-" inv:"-" mainv:?K46 mode:?L46 num:?M46 pass:?N46 perf:?O46 pers:?P46 progress:?Q46 tense:?R46 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?J46 dep:"subj" idx:?U46 label:?V46 num:?M46 pers:?P46 scopeL:?W46 wh:"-"]![cat:"np"]
+  n4 [assign-case:"nom" assign-comp:?I46 cat:"vp" mainv:?K46 mode:?L46 num:?M46 pass:?N46 perf:?O46 pers:?P46 progress:?Q46 tense:?R46]![assign-case:?Y46 assign-comp:?Z46 cat:"vp" compar:"-" mainv:?A47 mode:?B47 num:?C47 pass:?D47 pers:?E47 tense:?F47]{
+   n5 aconstr:noadj [assign-case:?Y46 assign-comp:?Z46 cat:"v" mainv:?A47 mode:?B47 num:?C47 pass:?D47 pers:?E47 punct-struct:"nil" tense:?F47]![cat:"v" mode:"ind" pass:"+"]{
+    V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+    n7 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+   }
+   n8 [cat:"vp"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-" mode:"base"]{
+    n9 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+    n10 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+     P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+     n12 aconstr:noadj [case:"acc" cat:"np" num:?B46 pers:?F46 trace:?G46 wh:"+"]![cat:"np" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[?U47:?R47(?S47 ?U46 ?T47)]
+trace:[ArgumentNodeSemantics CanSubject Dian1VPn2 ExtractedArgument Inversion MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop WhComplementTop WhExtraction WhPObjectCoanchor WhPObjectVPE binaryRel n1VPn2 passive]
+
+% ------------------------- Tn1VPn2-46
+n1VPn2:Tn1VPn2-46 ( ! arg0:?Z48 arg1:?C48 arg2:?A49 label:?B49 ppiobjectanchorI:?A49 rel:?Y48 scopeL:?E48 subjectI:?C48 subjectL:?D48 vbI:?Z48) auxiliary
+n0 [cat:"np"]![case:?A47 cat:"np" compar:?B47 num:?C47 pers:?D47 pron:?E47 rel-clause:"+"]{
+ n1 type:foot [case:?A47 cat:"np" compar:?B47 num:?C47 pers:?D47 pron:?E47]![case:?G47/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J47 pass:?K47 tense:?L47 wh:"+"]{
+  n3 type:subst [case:"acc" cat:"np" num:?J47 pers:?N47 rmode:"ind" trace:?O47 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K47 tense:?L47]![assign-case:"nom" assign-comp:?Q47 cat:"s" comp:"nil" control:?R47 extracted:"-" inv:"-" mainv:?S47 mode:?T47 num:?U47 pass:?V47 perf:?W47 pers:?X47 progress:?Y47 tense:?Z47 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?R47 dep:"subj" idx:?C48 label:?D48 num:?U47 pers:?X47 scopeL:?E48 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?Q47 cat:"vp" mainv:?S47 mode:?T47 num:?U47 pass:?V47 perf:?W47 pers:?X47 progress:?Y47 tense:?Z47]![assign-case:?G48 assign-comp:?H48 cat:"vp" compar:"-" mainv:?I48 mode:?J48 num:?K48 pass:?L48 pers:?M48 tense:?N48]{
+    n7 aconstr:noadj [assign-case:?G48 assign-comp:?H48 cat:"v" mainv:?I48 mode:?J48 num:?K48 pass:?L48 pers:?M48 punct-struct:"nil" tense:?N48]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp"]![cat:"vp"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"+"]{
+      P2 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n14 [case:"acc" cat:"np" num:?J47 pers:?N47 trace:?O47 wh:"+"]![cat:"np" phon:"e"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?B49:?Y48(?Z48 ?C48 ?A49)]
+trace:[ArgumentNodeSemantics CanSubject Dian1VPn2 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertPPAnchor RelativeOvertPPObject-VPE Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n1VPn2 passive]
+
+% ------------------------- Tn1VPn2-47
+n1VPn2:Tn1VPn2-47 ( ! arg0:?C51 arg1:?E50 arg2:?D51 label:?E51 ppiobjectanchorI:?D51 rel:?B51 scopeL:?G50 subjectI:?E50 subjectL:?F50 vbI:?C51) auxiliary
+n0 [cat:"np"]![case:?A49 cat:"np" compar:?B49 num:?C49 pers:?D49 pron:?E49 rel-clause:"+"]{
+ n1 type:foot [case:?A49 cat:"np" compar:?B49 num:?C49 pers:?D49 pron:?E49]![case:?G49/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:?J49 num:?K49 pass:?L49 tense:?M49 wh:"-"]{
+  n3 aconstr:noadj [case:"acc" cat:"np" num:?K49 pers:?P49 trace:?Q49 wh:"-"]![cat:"np" phon:"e"]
+  n4 [cat:"s" conj:"nil" inv:"-" mode:?J49/"ind"|"inf"|"ger" pass:?L49 tense:?M49]![assign-case:"nom" assign-comp:?S49 cat:"s" comp:"nil" control:?T49 extracted:"-" inv:"-" mainv:?U49 mode:?V49 num:?W49 pass:?X49 perf:?Y49 pers:?Z49 progress:?A50 tense:?B50 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?T49 dep:"subj" idx:?E50 label:?F50 num:?W49 pers:?Z49 scopeL:?G50 wh:"-"]![cat:"np"]
+   n6 [assign-case:"nom" assign-comp:?S49/"for"|"that"|"ecm"|"inf_nil"|"ind_nil" cat:"vp" mainv:?U49 mode:?V49 num:?W49 pass:?X49 perf:?Y49 pers:?Z49 progress:?A50 tense:?B50]![assign-case:?I50 assign-comp:?J50 cat:"vp" compar:"-" mainv:?K50 mode:?L50 num:?M50 pass:?N50 pers:?O50 tense:?P50]{
+    n7 aconstr:noadj [assign-case:?I50 assign-comp:?J50 cat:"v" mainv:?K50 mode:?L50 num:?M50 pass:?N50 pers:?O50 punct-struct:"nil" tense:?P50]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:"-"]{
+      P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n14 [case:"acc" cat:"np" num:?K49 pers:?P49 trace:?Q49 wh:"-"]![cat:"np" phon:"e"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?E51:?B51(?C51 ?E50 ?D51)]
+trace:[ArgumentNodeSemantics CanSubject Dian1VPn2 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner RelativeClause RelativeCovertExtractedWH RelativeCovertPPAnchor RelativeCovertPPObject-VPE Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n1VPn2 passive]
+
+% ------------------------- Tn1VPn2-48
+n1VPn2:Tn1VPn2-48 ( ! arg0:?D53 arg1:?H52 arg2:?E53 label:?F53 ppiobjectanchorI:?E53 rel:?C53 scopeL:?J52 subjectI:?H52 subjectL:?I52 vbI:?D53) auxiliary
+n0 [cat:"np"]![case:?A51 cat:"np" compar:?B51 num:?C51 pers:?D51 pron:?E51 rel-clause:"+"]{
+ n1 type:foot [case:?A51 cat:"np" compar:?B51 num:?C51 pers:?D51 pron:?E51]![case:?G51/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?J51 pass:?K51 tense:?L51 wh:"+"]{
+  n3 [case:?P51 cat:"pp" num:?J51 pers:?Q51 rmode:"ind" trace:?R51 wh:"+"]![assign-case:"acc" cat:"pp" wh:?N51]{
+   P2 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+   n5 type:subst [case:"acc" cat:"np" wh:?N51]![cat:"np"]
+  }
+  n6 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?K51 tense:?L51]![assign-case:"nom" assign-comp:?V51 cat:"s" comp:"nil" control:?W51 extracted:"-" inv:"-" mainv:?X51 mode:?Y51 num:?Z51 pass:?A52 perf:?B52 pers:?C52 progress:?D52 tense:?E52 wh:"-"]{
+   NP_subj type:subst [case:"nom" cat:"np" control:?W51 dep:"subj" idx:?H52 label:?I52 num:?Z51 pers:?C52 scopeL:?J52 wh:"-"]![cat:"np"]
+   n8 [assign-case:"nom" assign-comp:?V51 cat:"vp" mainv:?X51 mode:?Y51 num:?Z51 pass:?A52 perf:?B52 pers:?C52 progress:?D52 tense:?E52]![assign-case:?L52 assign-comp:?M52 cat:"vp" compar:"-" mainv:?N52 mode:?O52 num:?P52 pass:?Q52 pers:?R52 tense:?S52]{
+    n9 aconstr:noadj [assign-case:?L52 assign-comp:?M52 cat:"v" mainv:?N52 mode:?O52 num:?P52 pass:?Q52 pers:?R52 punct-struct:"nil" tense:?S52]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n11 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n12 [cat:"vp"]![cat:"vp"]{
+     n13 aconstr:noadj [cat:"v"]![cat:"v" phon:"e"]
+     n14 [case:?P51 cat:"pp" num:?J51 pers:?Q51 trace:?R51 wh:"+"]![cat:"pp" phon:"e"]
+    }
+   }
+  }
+ }
+}
+semantics:[?F53:?C53(?D53 ?H52 ?E53)]
+trace:[ArgumentNodeSemantics CanSubject Dian1VPn2 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativePPAnchor RelativePPIObject-VPE RelativePied-Piping Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n1VPn2 passive]
+
+% ------------------------- Tn1VPn2-49
+n1VPn2:Tn1VPn2-49 ( ! arg0:?Z54 arg1:?I53 arg2:?V54 label:?A55 ppiobjectanchorI:?V54 ppiobjectanchorL:?W54 rel:?Y54 scopeL:?K53 subjectI:?I53 subjectL:?J53 vbI:?Z54) auxiliary
+n0 [cat:"np"]![case:?A53 cat:"np" compar:?B53 num:?C53 pers:?D53 pron:?E53 rel-clause:"+"]{
+ n1 type:foot [case:?A53 cat:"np" compar:?B53 idx:?I53 label:?J53 num:?C53 pers:?D53 pron:?E53 scopeL:?K53]![case:?G53/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?M53 pass:?N53 tense:?O53 wh:"+"]{
+  NP1 [case:?Q53 cat:"np" num:?M53 pers:?R53 rmode:"ind" trace:?S53 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?N53 tense:?O53]![assign-case:?Q53 assign-comp:?U53 cat:"s" comp:"nil" extracted:"-" inv:"-" mode:?V53 num:?M53 pass:?W53 pers:?R53 tense:?X53 wh:"+"]{
+   n5 [case:?Q53 cat:"np" dep:"subj" num:?M53 pers:?R53 trace:?S53 wh:"+"]![cat:"np" phon:"e" rel-clause:"-"]
+   n6 [assign-case:?Q53 assign-comp:?U53 cat:"vp" mode:?V53 num:?M53 pass:?W53 pers:?R53 tense:?X53]![assign-case:?C54 assign-comp:?D54 cat:"vp" compar:"-" mainv:?E54 mode:?F54 num:?G54 pass:?H54 pers:?I54 tense:?J54]{
+    n7 aconstr:noadj [assign-case:?C54 assign-comp:?D54 cat:"v" mainv:?E54 mode:?F54 num:?G54 pass:?H54 pers:?I54 punct-struct:"nil" tense:?J54]![cat:"v" mode:"ind" pass:"+"]{
+     V_a [cat:"v" mode:"ind" pass:"+"]![cat:"v"]
+     n9 type:anchor [cat:"v" mode:"ppart" pass:"+"]![cat:"v"]
+    }
+    n10 [cat:"vp" wh:"-"]![assign-comp:"none" cat:"vp" compar:"-" mainv:"-"]{
+     n11 aconstr:noadj [cat:"v" phon:"e"]![cat:"v" phon:"e"]
+     n12 [cat:"pp"]![assign-case:"acc" cat:"pp" wh:?S54]{
+      P1 [assign-case:"acc" cat:"prep"]![cat:"prep"]
+      n14 type:subst [case:"acc" cat:"np" idx:?V54 label:?W54 scopeL:?K53 wh:?S54]![cat:"np"]
+     }
+    }
+   }
+  }
+ }
+}
+semantics:[?A55:?Y54(?Z54 ?I53 ?V54)]
+trace:[ArgumentNodeSemantics CanComplement CanPPCoanchor CanPPCoanchorExhaustive CanPPIObject-VPE Dian1VPn2 ExtractedArgument MovementAgreement PPIObjectAnchor PPIObjectAnchorArg2Linking PPIObjectAnchorSem PrepCaseAssigner RelativeClause RelativeOvertExtractedWH RelativeOvertSubject Subject SubjectAgreement SubjectArg1Linking SubjectSem TopLevelClass VerbalArgument VerbalTop binaryRel n1VPn2 passive]
+
+% ------------------------- Tn0N1-20
+n0N1:Tn0N1-20 ( ! arg0:?N56 arg1:?L55 arg2:?J56 label:?O56 objectI:?J56 objectL:?K56 rel:?M56 scopeL:?N55 subjectI:?L55 subjectL:?M55 vbI:?N56) initial
+n0 [cat:"s"]![assign-case:"nom" assign-comp:?A55 cat:"s" comp:"nil" control:?B55 extracted:"-" inv:"-" mainv:?C55 mode:?D55 num:?E55 pass:?F55 perf:?G55 pers:?H55 progress:?I55 tense:?J55 wh:"-"]{
+ NP_subj type:subst [case:"nom" cat:"np" control:?B55 dep:"subj" idx:?L55 label:?M55 num:?E55 pers:?H55 scopeL:?N55 wh:"-"]![cat:"np"]
+ n2 [assign-case:"nom" assign-comp:?A55 cat:"vp" mainv:?C55 mode:?D55 num:?E55 pass:?F55 perf:?G55 pers:?H55 progress:?I55 tense:?J55]![assign-case:?P55 assign-comp:?Q55 cat:"vp" compar:"-" mainv:?R55 mode:?S55 num:?T55 pass:?U55 pers:?V55 tense:?W55]{
+  V_a [assign-case:?P55 assign-comp:?Q55 cat:"v" mainv:?R55 mode:?S55 num:?T55 pass:?U55 pers:?V55 punct-struct:"nil" tense:?W55]![cat:"v"]
+  n4 [case:"acc" cat:"np" wh:"-"]![case:?A56 cat:"np" compar:?B56 definite:?C56 num:?D56 pers:?E56 pron:?F56 wh:?G56]{
+   n5 type:anchor [case:?A56 cat:"n" compar:?B56 definite:?C56 idx:?J56 label:?K56 num:?D56 pers:?E56 pron:?F56 scopeL:?N55 wh:?G56]![cat:"n"]
+  }
+ }
+}
+semantics:[?O56:?M56(?N56 ?L55 ?J56)]
+trace:[ArgumentNodeSemantics CanComplement CanObjectAnchor CanSubject CanXAnchor Dian0N1 ObjectAnchor ObjectArg2Linking ObjectSem Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop binaryRel n0N1 verbless]
+
+% ------------------------- Tn0N1-21
+n0N1:Tn0N1-21 ( ! arg0:?R57 arg1:?Z56 arg2:?S57 label:?T57 objectI:?S57 rel:?Q57 scopeL:?B57 subjectI:?Z56 subjectL:?A57 vbI:?R57) initial
+n0 [cat:"s"]![cat:"s" comp:"nil" extracted:"+" inv:"+" invlink:"+" mode:?A56 num:?B56 pass:?C56 tense:?D56 wh:"+"]{
+ n1 [case:"acc" cat:"np" num:?B56 pers:?J56 trace:?K56 wh:"+"]![case:?F56 cat:"np" definite:?G56 num:?B56 pers:?H56 wh:"+"]{
+  n2 type:anchor [case:?F56 cat:"n" definite:?G56 num:?B56 pers:?H56 wh:"+"]![cat:"n"]
+ }
+ n3 [cat:"s" comp:"nil" conj:"nil" inv:"+" mode:?A56 pass:?C56 tense:?D56]![assign-case:"nom" assign-comp:?N56 cat:"s" comp:"nil" control:?O56 extracted:"-" inv:"-" mainv:?P56 mode:?Q56 num:?R56 pass:?S56 perf:?T56 pers:?U56 progress:?V56 tense:?W56 wh:"-"]{
+  NP_subj type:subst [case:"nom" cat:"np" control:?O56 dep:"subj" idx:?Z56 label:?A57 num:?R56 pers:?U56 scopeL:?B57 wh:"-"]![cat:"np"]
+  n5 [assign-case:"nom" assign-comp:?N56 cat:"vp" mainv:?P56 mode:?Q56 num:?R56 pass:?S56 perf:?T56 pers:?U56 progress:?V56 tense:?W56]![assign-case:?D57 assign-comp:?E57 cat:"vp" compar:"-" mainv:?F57 mode:?G57 num:?H57 pass:?I57 pers:?J57 tense:?K57]{
+   V_a [assign-case:?D57 assign-comp:?E57 cat:"v" mainv:?F57 mode:?G57 num:?H57 pass:?I57 pers:?J57 punct-struct:"nil" tense:?K57]![cat:"v"]
+   n7 aconstr:noadj [case:"acc" cat:"np" num:?B56 pers:?J56 trace:?K56 wh:"+"]![cat:"np" phon:"e"]
+  }
+ }
+}
+semantics:[?T57:?Q57(?R57 ?Z56 ?S57)]
+trace:[ArgumentNodeSemantics CanSubject Dian0N1 ExtractedArgument Inversion MovementAgreement ObjectAnchor ObjectArg2Linking Subject SubjectAgreement SubjectArg1Linking SubjectArgument SubjectArgumentTop SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop WhAnchorTop WhComplement WhComplementTop WhExtraction WhObjectAnchor binaryRel n0N1 verbless]
+
+% ------------------------- Tn0N1-22
+n0N1:Tn0N1-22 ( ! arg0:?A59 arg1:?I57 arg2:?W58 label:?B59 objectI:?W58 objectL:?X58 rel:?Z58 scopeL:?K57 subjectI:?I57 subjectL:?J57 vbI:?A59) auxiliary
+n0 [cat:"np"]![case:?A57 cat:"np" compar:?B57 num:?C57 pers:?D57 pron:?E57 rel-clause:"+"]{
+ n1 type:foot [case:?A57 cat:"np" compar:?B57 idx:?I57 label:?J57 num:?C57 pers:?D57 pron:?E57 scopeL:?K57]![case:?G57/"nom"|"acc" cat:"np" refl:"-" rel-clause:"-"]
+ n2 aconstr:noadj [cat:"s"]![cat:"s" mode:"ind" num:?M57 pass:?N57 tense:?O57 wh:"+"]{
+  NP1 [case:?Q57 cat:"np" num:?M57 pers:?R57 rmode:"ind" trace:?S57 wh:"+"]![cat:"np"]
+  n4 [cat:"s" comp:"nil" conj:"nil" inv:"-" mode:"ind" pass:?N57 tense:?O57]![assign-case:?Q57 assign-comp:?U57 cat:"s" comp:"nil" extracted:"-" inv:"-" mode:?V57 num:?M57 pass:?W57 pers:?R57 tense:?X57 wh:"+"]{
+   n5 [case:?Q57 cat:"np" dep:"subj" num:?M57 pers:?R57 trace:?S57 wh:"+"]![cat:"np" phon:"e" rel-clause:"-"]
+   n6 [assign-case:?Q57 assign-comp:?U57 cat:"vp" mode:?V57 num:?M57 pass:?W57 pers:?R57 tense:?X57]![assign-case:?C58 assign-comp:?D58 cat:"vp" compar:"-" mainv:?E58 mode:?F58 num:?G58 pass:?H58 pers:?I58 tense:?J58]{
+    V_a [assign-case:?C58 assign-comp:?D58 cat:"v" mainv:?E58 mode:?F58 num:?G58 pass:?H58 pers:?I58 punct-struct:"nil" tense:?J58]![cat:"v"]
+    n8 [case:"acc" cat:"np" wh:"-"]![case:?N58 cat:"np" compar:?O58 definite:?P58 num:?Q58 pers:?R58 pron:?S58 wh:?T58]{
+     n9 type:anchor [case:?N58 cat:"n" compar:?O58 definite:?P58 idx:?W58 label:?X58 num:?Q58 pers:?R58 pron:?S58 scopeL:?K57 wh:?T58]![cat:"n"]
+    }
+   }
+  }
+ }
+}
+semantics:[?B59:?Z58(?A59 ?I57 ?W58)]
+trace:[ArgumentNodeSemantics CanComplement CanObjectAnchor CanXAnchor Dian0N1 ExtractedArgument MovementAgreement ObjectAnchor ObjectArg2Linking ObjectSem RelativeClause RelativeOvertExtractedWH RelativeOvertSubject Subject SubjectAgreement SubjectArg1Linking SubjectSem TopLevelClass VerbCaseAssigner VerbalArgument VerbalTop binaryRel n0N1 verbless]
+
+% ------------------------- TbetanxPUnx-50
+betanxPUnx:TbetanxPUnx-50 ( ! arg0:?Z59 arg1:?Q59 arg2:?V59 argI:?V59 argL:?W59 footI:?Q59 footL:?R59 label:?A60 rel:?Y59) auxiliary
+NP_r [cat:"np" punct-contains:?O59]![assign-comp:?A59 card:?B59 case:?C59/"nom"|"acc" cat:"np" compar:"-" conj:?D59/"nil"|"and"|"or" const:?E59 decreas:?F59 definite:?G59 gen:?H59 num:?I59 pers:?J59 predet:?K59 quan:?L59 wh:?M59]{
+ NP_f type:foot [assign-comp:?A59 card:?B59 case:?C59 cat:"np" conj:?D59 const:?E59 decreas:?F59 definite:?G59 gen:?H59 idx:?Q59 label:?R59 num:?I59 pers:?J59 predet:?K59 quan:?L59 wh:?M59]![cat:"np"]
+ PU1_a type:anchor [cat:"punct" punct-contains:?O59]![cat:"punct"]
+ NP_s type:subst [case:?U59/"nom"|"acc" cat:"np" idx:?V59 label:?W59 pron:"-"]![cat:"np"]
+}
+semantics:[?A60:?Y59(?Z59 ?Q59 ?V59)]
+trace:[PU PU-pur-punctContains PU-rfN-assignComp PU-rfN-conj-const-gen-definite-quan-card-decreas-predet-agr-case-wh TopLevelClass argArg2Linking argSem betanxPUnx binaryRel fPU fPUx footArg1Linking footSem]

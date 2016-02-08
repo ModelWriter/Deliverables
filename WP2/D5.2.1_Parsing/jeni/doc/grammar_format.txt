@@ -1,0 +1,49 @@
+*** Some notes about the grammar format in Jeni
+A. Denis - 4th sept 2013
+
+** Co-anchors in GenI and TuLiPA
+
+In GenI and TuLiPA, the co-anchor format is as follows (modulo syntactic variations):
+
+- "coanchor [cat=CAT]" represents a node whose type is co-anchor (mark=coanchor in XMG) whose lexicalization is defined by the lexicon, aka "lexicon co-anchor", typically "parler à/de".
+
+- "std [cat=CAT] { lex [cat=LEMMA] }" represents two nodes, a parent node providing the category, and a child node whose type is lex (mark=lex or mark=flex in XMG) whose lexicalization is defined in the grammar, 
+aka "grammar co-anchor". The lexicalization of such node is provided by the feature "cat". Typically "par" in the passive form "une souris est attrapée par un chat".
+
+- "subst [cat=CAT, lemanchor=LEMMA]" represents a substitution node whose lemma is constrained in the generation but not in parsing. In parsing it acts as a regular substitution node, while in generation the substitution
+is blocked and the node is considered as a lexicalized node.
+
+
+** Co-anchors in Jeni, discussion
+
+In Jeni we would like to simplify the format:
+- avoid cat=LEMMA, avoid two nodes for grammar co-anchors, avoid lemanchor
+
+So we propose instead:
+
+- "coanchor [cat=CAT]" represents a lexicon co-anchor, this one would not be changed
+- "lex [cat=CAT, lemma=LEMMA]" represents a grammar co-anchor, we would have only one node whose type is "lex"
+- "subst [cat=CAT, lemma=LEMMA]" represents a generation-lexicalized substitution
+
+Note that it has been proposed by Claire Gardent to switch the "coanchor" and the "lex" types (given that "lex" would rather evoke a lexicon co-anchor), 
+but I feel like it would be a rather important shift.
+
+Given that we could maintain a fair backward compatibility:
+- for "std [cat=CAT] { lex [cat=LEMMA] }", we could detect a lex node without a lemma=LEMMA feature and perform the conversion
+- convert "lemanchor" to "lemma"
+
+Remark: we could even go further with:
+- "coanchor [cat=CAT]" represents a lexicon co-anchor, this one would not be changed
+- "coanchor [cat=CAT, lemma=LEMMA]" represents a grammar co-anchor, we would have only one node whose type would be "coanchor"
+- "subst [cat=CAT, lemma=LEMMA]" represents a generation-lexicalized substitution
+but Laura Perez objected it would make debugging harder.
+
+
+** Co-anchors in Jeni, actual
+
+So we agreed to have:
+- "coanchor [cat=CAT]" represents a lexicon co-anchor, this one would not be changed
+- "coanchor [cat=CAT, lemma=LEMMA]" represents a grammar co-anchor, we would have only one node whose type would be "coanchor"
+- "subst [cat=CAT, lemma=LEMMA]" represents a generation-lexicalized substitution
+
+It removes the need to switch "coanchor" and "lex". As for debugging, we can implement that at the Node level by setting an appropriate flag.

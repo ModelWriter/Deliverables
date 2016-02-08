@@ -1,0 +1,2142 @@
+test-Leland_D__Melvin-22-rdf-syntax-ns_type-Astronaut
+semantics:[22-rdf-syntax-ns_type(e x y) Leland_D__Melvin(x) Astronaut(y)]
+
+test-Space_Shuttle_Atlantis-22-rdf-syntax-ns_type-SpaceShuttle
+semantics:[22-rdf-syntax-ns_type(e x y) Space_Shuttle_Atlantis(x) SpaceShuttle(y)]
+
+test-Yvonne_Cagle-22-rdf-syntax-ns_type-Astronaut
+semantics:[22-rdf-syntax-ns_type(e x y) Yvonne_Cagle(x) Astronaut(y)]
+
+test-Yury_Usachov-22-rdf-syntax-ns_type-Astronaut
+semantics:[22-rdf-syntax-ns_type(e x y) Yury_Usachov(x) Astronaut(y)]
+
+test-Brazilian_Journal_of_Medical_and_Biological_Research-academicDiscipline-Medicine
+semantics:[academicDiscipline(e x y) Brazilian_Journal_of_Medical_and_Biological_Research(x) Medicine(y)]
+
+test-Physician-activitySector-Medicine
+semantics:[activitySector(e x y) Physician(x) Medicine(y)]
+
+test-Teacher-activitySector-Education
+semantics:[activitySector(e x y) Teacher(x) Education(y)]
+
+test-Financial_adviser-activitySector-Business
+semantics:[activitySector(e x y) Financial_adviser(x) Business(y)]
+
+test-List_of_Highlander_characters-actor-Deborah_Kara_Unger
+semantics:[actor(e x y) List_of_Highlander_characters(x) Deborah_Kara_Unger(y)]
+
+test-Penza_Oblast-admCtrName-Penza
+semantics:[admCtrName(e x y) Penza_Oblast(x) Penza(y)]
+
+test-Chuvashia-admCtrName-Cheboksary
+semantics:[admCtrName(e x y) Chuvashia(x) Cheboksary(y)]
+
+test-Yekaterinburg-admCtrOf-Sverdlovsk_Oblast
+semantics:[admCtrOf(e x y) Yekaterinburg(x) Sverdlovsk_Oblast(y)]
+
+test-Birkbeck__University_of_London-affiliation-University_of_London
+semantics:[affiliation(e x y) Birkbeck__University_of_London(x) University_of_London(y)]
+
+test-University_College_Dublin-affiliation-National_University_of_Ireland
+semantics:[affiliation(e x y) University_College_Dublin(x) National_University_of_Ireland(y)]
+
+test-University_of_California__Davis-affiliation-University_of_California
+semantics:[affiliation(e x y) University_of_California__Davis(x) University_of_California(y)]
+
+test-California_State_University__Fullerton-affiliation-California_State_University
+semantics:[affiliation(e x y) California_State_University__Fullerton(x) California_State_University(y)]
+
+test-University_of_California__Santa_Cruz-affiliations-University_of_California
+semantics:[affiliations(e x y) University_of_California__Santa_Cruz(x) University_of_California(y)]
+
+test-Apollo_E2_80_93Soyuz_Test_Project-after-Space_Shuttle
+semantics:[after(e x y) Apollo_E2_80_93Soyuz_Test_Project(x) Space_Shuttle(y)]
+
+test-Apollo_13-after-Apollo_14
+semantics:[after(e x y) Apollo_13(x) Apollo_14(y)]
+
+test-Skylab_3-after-Skylab_4
+semantics:[after(e x y) Skylab_3(x) Skylab_4(y)]
+
+test-Salyut_7-after-Mir
+semantics:[after(e x y) Salyut_7(x) Mir(y)]
+
+test-United_States_presidential_election__1960-afterElection-John_F__Kennedy
+semantics:[afterElection(e x y) United_States_presidential_election__1960(x) John_F__Kennedy(y)]
+
+test-United_States_presidential_election__1980-afterElection-Ronald_Reagan
+semantics:[afterElection(e x y) United_States_presidential_election__1980(x) Ronald_Reagan(y)]
+
+test-STS-55-agency1Up-German_Aerospace_Center
+semantics:[agency1Up(e x y) STS-55(x) German_Aerospace_Center(y)]
+
+test-Soyuz_29-agency2Down-Interkosmos
+semantics:[agency2Down(e x y) Soyuz_29(x) Interkosmos(y)]
+
+test-Soyuz_TMA-15-agency2Up-European_Space_Agency
+semantics:[agency2Up(e x y) Soyuz_TMA-15(x) European_Space_Agency(y)]
+
+test-Soyuz_28-agency2Up-Interkosmos
+semantics:[agency2Up(e x y) Soyuz_28(x) Interkosmos(y)]
+
+test-Soyuz_TMA-02M-agency2Up-NASA
+semantics:[agency2Up(e x y) Soyuz_TMA-02M(x) NASA(y)]
+
+test-Soyuz_TMA-14-agency3Down-Space_Adventures
+semantics:[agency3Down(e x y) Soyuz_TMA-14(x) Space_Adventures(y)]
+
+test-Soyuz_TMA-21-agency3Up-NASA
+semantics:[agency3Up(e x y) Soyuz_TMA-21(x) NASA(y)]
+
+test-Soyuz_TMA-01M-agency3Up-NASA
+semantics:[agency3Up(e x y) Soyuz_TMA-01M(x) NASA(y)]
+
+test-Soyuz_TMA-04M-agency3Up-NASA
+semantics:[agency3Up(e x y) Soyuz_TMA-04M(x) NASA(y)]
+
+test-Soyuz_TMA-02M-agency3Up-NASA
+semantics:[agency3Up(e x y) Soyuz_TMA-02M(x) NASA(y)]
+
+test-STS-122-agency5Up-European_Space_Agency
+semantics:[agency5Up(e x y) STS-122(x) European_Space_Agency(y)]
+
+test-STS-71-agency6Down-Russian_Federal_Space_Agency
+semantics:[agency6Down(e x y) STS-71(x) Russian_Federal_Space_Agency(y)]
+
+test-STS-51-G-agency6Up-CNES
+semantics:[agency6Up(e x y) STS-51-G(x) CNES(y)]
+
+test-STS-71-agency6Up-Russian_Federal_Space_Agency
+semantics:[agency6Up(e x y) STS-71(x) Russian_Federal_Space_Agency(y)]
+
+test-STS-120-agency6Up-European_Space_Agency
+semantics:[agency6Up(e x y) STS-120(x) European_Space_Agency(y)]
+
+test-STS-131-agency6Up-Japan_Aerospace_Exploration_Agency
+semantics:[agency6Up(e x y) STS-131(x) Japan_Aerospace_Exploration_Agency(y)]
+
+test-STS-71-agency7Down-Russian_Federal_Space_Agency
+semantics:[agency7Down(e x y) STS-71(x) Russian_Federal_Space_Agency(y)]
+
+test-STS-71-agency7Up-Russian_Federal_Space_Agency
+semantics:[agency7Up(e x y) STS-71(x) Russian_Federal_Space_Agency(y)]
+
+test-STS-122-agency7Up-European_Space_Agency
+semantics:[agency7Up(e x y) STS-122(x) European_Space_Agency(y)]
+
+test-STS-78-agency7Up-Italian_Space_Agency
+semantics:[agency7Up(e x y) STS-78(x) Italian_Space_Agency(y)]
+
+test-425_Tactical_Fighter_Squadron-aircraftFighter-McDonnell_Douglas_CF-18_Hornet
+semantics:[aircraftFighter(e x y) 425_Tactical_Fighter_Squadron(x) McDonnell_Douglas_CF-18_Hornet(y)]
+
+test-Walter_Reed-almaMater-Johns_Hopkins_University
+semantics:[almaMater(e x y) Walter_Reed(x) Johns_Hopkins_University(y)]
+
+test-John_Poindexter-almaMater-United_States_Naval_Academy
+semantics:[almaMater(e x y) John_Poindexter(x) United_States_Naval_Academy(y)]
+
+test-Proton-antiparticle-Antiproton
+semantics:[antiparticle(e x y) Proton(x) Antiproton(y)]
+
+test-Electric_Area-area-United_States
+semantics:[area(e x y) Electric_Area(x) United_States(y)]
+
+test-American_Institute_for_Medical_and_Biological_Engineering-areaServed-United_States
+semantics:[areaServed(e x y) American_Institute_for_Medical_and_Biological_Engineering(x) United_States(y)]
+
+test-Expedition_33-arrivalCraft-Soyuz_TMA-06M
+semantics:[arrivalCraft(e x y) Expedition_33(x) Soyuz_TMA-06M(y)]
+
+test-Expedition_37-arrivalCraft-Soyuz_TMA-09M
+semantics:[arrivalCraft(e x y) Expedition_37(x) Soyuz_TMA-09M(y)]
+
+test-Expedition_2-arrivalCraft-STS-102
+semantics:[arrivalCraft(e x y) Expedition_2(x) STS-102(y)]
+
+test-Expedition_12-arrivalCraft-Soyuz_TMA-7
+semantics:[arrivalCraft(e x y) Expedition_12(x) Soyuz_TMA-7(y)]
+
+test-Random_Access_Memories-artist-Daft_Punk
+semantics:[artist(e x y) Random_Access_Memories(x) Daft_Punk(y)]
+
+test-Benefit__album_-artist-Jethro_Tull__band_
+semantics:[artist(e x y) Benefit__album_(x) Jethro_Tull__band_(y)]
+
+test-Synchronicity__The_Police_album_-artist-The_Police
+semantics:[artist(e x y) Synchronicity__The_Police_album_(x) The_Police(y)]
+
+test-Nissan_Quest-assembly-United_States
+semantics:[assembly(e x y) Nissan_Quest(x) United_States(y)]
+
+test-Space_Shuttle_main_engine-associated-Space_Shuttle
+semantics:[associated(e x y) Space_Shuttle_main_engine(x) Space_Shuttle(y)]
+
+test-Ed_Robertson-associatedBand-Barenaked_Ladies
+semantics:[associatedBand(e x y) Ed_Robertson(x) Barenaked_Ladies(y)]
+
+test-Jim_Gordon__musician_-associatedBand-Alice_Cooper
+semantics:[associatedBand(e x y) Jim_Gordon__musician_(x) Alice_Cooper(y)]
+
+test-Ed_Robertson-associatedMusicalArtist-Barenaked_Ladies
+semantics:[associatedMusicalArtist(e x y) Ed_Robertson(x) Barenaked_Ladies(y)]
+
+test-Jim_Gordon__musician_-associatedMusicalArtist-Alice_Cooper
+semantics:[associatedMusicalArtist(e x y) Jim_Gordon__musician_(x) Alice_Cooper(y)]
+
+test-University_of_Chicago-athletics-National_Collegiate_Athletic_Association
+semantics:[athletics(e x y) University_of_Chicago(x) National_Collegiate_Athletic_Association(y)]
+
+test-Stanford_University-athletics-National_Collegiate_Athletic_Association
+semantics:[athletics(e x y) Stanford_University(x) National_Collegiate_Athletic_Association(y)]
+
+test-Moon_Shot-author-Jay_Barbree
+semantics:[author(e x y) Moon_Shot(x) Jay_Barbree(y)]
+
+test-Moon_Shot-author-Deke_Slayton
+semantics:[author(e x y) Moon_Shot(x) Deke_Slayton(y)]
+
+test-List_of_Space_Ghost_Coast_to_Coast_episodes-aux-Buzz_Aldrin
+semantics:[aux(e x y) List_of_Space_Ghost_Coast_to_Coast_episodes(x) Buzz_Aldrin(y)]
+
+test-List_of_Space_Ghost_Coast_to_Coast_episodes-aux-Alice_Cooper
+semantics:[aux(e x y) List_of_Space_Ghost_Coast_to_Coast_episodes(x) Alice_Cooper(y)]
+
+test-Nathan_Farragut_Twining-award-Air_Medal
+semantics:[award(e x y) Nathan_Farragut_Twining(x) Air_Medal(y)]
+
+test-Nathan_Farragut_Twining-award-Distinguished_Flying_Cross__United_States_
+semantics:[award(e x y) Nathan_Farragut_Twining(x) Distinguished_Flying_Cross__United_States_(y)]
+
+test-Air_Force_Distinguished_Service_Medal-awardedBy-United_States_Air_Force
+semantics:[awardedBy(e x y) Air_Force_Distinguished_Service_Medal(x) United_States_Air_Force(y)]
+
+test-Order_of_British_Columbia-awardedBy-Lieutenant_Governor_of_British_Columbia
+semantics:[awardedBy(e x y) Order_of_British_Columbia(x) Lieutenant_Governor_of_British_Columbia(y)]
+
+test-Deke_Slayton-awards-Collier_Trophy
+semantics:[awards(e x y) Deke_Slayton(x) Collier_Trophy(y)]
+
+test-Alan_Shepard-awards-Navy_Distinguished_Service_Medal
+semantics:[awards(e x y) Alan_Shepard(x) Navy_Distinguished_Service_Medal(y)]
+
+test-Valentin_Bondarenko-awards-Order_of_the_Red_Star
+semantics:[awards(e x y) Valentin_Bondarenko(x) Order_of_the_Red_Star(y)]
+
+test-Barenaked_Ladies-bandMember-Ed_Robertson
+semantics:[bandMember(e x y) Barenaked_Ladies(x) Ed_Robertson(y)]
+
+test-Highlights_for_Children-based-Columbus__Ohio
+semantics:[based(e x y) Highlights_for_Children(x) Columbus__Ohio(y)]
+
+test-Orituco_River-basinCountries-Venezuela
+semantics:[basinCountries(e x y) Orituco_River(x) Venezuela(y)]
+
+test-Kharkiv_River-basinCountries-Russia
+semantics:[basinCountries(e x y) Kharkiv_River(x) Russia(y)]
+
+test-George_Lincoln_Rockwell-battle-World_War_II
+semantics:[battle(e x y) George_Lincoln_Rockwell(x) World_War_II(y)]
+
+test-Olaf_M__Hustvedt-battle-World_War_II
+semantics:[battle(e x y) Olaf_M__Hustvedt(x) World_War_II(y)]
+
+test-Bruce_McCandless-battle-World_War_II
+semantics:[battle(e x y) Bruce_McCandless(x) World_War_II(y)]
+
+test-140th_Wing-battle-Operation_Southern_Watch
+semantics:[battle(e x y) 140th_Wing(x) Operation_Southern_Watch(y)]
+
+test-Mother_Teresa-beatifiedPlace-St__Peter's_Basilica
+semantics:[beatifiedPlace(e x y) Mother_Teresa(x) St__Peter's_Basilica(y)]
+
+test-Skylab_4-before-Skylab_3
+semantics:[before(e x y) Skylab_4(x) Skylab_3(y)]
+
+test-Apollo_14-before-Apollo_13
+semantics:[before(e x y) Apollo_14(x) Apollo_13(y)]
+
+test-Apollo_program-before-Project_Gemini
+semantics:[before(e x y) Apollo_program(x) Project_Gemini(y)]
+
+test-Leonid_Kadeniuk-birthPlace-Ukraine
+semantics:[birthPlace(e x y) Leonid_Kadeniuk(x) Ukraine(y)]
+
+test-Konstantin_Valkov-birthPlace-Russia
+semantics:[birthPlace(e x y) Konstantin_Valkov(x) Russia(y)]
+
+test-Yvonne_Cagle-birthPlace-West_Point__New_York
+semantics:[birthPlace(e x y) Yvonne_Cagle(x) West_Point__New_York(y)]
+
+test-Yury_Vasilyevich_Malyshev-birthPlace-Volgograd_Oblast
+semantics:[birthPlace(e x y) Yury_Vasilyevich_Malyshev(x) Volgograd_Oblast(y)]
+
+test-Space_Shuttle-boostername-Space_Shuttle_Solid_Rocket_Booster
+semantics:[boostername(e x y) Space_Shuttle(x) Space_Shuttle_Solid_Rocket_Booster(y)]
+
+test-Texas-borderingstates-New_Mexico
+semantics:[borderingstates(e x y) Texas(x) New_Mexico(y)]
+
+test-Texas-borderingstates-Oklahoma
+semantics:[borderingstates(e x y) Texas(x) Oklahoma(y)]
+
+test-Leonardo__ISS_module_-bus-Multi-Purpose_Logistics_Module
+semantics:[bus(e x y) Leonardo__ISS_module_(x) Multi-Purpose_Logistics_Module(y)]
+
+test-Barney_Miller-camera-Videotape
+semantics:[camera(e x y) Barney_Miller(x) Videotape(y)]
+
+test-Georgetown_University-campus-Urban_area
+semantics:[campus(e x y) Georgetown_University(x) Urban_area(y)]
+
+test-West_Coast_University-campus-Los_Angeles
+semantics:[campus(e x y) West_Coast_University(x) Los_Angeles(y)]
+
+test-Jesse_Jackson-candidate-George_McGovern
+semantics:[candidate(e x y) Jesse_Jackson(x) George_McGovern(y)]
+
+test-Jesse_Jackson-candidate-Walter_Mondale
+semantics:[candidate(e x y) Jesse_Jackson(x) Walter_Mondale(y)]
+
+test-Russia-capital-Moscow
+semantics:[capital(e x y) Russia(x) Moscow(y)]
+
+test-Massachusetts-capital-Boston
+semantics:[capital(e x y) Massachusetts(x) Boston(y)]
+
+test-Taiwan-capital-Taipei
+semantics:[capital(e x y) Taiwan(x) Taipei(y)]
+
+test-Association_football-category-Team_sport
+semantics:[category(e x y) Association_football(x) Team_sport(y)]
+
+test-American_football-category-Team_sport
+semantics:[category(e x y) American_football(x) Team_sport(y)]
+
+test-1986__TV_series_-channel-NBC
+semantics:[channel(e x y) 1986__TV_series_(x) NBC(y)]
+
+test-Lyndon_B__Johnson_Space_Center-chief1Name-Ellen_Ochoa
+semantics:[chief1Name(e x y) Lyndon_B__Johnson_Space_Center(x) Ellen_Ochoa(y)]
+
+test-George_H__W__Bush-child-George_W__Bush
+semantics:[child(e x y) George_H__W__Bush(x) George_W__Bush(y)]
+
+test-Apogee_of_Fear-cinematography-Richard_Garriott
+semantics:[cinematography(e x y) Apogee_of_Fear(x) Richard_Garriott(y)]
+
+test-Subcommittee__Cragg_-city-United_States
+semantics:[city(e x y) Subcommittee__Cragg_(x) United_States(y)]
+
+test-Rocky_River_High_School__Ohio_-city-Rocky_River__Ohio
+semantics:[city(e x y) Rocky_River_High_School__Ohio_(x) Rocky_River__Ohio(y)]
+
+test-Florida_State_College_at_Jacksonville-city-Jacksonville__Florida
+semantics:[city(e x y) Florida_State_College_at_Jacksonville(x) Jacksonville__Florida(y)]
+
+test-William_R__Pogue_Municipal_Airport-city-Sand_Springs__Oklahoma
+semantics:[city(e x y) William_R__Pogue_Municipal_Airport(x) Sand_Springs__Oklahoma(y)]
+
+test-Stavropol_Shpakovskoye_Airport-cityServed-Stavropol
+semantics:[cityServed(e x y) Stavropol_Shpakovskoye_Airport(x) Stavropol(y)]
+
+test-Flight__horse_-colour-Bay__horse_
+semantics:[colour(e x y) Flight__horse_(x) Bay__horse_(y)]
+
+test-67th_Fighter_Squadron-commandStructure-18th_Wing
+semantics:[commandStructure(e x y) 67th_Fighter_Squadron(x) 18th_Wing(y)]
+
+test-1st_Battalion_5th_Marines-commandStructure-5th_Marine_Regiment__United_States_
+semantics:[commandStructure(e x y) 1st_Battalion_5th_Marines(x) 5th_Marine_Regiment__United_States_(y)]
+
+test-United_States_Navy_SEALs-commandStructure-United_States_Naval_Special_Warfare_Command
+semantics:[commandStructure(e x y) United_States_Navy_SEALs(x) United_States_Naval_Special_Warfare_Command(y)]
+
+test-United_States_Navy-commander2Label-United_States_Secretary_of_the_Navy
+semantics:[commander2Label(e x y) United_States_Navy(x) United_States_Secretary_of_the_Navy(y)]
+
+test-James_Cartwright-commands-Vice_Chairman_of_the_Joint_Chiefs_of_Staff
+semantics:[commands(e x y) James_Cartwright(x) Vice_Chairman_of_the_Joint_Chiefs_of_Staff(y)]
+
+test-Congress_Poland-commonLanguages-Russian_language
+semantics:[commonLanguages(e x y) Congress_Poland(x) Russian_language(y)]
+
+test-Uzbek_Soviet_Socialist_Republic-commonLanguages-Russian_language
+semantics:[commonLanguages(e x y) Uzbek_Soviet_Socialist_Republic(x) Russian_language(y)]
+
+test-Buzz_Lightyear_of_Star_Command-company-Pixar
+semantics:[company(e x y) Buzz_Lightyear_of_Star_Command(x) Pixar(y)]
+
+test-Good_Morning_America-company-ABC_News
+semantics:[company(e x y) Good_Morning_America(x) ABC_News(y)]
+
+test-The_Americans__2013_TV_series_-company-FX__TV_channel_
+semantics:[company(e x y) The_Americans__2013_TV_series_(x) FX__TV_channel_(y)]
+
+test-Mister_Rogers'_Neighborhood-composer-Fred_Rogers
+semantics:[composer(e x y) Mister_Rogers'_Neighborhood(x) Fred_Rogers(y)]
+
+test-Italy_national_football_team-confederation-UEFA
+semantics:[confederation(e x y) Italy_national_football_team(x) UEFA(y)]
+
+test-Glossary_of_American_football-content-Winning_percentage
+semantics:[content(e x y) Glossary_of_American_football(x) Winning_percentage(y)]
+
+test-Santa_Ana_Army_Air_Base-controlledby-United_States_Army_Air_Forces
+semantics:[controlledby(e x y) Santa_Ana_Army_Air_Base(x) United_States_Army_Air_Forces(y)]
+
+test-Reese_Air_Force_Base-controlledby-United_States_Air_Force
+semantics:[controlledby(e x y) Reese_Air_Force_Base(x) United_States_Air_Force(y)]
+
+test-Busan-country-South_Korea
+semantics:[country(e x y) Busan(x) South_Korea(y)]
+
+test-German_Army-country-Germany
+semantics:[country(e x y) German_Army(x) Germany(y)]
+
+test-New_York-country-United_States
+semantics:[country(e x y) New_York(x) United_States(y)]
+
+test-West_Point__New_York-country-United_States
+semantics:[country(e x y) West_Point__New_York(x) United_States(y)]
+
+test-Cape_Breton_Island-countryAdminDivisions-Nova_Scotia
+semantics:[countryAdminDivisions(e x y) Cape_Breton_Island(x) Nova_Scotia(y)]
+
+test-Key_West-countryAdminDivisions-Florida
+semantics:[countryAdminDivisions(e x y) Key_West(x) Florida(y)]
+
+test-H-II-countryOrigin-Japan
+semantics:[countryOrigin(e x y) H-II(x) Japan(y)]
+
+test-Energia-countryOrigin-Soviet_Union
+semantics:[countryOrigin(e x y) Energia(x) Soviet_Union(y)]
+
+test-Voskhod__rocket_-countryOrigin-Soviet_Union
+semantics:[countryOrigin(e x y) Voskhod__rocket_(x) Soviet_Union(y)]
+
+test-Pomeroy__County_Tyrone-county-County_Tyrone
+semantics:[county(e x y) Pomeroy__County_Tyrone(x) County_Tyrone(y)]
+
+test-Derry-county-County_Londonderry
+semantics:[county(e x y) Derry(x) County_Londonderry(y)]
+
+test-Mister_Rogers'_Neighborhood-creator-Fred_Rogers
+semantics:[creator(e x y) Mister_Rogers'_Neighborhood(x) Fred_Rogers(y)]
+
+test-Stephen_Colbert__character_-creator-Stephen_Colbert
+semantics:[creator(e x y) Stephen_Colbert__character_(x) Stephen_Colbert(y)]
+
+test-Apollo_13-crew1Up-Jim_Lovell
+semantics:[crew1Up(e x y) Apollo_13(x) Jim_Lovell(y)]
+
+test-Apollo_1-crew1Up-James_McDivitt
+semantics:[crew1Up(e x y) Apollo_1(x) James_McDivitt(y)]
+
+test-Soyuz_TMA-2-crew1Up-Yuri_Malenchenko
+semantics:[crew1Up(e x y) Soyuz_TMA-2(x) Yuri_Malenchenko(y)]
+
+test-Expedition_7-crew1Up-Yuri_Malenchenko
+semantics:[crew1Up(e x y) Expedition_7(x) Yuri_Malenchenko(y)]
+
+test-Soyuz_TMA-16M-crew2Down-Andreas_Mogensen
+semantics:[crew2Down(e x y) Soyuz_TMA-16M(x) Andreas_Mogensen(y)]
+
+test-Soyuz_4-crew2Down-Aleksei_Yeliseyev
+semantics:[crew2Down(e x y) Soyuz_4(x) Aleksei_Yeliseyev(y)]
+
+test-Soyuz_TMA-1-crew2Down-NASA
+semantics:[crew2Down(e x y) Soyuz_TMA-1(x) NASA(y)]
+
+test-Voskhod_1-crew2Up-Konstantin_Feoktistov
+semantics:[crew2Up(e x y) Voskhod_1(x) Konstantin_Feoktistov(y)]
+
+test-Apollo_13-crew2Up-Ken_Mattingly
+semantics:[crew2Up(e x y) Apollo_13(x) Ken_Mattingly(y)]
+
+test-Expedition_2-crew2Up-Susan_J__Helms
+semantics:[crew2Up(e x y) Expedition_2(x) Susan_J__Helms(y)]
+
+test-Expedition_2-crew2Up-NASA
+semantics:[crew2Up(e x y) Expedition_2(x) NASA(y)]
+
+test-Soyuz_TMA-6-crew3Down-Gregory_Olsen
+semantics:[crew3Down(e x y) Soyuz_TMA-6(x) Gregory_Olsen(y)]
+
+test-Soyuz_TMA-2-crew3Down-Pedro_Duque
+semantics:[crew3Down(e x y) Soyuz_TMA-2(x) Pedro_Duque(y)]
+
+test-Soyuz_TMA-11-crew3Down-Yi_So-Yeon
+semantics:[crew3Down(e x y) Soyuz_TMA-11(x) Yi_So-Yeon(y)]
+
+test-Apollo_13-crew3Up-Fred_Haise
+semantics:[crew3Up(e x y) Apollo_13(x) Fred_Haise(y)]
+
+test-STS-40-crew3Up-James_P__Bagian
+semantics:[crew3Up(e x y) STS-40(x) James_P__Bagian(y)]
+
+test-Soyuz_TMA-13-crew3Up-Richard_Garriott
+semantics:[crew3Up(e x y) Soyuz_TMA-13(x) Richard_Garriott(y)]
+
+test-Voskhod_1-crew3Up-Boris_Yegorov
+semantics:[crew3Up(e x y) Voskhod_1(x) Boris_Yegorov(y)]
+
+test-STS-87-crew4Up-Winston_E__Scott
+semantics:[crew4Up(e x y) STS-87(x) Winston_E__Scott(y)]
+
+test-STS-54-crew4Up-Gregory_J__Harbaugh
+semantics:[crew4Up(e x y) STS-54(x) Gregory_J__Harbaugh(y)]
+
+test-STS-5-crew4Up-William_B__Lenoir
+semantics:[crew4Up(e x y) STS-5(x) William_B__Lenoir(y)]
+
+test-STS-123-crew4Up-Michael_Foreman__astronaut_
+semantics:[crew4Up(e x y) STS-123(x) Michael_Foreman__astronaut_(y)]
+
+test-STS-87-crew5Up-Takao_Doi
+semantics:[crew5Up(e x y) STS-87(x) Takao_Doi(y)]
+
+test-STS-29-crew5Up-James_P__Bagian
+semantics:[crew5Up(e x y) STS-29(x) James_P__Bagian(y)]
+
+test-STS-123-crew5Up-Richard_M__Linnehan
+semantics:[crew5Up(e x y) STS-123(x) Richard_M__Linnehan(y)]
+
+test-STS-90-crew5Up-Richard_M__Linnehan
+semantics:[crew5Up(e x y) STS-90(x) Richard_M__Linnehan(y)]
+
+test-STS-81-crew6Down-John_E__Blaha
+semantics:[crew6Down(e x y) STS-81(x) John_E__Blaha(y)]
+
+test-STS-72-crew6Up-Daniel_T__Barry
+semantics:[crew6Up(e x y) STS-72(x) Daniel_T__Barry(y)]
+
+test-STS-51-G-crew6Up-Patrick_Baudry
+semantics:[crew6Up(e x y) STS-51-G(x) Patrick_Baudry(y)]
+
+test-STS-51-B-crew6Up-Lodewijk_van_den_Berg
+semantics:[crew6Up(e x y) STS-51-B(x) Lodewijk_van_den_Berg(y)]
+
+test-STS-47-crew6Up-Mae_Jemison
+semantics:[crew6Up(e x y) STS-47(x) Mae_Jemison(y)]
+
+test-STS-89-crew7Down-David_Wolf__astronaut_
+semantics:[crew7Down(e x y) STS-89(x) David_Wolf__astronaut_(y)]
+
+test-STS-120-crew7Down-Clayton_Anderson
+semantics:[crew7Down(e x y) STS-120(x) Clayton_Anderson(y)]
+
+test-STS-117-crew7Up-Clayton_Anderson
+semantics:[crew7Up(e x y) STS-117(x) Clayton_Anderson(y)]
+
+test-STS-122-crew7Up-L_C3_A9opold_Eyharts
+semantics:[crew7Up(e x y) STS-122(x) L_C3_A9opold_Eyharts(y)]
+
+test-STS-120-crew7Up-Daniel_M__Tani
+semantics:[crew7Up(e x y) STS-120(x) Daniel_M__Tani(y)]
+
+test-STS-61-A-crew8Up-Wubbo_Ockels
+semantics:[crew8Up(e x y) STS-61-A(x) Wubbo_Ockels(y)]
+
+test-STS-89-crewLanding-David_Wolf__astronaut_
+semantics:[crewLanding(e x y) STS-89(x) David_Wolf__astronaut_(y)]
+
+test-STS-120-crewLanding-Clayton_Anderson
+semantics:[crewLanding(e x y) STS-120(x) Clayton_Anderson(y)]
+
+test-Soyuz_TMA-2-crewLanding-Pedro_Duque
+semantics:[crewLanding(e x y) Soyuz_TMA-2(x) Pedro_Duque(y)]
+
+test-Soyuz_TM-33-crewLanding-Yuri_Gidzenko
+semantics:[crewLanding(e x y) Soyuz_TM-33(x) Yuri_Gidzenko(y)]
+
+test-STS-117-crewLaunching-Clayton_Anderson
+semantics:[crewLaunching(e x y) STS-117(x) Clayton_Anderson(y)]
+
+test-Soyuz_TMA-13-crewLaunching-Richard_Garriott
+semantics:[crewLaunching(e x y) Soyuz_TMA-13(x) Richard_Garriott(y)]
+
+test-Soyuz_TM-18-crewLaunching-Valeri_Polyakov
+semantics:[crewLaunching(e x y) Soyuz_TM-18(x) Valeri_Polyakov(y)]
+
+test-Apollo_13-crewList-Jim_Lovell
+semantics:[crewList(e x y) Apollo_13(x) Jim_Lovell(y)]
+
+test-Apollo_13-crewList-Fred_Haise
+semantics:[crewList(e x y) Apollo_13(x) Fred_Haise(y)]
+
+test-Voskhod_1-crewMembers-Konstantin_Feoktistov
+semantics:[crewMembers(e x y) Voskhod_1(x) Konstantin_Feoktistov(y)]
+
+test-STS-72-crewMembers-Daniel_T__Barry
+semantics:[crewMembers(e x y) STS-72(x) Daniel_T__Barry(y)]
+
+test-Expedition_2-crewMembers-Susan_J__Helms
+semantics:[crewMembers(e x y) Expedition_2(x) Susan_J__Helms(y)]
+
+test-Soyuz_TM-23-crewMembers-Yury_Usachov
+semantics:[crewMembers(e x y) Soyuz_TM-23(x) Yury_Usachov(y)]
+
+test-Mercury-Atlas_8-crewPhotoCaption-Wally_Schirra
+semantics:[crewPhotoCaption(e x y) Mercury-Atlas_8(x) Wally_Schirra(y)]
+
+test-Russia-currency-Russian_ruble
+semantics:[currency(e x y) Russia(x) Russian_ruble(y)]
+
+test-Israeli_Air_Force-currentCommander-Aluf
+semantics:[currentCommander(e x y) Israeli_Air_Force(x) Aluf(y)]
+
+test-Exxon-currentowner-ExxonMobil
+semantics:[currentowner(e x y) Exxon(x) ExxonMobil(y)]
+
+test-NEEMO-data-Aquarius__laboratory_
+semantics:[data(e x y) NEEMO(x) Aquarius__laboratory_(y)]
+
+test-ABC_News-data-United_States
+semantics:[data(e x y) ABC_News(x) United_States(y)]
+
+test-List_of_Ice_Age_characters-data-Human
+semantics:[data(e x y) List_of_Ice_Age_characters(x) Human(y)]
+
+test-Konstantin_Feoktistov-deathPlace-Russia
+semantics:[deathPlace(e x y) Konstantin_Feoktistov(x) Russia(y)]
+
+test-Ivan_Kozhedub-deathPlace-Soviet_Union
+semantics:[deathPlace(e x y) Ivan_Kozhedub(x) Soviet_Union(y)]
+
+test-Heo_Jeong-deathPlace-South_Korea
+semantics:[deathPlace(e x y) Heo_Jeong(x) South_Korea(y)]
+
+test-Wubbo_Ockels-deathPlace-Netherlands
+semantics:[deathPlace(e x y) Wubbo_Ockels(x) Netherlands(y)]
+
+test-4750th_Air_Defense_Wing-decorations-Air_Force_Outstanding_Unit_Award
+semantics:[decorations(e x y) 4750th_Air_Defense_Wing(x) Air_Force_Outstanding_Unit_Award(y)]
+
+test-Soviet_Union-demonym-Soviet_people
+semantics:[demonym(e x y) Soviet_Union(x) Soviet_people(y)]
+
+test-Expedition_33-departureCraft-Soyuz_TMA-06M
+semantics:[departureCraft(e x y) Expedition_33(x) Soyuz_TMA-06M(y)]
+
+test-Expedition_37-departureCraft-Soyuz_TMA-09M
+semantics:[departureCraft(e x y) Expedition_37(x) Soyuz_TMA-09M(y)]
+
+test-Expedition_4-departureCraft-STS-111
+semantics:[departureCraft(e x y) Expedition_4(x) STS-111(y)]
+
+test-Expedition_12-departureCraft-Soyuz_TMA-7
+semantics:[departureCraft(e x y) Expedition_12(x) Soyuz_TMA-7(y)]
+
+test-Vice_Chairman_of_the_Joint_Chiefs_of_Staff-deputy-Joint_Chiefs_of_Staff
+semantics:[deputy(e x y) Vice_Chairman_of_the_Joint_Chiefs_of_Staff(x) Joint_Chiefs_of_Staff(y)]
+
+test-St_C3_A9phane_Dion-deputy-Michael_Ignatieff
+semantics:[deputy(e x y) St_C3_A9phane_Dion(x) Michael_Ignatieff(y)]
+
+test-Space_disco-derivative-British_rock
+semantics:[derivative(e x y) Space_disco(x) British_rock(y)]
+
+test-Soyuz-TM-derivatives-Soyuz-TMA
+semantics:[derivatives(e x y) Soyuz-TM(x) Soyuz-TMA(y)]
+
+test-Soyuz-TMA-derivedfrom-Soyuz-TM
+semantics:[derivedfrom(e x y) Soyuz-TMA(x) Soyuz-TM(y)]
+
+test-Wright_Flyer-designer-Wright_brothers
+semantics:[designer(e x y) Wright_Flyer(x) Wright_brothers(y)]
+
+test-Soyuz_TMA-6-details3Down-Space_tourism
+semantics:[details3Down(e x y) Soyuz_TMA-6(x) Space_tourism(y)]
+
+test-Soyuz_TMA-12-details3Down-Space_tourism
+semantics:[details3Down(e x y) Soyuz_TMA-12(x) Space_tourism(y)]
+
+test-Soyuz_TM-31-details3Down-Space_tourism
+semantics:[details3Down(e x y) Soyuz_TM-31(x) Space_tourism(y)]
+
+test-Soyuz_TMA-13-details3Up-Space_tourism
+semantics:[details3Up(e x y) Soyuz_TMA-13(x) Space_tourism(y)]
+
+test-Soyuz_TMA-10-details3Up-Space_tourism
+semantics:[details3Up(e x y) Soyuz_TMA-10(x) Space_tourism(y)]
+
+test-Soyuz_TM-32-details3Up-Space_tourism
+semantics:[details3Up(e x y) Soyuz_TM-32(x) Space_tourism(y)]
+
+test-North_American_F-107-developedFrom-North_American_F-100_Super_Sabre
+semantics:[developedFrom(e x y) North_American_F-107(x) North_American_F-100_Super_Sabre(y)]
+
+test-Northrop_M2-F3-developedFrom-NASA_M2-F1
+semantics:[developedFrom(e x y) Northrop_M2-F3(x) NASA_M2-F1(y)]
+
+test-Aero_L-39_Albatros-developedFrom-Aero_L-29_Delf_C3_ADn
+semantics:[developedFrom(e x y) Aero_L-39_Albatros(x) Aero_L-29_Delf_C3_ADn(y)]
+
+test-Sukhoi_Su-17-developedFrom-Sukhoi_Su-7
+semantics:[developedFrom(e x y) Sukhoi_Su-17(x) Sukhoi_Su-7(y)]
+
+test-Convair_F-102_Delta_Dagger-developedInto-Convair_F-106_Delta_Dart
+semantics:[developedInto(e x y) Convair_F-102_Delta_Dagger(x) Convair_F-106_Delta_Dart(y)]
+
+test-North_American_F-100_Super_Sabre-developedInto-North_American_F-107
+semantics:[developedInto(e x y) North_American_F-100_Super_Sabre(x) North_American_F-107(y)]
+
+test-Sukhoi_Su-7-developedInto-Sukhoi_Su-17
+semantics:[developedInto(e x y) Sukhoi_Su-7(x) Sukhoi_Su-17(y)]
+
+test-ASP_NET_Razor_view_engine-developer-Microsoft
+semantics:[developer(e x y) ASP_NET_Razor_view_engine(x) Microsoft(y)]
+
+test-Shroud_of_the_Avatar__Forsaken_Virtues-developer-Portalarium
+semantics:[developer(e x y) Shroud_of_the_Avatar__Forsaken_Virtues(x) Portalarium(y)]
+
+test-Apogee_of_Fear-director-Richard_Garriott
+semantics:[director(e x y) Apogee_of_Fear(x) Richard_Garriott(y)]
+
+test-Serenity__film_-director-Joss_Whedon
+semantics:[director(e x y) Serenity__film_(x) Joss_Whedon(y)]
+
+test-The_IEEE_Multidisciplinary_Engineering_Education_Magazine-discipline-Education
+semantics:[discipline(e x y) The_IEEE_Multidisciplinary_Engineering_Education_Magazine(x) Education(y)]
+
+test-10605_Guidoni-discoverer-V__Giuliani
+semantics:[discoverer(e x y) 10605_Guidoni(x) V__Giuliani(y)]
+
+test-Morgenr_C3_B6the-Rautenkranz-district-Vogtlandkreis
+semantics:[district(e x y) Morgenr_C3_B6the-Rautenkranz(x) Vogtlandkreis(y)]
+
+test-IBM-division-Personal_computer_hardware
+semantics:[division(e x y) IBM(x) Personal_computer_hardware(y)]
+
+test-Latvia-east-Russia
+semantics:[east(e x y) Latvia(x) Russia(y)]
+
+test-Apogee_of_Fear-editing-Tracy_Hickman
+semantics:[editing(e x y) Apogee_of_Fear(x) Tracy_Hickman(y)]
+
+test-John_McCain-education-United_States_Naval_Academy
+semantics:[education(e x y) John_McCain(x) United_States_Naval_Academy(y)]
+
+test-Aerospace_engineering-employmentField-Science
+semantics:[employmentField(e x y) Aerospace_engineering(x) Science(y)]
+
+test-Engineer-employmentField-Business
+semantics:[employmentField(e x y) Engineer(x) Business(y)]
+
+test-Aerospace_engineering-employmentField-Technology
+semantics:[employmentField(e x y) Aerospace_engineering(x) Technology(y)]
+
+test-Mechanical_engineering-employmentField-Science
+semantics:[employmentField(e x y) Mechanical_engineering(x) Science(y)]
+
+test-McAuliffe__crater_-eponym-Christa_McAuliffe
+semantics:[eponym(e x y) McAuliffe__crater_(x) Christa_McAuliffe(y)]
+
+test-Soviet_Union-era-World_War_II
+semantics:[era(e x y) Soviet_Union(x) World_War_II(y)]
+
+test-Nazi_Germany-era-World_War_II
+semantics:[era(e x y) Nazi_Germany(x) World_War_II(y)]
+
+test-Russia-establishedEvent-Soviet_Union
+semantics:[establishedEvent(e x y) Russia(x) Soviet_Union(y)]
+
+test-Russia-establishedEvent-Russian_Soviet_Federative_Socialist_Republic
+semantics:[establishedEvent(e x y) Russia(x) Russian_Soviet_Federative_Socialist_Republic(y)]
+
+test-Kyrgyzstan-ethnicGroup-Uzbeks
+semantics:[ethnicGroup(e x y) Kyrgyzstan(x) Uzbeks(y)]
+
+test-Ba'athist_Iraq-event-Gulf_War
+semantics:[event(e x y) Ba'athist_Iraq(x) Gulf_War(y)]
+
+test-Nazi_Germany-event-World_War_II
+semantics:[event(e x y) Nazi_Germany(x) World_War_II(y)]
+
+test-The_Daily_Show-executiveProducer-Jon_Stewart
+semantics:[executiveProducer(e x y) The_Daily_Show(x) Jon_Stewart(y)]
+
+test-Soyuz_TMA-09M-expedition1Up-Expedition_36
+semantics:[expedition1Up(e x y) Soyuz_TMA-09M(x) Expedition_36(y)]
+
+test-Soyuz_TMA-07M-expedition1Up-Expedition_34
+semantics:[expedition1Up(e x y) Soyuz_TMA-07M(x) Expedition_34(y)]
+
+test-Soyuz_TMA-13-expedition1Up-Expedition_18
+semantics:[expedition1Up(e x y) Soyuz_TMA-13(x) Expedition_18(y)]
+
+test-Soyuz_TMA-11-expedition1Up-Expedition_16
+semantics:[expedition1Up(e x y) Soyuz_TMA-11(x) Expedition_16(y)]
+
+test-Soyuz_TMA-09M-expedition2Up-Expedition_36
+semantics:[expedition2Up(e x y) Soyuz_TMA-09M(x) Expedition_36(y)]
+
+test-Soyuz_TMA-20-expedition2Up-Expedition_26
+semantics:[expedition2Up(e x y) Soyuz_TMA-20(x) Expedition_26(y)]
+
+test-Soyuz_TMA-13-expedition2Up-Expedition_18
+semantics:[expedition2Up(e x y) Soyuz_TMA-13(x) Expedition_18(y)]
+
+test-Soyuz_TMA-11-expedition2Up-Expedition_16
+semantics:[expedition2Up(e x y) Soyuz_TMA-11(x) Expedition_16(y)]
+
+test-Soyuz_TMA-09M-expedition3Up-Expedition_36
+semantics:[expedition3Up(e x y) Soyuz_TMA-09M(x) Expedition_36(y)]
+
+test-Soyuz_TMA-20-expedition3Up-Expedition_26
+semantics:[expedition3Up(e x y) Soyuz_TMA-20(x) Expedition_26(y)]
+
+test-Soyuz_TMA-02M-expedition3Up-Expedition_28
+semantics:[expedition3Up(e x y) Soyuz_TMA-02M(x) Expedition_28(y)]
+
+test-Soyuz_TMA-15-expedition3Up-Expedition_20
+semantics:[expedition3Up(e x y) Soyuz_TMA-15(x) Expedition_20(y)]
+
+test-STS-105-expedition5Down-Expedition_2
+semantics:[expedition5Down(e x y) STS-105(x) Expedition_2(y)]
+
+test-STS-111-expedition5Down-Expedition_4
+semantics:[expedition5Down(e x y) STS-111(x) Expedition_4(y)]
+
+test-STS-108-expedition5Up-Expedition_4
+semantics:[expedition5Up(e x y) STS-108(x) Expedition_4(y)]
+
+test-STS-105-expedition5Up-Expedition_3
+semantics:[expedition5Up(e x y) STS-105(x) Expedition_3(y)]
+
+test-STS-113-expedition5Up-Expedition_6
+semantics:[expedition5Up(e x y) STS-113(x) Expedition_6(y)]
+
+test-STS-111-expedition5Up-Expedition_5
+semantics:[expedition5Up(e x y) STS-111(x) Expedition_5(y)]
+
+test-STS-105-expedition6Down-Expedition_2
+semantics:[expedition6Down(e x y) STS-105(x) Expedition_2(y)]
+
+test-STS-111-expedition6Down-Expedition_4
+semantics:[expedition6Down(e x y) STS-111(x) Expedition_4(y)]
+
+test-STS-108-expedition6Up-Expedition_4
+semantics:[expedition6Up(e x y) STS-108(x) Expedition_4(y)]
+
+test-STS-105-expedition6Up-Expedition_3
+semantics:[expedition6Up(e x y) STS-105(x) Expedition_3(y)]
+
+test-STS-113-expedition6Up-Expedition_6
+semantics:[expedition6Up(e x y) STS-113(x) Expedition_6(y)]
+
+test-STS-111-expedition6Up-Expedition_5
+semantics:[expedition6Up(e x y) STS-111(x) Expedition_5(y)]
+
+test-STS-119-expedition7Down-Expedition_18
+semantics:[expedition7Down(e x y) STS-119(x) Expedition_18(y)]
+
+test-STS-105-expedition7Down-Expedition_2
+semantics:[expedition7Down(e x y) STS-105(x) Expedition_2(y)]
+
+test-STS-120-expedition7Down-Expedition_16
+semantics:[expedition7Down(e x y) STS-120(x) Expedition_16(y)]
+
+test-STS-122-expedition7Down-Expedition_16
+semantics:[expedition7Down(e x y) STS-122(x) Expedition_16(y)]
+
+test-STS-119-expedition7Up-Expedition_18
+semantics:[expedition7Up(e x y) STS-119(x) Expedition_18(y)]
+
+test-STS-122-expedition7Up-Expedition_16
+semantics:[expedition7Up(e x y) STS-122(x) Expedition_16(y)]
+
+test-STS-121-expedition7Up-Expedition_13
+semantics:[expedition7Up(e x y) STS-121(x) Expedition_13(y)]
+
+test-STS-120-expedition7Up-Expedition_16
+semantics:[expedition7Up(e x y) STS-120(x) Expedition_16(y)]
+
+test-STS-71-expedition8Down-Mir_EO-18
+semantics:[expedition8Down(e x y) STS-71(x) Mir_EO-18(y)]
+
+test-MS-DOS-family-DOS
+semantics:[family(e x y) MS-DOS(x) DOS(y)]
+
+test-Yekaterinburg-federalSubject-Sverdlovsk_Oblast
+semantics:[federalSubject(e x y) Yekaterinburg(x) Sverdlovsk_Oblast(y)]
+
+test-Korolyov__Moscow_Oblast-federalSubject-Moscow_Oblast
+semantics:[federalSubject(e x y) Korolyov__Moscow_Oblast(x) Moscow_Oblast(y)]
+
+test-Zvyozdny_gorodok__urban-type_settlement_-federalSubject-Moscow_Oblast
+semantics:[federalSubject(e x y) Zvyozdny_gorodok__urban-type_settlement_(x) Moscow_Oblast(y)]
+
+test-Engels__Saratov_Oblast-federalSubject-Saratov_Oblast
+semantics:[federalSubject(e x y) Engels__Saratov_Oblast(x) Saratov_Oblast(y)]
+
+test-David_Schramm__astrophysicist_-field-Astrophysics
+semantics:[field(e x y) David_Schramm__astrophysicist_(x) Astrophysics(y)]
+
+test-Anders_Celsius-field-Astronomy
+semantics:[field(e x y) Anders_Celsius(x) Astronomy(y)]
+
+test-Ernest_Lawrence-field-Physics
+semantics:[field(e x y) Ernest_Lawrence(x) Physics(y)]
+
+test-Nicolaus_Copernicus-field-Astronomy
+semantics:[field(e x y) Nicolaus_Copernicus(x) Astronomy(y)]
+
+test-Space_Shuttle_Endeavour-firstFlight-STS-49
+semantics:[firstFlight(e x y) Space_Shuttle_Endeavour(x) STS-49(y)]
+
+test-Space_Shuttle_Columbia-firstFlight-STS-1
+semantics:[firstFlight(e x y) Space_Shuttle_Columbia(x) STS-1(y)]
+
+test-Space_Shuttle_Discovery-firstFlight-STS-41-D
+semantics:[firstFlight(e x y) Space_Shuttle_Discovery(x) STS-41-D(y)]
+
+test-Nightline-format-480i
+semantics:[format(e x y) Nightline(x) 480i(y)]
+
+test-1963__song_-format-Gramophone_record
+semantics:[format(e x y) 1963__song_(x) Gramophone_record(y)]
+
+test-Saab_9-3-formerManufacturer-Saab_Automobile
+semantics:[formerManufacturer(e x y) Saab_9-3(x) Saab_Automobile(y)]
+
+test-Upwardly_Global-foundationPlace-United_States
+semantics:[foundationPlace(e x y) Upwardly_Global(x) United_States(y)]
+
+test-Raytheon-foundationPlace-Massachusetts
+semantics:[foundationPlace(e x y) Raytheon(x) Massachusetts(y)]
+
+test-Boeing-foundationPlace-Seattle
+semantics:[foundationPlace(e x y) Boeing(x) Seattle(y)]
+
+test-Microsoft-foundedBy-Paul_Allen
+semantics:[foundedBy(e x y) Microsoft(x) Paul_Allen(y)]
+
+test-James_Randi_Educational_Foundation-foundedBy-James_Randi
+semantics:[foundedBy(e x y) James_Randi_Educational_Foundation(x) James_Randi(y)]
+
+test-Planetary_Resources-foundedBy-Eric_C__Anderson
+semantics:[foundedBy(e x y) Planetary_Resources(x) Eric_C__Anderson(y)]
+
+test-NOAA_Weather_Radio-foundedBy-National_Oceanic_and_Atmospheric_Administration
+semantics:[foundedBy(e x y) NOAA_Weather_Radio(x) National_Oceanic_and_Atmospheric_Administration(y)]
+
+test-Air_Force_Space_Command-garrison-Peterson_Air_Force_Base
+semantics:[garrison(e x y) Air_Force_Space_Command(x) Peterson_Air_Force_Base(y)]
+
+test-67th_Fighter_Squadron-garrison-Kadena_Air_Base
+semantics:[garrison(e x y) 67th_Fighter_Squadron(x) Kadena_Air_Base(y)]
+
+test-VAQ-129-garrison-Naval_Air_Station_Whidbey_Island
+semantics:[garrison(e x y) VAQ-129(x) Naval_Air_Station_Whidbey_Island(y)]
+
+test-U_S__Air_Force_Test_Pilot_School-garrison-Edwards_Air_Force_Base
+semantics:[garrison(e x y) U_S__Air_Force_Test_Pilot_School(x) Edwards_Air_Force_Base(y)]
+
+test-Shuttle__video_game_-genre-Flight_simulator
+semantics:[genre(e x y) Shuttle__video_game_(x) Flight_simulator(y)]
+
+test-This__Darius_Rucker_song_-genre-Country_music
+semantics:[genre(e x y) This__Darius_Rucker_song_(x) Country_music(y)]
+
+test-Fort_Benjamin_Harrison-governingBody-United_States_Army
+semantics:[governingBody(e x y) Fort_Benjamin_Harrison(x) United_States_Army(y)]
+
+test-Union_Douala-ground-Douala
+semantics:[ground(e x y) Union_Douala(x) Douala(y)]
+
+test-Union_Douala-ground-Cameroon
+semantics:[ground(e x y) Union_Douala(x) Cameroon(y)]
+
+test-Second_Chances__Star_Trek__The_Next_Generation_-guest-Mae_Jemison
+semantics:[guest(e x y) Second_Chances__Star_Trek__The_Next_Generation_(x) Mae_Jemison(y)]
+
+test-Kennedy_Space_Center-headquarter-United_States
+semantics:[headquarter(e x y) Kennedy_Space_Center(x) United_States(y)]
+
+test-Republican_Party__United_States_-headquarter-Washington__D_C_
+semantics:[headquarter(e x y) Republican_Party__United_States_(x) Washington__D_C_(y)]
+
+test-Rotary_International-headquarter-United_States
+semantics:[headquarter(e x y) Rotary_International(x) United_States(y)]
+
+test-Brit_Air-headquarters-Morlaix
+semantics:[headquarters(e x y) Brit_Air(x) Morlaix(y)]
+
+test-NASA-headquarters-Washington__D_C_
+semantics:[headquarters(e x y) NASA(x) Washington__D_C_(y)]
+
+test-Academy_of_Motion_Picture_Arts_and_Sciences-headquarters-California
+semantics:[headquarters(e x y) Academy_of_Motion_Picture_Arts_and_Sciences(x) California(y)]
+
+test-CNES-headquarters-France
+semantics:[headquarters(e x y) CNES(x) France(y)]
+
+test-Commendation_Medal-higher-Air_Medal
+semantics:[higher(e x y) Commendation_Medal(x) Air_Medal(y)]
+
+test-Order_of_Lenin-higher-Hero_of_the_Soviet_Union
+semantics:[higher(e x y) Order_of_Lenin(x) Hero_of_the_Soviet_Union(y)]
+
+test-Meritorious_Service_Medal__United_States_-higher-Defense_Meritorious_Service_Medal
+semantics:[higher(e x y) Meritorious_Service_Medal__United_States_(x) Defense_Meritorious_Service_Medal(y)]
+
+test-United_States_presidential_election__2012-homeState-Massachusetts
+semantics:[homeState(e x y) United_States_presidential_election__2012(x) Massachusetts(y)]
+
+test-Mephisto_Walz-hometown-United_States
+semantics:[hometown(e x y) Mephisto_Walz(x) United_States(y)]
+
+test-The_Association-hometown-United_States
+semantics:[hometown(e x y) The_Association(x) United_States(y)]
+
+test-The_Books-hometown-United_States
+semantics:[hometown(e x y) The_Books(x) United_States(y)]
+
+test-The_Seeds-hometown-United_States
+semantics:[hometown(e x y) The_Seeds(x) United_States(y)]
+
+test-2010_Winter_Olympics-hostCity-British_Columbia
+semantics:[hostCity(e x y) 2010_Winter_Olympics(x) British_Columbia(y)]
+
+test-2010_Winter_Olympics-hostCity-Vancouver
+semantics:[hostCity(e x y) 2010_Winter_Olympics(x) Vancouver(y)]
+
+test-Federal_Assembly__Russia_-house-State_Duma
+semantics:[house(e x y) Federal_Assembly__Russia_(x) State_Duma(y)]
+
+test-United_States_Secretary_of_the_Navy-incumbent-Ray_Mabus
+semantics:[incumbent(e x y) United_States_Secretary_of_the_Navy(x) Ray_Mabus(y)]
+
+test-NRK-industry-Broadcasting
+semantics:[industry(e x y) NRK(x) Broadcasting(y)]
+
+test-Optus-industry-Telecommunication
+semantics:[industry(e x y) Optus(x) Telecommunication(y)]
+
+test-GE_Aviation-industry-Aerospace
+semantics:[industry(e x y) GE_Aviation(x) Aerospace(y)]
+
+test-IBM_Internet_Security_Systems-industry-Computer_software
+semantics:[industry(e x y) IBM_Internet_Security_Systems(x) Computer_software(y)]
+
+test-Space_Shuttle_Challenger_disaster-inquiries-Rogers_Commission_Report
+semantics:[inquiries(e x y) Space_Shuttle_Challenger_disaster(x) Rogers_Commission_Report(y)]
+
+test-Ed_Robertson-instrument-Singing
+semantics:[instrument(e x y) Ed_Robertson(x) Singing(y)]
+
+test-Rock_and_roll-instrument-Piano
+semantics:[instrument(e x y) Rock_and_roll(x) Piano(y)]
+
+test-Amanda_Overmyer-instrument-Singing
+semantics:[instrument(e x y) Amanda_Overmyer(x) Singing(y)]
+
+test-World_music-instrument-Synthesizer
+semantics:[instrument(e x y) World_music(x) Synthesizer(y)]
+
+test-St__Louis-isPartOf-Missouri
+semantics:[isPartOf(e x y) St__Louis(x) Missouri(y)]
+
+test-Milwaukee-isPartOf-Wisconsin
+semantics:[isPartOf(e x y) Milwaukee(x) Wisconsin(y)]
+
+test-Qiqihar-isPartOf-Heilongjiang
+semantics:[isPartOf(e x y) Qiqihar(x) Heilongjiang(y)]
+
+test-West_Point__New_York-isPartOf-New_York
+semantics:[isPartOf(e x y) West_Point__New_York(x) New_York(y)]
+
+test-Winter_War-isPartOfMilitaryConflict-World_War_II
+semantics:[isPartOfMilitaryConflict(e x y) Winter_War(x) World_War_II(y)]
+
+test-High_Speed_Civil_Transport-issuer-NASA
+semantics:[issuer(e x y) High_Speed_Civil_Transport(x) NASA(y)]
+
+test-NASA-jurisdiction-Federal_government_of_the_United_States
+semantics:[jurisdiction(e x y) NASA(x) Federal_government_of_the_United_States(y)]
+
+test-Canadian_Space_Agency-jurisdiction-Government_of_Canada
+semantics:[jurisdiction(e x y) Canadian_Space_Agency(x) Government_of_Canada(y)]
+
+test-Eastern_Air_Lines-keyPeople-Frank_Borman
+semantics:[keyPeople(e x y) Eastern_Air_Lines(x) Frank_Borman(y)]
+
+test-Liquid_Robotics-keyPerson-Chief_executive_officer
+semantics:[keyPerson(e x y) Liquid_Robotics(x) Chief_executive_officer(y)]
+
+test-Scaled_Composites-keyPerson-Burt_Rutan
+semantics:[keyPerson(e x y) Scaled_Composites(x) Burt_Rutan(y)]
+
+test-General_Dynamics-keyPerson-Chief_executive_officer
+semantics:[keyPerson(e x y) General_Dynamics(x) Chief_executive_officer(y)]
+
+test-Capcom-keyPerson-Chief_executive_officer
+semantics:[keyPerson(e x y) Capcom(x) Chief_executive_officer(y)]
+
+test-Anders_Celsius-knownFor-Celsius
+semantics:[knownFor(e x y) Anders_Celsius(x) Celsius(y)]
+
+test-Richard_Garriott-knownFor-Space_tourism
+semantics:[knownFor(e x y) Richard_Garriott(x) Space_tourism(y)]
+
+test-Wilhelm_R_C3_B6ntgen-knownFor-X-ray
+semantics:[knownFor(e x y) Wilhelm_R_C3_B6ntgen(x) X-ray(y)]
+
+test-Robert_Zubrin-knownFor-Mars_Society
+semantics:[knownFor(e x y) Robert_Zubrin(x) Mars_Society(y)]
+
+test-International_Space_Station_program-label-NASA
+semantics:[label(e x y) International_Space_Station_program(x) NASA(y)]
+
+test-Dragon__spacecraft_-label-Launch_vehicle
+semantics:[label(e x y) Dragon__spacecraft_(x) Launch_vehicle(y)]
+
+test-Joint_Chiefs_of_Staff-label-Vice_Chairman_of_the_Joint_Chiefs_of_Staff
+semantics:[label(e x y) Joint_Chiefs_of_Staff(x) Vice_Chairman_of_the_Joint_Chiefs_of_Staff(y)]
+
+test-STS-60-landingSite-Kennedy_Space_Center
+semantics:[landingSite(e x y) STS-60(x) Kennedy_Space_Center(y)]
+
+test-STS-74-landingSite-Kennedy_Space_Center
+semantics:[landingSite(e x y) STS-74(x) Kennedy_Space_Center(y)]
+
+test-STS-105-landingSite-Kennedy_Space_Center
+semantics:[landingSite(e x y) STS-105(x) Kennedy_Space_Center(y)]
+
+test-STS-70-landingSite-Kennedy_Space_Center
+semantics:[landingSite(e x y) STS-70(x) Kennedy_Space_Center(y)]
+
+test-Ukraine-language-Ukrainian_language
+semantics:[language(e x y) Ukraine(x) Ukrainian_language(y)]
+
+test-The_Grissom_Gang-language-English_language
+semantics:[language(e x y) The_Grissom_Gang(x) English_language(y)]
+
+test-Technology__Tradition__and_the_State_in_Africa-language-English_language
+semantics:[language(e x y) Technology__Tradition__and_the_State_in_Africa(x) English_language(y)]
+
+test-TFO-language-French_language
+semantics:[language(e x y) TFO(x) French_language(y)]
+
+test-California-largestCity-Los_Angeles
+semantics:[largestCity(e x y) California(x) Los_Angeles(y)]
+
+test-Soviet_Union-largestCity-Moscow
+semantics:[largestCity(e x y) Soviet_Union(x) Moscow(y)]
+
+test-Texas-largestCity-Houston
+semantics:[largestCity(e x y) Texas(x) Houston(y)]
+
+test-Italy-largestMetropolitanArea-Naples
+semantics:[largestMetropolitanArea(e x y) Italy(x) Naples(y)]
+
+test-Italy-largestMetropolitanArea-Milan
+semantics:[largestMetropolitanArea(e x y) Italy(x) Milan(y)]
+
+test-Space_Shuttle_Columbia-lastFlight-STS-107
+semantics:[lastFlight(e x y) Space_Shuttle_Columbia(x) STS-107(y)]
+
+test-Space_Shuttle_Challenger-lastFlight-STS-51-L
+semantics:[lastFlight(e x y) Space_Shuttle_Challenger(x) STS-51-L(y)]
+
+test-Space_Shuttle_Discovery-lastFlight-STS-133
+semantics:[lastFlight(e x y) Space_Shuttle_Discovery(x) STS-133(y)]
+
+test-Albert_Scott_Crossfield-lastStopover-Maxwell_Air_Force_Base
+semantics:[lastStopover(e x y) Albert_Scott_Crossfield(x) Maxwell_Air_Force_Base(y)]
+
+test-Salyut_6-launchPad-Soviet_Union
+semantics:[launchPad(e x y) Salyut_6(x) Soviet_Union(y)]
+
+test-Mir-launchPad-Kennedy_Space_Center
+semantics:[launchPad(e x y) Mir(x) Kennedy_Space_Center(y)]
+
+test-Arabsat-1B-launchRocket-STS-51-G
+semantics:[launchRocket(e x y) Arabsat-1B(x) STS-51-G(y)]
+
+test-Compton_Gamma_Ray_Observatory-launchRocket-STS-37
+semantics:[launchRocket(e x y) Compton_Gamma_Ray_Observatory(x) STS-37(y)]
+
+test-Shenzhou_6-launchRocket-Long_March_2F
+semantics:[launchRocket(e x y) Shenzhou_6(x) Long_March_2F(y)]
+
+test-STS-60-launchSite-Kennedy_Space_Center
+semantics:[launchSite(e x y) STS-60(x) Kennedy_Space_Center(y)]
+
+test-STS-74-launchSite-Kennedy_Space_Center
+semantics:[launchSite(e x y) STS-74(x) Kennedy_Space_Center(y)]
+
+test-Soyuz_TM-18-launchSite-Baikonur_Cosmodrome
+semantics:[launchSite(e x y) Soyuz_TM-18(x) Baikonur_Cosmodrome(y)]
+
+test-Soyuz_TMA-2-launchSite-Baikonur_Cosmodrome
+semantics:[launchSite(e x y) Soyuz_TMA-2(x) Baikonur_Cosmodrome(y)]
+
+test-Russia-leader-Dmitry_Medvedev
+semantics:[leader(e x y) Russia(x) Dmitry_Medvedev(y)]
+
+test-Turkmenistan-leader-Gurbanguly_Berdimuhamedow
+semantics:[leader(e x y) Turkmenistan(x) Gurbanguly_Berdimuhamedow(y)]
+
+test-Washington__D_C_-leaderName-Democratic_Party__United_States_
+semantics:[leaderName(e x y) Washington__D_C_(x) Democratic_Party__United_States_(y)]
+
+test-Washington__D_C_-leaderTitle-United_States_House_of_Representatives
+semantics:[leaderTitle(e x y) Washington__D_C_(x) United_States_House_of_Representatives(y)]
+
+test-Russia-leaderTitle-President_of_Russia
+semantics:[leaderTitle(e x y) Russia(x) President_of_Russia(y)]
+
+test-Bulgaria-legislature-National_Assembly__Bulgaria_
+semantics:[legislature(e x y) Bulgaria(x) National_Assembly__Bulgaria_(y)]
+
+test-The_Return__Star_Trek_-literaryGenre-Science_fiction
+semantics:[literaryGenre(e x y) The_Return__Star_Trek_(x) Science_fiction(y)]
+
+test-The_Other__short_story_-literaryGenre-Short_story
+semantics:[literaryGenre(e x y) The_Other__short_story_(x) Short_story(y)]
+
+test-Mount_Ararat-locatedInArea-Turkey
+semantics:[locatedInArea(e x y) Mount_Ararat(x) Turkey(y)]
+
+test-Mount_Disappointment__California_-locatedInArea-United_States
+semantics:[locatedInArea(e x y) Mount_Disappointment__California_(x) United_States(y)]
+
+test-Naval_Air_Station_Patuxent_River-location-Maryland
+semantics:[location(e x y) Naval_Air_Station_Patuxent_River(x) Maryland(y)]
+
+test-Rocky_River_High_School__Ohio_-location-Ohio
+semantics:[location(e x y) Rocky_River_High_School__Ohio_(x) Ohio(y)]
+
+test-Be_Strong__Geum-soon_-location-South_Korea
+semantics:[location(e x y) Be_Strong__Geum-soon_(x) South_Korea(y)]
+
+test-Naval_Air_Station_Oceana-location-Virginia
+semantics:[location(e x y) Naval_Air_Station_Oceana(x) Virginia(y)]
+
+test-General_Dynamics_Electric_Boat-locationCity-Groton__Connecticut
+semantics:[locationCity(e x y) General_Dynamics_Electric_Boat(x) Groton__Connecticut(y)]
+
+test-Hughes_Aircraft_Company-locationCity-Culver_City__California
+semantics:[locationCity(e x y) Hughes_Aircraft_Company(x) Culver_City__California(y)]
+
+test-Applied_Minds-locationCity-California
+semantics:[locationCity(e x y) Applied_Minds(x) California(y)]
+
+test-Vestas-locationCountry-Denmark
+semantics:[locationCountry(e x y) Vestas(x) Denmark(y)]
+
+test-Imperial_Tobacco-locationCountry-United_Kingdom
+semantics:[locationCountry(e x y) Imperial_Tobacco(x) United_Kingdom(y)]
+
+test-Tenix-locationCountry-Australia
+semantics:[locationCountry(e x y) Tenix(x) Australia(y)]
+
+test-ABC_Family-locationCountry-United_States
+semantics:[locationCountry(e x y) ABC_Family(x) United_States(y)]
+
+test-NASA-logoCaption-NASA_insignia
+semantics:[logoCaption(e x y) NASA(x) NASA_insignia(y)]
+
+test-Meritorious_Service_Medal__United_States_-lower-Air_Medal
+semantics:[lower(e x y) Meritorious_Service_Medal__United_States_(x) Air_Medal(y)]
+
+test-Hero_of_the_Soviet_Union-lower-Order_of_Lenin
+semantics:[lower(e x y) Hero_of_the_Soviet_Union(x) Order_of_Lenin(y)]
+
+test-United_States-lowerHouse-United_States_House_of_Representatives
+semantics:[lowerHouse(e x y) United_States(x) United_States_House_of_Representatives(y)]
+
+test-Russia-lowerHouse-State_Duma
+semantics:[lowerHouse(e x y) Russia(x) State_Duma(y)]
+
+test-General_Dynamics_F-111_Aardvark-manufacturer-General_Dynamics
+semantics:[manufacturer(e x y) General_Dynamics_F-111_Aardvark(x) General_Dynamics(y)]
+
+test-SpaceShipOne-manufacturer-Scaled_Composites
+semantics:[manufacturer(e x y) SpaceShipOne(x) Scaled_Composites(y)]
+
+test-McDonnell_F3H_Demon-manufacturer-McDonnell_Aircraft
+semantics:[manufacturer(e x y) McDonnell_F3H_Demon(x) McDonnell_Aircraft(y)]
+
+test-Space_Shuttle-manufacturer-Rockwell_International
+semantics:[manufacturer(e x y) Space_Shuttle(x) Rockwell_International(y)]
+
+test-Vice_Chairman_of_the_Joint_Chiefs_of_Staff-memberOf-Joint_Chiefs_of_Staff
+semantics:[memberOf(e x y) Vice_Chairman_of_the_Joint_Chiefs_of_Staff(x) Joint_Chiefs_of_Staff(y)]
+
+test-Alexander_Pokryshkin-militaryBranch-Soviet_Air_Forces
+semantics:[militaryBranch(e x y) Alexander_Pokryshkin(x) Soviet_Air_Forces(y)]
+
+test-Olaf_M__Hustvedt-militaryBranch-United_States_Navy
+semantics:[militaryBranch(e x y) Olaf_M__Hustvedt(x) United_States_Navy(y)]
+
+test-VX-23-militaryBranch-United_States_Navy
+semantics:[militaryBranch(e x y) VX-23(x) United_States_Navy(y)]
+
+test-VMFA-212-militaryBranch-United_States_Marine_Corps
+semantics:[militaryBranch(e x y) VMFA-212(x) United_States_Marine_Corps(y)]
+
+test-Georgy_Zhukov-militaryRank-Marshal_of_the_Soviet_Union
+semantics:[militaryRank(e x y) Georgy_Zhukov(x) Marshal_of_the_Soviet_Union(y)]
+
+test-Leonid_Brezhnev-militaryRank-Marshal_of_the_Soviet_Union
+semantics:[militaryRank(e x y) Leonid_Brezhnev(x) Marshal_of_the_Soviet_Union(y)]
+
+test-Konstantin_Kozeyev-mission-Soyuz_TM-33
+semantics:[mission(e x y) Konstantin_Kozeyev(x) Soyuz_TM-33(y)]
+
+test-Kenneth_S__Reightler__Jr_-mission-STS-60
+semantics:[mission(e x y) Kenneth_S__Reightler__Jr_(x) STS-60(y)]
+
+test-Jing_Haipeng-mission-Shenzhou_7
+semantics:[mission(e x y) Jing_Haipeng(x) Shenzhou_7(y)]
+
+test-Liu_Boming__astronaut_-mission-Shenzhou_7
+semantics:[mission(e x y) Liu_Boming__astronaut_(x) Shenzhou_7(y)]
+
+test-Joseph_M__Acaba-missions-Soyuz_TMA-04M
+semantics:[missions(e x y) Joseph_M__Acaba(x) Soyuz_TMA-04M(y)]
+
+test-Aero_Spacelines_Super_Guppy-moreUsers-NASA
+semantics:[moreUsers(e x y) Aero_Spacelines_Super_Guppy(x) NASA(y)]
+
+test-North_American_Sabreliner-moreUsers-United_States_Navy
+semantics:[moreUsers(e x y) North_American_Sabreliner(x) United_States_Navy(y)]
+
+test-Northrop_F-89_Scorpion-moreUsers-Air_National_Guard
+semantics:[moreUsers(e x y) Northrop_F-89_Scorpion(x) Air_National_Guard(y)]
+
+test-Panavia_Tornado-moreUsers-Italian_Air_Force
+semantics:[moreUsers(e x y) Panavia_Tornado(x) Italian_Air_Force(y)]
+
+test-Fallen_Astronaut-museum-Moon
+semantics:[museum(e x y) Fallen_Astronaut(x) Moon(y)]
+
+test-September__Daughtry_song_-musicalArtist-Daughtry__band_
+semantics:[musicalArtist(e x y) September__Daughtry_song_(x) Daughtry__band_(y)]
+
+test-Fake_Plastic_Trees-musicalArtist-Radiohead
+semantics:[musicalArtist(e x y) Fake_Plastic_Trees(x) Radiohead(y)]
+
+test-September__Daughtry_song_-musicalBand-Daughtry__band_
+semantics:[musicalBand(e x y) September__Daughtry_song_(x) Daughtry__band_(y)]
+
+test-Fake_Plastic_Trees-musicalBand-Radiohead
+semantics:[musicalBand(e x y) Fake_Plastic_Trees(x) Radiohead(y)]
+
+test-United_States_presidential_election__1960-name-John_F__Kennedy
+semantics:[name(e x y) United_States_presidential_election__1960(x) John_F__Kennedy(y)]
+
+test-List_of_mathematical_symbols-name-Subset
+semantics:[name(e x y) List_of_mathematical_symbols(x) Subset(y)]
+
+test-United_States_presidential_election__1980-name-Ronald_Reagan
+semantics:[name(e x y) United_States_presidential_election__1980(x) Ronald_Reagan(y)]
+
+test-Republican_Party_of_Minnesota-nationalAffiliation-Republican_Party__United_States_
+semantics:[nationalAffiliation(e x y) Republican_Party_of_Minnesota(x) Republican_Party__United_States_(y)]
+
+test-Sukhoi_Su-26-nationalOrigin-Soviet_Union
+semantics:[nationalOrigin(e x y) Sukhoi_Su-26(x) Soviet_Union(y)]
+
+test-Leonid_Kadeniuk-nationality-Ukraine
+semantics:[nationality(e x y) Leonid_Kadeniuk(x) Ukraine(y)]
+
+test-Leland_D__Melvin-nationality-United_States
+semantics:[nationality(e x y) Leland_D__Melvin(x) United_States(y)]
+
+test-Yvonne_Cagle-nationality-United_States
+semantics:[nationality(e x y) Yvonne_Cagle(x) United_States(y)]
+
+test-Yury_Romanenko-nationality-Soviet_Union
+semantics:[nationality(e x y) Yury_Romanenko(x) Soviet_Union(y)]
+
+test-Hallmark_Hall_of_Fame-network-NBC
+semantics:[network(e x y) Hallmark_Hall_of_Fame(x) NBC(y)]
+
+test-American_Dreams-network-NBC
+semantics:[network(e x y) American_Dreams(x) NBC(y)]
+
+test-The_Big_Bang_Theory-network-CBS
+semantics:[network(e x y) The_Big_Bang_Theory(x) CBS(y)]
+
+test-The_Americans__2013_TV_series_-network-FX__TV_channel_
+semantics:[network(e x y) The_Americans__2013_TV_series_(x) FX__TV_channel_(y)]
+
+test-Expedition_19-nextMission-Expedition_20
+semantics:[nextMission(e x y) Expedition_19(x) Expedition_20(y)]
+
+test-Expedition_18-nextMission-Expedition_19
+semantics:[nextMission(e x y) Expedition_18(x) Expedition_19(y)]
+
+test-Soyuz_27-nextMission-Soyuz_28
+semantics:[nextMission(e x y) Soyuz_27(x) Soyuz_28(y)]
+
+test-Soyuz_TM-2-nextMission-Soyuz_TM-3
+semantics:[nextMission(e x y) Soyuz_TM-2(x) Soyuz_TM-3(y)]
+
+test-Stargate_SG-1__season_4_-nextSeason-Stargate_SG-1__season_5_
+semantics:[nextSeason(e x y) Stargate_SG-1__season_4_(x) Stargate_SG-1__season_5_(y)]
+
+test-University_of_Portland-nickname-Portland_Pilots
+semantics:[nickname(e x y) University_of_Portland(x) Portland_Pilots(y)]
+
+test-Science__Order__and_Creativity-nonFictionSubject-Science
+semantics:[nonFictionSubject(e x y) Science__Order__and_Creativity(x) Science(y)]
+
+test-Songs_of_the_Doomed-nonFictionSubject-Politics
+semantics:[nonFictionSubject(e x y) Songs_of_the_Doomed(x) Politics(y)]
+
+test-Latvia-northeast-Russia
+semantics:[northeast(e x y) Latvia(x) Russia(y)]
+
+test-Arthur_C__Clarke-notableWork-2001__A_Space_Odyssey
+semantics:[notableWork(e x y) Arthur_C__Clarke(x) 2001__A_Space_Odyssey(y)]
+
+test-Marine_Corps_Air_Station_Iwakuni-occupants-Marine_Aircraft_Group_12
+semantics:[occupants(e x y) Marine_Corps_Air_Station_Iwakuni(x) Marine_Aircraft_Group_12(y)]
+
+test-Fort_Huachuca-occupants-United_States_Army_Intelligence_Center
+semantics:[occupants(e x y) Fort_Huachuca(x) United_States_Army_Intelligence_Center(y)]
+
+test-Konstantin_Kozeyev-occupation-Flight_engineer
+semantics:[occupation(e x y) Konstantin_Kozeyev(x) Flight_engineer(y)]
+
+test-Klaus_von_Storch-occupation-Aerospace_engineering
+semantics:[occupation(e x y) Klaus_von_Storch(x) Aerospace_engineering(y)]
+
+test-Yuri_Gagarin-occupation-Pilot__aircraft_
+semantics:[occupation(e x y) Yuri_Gagarin(x) Pilot__aircraft_(y)]
+
+test-Wubbo_Ockels-occupation-Physicist
+semantics:[occupation(e x y) Wubbo_Ockels(x) Physicist(y)]
+
+test-Mohammad_Najibullah-office-President_of_Afghanistan
+semantics:[office(e x y) Mohammad_Najibullah(x) President_of_Afghanistan(y)]
+
+test-Michael_Ignatieff-office-Liberal_Party_of_Canada
+semantics:[office(e x y) Michael_Ignatieff(x) Liberal_Party_of_Canada(y)]
+
+test-Sevastopol-officialLang-Russian_language
+semantics:[officialLang(e x y) Sevastopol(x) Russian_language(y)]
+
+test-Ukraine-officialLanguage-Ukrainian_language
+semantics:[officialLanguage(e x y) Ukraine(x) Ukrainian_language(y)]
+
+test-Lawrence_Berkeley_National_Laboratory-operatingAgency-University_of_California
+semantics:[operatingAgency(e x y) Lawrence_Berkeley_National_Laboratory(x) University_of_California(y)]
+
+test-Marine_Corps_Air_Station_Yuma-operator-United_States_Marine_Corps
+semantics:[operator(e x y) Marine_Corps_Air_Station_Yuma(x) United_States_Marine_Corps(y)]
+
+test-STS-78-operator-NASA
+semantics:[operator(e x y) STS-78(x) NASA(y)]
+
+test-Apollo_7-operator-NASA
+semantics:[operator(e x y) Apollo_7(x) NASA(y)]
+
+test-2001_Mars_Odyssey-operator-NASA
+semantics:[operator(e x y) 2001_Mars_Odyssey(x) NASA(y)]
+
+test-STS-99-orbitReference-Geocentric_orbit
+semantics:[orbitReference(e x y) STS-99(x) Geocentric_orbit(y)]
+
+test-STS-103-orbitReference-Geocentric_orbit
+semantics:[orbitReference(e x y) STS-103(x) Geocentric_orbit(y)]
+
+test-STS-91-orbitReference-Geocentric_orbit
+semantics:[orbitReference(e x y) STS-91(x) Geocentric_orbit(y)]
+
+test-STS-122-orbitReference-Geocentric_orbit
+semantics:[orbitReference(e x y) STS-122(x) Geocentric_orbit(y)]
+
+test-Apollo_Lunar_Module-orbits-Lunar_orbit
+semantics:[orbits(e x y) Apollo_Lunar_Module(x) Lunar_orbit(y)]
+
+test-Sukhoi_Su-27-origin-Soviet_Union
+semantics:[origin(e x y) Sukhoi_Su-27(x) Soviet_Union(y)]
+
+test-Tupolev_Tu-154-origin-Russia
+semantics:[origin(e x y) Tupolev_Tu-154(x) Russia(y)]
+
+test-Kharkiv_River-origin-Russia
+semantics:[origin(e x y) Kharkiv_River(x) Russia(y)]
+
+test-Rome_Laboratory-owl_differentFrom-New_York
+semantics:[owl_differentFrom(e x y) Rome_Laboratory(x) New_York(y)]
+
+test-Rome_Laboratory-owl_differentFrom-Griffiss_Air_Force_Base
+semantics:[owl_differentFrom(e x y) Rome_Laboratory(x) Griffiss_Air_Force_Base(y)]
+
+test-Activity-owl_disjointWith-Person
+semantics:[owl_disjointWith(e x y) Activity(x) Person(y)]
+
+test-Event-owl_disjointWith-Person
+semantics:[owl_disjointWith(e x y) Event(x) Person(y)]
+
+test-Eagle_Scout__Boy_Scouts_of_America_-owner-Boy_Scouts_of_America
+semantics:[owner(e x y) Eagle_Scout__Boy_Scouts_of_America_(x) Boy_Scouts_of_America(y)]
+
+test-Epcot-owner-The_Walt_Disney_Company
+semantics:[owner(e x y) Epcot(x) The_Walt_Disney_Company(y)]
+
+test-William_R__Pogue_Municipal_Airport-owner-Sand_Springs__Oklahoma
+semantics:[owner(e x y) William_R__Pogue_Municipal_Airport(x) Sand_Springs__Oklahoma(y)]
+
+test-NASA_TV-owningCompany-NASA
+semantics:[owningCompany(e x y) NASA_TV(x) NASA(y)]
+
+test-BBC_World_Service-owningCompany-BBC
+semantics:[owningCompany(e x y) BBC_World_Service(x) BBC(y)]
+
+test-Scripps_Institution_of_Oceanography-parent-University_of_California__San_Diego
+semantics:[parent(e x y) Scripps_Institution_of_Oceanography(x) University_of_California__San_Diego(y)]
+
+test-Richard_Garriott-parent-Owen_K__Garriott
+semantics:[parent(e x y) Richard_Garriott(x) Owen_K__Garriott(y)]
+
+test-Lyndon_B__Johnson_Space_Center-parentAgency-NASA
+semantics:[parentAgency(e x y) Lyndon_B__Johnson_Space_Center(x) NASA(y)]
+
+test-Goddard_Space_Flight_Center-parentAgency-NASA
+semantics:[parentAgency(e x y) Goddard_Space_Flight_Center(x) NASA(y)]
+
+test-Boeing_Defense__Space___Security-parentCompany-Boeing
+semantics:[parentCompany(e x y) Boeing_Defense__Space___Security(x) Boeing(y)]
+
+test-United_Space_Alliance-parentCompany-Boeing
+semantics:[parentCompany(e x y) United_Space_Alliance(x) Boeing(y)]
+
+test-Kennedy_Space_Center-parentOrganisation-NASA
+semantics:[parentOrganisation(e x y) Kennedy_Space_Center(x) NASA(y)]
+
+test-George_W__Bush-parents-George_H__W__Bush
+semantics:[parents(e x y) George_W__Bush(x) George_H__W__Bush(y)]
+
+test-Antiproton-particle-Proton
+semantics:[particle(e x y) Antiproton(x) Proton(y)]
+
+test-Laughlin_Air_Force_Base-partof-Air_Education_and_Training_Command
+semantics:[partof(e x y) Laughlin_Air_Force_Base(x) Air_Education_and_Training_Command(y)]
+
+test-Columbus_Air_Force_Base-partof-Air_Education_and_Training_Command
+semantics:[partof(e x y) Columbus_Air_Force_Base(x) Air_Education_and_Training_Command(y)]
+
+test-Vance_Air_Force_Base-partof-Air_Education_and_Training_Command
+semantics:[partof(e x y) Vance_Air_Force_Base(x) Air_Education_and_Training_Command(y)]
+
+test-Dennis_Cardoza-party-Democratic_Party__United_States_
+semantics:[party(e x y) Dennis_Cardoza(x) Democratic_Party__United_States_(y)]
+
+test-Marc_Garneau-party-Liberal_Party_of_Canada
+semantics:[party(e x y) Marc_Garneau(x) Liberal_Party_of_Canada(y)]
+
+test-Jean_Lapierre-party-Liberal_Party_of_Canada
+semantics:[party(e x y) Jean_Lapierre(x) Liberal_Party_of_Canada(y)]
+
+test-Apollo_15-payloadItems-Lunar_Roving_Vehicle
+semantics:[payloadItems(e x y) Apollo_15(x) Lunar_Roving_Vehicle(y)]
+
+test-Space_Shuttle-payloads-Spacelab
+semantics:[payloads(e x y) Space_Shuttle(x) Spacelab(y)]
+
+test-Soyuz__rocket_family_-payloads-Soyuz__spacecraft_
+semantics:[payloads(e x y) Soyuz__rocket_family_(x) Soyuz__spacecraft_(y)]
+
+test-Space_Shuttle-payloads-Hubble_Space_Telescope
+semantics:[payloads(e x y) Space_Shuttle(x) Hubble_Space_Telescope(y)]
+
+test-Space_Shuttle-payloads-Galileo__spacecraft_
+semantics:[payloads(e x y) Space_Shuttle(x) Galileo__spacecraft_(y)]
+
+test-Operation_Enduring_Freedom-place-Afghanistan
+semantics:[place(e x y) Operation_Enduring_Freedom(x) Afghanistan(y)]
+
+test-Attack_on_Pearl_Harbor-place-Pearl_Harbor
+semantics:[place(e x y) Attack_on_Pearl_Harbor(x) Pearl_Harbor(y)]
+
+test-Siege_of_Leningrad-place-Soviet_Union
+semantics:[place(e x y) Siege_of_Leningrad(x) Soviet_Union(y)]
+
+test-Operation_Provide_Comfort-place-Iraq
+semantics:[place(e x y) Operation_Provide_Comfort(x) Iraq(y)]
+
+test-Robert_April-planet-Earth
+semantics:[planet(e x y) Robert_April(x) Earth(y)]
+
+test-List_of_UNIT_personnel-planet-Earth
+semantics:[planet(e x y) List_of_UNIT_personnel(x) Earth(y)]
+
+test-State_Duma-politicalPartyInLegislature-Communist_Party_of_the_Russian_Federation
+semantics:[politicalPartyInLegislature(e x y) State_Duma(x) Communist_Party_of_the_Russian_Federation(y)]
+
+test-European_Parliament-politicalPartyInLegislature-European_United_Left_E2_80_93Nordic_Green_Left
+semantics:[politicalPartyInLegislature(e x y) European_Parliament(x) European_United_Left_E2_80_93Nordic_Green_Left(y)]
+
+test-State_Duma-politicalPartyInLegislature-United_Russia
+semantics:[politicalPartyInLegislature(e x y) State_Duma(x) United_Russia(y)]
+
+test-United_States_House_of_Representatives-politicalPartyOfLeader-Republican_Party__United_States_
+semantics:[politicalPartyOfLeader(e x y) United_States_House_of_Representatives(x) Republican_Party__United_States_(y)]
+
+test-State_Duma-politicalPartyOfLeader-United_Russia
+semantics:[politicalPartyOfLeader(e x y) State_Duma(x) United_Russia(y)]
+
+test-Spanish_people-populationPlace-Germany
+semantics:[populationPlace(e x y) Spanish_people(x) Germany(y)]
+
+test-Iroquois-populationPlace-New_York
+semantics:[populationPlace(e x y) Iroquois(x) New_York(y)]
+
+test-Russians-populationPlace-Kazakhstan
+semantics:[populationPlace(e x y) Russians(x) Kazakhstan(y)]
+
+test-Japanese_people-populationPlace-United_Kingdom
+semantics:[populationPlace(e x y) Japanese_people(x) United_Kingdom(y)]
+
+test-Stephen_Colbert__character_-portrayer-Stephen_Colbert
+semantics:[portrayer(e x y) Stephen_Colbert__character_(x) Stephen_Colbert(y)]
+
+test-Sandrine_Br_C3_A9tigny-position-Forward__association_football_
+semantics:[position(e x y) Sandrine_Br_C3_A9tigny(x) Forward__association_football_(y)]
+
+test-Paul_Goddard-position-Forward__association_football_
+semantics:[position(e x y) Paul_Goddard(x) Forward__association_football_(y)]
+
+test-Lar_Gand-powers-Flight
+semantics:[powers(e x y) Lar_Gand(x) Flight(y)]
+
+test-NASA-preceding-National_Advisory_Committee_for_Aeronautics
+semantics:[preceding(e x y) NASA(x) National_Advisory_Committee_for_Aeronautics(y)]
+
+test-McDonnell_Douglas_F-15E_Strike_Eagle-predecessor-McDonnell_Douglas_F-15_Eagle
+semantics:[predecessor(e x y) McDonnell_Douglas_F-15E_Strike_Eagle(x) McDonnell_Douglas_F-15_Eagle(y)]
+
+test-North_American_F-100_Super_Sabre-predecessor-North_American_F-86_Sabre
+semantics:[predecessor(e x y) North_American_F-100_Super_Sabre(x) North_American_F-86_Sabre(y)]
+
+test-High_Alpha_Research_Vehicle-predecessor-A-18_Hornet
+semantics:[predecessor(e x y) High_Alpha_Research_Vehicle(x) A-18_Hornet(y)]
+
+test-Michael_Ignatieff-predecessor-St_C3_A9phane_Dion
+semantics:[predecessor(e x y) Michael_Ignatieff(x) St_C3_A9phane_Dion(y)]
+
+test-The_Daily_Show-presenter-Jon_Stewart
+semantics:[presenter(e x y) The_Daily_Show(x) Jon_Stewart(y)]
+
+test-William_P__Rogers-president-Richard_Nixon
+semantics:[president(e x y) William_P__Rogers(x) Richard_Nixon(y)]
+
+test-Janet_Napolitano-president-Barack_Obama
+semantics:[president(e x y) Janet_Napolitano(x) Barack_Obama(y)]
+
+test-Stargate_SG-1__season_5_-prevSeason-Stargate_SG-1__season_4_
+semantics:[prevSeason(e x y) Stargate_SG-1__season_5_(x) Stargate_SG-1__season_4_(y)]
+
+test-Apollo_9-previousMission-Apollo_8
+semantics:[previousMission(e x y) Apollo_9(x) Apollo_8(y)]
+
+test-Expedition_18-previousMission-Expedition_17
+semantics:[previousMission(e x y) Expedition_18(x) Expedition_17(y)]
+
+test-Expedition_2-previousMission-Expedition_1
+semantics:[previousMission(e x y) Expedition_2(x) Expedition_1(y)]
+
+test-Soyuz_TM-32-previousMission-Soyuz_TM-31
+semantics:[previousMission(e x y) Soyuz_TM-32(x) Soyuz_TM-31(y)]
+
+test-Seventeen_Seconds-previousWork-Three_Imaginary_Boys
+semantics:[previousWork(e x y) Seventeen_Seconds(x) Three_Imaginary_Boys(y)]
+
+test-Trip__Rivermaya_album_-previousWork-Rivermaya__album_
+semantics:[previousWork(e x y) Trip__Rivermaya_album_(x) Rivermaya__album_(y)]
+
+test-1957__album_-previousWork-1956__album_
+semantics:[previousWork(e x y) 1957__album_(x) 1956__album_(y)]
+
+test-Shuttle_Carrier_Aircraft-primaryUser-NASA
+semantics:[primaryUser(e x y) Shuttle_Carrier_Aircraft(x) NASA(y)]
+
+test-North_American_XB-70_Valkyrie-primaryUser-United_States_Air_Force
+semantics:[primaryUser(e x y) North_American_XB-70_Valkyrie(x) United_States_Air_Force(y)]
+
+test-Northrop_T-38_Talon-primaryUser-United_States_Air_Force
+semantics:[primaryUser(e x y) Northrop_T-38_Talon(x) United_States_Air_Force(y)]
+
+test-Apogee_of_Fear-producer-Tracy_Hickman
+semantics:[producer(e x y) Apogee_of_Fear(x) Tracy_Hickman(y)]
+
+test-Synchronicity__The_Police_album_-producer-The_Police
+semantics:[producer(e x y) Synchronicity__The_Police_album_(x) The_Police(y)]
+
+test-Saab_Automobile-product-Automobile
+semantics:[product(e x y) Saab_Automobile(x) Automobile(y)]
+
+test-Northrop_Grumman-product-Information_technology
+semantics:[product(e x y) Northrop_Grumman(x) Information_technology(y)]
+
+test-USAA-product-Insurance
+semantics:[product(e x y) USAA(x) Insurance(y)]
+
+test-Electronic_Arts-product-Harry_Potter
+semantics:[product(e x y) Electronic_Arts(x) Harry_Potter(y)]
+
+test-Gordon_O'Connor-profession-Consultant
+semantics:[profession(e x y) Gordon_O'Connor(x) Consultant(y)]
+
+test-Carlo_Urbani-profession-Physician
+semantics:[profession(e x y) Carlo_Urbani(x) Physician(y)]
+
+test-STS-117-programme-Space_Shuttle_program
+semantics:[programme(e x y) STS-117(x) Space_Shuttle_program(y)]
+
+test-Expedition_9-programme-International_Space_Station
+semantics:[programme(e x y) Expedition_9(x) International_Space_Station(y)]
+
+test-Expedition_44-programme-International_Space_Station
+semantics:[programme(e x y) Expedition_44(x) International_Space_Station(y)]
+
+test-STS-5-programme-Space_Shuttle_program
+semantics:[programme(e x y) STS-5(x) Space_Shuttle_program(y)]
+
+test-KAIST-province-Daejeon
+semantics:[province(e x y) KAIST(x) Daejeon(y)]
+
+test-University_of_Oldenburg-province-Lower_Saxony
+semantics:[province(e x y) University_of_Oldenburg(x) Lower_Saxony(y)]
+
+test-People__magazine_-publisher-Time_Inc_
+semantics:[publisher(e x y) People__magazine_(x) Time_Inc_(y)]
+
+test-Shroud_of_the_Avatar__Forsaken_Virtues-publisher-Portalarium
+semantics:[publisher(e x y) Shroud_of_the_Avatar__Forsaken_Virtues(x) Portalarium(y)]
+
+test-Croatian_Academy_of_Sciences_and_Arts-purpose-Science
+semantics:[purpose(e x y) Croatian_Academy_of_Sciences_and_Arts(x) Science(y)]
+
+test-Leonid_Kadeniuk-rank-Ukrainian_Air_Force
+semantics:[rank(e x y) Leonid_Kadeniuk(x) Ukrainian_Air_Force(y)]
+
+test-Lee_Morin-rank-Captain__naval_
+semantics:[rank(e x y) Lee_Morin(x) Captain__naval_(y)]
+
+test-Yury_Glazkov-rank-Russian_Air_Force
+semantics:[rank(e x y) Yury_Glazkov(x) Russian_Air_Force(y)]
+
+test-Yevgeny_Khrunov-rank-Colonel
+semantics:[rank(e x y) Yevgeny_Khrunov(x) Colonel(y)]
+
+test-Medical_school-rdf-schema_seeAlso-Medical_education
+semantics:[rdf-schema_seeAlso(e x y) Medical_school(x) Medical_education(y)]
+
+test-California-rdf-schema_seeAlso-California
+semantics:[rdf-schema_seeAlso(e x y) California(x) California(y)]
+
+test-China-rdf-schema_seeAlso-China
+semantics:[rdf-schema_seeAlso(e x y) China(x) China(y)]
+
+test-Astana-rdf-schema_seeAlso-Astana
+semantics:[rdf-schema_seeAlso(e x y) Astana(x) Astana(y)]
+
+test-Astronaut-rdf-schema_subClassOf-Person
+semantics:[rdf-schema_subClassOf(e x y) Astronaut(x) Person(y)]
+
+test-Website-rdf-schema_subClassOf-Work
+semantics:[rdf-schema_subClassOf(e x y) Website(x) Work(y)]
+
+test-SportFacility-rdf-schema_subClassOf-Place
+semantics:[rdf-schema_subClassOf(e x y) SportFacility(x) Place(y)]
+
+test-Publisher-rdf-schema_subClassOf-Company
+semantics:[rdf-schema_subClassOf(e x y) Publisher(x) Company(y)]
+
+test-Band_on_the_Run-recordLabel-Apple_Records
+semantics:[recordLabel(e x y) Band_on_the_Run(x) Apple_Records(y)]
+
+test-Fame__David_Bowie_song_-recordedIn-New_York
+semantics:[recordedIn(e x y) Fame__David_Bowie_song_(x) New_York(y)]
+
+test-1985__song_-recordedIn-United_States
+semantics:[recordedIn(e x y) 1985__song_(x) United_States(y)]
+
+test-Daughter__song_-recordedIn-California
+semantics:[recordedIn(e x y) Daughter__song_(x) California(y)]
+
+test-Document__album_-recordedIn-United_States
+semantics:[recordedIn(e x y) Document__album_(x) United_States(y)]
+
+test-Ostfildern-region-Stuttgart
+semantics:[region(e x y) Ostfildern(x) Stuttgart(y)]
+
+test-Grady_Memorial_Hospital-region-Atlanta
+semantics:[region(e x y) Grady_Memorial_Hospital(x) Atlanta(y)]
+
+test-Gabrielle_Giffords-region-Arizona
+semantics:[region(e x y) Gabrielle_Giffords(x) Arizona(y)]
+
+test-Shopko-regionServed-North_Dakota
+semantics:[regionServed(e x y) Shopko(x) North_Dakota(y)]
+
+test-National_Collegiate_Athletic_Association-regionServed-United_States
+semantics:[regionServed(e x y) National_Collegiate_Athletic_Association(x) United_States(y)]
+
+test-American_Bankers_Association-regionServed-United_States
+semantics:[regionServed(e x y) American_Bankers_Association(x) United_States(y)]
+
+test-Hero_of_the_Soviet_Union-related-Hero_of_the_Russian_Federation
+semantics:[related(e x y) Hero_of_the_Soviet_Union(x) Hero_of_the_Russian_Federation(y)]
+
+test-Southwest_Asia_Service_Medal-related-National_Defense_Service_Medal
+semantics:[related(e x y) Southwest_Asia_Service_Medal(x) National_Defense_Service_Medal(y)]
+
+test-Teacher-relatedOccupation-Professor
+semantics:[relatedOccupation(e x y) Teacher(x) Professor(y)]
+
+test-Soldier-relatedOccupation-Police_officer
+semantics:[relatedOccupation(e x y) Soldier(x) Police_officer(y)]
+
+test-Professor-relatedOccupation-Teacher
+semantics:[relatedOccupation(e x y) Professor(x) Teacher(y)]
+
+test-Willis_W__Bradley-relation-Bruce_McCandless
+semantics:[relation(e x y) Willis_W__Bradley(x) Bruce_McCandless(y)]
+
+test-Burt_Rutan-relation-Dick_Rutan
+semantics:[relation(e x y) Burt_Rutan(x) Dick_Rutan(y)]
+
+test-James_L__Holloway_III-relation-Admiral__United_States_
+semantics:[relation(e x y) James_L__Holloway_III(x) Admiral__United_States_(y)]
+
+test-Richard_Garriott-relative-Robert_Garriott
+semantics:[relative(e x y) Richard_Garriott(x) Robert_Garriott(y)]
+
+test-Heather_Reisman-religion-Judaism
+semantics:[religion(e x y) Heather_Reisman(x) Judaism(y)]
+
+test-Afghanistan-religion-Islam
+semantics:[religion(e x y) Afghanistan(x) Islam(y)]
+
+test-Anders_Celsius-residence-Sweden
+semantics:[residence(e x y) Anders_Celsius(x) Sweden(y)]
+
+test-The_Young_and_the_Restless_characters__2000s_-residence-Washington__D_C_
+semantics:[residence(e x y) The_Young_and_the_Restless_characters__2000s_(x) Washington__D_C_(y)]
+
+test-Gabrielle_Giffords-residence-Arizona
+semantics:[residence(e x y) Gabrielle_Giffords(x) Arizona(y)]
+
+test-Gabrielle_Giffords-residence-Tucson__Arizona
+semantics:[residence(e x y) Gabrielle_Giffords(x) Tucson__Arizona(y)]
+
+test-Jesse_Helms-restingPlace-North_Carolina
+semantics:[restingPlace(e x y) Jesse_Helms(x) North_Carolina(y)]
+
+test-Three__Sugababes_album_-rev-BBC
+semantics:[rev(e x y) Three__Sugababes_album_(x) BBC(y)]
+
+test-Roman_Catholic_Diocese_of_Paterson-rite-Roman_Rite
+semantics:[rite(e x y) Roman_Catholic_Diocese_of_Paterson(x) Roman_Rite(y)]
+
+test-LGM-25C_Titan_II-rocketFunction-Launch_vehicle
+semantics:[rocketFunction(e x y) LGM-25C_Titan_II(x) Launch_vehicle(y)]
+
+test-Saturn_II-rocketFunction-Launch_vehicle
+semantics:[rocketFunction(e x y) Saturn_II(x) Launch_vehicle(y)]
+
+test-Space_Shuttle_Orbital_Maneuvering_System-rockets-Space_Shuttle
+semantics:[rockets(e x y) Space_Shuttle_Orbital_Maneuvering_System(x) Space_Shuttle(y)]
+
+test-Centaur__rocket_stage_-rockets-Space_Shuttle
+semantics:[rockets(e x y) Centaur__rocket_stage_(x) Space_Shuttle(y)]
+
+test-Space_Shuttle_Solid_Rocket_Booster-rockets-Space_Shuttle
+semantics:[rockets(e x y) Space_Shuttle_Solid_Rocket_Booster(x) Space_Shuttle(y)]
+
+test-Interstate_293-routeEnd-Hooksett__New_Hampshire
+semantics:[routeEnd(e x y) Interstate_293(x) Hooksett__New_Hampshire(y)]
+
+test-Interstate_293-routeEnd-Everett_Turnpike
+semantics:[routeEnd(e x y) Interstate_293(x) Everett_Turnpike(y)]
+
+test-Everett_Turnpike-routeJunction-Hooksett__New_Hampshire
+semantics:[routeJunction(e x y) Everett_Turnpike(x) Hooksett__New_Hampshire(y)]
+
+test-Interstate_93-routeJunction-Hooksett__New_Hampshire
+semantics:[routeJunction(e x y) Interstate_93(x) Hooksett__New_Hampshire(y)]
+
+test-Willie_Llewellyn-ruAmateurclubs-Cardiff_RFC
+semantics:[ruAmateurclubs(e x y) Willie_Llewellyn(x) Cardiff_RFC(y)]
+
+test-Moon-satelliteOf-Earth
+semantics:[satelliteOf(e x y) Moon(x) Earth(y)]
+
+test-North_Toronto_Collegiate_Institute-schooltype-High_school
+semantics:[schooltype(e x y) North_Toronto_Collegiate_Institute(x) High_school(y)]
+
+test-Ghazni_Province-seat-Ghazni
+semantics:[seat(e x y) Ghazni_Province(x) Ghazni(y)]
+
+test-Republican_Party__United_States_-seats1Title-United_States_Senate
+semantics:[seats1Title(e x y) Republican_Party__United_States_(x) United_States_Senate(y)]
+
+test-Communist_Party_of_the_Russian_Federation-seats1Title-State_Duma
+semantics:[seats1Title(e x y) Communist_Party_of_the_Russian_Federation(x) State_Duma(y)]
+
+test-United_Russia-seats1Title-State_Duma
+semantics:[seats1Title(e x y) United_Russia(x) State_Duma(y)]
+
+test-Republican_Party__United_States_-seats2Title-United_States_House_of_Representatives
+semantics:[seats2Title(e x y) Republican_Party__United_States_(x) United_States_House_of_Representatives(y)]
+
+test-Republican_Party_of_Minnesota-seats4Title-United_States_House_of_Representatives
+semantics:[seats4Title(e x y) Republican_Party_of_Minnesota(x) United_States_House_of_Representatives(y)]
+
+test-United_States_Navy-secondCommander-Ray_Mabus
+semantics:[secondCommander(e x y) United_States_Navy(x) Ray_Mabus(y)]
+
+test-Deke_Slayton-selection-Mercury_Seven
+semantics:[selection(e x y) Deke_Slayton(x) Mercury_Seven(y)]
+
+test-Yvonne_Cagle-selection-NASA_Astronaut_Group_16
+semantics:[selection(e x y) Yvonne_Cagle(x) NASA_Astronaut_Group_16(y)]
+
+test-Mark_T__Vande_Hei-selection-NASA_Astronaut_Group_20
+semantics:[selection(e x y) Mark_T__Vande_Hei(x) NASA_Astronaut_Group_20(y)]
+
+test-Latin_Church-separations-Protestantism
+semantics:[separations(e x y) Latin_Church(x) Protestantism(y)]
+
+test-Scott_Tracy-series-Thunderbirds__TV_series_
+semantics:[series(e x y) Scott_Tracy(x) Thunderbirds__TV_series_(y)]
+
+test-Linus_van_Pelt-series-Peanuts
+semantics:[series(e x y) Linus_van_Pelt(x) Peanuts(y)]
+
+test-Sarnoff_Corporation-service-Research
+semantics:[service(e x y) Sarnoff_Corporation(x) Research(y)]
+
+test-SpaceX-services-Rocket_launch
+semantics:[services(e x y) SpaceX(x) Rocket_launch(y)]
+
+test-USNS_Wally_Schirra__T-AKE-8_-shipNamesake-Wally_Schirra
+semantics:[shipNamesake(e x y) USNS_Wally_Schirra__T-AKE-8_(x) Wally_Schirra(y)]
+
+test-Daniel_C__Burbank-shortDescription-Astronaut
+semantics:[shortDescription(e x y) Daniel_C__Burbank(x) Astronaut(y)]
+
+test-Randolph_Bresnik-shortDescription-Astronaut
+semantics:[shortDescription(e x y) Randolph_Bresnik(x) Astronaut(y)]
+
+test-Expedition_9-spaceStation-International_Space_Station
+semantics:[spaceStation(e x y) Expedition_9(x) International_Space_Station(y)]
+
+test-Expedition_13-spaceStation-International_Space_Station
+semantics:[spaceStation(e x y) Expedition_13(x) International_Space_Station(y)]
+
+test-Expedition_44-spaceStation-International_Space_Station
+semantics:[spaceStation(e x y) Expedition_44(x) International_Space_Station(y)]
+
+test-Expedition_12-spaceStation-International_Space_Station
+semantics:[spaceStation(e x y) Expedition_12(x) International_Space_Station(y)]
+
+test-Soyuz_TM-34-spacecraftType-Soyuz-TM
+semantics:[spacecraftType(e x y) Soyuz_TM-34(x) Soyuz-TM(y)]
+
+test-Russian_Federal_Space_Agency-spaceport-Baikonur_Cosmodrome
+semantics:[spaceport(e x y) Russian_Federal_Space_Agency(x) Baikonur_Cosmodrome(y)]
+
+test-Chinese_language-spokenIn-China
+semantics:[spokenIn(e x y) Chinese_language(x) China(y)]
+
+test-Chinese_language-spokenIn-United_States
+semantics:[spokenIn(e x y) Chinese_language(x) United_States(y)]
+
+test-Hindustani_language-spokenIn-India
+semantics:[spokenIn(e x y) Hindustani_language(x) India(y)]
+
+test-Taichi_Yamazaki-spouse-Naoko_Yamazaki
+semantics:[spouse(e x y) Taichi_Yamazaki(x) Naoko_Yamazaki(y)]
+
+test-Sally_Ride-spouse-Steven_Hawley
+semantics:[spouse(e x y) Sally_Ride(x) Steven_Hawley(y)]
+
+test-Ukraine_women's_national_football_team-stadium-Chernihiv
+semantics:[stadium(e x y) Ukraine_women's_national_football_team(x) Chernihiv(y)]
+
+test-Challenger__1990_film_-starring-Julie_Fulton
+semantics:[starring(e x y) Challenger__1990_film_(x) Julie_Fulton(y)]
+
+test-Magnificent_Desolation__Walking_on_the_Moon_3D-starring-Gary_Sinise
+semantics:[starring(e x y) Magnificent_Desolation__Walking_on_the_Moon_3D(x) Gary_Sinise(y)]
+
+test-Challenger__1990_film_-starring-Brian_Kerwin
+semantics:[starring(e x y) Challenger__1990_film_(x) Brian_Kerwin(y)]
+
+test-Apogee_of_Fear-starring-Richard_Garriott
+semantics:[starring(e x y) Apogee_of_Fear(x) Richard_Garriott(y)]
+
+test-Patuxent_River-state-Maryland
+semantics:[state(e x y) Patuxent_River(x) Maryland(y)]
+
+test-St__Bernard_High_School__Los_Angeles_-state-California
+semantics:[state(e x y) St__Bernard_High_School__Los_Angeles_(x) California(y)]
+
+test-Grossmont_High_School-state-California
+semantics:[state(e x y) Grossmont_High_School(x) California(y)]
+
+test-Upper_Dublin_Township__Montgomery_County__Pennsylvania-state-Pennsylvania
+semantics:[state(e x y) Upper_Dublin_Township__Montgomery_County__Pennsylvania(x) Pennsylvania(y)]
+
+test-Sergei_Korolev-stateOfOrigin-Soviet_Union
+semantics:[stateOfOrigin(e x y) Sergei_Korolev(x) Soviet_Union(y)]
+
+test-Herbert__22Flight_Time_22_Lang-stateOfOrigin-United_States
+semantics:[stateOfOrigin(e x y) Herbert__22Flight_Time_22_Lang(x) United_States(y)]
+
+test-Richard_Garriott-stateOfOrigin-United_Kingdom
+semantics:[stateOfOrigin(e x y) Richard_Garriott(x) United_Kingdom(y)]
+
+test-Marine_Corps_Base_Quantico-subdivisionName-Virginia
+semantics:[subdivisionName(e x y) Marine_Corps_Base_Quantico(x) Virginia(y)]
+
+test-Aberdeen-subdivisionName-Scotland
+semantics:[subdivisionName(e x y) Aberdeen(x) Scotland(y)]
+
+test-Offutt_Air_Force_Base-subdivisionName-Nebraska
+semantics:[subdivisionName(e x y) Offutt_Air_Force_Base(x) Nebraska(y)]
+
+test-Ramon__Isabela-subdivisionType-House_of_Representatives_of_the_Philippines
+semantics:[subdivisionType(e x y) Ramon__Isabela(x) House_of_Representatives_of_the_Philippines(y)]
+
+test-Pool__West_Virginia-subdivisionType-Political_divisions_of_the_United_States
+semantics:[subdivisionType(e x y) Pool__West_Virginia(x) Political_divisions_of_the_United_States(y)]
+
+test-Institute__West_Virginia-subdivisionType-Political_divisions_of_the_United_States
+semantics:[subdivisionType(e x y) Institute__West_Virginia(x) Political_divisions_of_the_United_States(y)]
+
+test-1957__album_-subsequentWork-1958__album_
+semantics:[subsequentWork(e x y) 1957__album_(x) 1958__album_(y)]
+
+test-Rivermaya__album_-subsequentWork-Trip__Rivermaya_album_
+semantics:[subsequentWork(e x y) Rivermaya__album_(x) Trip__Rivermaya_album_(y)]
+
+test-1953__album_-subsequentWork-1954__album_
+semantics:[subsequentWork(e x y) 1953__album_(x) 1954__album_(y)]
+
+test-1956__album_-subsequentWork-1957__album_
+semantics:[subsequentWork(e x y) 1956__album_(x) 1957__album_(y)]
+
+test-ExxonMobil-subsidiary-Exxon
+semantics:[subsidiary(e x y) ExxonMobil(x) Exxon(y)]
+
+test-Sperry_Corporation-successor-Unisys
+semantics:[successor(e x y) Sperry_Corporation(x) Unisys(y)]
+
+test-AlliedSignal-successor-Honeywell
+semantics:[successor(e x y) AlliedSignal(x) Honeywell(y)]
+
+test-St_C3_A9phane_Dion-successor-Michael_Ignatieff
+semantics:[successor(e x y) St_C3_A9phane_Dion(x) Michael_Ignatieff(y)]
+
+test-Douglas_Aircraft_Company-successor-McDonnell_Douglas
+semantics:[successor(e x y) Douglas_Aircraft_Company(x) McDonnell_Douglas(y)]
+
+test-National_Advisory_Committee_for_Aeronautics-superseding-NASA
+semantics:[superseding(e x y) National_Advisory_Committee_for_Aeronautics(x) NASA(y)]
+
+test-Car_Talk-syndicates-NPR
+semantics:[syndicates(e x y) Car_Talk(x) NPR(y)]
+
+test-Johnson_Space_Center_shooting-target-Lyndon_B__Johnson_Space_Center
+semantics:[target(e x y) Johnson_Space_Center_shooting(x) Lyndon_B__Johnson_Space_Center(y)]
+
+test-Zsolt_Baumgartner-team_s_-Minardi
+semantics:[team_s_(e x y) Zsolt_Baumgartner(x) Minardi(y)]
+
+test-Zsolt_Baumgartner-team_s__-Minardi
+semantics:[team_s__(e x y) Zsolt_Baumgartner(x) Minardi(y)]
+
+test-Enos_Cabell-team-Houston_Astros
+semantics:[team(e x y) Enos_Cabell(x) Houston_Astros(y)]
+
+test-Nichelle_Nichols-television-Star_Trek
+semantics:[television(e x y) Nichelle_Nichols(x) Star_Trek(y)]
+
+test-George_H__Winner__Jr_-title-New_York_State_Assembly
+semantics:[title(e x y) George_H__Winner__Jr_(x) New_York_State_Assembly(y)]
+
+test-George_H__Winner__Jr_-title-New_York_State_Senate
+semantics:[title(e x y) George_H__Winner__Jr_(x) New_York_State_Senate(y)]
+
+test-Carlo_Azeglio_Ciampi-title-President_of_Italy
+semantics:[title(e x y) Carlo_Azeglio_Ciampi(x) President_of_Italy(y)]
+
+test-Manmohan_Singh-title-Prime_Minister_of_India
+semantics:[title(e x y) Manmohan_Singh(x) Prime_Minister_of_India(y)]
+
+test-Apogee_Books-topics-Space
+semantics:[topics(e x y) Apogee_Books(x) Space(y)]
+
+test-Bill_Anoatubby-tribe-Chickasaw_Nation
+semantics:[tribe(e x y) Bill_Anoatubby(x) Chickasaw_Nation(y)]
+
+test-Toronto-twinCountry-Toronto
+semantics:[twinCountry(e x y) Toronto(x) Toronto(y)]
+
+test-Leland_D__Melvin-type-NASA
+semantics:[type(e x y) Leland_D__Melvin(x) NASA(y)]
+
+test-Lee_Morin-type-NASA
+semantics:[type(e x y) Lee_Morin(x) NASA(y)]
+
+test-Yvonne_Cagle-type-NASA
+semantics:[type(e x y) Yvonne_Cagle(x) NASA(y)]
+
+test-Daniel_W__Bursch-type-NASA
+semantics:[type(e x y) Daniel_W__Bursch(x) NASA(y)]
+
+test-Portland_Pilots-university-University_of_Portland
+semantics:[university(e x y) Portland_Pilots(x) University_of_Portland(y)]
+
+test-Statin-use-Hypercholesterolemia
+semantics:[use(e x y) Statin(x) Hypercholesterolemia(y)]
+
+test-NASA_M2-F1-variantsWithTheirOwnArticles-Northrop_M2-F3
+semantics:[variantsWithTheirOwnArticles(e x y) NASA_M2-F1(x) Northrop_M2-F3(y)]
+
+test-American_Institute-wikiPageDisambiguates-American_Institute_of_Aeronautics_and_Astronautics
+semantics:[wikiPageDisambiguates(e x y) American_Institute(x) American_Institute_of_Aeronautics_and_Astronautics(y)]
+
+test-Magnetic_tape_sound_recording-wikiPageRedirects-Tape_recorder
+semantics:[wikiPageRedirects(e x y) Magnetic_tape_sound_recording(x) Tape_recorder(y)]
+
+test-Sergey_Korolyov-wikiPageRedirects-Sergei_Korolev
+semantics:[wikiPageRedirects(e x y) Sergey_Korolyov(x) Sergei_Korolev(y)]
+
+test-Control_tower-wikiPageRedirects-Air_traffic_control
+semantics:[wikiPageRedirects(e x y) Control_tower(x) Air_traffic_control(y)]
+
+test-Apollo_2-wikiPageRedirects-Apollo_1
+semantics:[wikiPageRedirects(e x y) Apollo_2(x) Apollo_1(y)]
+
+test-Liberal_Party_of_Canada_leadership_election__2006-winner-St_C3_A9phane_Dion
+semantics:[winner(e x y) Liberal_Party_of_Canada_leadership_election__2006(x) St_C3_A9phane_Dion(y)]
+
+test-Carl_Sagan-workInstitutions-Cornell_University
+semantics:[workInstitutions(e x y) Carl_Sagan(x) Cornell_University(y)]
+
+test-Arthur_Leonard_Schawlow-workInstitutions-Stanford_University
+semantics:[workInstitutions(e x y) Arthur_Leonard_Schawlow(x) Stanford_University(y)]
+
+test-2001__A_Space_Odyssey__film_-writer-Arthur_C__Clarke
+semantics:[writer(e x y) 2001__A_Space_Odyssey__film_(x) Arthur_C__Clarke(y)]
+
+test-Apogee_of_Fear-writer-Tracy_Hickman
+semantics:[writer(e x y) Apogee_of_Fear(x) Tracy_Hickman(y)]
+
+test-Three__Sugababes_album_-writer-Diane_Warren
+semantics:[writer(e x y) Three__Sugababes_album_(x) Diane_Warren(y)]
+

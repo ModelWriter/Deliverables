@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/modelwriter/deliverables.png?label=ready&title=Ready)](https://waffle.io/modelwriter/deliverables)
 [Project-Management](https://waffle.io/modelwriter/deliverables)
 ==================
 **Project Monitoring, Tracking, Communication Management and Infrastructure**

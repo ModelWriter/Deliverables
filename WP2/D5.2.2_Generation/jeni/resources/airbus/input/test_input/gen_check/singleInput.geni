@@ -1,0 +1,2 @@
+test-SingleInput
+semantics:[L0:exists(attached8arg3 V17) V1:exists(attached8arg2inv J0) V12:or(V21 V20) V6:conduit_+_comma_+_bundle_+_comma_+_wire(V5) V17:conj(V12 V14) J0:and(attached8 L0) V20:removable12(V10) V14:equipment13(V15) V4:not(V4) V13:pipe10(V19) V0:subset(V6 V1)]

@@ -1,0 +1,10 @@
+thermal variation shall be taken into account
+spare wire shall be protected with crimped cap nsa936601
+virtual terminal block (vt) shall be protected by drip loop and electrical shock protection
+grommet shall be installed between two clamp-block or saddle clamp
+g-route shall not be installed to fuel tank boundaries
+spare wire shall not be provided for afdx bus link
+spare wire shall be used only on development aircraft
+abs0369 saddle clamp should be used in all zones
+only "three-hole" bulkhead unions shall be used for bulkhead connections
+nsa 931025 metallic label shall be protected with varnish after printing when installed in unpressurized area

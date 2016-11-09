@@ -14,7 +14,7 @@ representatons.
 The parser uses a generic grammar and a lexicon to map sentences into
 DL (Description Logic) formulae.
 
-The sources for PGen are in jeni/src/synalp/parsing/ParserMain.java
+The sources for PGen are in pgen/src/synalp/parsing/ParserMain.java
 
 ## From Meaning Representations to Text (Generating, Jeni)
 
@@ -33,9 +33,12 @@ Bafling is distributed under the GPL license.
 
 Parsing:
 
-java -jar PGen_5_Feb.jar demo/grammar-airbus-02022016.xml demo/airbus-lexicon-0116.lex demo/testsuite.sentence
+cd pgen
+./run_parser.sh parse_airbus_excellex_colbc_sentence
+
 
 Generating:
 
-java -jar Jeni_7_Feb.jar -g demo/grammar-airbus-02022016.xml -l demo/airbus-lexicon-0116.lex -s demo/testsuite.geni -m demo/morph.mph
+cd jeni
+./run_generator.sh -c minimal
 

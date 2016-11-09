@@ -1,0 +1,5728 @@
+1. or_x000d _		Parse OK? : No
+
+
+
+
+2. or_x000d _		Parse OK? : No
+
+
+
+
+3. or_x000d _		Parse OK? : No
+
+
+
+
+4. pipes shall be bend		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_bend (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be bend
+
+	Semantics:[G0:subset(A0 V0) A0:pipes(D0) I0:and(bend K0) V0:exists(bendarg2inv I0) K0:exists(L0 semtop)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:bendarg2inv ObjectIntersectionOf(:bend ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:bendarg2inv, :bend, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 3 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+5. bend should be used		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_used (↓ TalphaNX-16.bend 0.0))
+	Parsed Sentence = bend should be used
+
+	Semantics:[A0:bend(D0) V0:exists(usedarg2inv semtop) K0:exists(usedarg2inv semtop) I0:and(used K0) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:used ObjectSomeValuesFrom(:usedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:semtop, :usedarg2inv, :used]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+6. pipes shall be bend		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_bend (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be bend
+
+	Semantics:[V0:exists(bendarg2inv I0) I0:and(bend K0) K0:exists(L0 semtop) G0:subset(A0 V0) A0:pipes(D0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:bendarg2inv ObjectIntersectionOf(:bend ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:bendarg2inv, :bend, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+7. pipes shall be bend		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_bend (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be bend
+
+	Semantics:[V0:exists(bendarg2inv I0) K0:exists(L0 semtop) I0:and(bend K0) A0:pipes(D0) G0:subset(A0 V0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:bendarg2inv ObjectIntersectionOf(:bend ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:bendarg2inv, :bend, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+8. pipes shall be fixed		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_fixed (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be fixed
+
+	Semantics:[V0:exists(fixedarg2inv I0) A0:pipes(D0) K0:exists(L0 semtop) I0:and(fixed K0) G0:subset(A0 V0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:fixedarg2inv ObjectIntersectionOf(:fixed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:fixedarg2inv, :fixed, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+9. see also figure below		Parse OK? : No
+
+
+
+
+10. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[K0:exists(definedarg2inv semtop) A0:pipes(D0) G0:subset(A0 V0) I0:and(defined K0) V0:exists(definedarg2inv semtop)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+11. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[I0:and(defined K0) A0:pipes(D0) K0:exists(definedarg2inv semtop) V0:exists(definedarg2inv semtop) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+12. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[G0:subset(A0 V0) K0:exists(definedarg2inv semtop) A0:pipes(D0) V0:exists(definedarg2inv semtop) I0:and(defined K0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+13. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[G0:subset(A0 V0) A0:pipes(D0) V0:exists(definedarg2inv semtop) I0:and(defined K0) K0:exists(definedarg2inv semtop)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+14. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[G0:subset(A0 V0) I0:and(defined K0) A0:pipes(D0) V0:exists(definedarg2inv semtop) K0:exists(definedarg2inv semtop)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+15. p-clamp should be used		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_used (↓ TalphaNX-16.p-clamp 0.0))
+	Parsed Sentence = p-clamp should be used
+
+	Semantics:[I0:and(used K0) K0:exists(usedarg2inv semtop) A0:p-clamp(D0) G0:subset(A0 V0) V0:exists(usedarg2inv semtop)]
+	DL semantics =  ObjectIntersectionOf(:used ObjectSomeValuesFrom(:usedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:semtop, :usedarg2inv, :used]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+16. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[I0:and(defined K0) K0:exists(definedarg2inv semtop) G0:subset(A0 V0) V0:exists(definedarg2inv semtop) A0:pipes(D0)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+17. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[K0:exists(definedarg2inv semtop) V0:exists(definedarg2inv semtop) I0:and(defined K0) A0:pipes(D0) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+18. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[A0:pipes(D0) K0:exists(definedarg2inv semtop) G0:subset(A0 V0) I0:and(defined K0) V0:exists(definedarg2inv semtop)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+19. pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be defined
+
+	Semantics:[I0:and(defined K0) A0:pipes(D0) V0:exists(definedarg2inv semtop) G0:subset(A0 V0) K0:exists(definedarg2inv semtop)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+20. pipes should be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_defined (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes should be defined
+
+	Semantics:[V0:exists(definedarg2inv semtop) G0:subset(A0 V0) I0:and(defined K0) K0:exists(definedarg2inv semtop) A0:pipes(D0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+21. pipes shall be attached		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_attached (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be attached
+
+	Semantics:[I0:and(attached K0) K0:exists(attachedarg2inv semtop) V0:exists(attachedarg2inv semtop) A0:pipes(D0) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:attached ObjectSomeValuesFrom(:attachedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:attached, :attachedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+22. piping should be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_defined (↓ TalphaNX-16.piping 0.0))
+	Parsed Sentence = piping should be defined
+
+	Semantics:[I0:and(defined K0) V0:exists(definedarg2inv semtop) G0:subset(A0 V0) A0:piping(D0) K0:exists(definedarg2inv semtop)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+23. pipes shall be installed		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_installed (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be installed
+
+	Semantics:[K0:exists(L0 semtop) G0:subset(A0 V0) I0:and(installed K0) V0:exists(installedarg2inv I0) A0:pipes(D0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:installedarg2inv, :semtop, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+24. unions shall be selected		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_selected (↓ TalphaNX-16.unions 0.0))
+	Parsed Sentence = unions shall be selected
+
+	Semantics:[V0:exists(selectedarg2inv semtop) A0:unions(D0) I0:and(selected K0) K0:exists(selectedarg2inv semtop) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:selected ObjectSomeValuesFrom(:selectedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:selectedarg2inv, :selected, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+25. pipes shall be segregated		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_segregated (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be segregated
+
+	Semantics:[G0:subset(A0 V0) I0:and(segregated K0) A0:pipes(D0) V0:exists(segregatedarg2inv semtop) K0:exists(segregatedarg2inv semtop)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:segregatedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:segregatedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+26. clamp-block shall be used		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_used (↓ TalphaNX-16.clamp-block 0.0))
+	Parsed Sentence = clamp-block shall be used
+
+	Semantics:[A0:clamp-block(D0) V0:exists(usedarg2inv semtop) I0:and(used K0) K0:exists(usedarg2inv semtop) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:used ObjectSomeValuesFrom(:usedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:semtop, :usedarg2inv, :used]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+27. routings shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.routings 0.0))
+	Parsed Sentence = routings shall be defined
+
+	Semantics:[A0:routings(D0) V0:exists(definedarg2inv semtop) K0:exists(definedarg2inv semtop) I0:and(defined K0) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+28. routings shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.routings 0.0))
+	Parsed Sentence = routings shall be defined
+
+	Semantics:[V0:exists(definedarg2inv semtop) K0:exists(definedarg2inv semtop) A0:routings(D0) G0:subset(A0 V0) I0:and(defined K0)]
+	DL semantics =  SubClassOf(:routings ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:routings]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+29. pipes should be installed		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_installed (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes should be installed
+
+	Semantics:[A0:pipes(D0) G0:subset(A0 V0) I0:and(installed K0) K0:exists(L0 semtop) V0:exists(installedarg2inv I0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:installedarg2inv, :semtop, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+30. routings shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.routings 0.0))
+	Parsed Sentence = routings shall be defined
+
+	Semantics:[A0:routings(D0) G0:subset(A0 V0) K0:exists(definedarg2inv semtop) I0:and(defined K0) V0:exists(definedarg2inv semtop)]
+	DL semantics =  SubClassOf(:routings ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:routings]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+31. clamp shall be positioned		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_positioned (↓ TalphaNX-16.clamp 0.0))
+	Parsed Sentence = clamp shall be positioned
+
+	Semantics:[I0:and(positioned K0) G0:subset(A0 V0) V0:exists(positionedarg2inv semtop) A0:clamp(D0) K0:exists(positionedarg2inv semtop)]
+	DL semantics =  ObjectIntersectionOf(:positioned ObjectSomeValuesFrom(:positionedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:positioned, :positionedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+32. pipes shall be segregated		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_segregated (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be segregated
+
+	Semantics:[G0:subset(A0 V0) K0:exists(segregatedarg2inv semtop) V0:exists(segregatedarg2inv semtop) A0:pipes(D0) I0:and(segregated K0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:segregatedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:segregatedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+33. routings shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_defined (↓ TalphaNX-16.routings 0.0))
+	Parsed Sentence = routings shall be defined
+
+	Semantics:[A0:routings(D0) K0:exists(definedarg2inv semtop) V0:exists(definedarg2inv semtop) I0:and(defined K0) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:defined ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:defined, :definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+34. clamp-block shall be used		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_used (↓ TalphaNX-16.clamp-block 0.0))
+	Parsed Sentence = clamp-block shall be used
+
+	Semantics:[G0:subset(A0 V0) K0:exists(usedarg2inv semtop) V0:exists(usedarg2inv semtop) I0:and(used K0) A0:clamp-block(D0)]
+	DL semantics =  SubClassOf(:clamp-block ObjectSomeValuesFrom(:usedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:clamp-block]
+	List of RelationNames =  [:semtop, :usedarg2inv]
+
+	Ontology Enrichment Remarks = 1 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+35. low t bobbin + nsa 5516cbd		Parse OK? : No
+
+
+
+
+36. low t bobbin + nsa 5516cbj		Parse OK? : No
+
+
+
+
+37. wire may not be identified		Parse OK? : No
+
+
+
+
+38. saddle clamp shall be used		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_used (↓ TalphaNX-16.clamp 0.0))
+	Parsed Sentence = clamp shall be used
+
+	Semantics:[V0:exists(usedarg2inv semtop) A0:clamp(D0) K0:exists(usedarg2inv semtop) I0:and(used K0) G0:subset(A0 V0)]
+	DL semantics =  ObjectIntersectionOf(:used ObjectSomeValuesFrom(:usedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:semtop, :usedarg2inv, :used]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+39. tee - unions shall be used		Parse OK? : No
+
+
+
+
+40. spray cover should be used		Parse OK? : No
+
+
+
+
+41. spray cover should be used		Parse OK? : No
+
+
+
+
+42. a flag note shall be added		Parse OK? : No
+
+
+
+
+43. a flag note shall be added		Parse OK? : No
+
+
+
+
+44. the bracket shall be sized		Parse OK? : No
+
+
+
+
+45. high t bobbin + nsa 5516cbd		Parse OK? : No
+
+
+
+
+46. strain relief shall be bend		Parse OK? : No
+
+
+
+
+47. every pipe shall be labeled		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_labeled (↓ TalphaNX-16.pipe 0.0))
+	Parsed Sentence = pipe shall be labeled
+
+	Semantics:[V0:exists(labeledarg2inv semtop) G0:subset(A0 V0) I0:and(labeled K0) A0:pipe(D0) K0:exists(labeledarg2inv semtop)]
+	DL semantics =  SubClassOf(:pipe ObjectSomeValuesFrom(:labeledarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipe]
+	List of RelationNames =  [:semtop, :labeledarg2inv]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+48. special grommet may be used		Parse OK? : No
+
+
+
+
+49. nsa5527 spacer shall be used		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_used (↓ TalphaNX-16.spacer 0.0))
+	Parsed Sentence = spacer shall be used
+
+	Semantics:[V0:exists(usedarg2inv semtop) G0:subset(A0 V0) A0:spacer(D0) I0:and(used K0) K0:exists(usedarg2inv semtop)]
+	DL semantics =  SubClassOf(:spacer ObjectSomeValuesFrom(:usedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:spacer]
+	List of RelationNames =  [:semtop, :usedarg2inv]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+50. hexagonal bolt shall be used		Parse OK? : No
+
+
+
+
+51. fuel pipes shall be installed		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_installed (↓ TalphaNX-16.pipes 0.0))
+	Parsed Sentence = pipes shall be installed
+
+	Semantics:[K0:exists(L0 semtop) I0:and(installed K0) V0:exists(installedarg2inv I0) G0:subset(A0 V0) A0:pipes(D0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:installedarg2inv, :semtop, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+52. fastening clamp shall be used		Parse OK? : No
+
+
+
+
+53. bus bar shall be protected by		Parse OK? : No
+
+
+
+
+54. the routings shall be defined		Parse OK? : No
+
+
+
+
+55. bracket should not be defined		Parse OK? : No
+
+
+
+
+56. new bracket should be defined		Parse OK? : No
+
+
+
+
+57. g-route shall not be installed		Parse OK? : No
+
+
+
+
+58. equipment should be positioned		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_positioned (↓ TalphaNX-16.equipment 0.0))
+	Parsed Sentence = equipment should be positioned
+
+	Semantics:[V0:exists(positionedarg2inv semtop) A0:equipment(D0) I0:and(positioned K0) G0:subset(A0 V0) K0:exists(positionedarg2inv semtop)]
+	DL semantics =  ObjectIntersectionOf(:positioned ObjectSomeValuesFrom(:positionedarg2inv :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:positioned, :positionedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+59. unions shall be fixed on pipes		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_fixed_on (↓ TalphaNX-16.unions 0.0) (↓ TalphaNX-16.pipes 0.1.3.1))
+	Parsed Sentence = unions shall be fixed on pipes
+
+	Semantics:[A0:pipes(D0) I0:subset(V4 V0) V4:unions(V2) M0:exists(fixedarg3 A0) K0:and(fixed M0) V0:exists(fixedarg2inv K0)]
+	DL semantics =  SubClassOf(:unions ObjectSomeValuesFrom(:fixedarg2inv ObjectIntersectionOf(:fixed ObjectSomeValuesFrom(:fixedarg3 :pipes ) ) ) )
+
+	List of ConceptNames =  [:unions, :pipes]
+	List of RelationNames =  [:fixedarg3, :fixedarg2inv, :fixed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+60. v-support shall be installed by		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_installed (↓ TalphaNX-16.v-support 0.0))
+	Parsed Sentence = v-support shall be installed
+
+	Semantics:[A0:v-support(D0) G0:subset(A0 V0) I0:and(installed K0) K0:exists(L0 semtop) V0:exists(installedarg2inv I0)]
+	DL semantics =  SubClassOf(:v-support ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:v-support]
+	List of RelationNames =  [:installedarg2inv, :semtop, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+61. coaxial cable shall be attached		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_attached (↓ TalphaNX-16.cable 0.0))
+	Parsed Sentence = cable shall be attached
+
+	Semantics:[I0:and(attached K0) G0:subset(A0 V0) K0:exists(L0 semtop) A0:cable(D0) V0:exists(attachedarg2inv semtop)]
+	DL semantics =  ObjectIntersectionOf(:attached ObjectSomeValuesFrom( :semtop ) )
+
+	List of ConceptNames =  []
+	List of RelationNames =  [:attached, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 0 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+62. first clamp shall be positioned		Parse OK? : No
+
+
+
+
+63. en 3545 connector shall be used		Parse OK? : No
+
+
+
+
+64. terminal lug shall be installed		Parse OK? : No
+
+
+
+
+65. 5080 psi pipes shall be defined		Parse OK? : No
+
+
+
+
+66. permanent unions should be used		Parse OK? : No
+
+
+
+
+67. flexible hoses shall be defined		Parse OK? : No
+
+
+
+
+68. flexible hoses shall be defined		Parse OK? : No
+
+
+
+
+69. flexible hoses shall be defined		Parse OK? : No
+
+
+
+
+70. flexible hoses shall be defined		Parse OK? : No
+
+
+
+
+71. flexible hoses shall be defined		Parse OK? : No
+
+
+
+
+72. flexible hoses shall be defined		Parse OK? : No
+
+
+
+
+73. clamp shall be attached by bolt		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_attached_by (↓ TalphaNX-16.clamp 0.0) (↓ TalphaNX-16.bolt 0.1.3.1))
+	Parsed Sentence = clamp shall be attached by bolt
+
+	Semantics:[M0:exists(attachedarg3 A0) K0:and(attached M0) V4:clamp(V2) I0:subset(V4 V0) V0:exists(attachedarg2inv K0) A0:bolt(D0)]
+	DL semantics =  SubClassOf(:clamp ObjectSomeValuesFrom(:attachedarg2inv ObjectIntersectionOf(:attached ObjectSomeValuesFrom(:attachedarg3 :bolt ) ) ) )
+
+	List of ConceptNames =  [:bolt, :clamp]
+	List of RelationNames =  [:attachedarg3, :attached, :attachedarg2inv]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+74. back shell may be used inside vu		Parse OK? : No
+
+
+
+
+75. nsa 9504 boot shall be installed		Parse OK? : No
+
+
+
+
+76. nsa 9504 boot shall be installed		Parse OK? : No
+
+
+
+
+77. hydraulic pipes shall be labeled		Parse OK? : No
+
+
+
+
+78. flexible hoses should be defined		Parse OK? : No
+
+
+
+
+79. each bracket should be installed		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_installed (↓ TalphaNX-16.bracket 0.0))
+	Parsed Sentence = bracket should be installed
+
+	Semantics:[K0:exists(L0 semtop) G0:subset(A0 V0) A0:bracket(D0) V0:exists(installedarg2inv I0) I0:and(installed K0)]
+	DL semantics =  SubClassOf(:bracket ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:bracket]
+	List of RelationNames =  [:installedarg2inv, :semtop, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+80. each bracket should be installed		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.should_be_installed (↓ TalphaNX-16.bracket 0.0))
+	Parsed Sentence = bracket should be installed
+
+	Semantics:[A0:bracket(D0) G0:subset(A0 V0) K0:exists(L0 semtop) I0:and(installed K0) V0:exists(installedarg2inv I0)]
+	DL semantics =  SubClassOf(:bracket ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom( :semtop ) ) ) )
+
+	List of ConceptNames =  [:bracket]
+	List of RelationNames =  [:installedarg2inv, :semtop, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+81. abs5004-xxxx pipes shall be used		Parse OK? : No
+
+
+
+
+82. adjustable bracket shall be used		Parse OK? : No
+
+
+
+
+83. flexible hoses should be defined		Parse OK? : No
+
+
+
+
+84. parallel splice shall not be used		Parse OK? : No
+
+
+
+
+85. terminal lug shall not be defined		Parse OK? : No
+
+
+
+
+86. independant bracket shall be used		Parse OK? : No
+
+
+
+
+87. flexible hoses shall be identified		Parse OK? : No
+
+
+
+
+88. cross - junction should be avoided		Parse OK? : No
+
+
+
+
+89. 2-hole bulkhead unions may be used		Parse OK? : No
+
+
+
+
+90. swaged unions should be positioned		Parse OK? : No
+
+
+
+
+91. bundle over length shall be defined		Parse OK? : No
+
+
+
+
+92. bundle over length shall be defined		Parse OK? : No
+
+
+
+
+93. bleed air pipes shall be segregated		Parse OK? : No
+
+
+
+
+94. loap shall be taken into account by		Parse OK? : No
+
+
+
+
+95. the ends of tubing shall be defined		Parse OK? : No
+
+
+
+
+96. bulkhead unions shall be segregated		Parse OK? : No
+
+
+
+
+97. flexible hoses shall not be defined		Parse OK? : No
+
+
+
+
+98. bulkhead unions shall be positioned		Parse OK? : No
+
+
+
+
+99. if standard bracket can not be used		Parse OK? : No
+
+
+
+
+100. - bonding points(e.g. for en 60498 closesb		Parse OK? : No
+
+
+
+
+101. long straight pipes shall be defined		Parse OK? : No
+
+
+
+
+102. long straight pipes shall be defined		Parse OK? : No
+
+
+
+
+103. abs2226 flexible hoses shall be used		Parse OK? : No
+
+
+
+
+104. the saddle clamp shall be positioned		Parse OK? : No
+
+
+
+
+105. fixed bracket should be manufactured		Parse OK? : No
+
+
+
+
+106. separators shall be used in a minimum		Parse OK? : No
+
+
+
+
+107. attachment device shall be positioned		Parse OK? : No
+
+
+
+
+108. attachment device shall be positioned		Parse OK? : No
+
+
+
+
+109. shielded bundle shall be protected by		Parse OK? : No
+
+
+
+
+110. flanged bulkhead unions shall be used		Parse OK? : No
+
+
+
+
+111. flying tee - unions should be avoided		Parse OK? : No
+
+
+
+
+112. 2 pipes may be used in junction zones		Parse OK? : No
+
+
+
+
+113. flexible hoses shall not be installed		Parse OK? : No
+
+
+
+
+114. wire shall be identified with uv laser		Parse OK? : No
+
+
+
+
+115. a spacer shall be used between p-clamp		Parse OK? : No
+
+
+
+
+116. a spacer shall be used between p-clamp		Parse OK? : No
+
+
+
+
+117. double thread unions shall not be used		Parse OK? : No
+
+
+
+
+118. stand-off/colonettes shall be installed		Parse OK? : No
+
+
+
+
+119. when bundle shall be installed at hinge		Parse OK? : No
+
+
+
+
+120. emi protection shall be installed using		Parse OK? : No
+
+
+
+
+121. single tee - junction should be defined		Parse OK? : No
+
+
+
+
+122. identification label should be attached		Parse OK? : No
+
+
+
+
+123. adhesive bonded bracket may be installed		Parse OK? : No
+
+
+
+
+124. g routes shall not be installed on ramps		Parse OK? : No
+
+
+
+
+125. aluminium terminal lug shall not be bend		Parse OK? : No
+
+
+
+
+126. pipes should be installed in clamp-block		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.should_be_installed_in (↓ TalphaNX-16.pipes 0.0) (↓ TalphaNX-16.clamp-block 0.1.3.1))
+	Parsed Sentence = pipes should be installed in clamp-block
+
+	Semantics:[V0:exists(installedarg2inv K0) V4:pipes(V2) A0:clamp-block(D0) M0:exists(installedarg3 A0) K0:and(installed M0) I0:subset(V4 V0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom(:installedarg3 :clamp-block ) ) ) )
+
+	List of ConceptNames =  [:clamp-block, :pipes]
+	List of RelationNames =  [:installedarg3, :installedarg2inv, :installed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+127. different bulkhead unions should be used		Parse OK? : No
+
+
+
+
+128. in-situ swaged pipes shall be segregated		Parse OK? : No
+
+
+
+
+129. g-route shall be segregated from e-route		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_segregated_from (↓ TalphaNX-16.g-route 0.0) (↓ TalphaNX-16.e-route 0.1.3.1))
+	Parsed Sentence = g-route shall be segregated from e-route
+
+	Semantics:[M0:exists(segregatedarg3 A0) V4:g-route(V2) K0:and(segregated M0) I0:subset(V4 V0) A0:e-route(D0) V0:exists(segregatedarg2inv K0)]
+	DL semantics =  SubClassOf(:g-route ObjectSomeValuesFrom(:segregatedarg2inv ObjectIntersectionOf(:segregated ObjectSomeValuesFrom(:segregatedarg3 :e-route ) ) ) )
+
+	List of ConceptNames =  [:g-route, :e-route]
+	List of RelationNames =  [:segregatedarg3, :segregatedarg2inv, :segregated]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 2 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+130. g-route shall be segregated from m-route		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_segregated_from (↓ TalphaNX-16.g-route 0.0) (↓ TalphaNX-16.m-route 0.1.3.1))
+	Parsed Sentence = g-route shall be segregated from m-route
+
+	Semantics:[V4:g-route(V2) I0:subset(V4 V0) A0:m-route(D0) M0:exists(segregatedarg3 A0) K0:and(segregated M0) V0:exists(segregatedarg2inv K0)]
+	DL semantics =  SubClassOf(:g-route ObjectSomeValuesFrom(:segregatedarg2inv ObjectIntersectionOf(:segregated ObjectSomeValuesFrom(:segregatedarg3 :m-route ) ) ) )
+
+	List of ConceptNames =  [:g-route, :m-route]
+	List of RelationNames =  [:segregatedarg3, :segregatedarg2inv, :segregated]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+131. g-route shall be segregated from s-route		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_segregated_from (↓ TalphaNX-16.g-route 0.0) (↓ TalphaNX-16.s-route 0.1.3.1))
+	Parsed Sentence = g-route shall be segregated from s-route
+
+	Semantics:[A0:s-route(D0) I0:subset(V4 V0) K0:and(segregated M0) V0:exists(segregatedarg2inv K0) V4:g-route(V2) M0:exists(segregatedarg3 A0)]
+	DL semantics =  SubClassOf(:g-route ObjectSomeValuesFrom(:segregatedarg2inv ObjectIntersectionOf(:segregated ObjectSomeValuesFrom(:segregatedarg3 :s-route ) ) ) )
+
+	List of ConceptNames =  [:s-route, :g-route]
+	List of RelationNames =  [:segregatedarg3, :segregatedarg2inv, :segregated]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+132. kevlar flexible hoses shall be installed		Parse OK? : No
+
+
+
+
+133. spacer shall not be used in between clamp		Parse OK? : No
+
+
+
+
+134. bundle shall be added on protected bundle		Parse OK? : No
+
+
+
+
+135. support tubes should be attached on bends		Parse OK? : No
+
+
+
+
+136. fire detector assembly shall be installed		Parse OK? : No
+
+
+
+
+137. asna2553 spring washer shall be installed		Parse OK? : No
+
+
+
+
+138. in-situ swaged unions shall be positioned		Parse OK? : No
+
+
+
+
+139. position of derivation shall be integrated		Parse OK? : No
+
+
+
+
+140. the mechanical part of the pressure seal		Parse OK? : No
+
+
+
+
+141. equipment shall be protected with umbrella		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_protected_with (↓ TalphaNX-16.equipment 0.0) (↓ TalphaNX-16.umbrella 0.1.3.1))
+	Parsed Sentence = equipment shall be protected with umbrella
+
+	Semantics:[V4:equipment(V2) V0:exists(protectedarg2inv K0) K0:and(protected M0) A0:umbrella(D0) M0:exists(protectedarg3 A0) I0:subset(V4 V0)]
+	DL semantics =  SubClassOf(:equipment ObjectSomeValuesFrom(:protectedarg2inv ObjectIntersectionOf(:protected ObjectSomeValuesFrom(:protectedarg3 :umbrella ) ) ) )
+
+	List of ConceptNames =  [:umbrella, :equipment]
+	List of RelationNames =  [:protectedarg2inv, :protected, :protectedarg3]
+
+	Ontology Enrichment Remarks = 1 new class(es) added; 3 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+142. pipes may be segregated to fixed structure		Parse OK? : No
+
+
+
+
+143. pipes may be segregated to fixed structure		Parse OK? : No
+
+
+
+
+144. the bolts for clamp-block shall be defined		Parse OK? : No
+
+
+
+
+145. nsa 935401 shall not be used inside raceway		Parse OK? : No
+
+
+
+
+146. en 3646 connector shall be used in small vu		Parse OK? : No
+
+
+
+
+147. en 3646 connector shall be used in large vu		Parse OK? : No
+
+
+
+
+148. specific nsa5590 double - clamp can be used		Parse OK? : No
+
+
+
+
+149. bending radii for support should be defined		Parse OK? : No
+
+
+
+
+150. connector shall be protected with drip loop		Parse OK? : No
+
+
+
+
+151. washer shall not be used in the fuel-tank		Parse OK? : No
+
+
+
+
+152. pipes should be identified in the tank area		Parse OK? : No
+
+
+
+
+153. bundle shall be defined at moving components		Parse OK? : No
+
+
+
+
+154. en 2997 connector shall be used in hot zones		Parse OK? : No
+
+
+
+
+155. en 2997 connector shall be used in fire area		Parse OK? : No
+
+
+
+
+156. en 3646 connector shall be used in fire area		Parse OK? : No
+
+
+
+
+157. protection means shall be defined in drawing		Parse OK? : No
+
+
+
+
+158. connector shall be protected outside vu with		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_protected_outside (↓ TalphaNX-16.connector 0.0) (↓ TalphaNX-16.vu 0.1.3.1))
+	Parsed Sentence = connector shall be protected outside vu
+
+	Semantics:[I0:subset(V4 V0) A0:vu(D0) V4:connector(V2) K0:and(protected M0) M0:exists(protectedarg3 A0) V0:exists(protectedarg2inv K0)]
+	DL semantics =  SubClassOf(:connector ObjectSomeValuesFrom(:protectedarg2inv ObjectIntersectionOf(:protected ObjectSomeValuesFrom(:protectedarg3 :vu ) ) ) )
+
+	List of ConceptNames =  [:vu, :connector]
+	List of RelationNames =  [:protectedarg2inv, :protected, :protectedarg3]
+
+	Ontology Enrichment Remarks = 1 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+159. connector shall be protected outside vu with		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_protected_outside (↓ TalphaNX-16.connector 0.0) (↓ TalphaNX-16.vu 0.1.3.1))
+	Parsed Sentence = connector shall be protected outside vu
+
+	Semantics:[M0:exists(protectedarg3 A0) A0:vu(D0) V0:exists(protectedarg2inv K0) V4:connector(V2) I0:subset(V4 V0) K0:and(protected M0)]
+	DL semantics =  SubClassOf(:connector ObjectSomeValuesFrom(:protectedarg2inv ObjectIntersectionOf(:protected ObjectSomeValuesFrom(:protectedarg3 :vu ) ) ) )
+
+	List of ConceptNames =  [:vu, :connector]
+	List of RelationNames =  [:protectedarg2inv, :protected, :protectedarg3]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+160. connector shall be protected outside vu with		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_protected_outside (↓ TalphaNX-16.connector 0.0) (↓ TalphaNX-16.vu 0.1.3.1))
+	Parsed Sentence = connector shall be protected outside vu
+
+	Semantics:[A0:vu(D0) V4:connector(V2) V0:exists(protectedarg2inv K0) K0:and(protected M0) M0:exists(protectedarg3 A0) I0:subset(V4 V0)]
+	DL semantics =  SubClassOf(:connector ObjectSomeValuesFrom(:protectedarg2inv ObjectIntersectionOf(:protected ObjectSomeValuesFrom(:protectedarg3 :vu ) ) ) )
+
+	List of ConceptNames =  [:vu, :connector]
+	List of RelationNames =  [:protectedarg2inv, :protected, :protectedarg3]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+161. double staging clamp-block shall not be used		Parse OK? : No
+
+
+
+
+162. routings shall be provided with repair zones		Parse OK? : No
+
+
+
+
+163. straight pipes shall not be used in routings		Parse OK? : No
+
+
+
+
+164. unions shall not be used in distortion areas		Parse OK? : No
+
+
+
+
+165. double staging clamp-block shall not be used		Parse OK? : No
+
+
+
+
+166. thermal variation shall be taken into account		Parse OK? : No
+
+
+
+
+167. sense pipes shall be provided with restrictor		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_provided_with (↓ TalphaNX-16.pipes 0.0) (↓ TalphaNX-16.restrictor 0.1.3.1))
+	Parsed Sentence = pipes shall be provided with restrictor
+
+	Semantics:[M0:exists(providedarg3 A0) V0:exists(providedarg2inv K0) I0:subset(V4 V0) K0:and(provided M0) A0:restrictor(D0) V4:pipes(V2)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:providedarg2inv ObjectIntersectionOf(:provided ObjectSomeValuesFrom(:providedarg3 :restrictor ) ) ) )
+
+	List of ConceptNames =  [:restrictor, :pipes]
+	List of RelationNames =  [:providedarg2inv, :provided, :providedarg3]
+
+	Ontology Enrichment Remarks = 1 new class(es) added; 3 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+168. en 3646 connector shall be used in swamp area		Parse OK? : No
+
+
+
+
+169. virtual pressure seal(vp)shall be installed		Parse OK? : No
+
+
+
+
+170. low point shall be avoided along the piping		Parse OK? : No
+
+
+
+
+171. elbow unions shall be used for flexible hoses		Parse OK? : No
+
+
+
+
+172. para-aramid flexible hoses shall be installed		Parse OK? : No
+
+
+
+
+173. g-route should be routed above the cargo floor		Parse OK? : No
+
+
+
+
+174. pipes should be defined as short as possible		Parse OK? : No
+
+
+
+
+175. abs 0504 shall be used in fuel immersion zones		Parse OK? : No
+
+
+
+
+176. back shell shall be locked on shielded harness		Parse OK? : No
+
+
+
+
+177. glued label shall not be used in the fuel tank		Parse OK? : No
+
+
+
+
+178. g-route shall be installed with metallic spacer		Parse OK? : No
+
+
+
+
+179. p-route shall be installed with metallic spacer		Parse OK? : No
+
+
+
+
+180. bundle shall be installed with abs 1020 grommet		Parse OK? : No
+
+
+
+
+181. bundle shall be installed in front of fire seal		Parse OK? : No
+
+
+
+
+182. bundle protection shall be defined in _ x000d _		Parse OK? : No
+
+
+
+
+183. abs 5342-02 flag datum marker shall be attached		Parse OK? : No
+
+
+
+
+184. spare wire shall not be provided for feeder wire		Parse OK? : No
+
+
+
+
+185. separators shall not be used at bundle crossings		Parse OK? : No
+
+
+
+
+186. leaky line shall be bend minimum 80 mm up to 180		Parse OK? : No
+
+
+
+
+187. spare conduit shall be identified with asne 0248		Parse OK? : No
+
+
+
+
+188. nsa 9504 boot shall be attached to the structure		Parse OK? : No
+
+
+
+
+189. lock wire should not be used inside power center		Parse OK? : No
+
+
+
+
+190. suction pipes shall not be used inside fuel tank		Parse OK? : No
+
+
+
+
+191. clamp-block shall be fixed directly onto bracket		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_fixed_directly_+_onto (↓ TalphaNX-16.clamp-block 0.0) (↓ TalphaNX-16.bracket 0.1.3.1))
+	Parsed Sentence = clamp-block shall be fixed directly onto bracket
+
+	Semantics:[V4:clamp-block(V2) A0:bracket(D0) V0:exists(fixedarg2inv K0) K0:and(fixed M0) M0:exists(fixedarg3 A0) I0:subset(V4 V0)]
+	DL semantics =  SubClassOf(:clamp-block ObjectSomeValuesFrom(:fixedarg2inv ObjectIntersectionOf(:fixed ObjectSomeValuesFrom(:fixedarg3 :bracket ) ) ) )
+
+	List of ConceptNames =  [:clamp-block, :bracket]
+	List of RelationNames =  [:fixedarg3, :fixedarg2inv, :fixed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+192. the bend radius shall be defined for g-route with		Parse OK? : No
+
+
+
+
+193. dynamic bundle may be protected with overbraiding		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.may_be_protected_with (↓ TalphaNX-16.bundle 0.0) (↓ TalphaNX-16.overbraiding 0.1.3.1))
+	Parsed Sentence = bundle may be protected with overbraiding
+
+	Semantics:[A0:overbraiding(D0) V0:exists(protectedarg2inv K0) I0:subset(V4 V0) M0:exists(protectedarg3 A0) K0:and(protected M0) V4:bundle(V2)]
+	DL semantics =  SubClassOf(:bundle ObjectSomeValuesFrom(:protectedarg2inv ObjectIntersectionOf(:protected ObjectSomeValuesFrom(:protectedarg3 :overbraiding ) ) ) )
+
+	List of ConceptNames =  [:bundle, :overbraiding]
+	List of RelationNames =  [:protectedarg2inv, :protected, :protectedarg3]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+194. p routes should not be attached directly to ramps		Parse OK? : No
+
+
+
+
+195. abs 5342-02 flag datum marker should be installed		Parse OK? : No
+
+
+
+
+196. jam nut connector shall be used inside fuel tanks		Parse OK? : No
+
+
+
+
+197. soldered connection shall be protected by conduit		Parse OK? : No
+
+
+
+
+198. flexible hoses shall not be used inside fuel tank		Parse OK? : No
+
+
+
+
+199. tee - unions should be fixed on at least one pipe		Parse OK? : No
+
+
+
+
+200. four possible highly resistive unions may be used		Parse OK? : No
+
+
+
+
+201. abs5151d5-035&abs5151d6-035 pipes shall be used		Parse OK? : No
+
+
+
+
+202. separators shall be used following the table below		Parse OK? : No
+
+
+
+
+203. structural deformation shall be taken into account		Parse OK? : No
+
+
+
+
+204. spare wire shall not be provided for optical cable		Parse OK? : No
+
+
+
+
+205. spare wire shall not be provided for coaxial cable		Parse OK? : No
+
+
+
+
+206. bundle over length shall be provided for equipment		Parse OK? : No
+
+
+
+
+207. silicon seal shall not be used on pneumatic system		Parse OK? : No
+
+
+
+
+208. if bracket shall be used for ata 92 fixation point		Parse OK? : No
+
+
+
+
+209. wedge type support shall be avoided for new design		Parse OK? : No
+
+
+
+
+210. p-route shall not be attached on abs1576 peek ramp		Parse OK? : No
+
+
+
+
+211. unions shall not be installed in expansion zones		Parse OK? : No
+
+
+
+
+212. en 3646 connector shall be used in hydraulic zones		Parse OK? : No
+
+
+
+
+213. en 3545 connector shall be used on interface areas		Parse OK? : No
+
+
+
+
+214. en 2997 connector shall be used in vibration zones		Parse OK? : No
+
+
+
+
+215. geometry definintion for support should be defined		Parse OK? : No
+
+
+
+
+216. the interface of the drained hole shall be defined		Parse OK? : No
+
+
+
+
+217. connector shall be defined with socket on the plug		Parse OK? : No
+
+
+
+
+218. saddle clamp should be fixed directly onto bracket		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.should_be_fixed_directly_+_onto (↓ TalphaNX-16.clamp 0.0) (↓ TalphaNX-16.bracket 0.1.3.1))
+	Parsed Sentence = clamp should be fixed directly onto bracket
+
+	Semantics:[A0:bracket(D0) V0:exists(fixedarg2inv K0) M0:exists(fixedarg3 A0) V4:clamp(V2) I0:subset(V4 V0) K0:and(fixed M0)]
+	DL semantics =  SubClassOf(:clamp ObjectSomeValuesFrom(:fixedarg2inv ObjectIntersectionOf(:fixed ObjectSomeValuesFrom(:fixedarg3 :bracket ) ) ) )
+
+	List of ConceptNames =  [:bracket, :clamp]
+	List of RelationNames =  [:fixedarg3, :fixedarg2inv, :fixed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+219. 3-hole bulkhead unions should be used for routings		Parse OK? : No
+
+
+
+
+220. two connections of a tee - unions shall be defined		Parse OK? : No
+
+
+
+
+221. saddle clamp should be fixed directly onto bracket		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.should_be_fixed_directly_+_onto (↓ TalphaNX-16.clamp 0.0) (↓ TalphaNX-16.bracket 0.1.3.1))
+	Parsed Sentence = clamp should be fixed directly onto bracket
+
+	Semantics:[K0:and(fixed M0) V4:clamp(V2) M0:exists(fixedarg3 A0) V0:exists(fixedarg2inv K0) I0:subset(V4 V0) A0:bracket(D0)]
+	DL semantics =  SubClassOf(:clamp ObjectSomeValuesFrom(:fixedarg2inv ObjectIntersectionOf(:fixed ObjectSomeValuesFrom(:fixedarg3 :bracket ) ) ) )
+
+	List of ConceptNames =  [:bracket, :clamp]
+	List of RelationNames =  [:fixedarg3, :fixedarg2inv, :fixed]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 2 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+222. g-route shall be installed taking into account loap		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.shall_be_installed_taking_+_into_+_account (↓ TalphaNX-16.g-route 0.0) (↓ TalphaNX-16.loap 0.1.3.1))
+	Parsed Sentence = g-route shall be installed taking into account loap
+
+	Semantics:[M0:exists(installedarg3 A0) K0:and(installed M0) I0:subset(V4 V0) A0:loap(D0) V0:exists(installedarg2inv K0) V4:g-route(V2)]
+	DL semantics =  SubClassOf(:g-route ObjectSomeValuesFrom(:installedarg2inv ObjectIntersectionOf(:installed ObjectSomeValuesFrom(:installedarg3 :loap ) ) ) )
+
+	List of ConceptNames =  [:g-route, :loap]
+	List of RelationNames =  [:installedarg3, :installedarg2inv, :installed]
+
+	Ontology Enrichment Remarks = 1 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+223. derivation shall be defined from overbraided bundle		Parse OK? : No
+
+
+
+
+224. g-route shall not be attached on abs 1576 peek ramp		Parse OK? : No
+
+
+
+
+225. g-route shall be installed with intermediate bobbin		Parse OK? : No
+
+
+
+
+226. pipes should be segregated with a minimum clearance		Parse OK? : No
+
+
+
+
+227. the definition of flexible hoses shall be submitted		Parse OK? : No
+
+
+
+
+228. copper terminal lug shall not be bend for more then		Parse OK? : No
+
+
+
+
+229. maximum 5 pipes should be installed per clamp-block		Parse OK? : No
+
+
+
+
+230. the elongation of pipes shall be taken into account		Parse OK? : No
+
+
+
+
+231. pressurization variation shall be taken into account		Parse OK? : No
+
+
+
+
+232. spare wire shall not be provided for afdx bus link		Parse OK? : No
+
+
+
+
+233. feeder of g-route shall be segregated by lacing tape		Parse OK? : No
+
+
+
+
+234. bundle shall be protected with mechanical protection		Parse OK? : No
+
+
+
+
+235. bundle shall be protected with mechanical protection		Parse OK? : No
+
+
+
+
+236. bundle shall be protected with mechanical protection		Parse OK? : No
+
+
+
+
+237. bundle shall be protected with mechanical protection		Parse OK? : No
+
+
+
+
+238. bundle shall be protected with mechanical protection		Parse OK? : No
+
+
+
+
+239. bundle shall be protected with electrical protection		Parse OK? : No
+
+
+
+
+240. support tubes should be attached on straight parts		Parse OK? : No
+
+
+
+
+241. connector shall be protected inside vu with cu cable		Parse OK? : No
+
+
+
+
+242. small(dash number -04 to -08)pipes should be fixed		Parse OK? : No
+
+
+
+
+243. the minimum/maximum bend angle(s)shall be defined		Parse OK? : No
+
+
+
+
+244. repair over length shall be provided on copper bundle		Parse OK? : No
+
+
+
+
+245. repair over length shall be provided on copper bundle		Parse OK? : No
+
+
+
+
+246. repair over length shall be provided on copper bundle		Parse OK? : No
+
+
+
+
+247. abs1576 peek ramp should not be attached with torsion		Parse OK? : No
+
+
+
+
+248. abs1576 peek ramp should not be attached with torsion		Parse OK? : No
+
+
+
+
+249. dynamic bundle shall be attached with double clamping		Parse OK? : No
+
+
+
+
+250. connector plate shall be defined with spare provision		Parse OK? : No
+
+
+
+
+251. connector plate shall be defined with spare provision		Parse OK? : No
+
+
+
+
+252. connector shall be protected inside vu with alu cable		Parse OK? : No
+
+
+
+
+253. two wire shall not be installed in one single contact		Parse OK? : No
+
+
+
+
+254. p-clamp shall not be used to fix pipes onto structure		Parse OK? : No
+
+
+
+
+255. following standards shall be used for bulkhead unions		Parse OK? : No
+
+
+
+
+256. flexible hoses shall be protected by a chafing sheath		Parse OK? : No
+
+
+
+
+257. separators shall not be used for overlength management		Parse OK? : No
+
+
+
+
+258. repair over length shall be provided for coaxial cable		Parse OK? : No
+
+
+
+
+259. g-route shall not be installed to fuel tank boundaries		Parse OK? : No
+
+
+
+
+260. when g-route shall be installed below cargo floor with		Parse OK? : No
+
+
+
+
+261. bundle shall be protected with en 6049-009 open sleeve		Parse OK? : No
+
+
+
+
+262. route identification marker shall be installed showing		Parse OK? : No
+
+
+
+
+263. unions shall be positioned close to one fixation point		Parse OK? : No
+
+
+
+
+264. floating clamp-block should be used instead of p-clamp		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0Vpn1-9.should_be_used_instead_+_of (↓ TalphaNX-16.clamp-block 0.0) (↓ TalphaNX-16.p-clamp 0.1.3.1))
+	Parsed Sentence = clamp-block should be used instead of p-clamp
+
+	Semantics:[A0:p-clamp(D0) K0:and(used M0) M0:exists(usedarg3 A0) V0:exists(usedarg2inv K0) I0:subset(V4 V0) V4:clamp-block(V2)]
+	DL semantics =  SubClassOf(:clamp-block ObjectSomeValuesFrom(:usedarg2inv ObjectIntersectionOf(:used ObjectSomeValuesFrom(:usedarg3 :p-clamp ) ) ) )
+
+	List of ConceptNames =  [:clamp-block, :p-clamp]
+	List of RelationNames =  [:usedarg3, :usedarg2inv, :used]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 1 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was added.
+
+
+
+
+
+265. fully separable flying tee - unions should not be used		Parse OK? : No
+
+
+
+
+266. existing drawn bracket may be used if standard bracket		Parse OK? : No
+
+
+
+
+267. g-route shall not be installed taking into account loap		Parse OK? : No
+
+
+
+
+268. multi branch single derivation shall be used when cable		Parse OK? : No
+
+
+
+
+269. dynamic bundle shall be installed with a guiding device		Parse OK? : No
+
+
+
+
+270. dynamic bundle shall be protected with shielded conduit		Parse OK? : No
+
+
+
+
+271. spare conduit should be attached with the main routings		Parse OK? : No
+
+
+
+
+272. flareless hydraulic unions shall be used exclusivesly		Parse OK? : No
+
+
+
+
+273. abs1571 pressure seal shall be installed with backshell		Parse OK? : No
+
+
+
+
+274. the live side of power supply shall be connected to the		Parse OK? : No
+
+
+
+
+275. socket shall be installed to the loose connector(plug closesb		Parse OK? : No
+
+
+
+
+276. maximum three terminal lug shall be connected to one vn		Parse OK? : No
+
+
+
+
+277. spare wire shall be protected with crimped cap nsa936601		Parse OK? : No
+
+
+
+
+278. flexible bf type cable shall be bend 3x diameter minimum		Parse OK? : No
+
+
+
+
+279. repair over length shall be provided on aluminium bundle		Parse OK? : No
+
+
+
+
+280. repair over length shall be provided on aluminium bundle		Parse OK? : No
+
+
+
+
+281. repair over length shall be provided on aluminium bundle		Parse OK? : No
+
+
+
+
+282. nsa 935401 cable tie shall not be used for tying bundles		Parse OK? : No
+
+
+
+
+283. g routes shall not be attached on stand-off/colonettes		Parse OK? : No
+
+
+
+
+284. adhesive bonded bracket shall be used in hydraulic areas		Parse OK? : No
+
+
+
+
+285. g routes shall be installed with two level of insulation		Parse OK? : No
+
+
+
+
+286. modification kid shall be attached on overbraided bundle		Parse OK? : No
+
+
+
+
+287. bundle shall not be protected with mechanical protection		Parse OK? : No
+
+
+
+
+288. raceway breakout shall be attached with breakout bracket		Parse OK? : No
+
+
+
+
+289. virtual splice(vs)shall not be used in efcs circuits		Parse OK? : No
+
+
+
+
+290. support tubes shall be installed with sufficient bracket		Parse OK? : No
+
+
+
+
+291. virtual terminal block(vt)shall be locked by lock wire		Parse OK? : No
+
+
+
+
+292. connector shall be protected with abs 0916 shrink sleeve		Parse OK? : No
+
+
+
+
+293. highly resistive unions should be used in the fuel tanks		Parse OK? : No
+
+
+
+
+294. long straight pipes shall be defined with flexible hoses		Parse OK? : No
+
+
+
+
+295. unions shall be positioned close to one fixation point		Parse OK? : No
+
+
+
+
+296. the minimum of bundle shall be routed in landing gear bay		Parse OK? : No
+
+
+
+
+297. g-route shall be installed in case of crossing-route with		Parse OK? : No
+
+
+
+
+298. overbraided bundle shall be defined with diameter/section		Parse OK? : No
+
+
+
+
+299. as bundle tying device shall be used nsa 935401 cable tie		Parse OK? : No
+
+
+
+
+300. nsa935805 convoluted condiut shall be attached by p-clamp		Parse OK? : No
+
+
+
+
+301. unused cavity shall be sealed in class e fire compartment		Parse OK? : No
+
+
+
+
+302. unused connector shall be protected against contamination		Parse OK? : No
+
+
+
+
+303. feeder lugs shall be protected with abs0916 shrink sleeve		Parse OK? : No
+
+
+
+
+304. flexible hoses shall not be defined with two elbow unions		Parse OK? : No
+
+
+
+
+305. flexible hoses shall be defined with a larger bend radius		Parse OK? : No
+
+
+
+
+306. optical wire shall be bend 10 times outer diameter minimum		Parse OK? : No
+
+
+
+
+307. coaxial wire shall be bend 10 times outer diameter minimum		Parse OK? : No
+
+
+
+
+308. databus wire shall be bend 10 times outer diameter minimum		Parse OK? : No
+
+
+
+
+309. duct shall not be defined with a minimum bend radius of 2d		Parse OK? : No
+
+
+
+
+310. as bundle tying device shall be used nsa8420-7 lacing tape		Parse OK? : No
+
+
+
+
+311. bundle shall not be attached on movable component - type a		Parse OK? : No
+
+
+
+
+312. electrical active item shall not be positioned equipment		Parse OK? : No
+
+
+
+
+313. g-route shall not be routed taking into account cut of wire		Parse OK? : No
+
+
+
+
+314. as bundle tying device shall be used nsa 8420-9 lacing tape		Parse OK? : No
+
+
+
+
+315. two attachment device shall be installed with maximum pitch		Parse OK? : No
+
+
+
+
+316. two attachment device shall be installed with maximum pitch		Parse OK? : No
+
+
+
+
+317. two attachment device shall be installed with maximum pitch		Parse OK? : No
+
+
+
+
+318. dynamic bundle shall be attached by nsa 5516 p-clamp type b		Parse OK? : No
+
+
+
+
+319. - bundle length in swamp area to define tying pitch_x000d _		Parse OK? : No
+
+
+
+
+320. where asne0176 protective cap can not be used a sealed plug		Parse OK? : No
+
+
+
+
+321. asna2553 spring washer shall be used for bus bar fixation		Parse OK? : No
+
+
+
+
+322. saddle clamp shall be used for the routings of single pipes		Parse OK? : No
+
+
+
+
+323. repair over length shall not be provided for optical cable		Parse OK? : No
+
+
+
+
+324. virtual terminal block(vt)should be installed above bundle		Parse OK? : No
+
+
+
+
+325. asne0425 sealed vg shall be protected by drip loop inside vu		Parse OK? : No
+
+
+
+
+326. label shall be installed for equipment rack beside connector		Parse OK? : No
+
+
+
+
+327. unions shall not be installed at bending branches of pipes		Parse OK? : No
+
+
+
+
+328. the drain bottle shall be installed in a vertical position		Parse OK? : No
+
+
+
+
+329. each single wire shall be bend 6 times outer diameter minimum		Parse OK? : No
+
+
+
+
+330. each single wire shall be bend 8 times outer diameter minimum		Parse OK? : No
+
+
+
+
+331. terminal lug shall be integrated with a distance to structure		Parse OK? : No
+
+
+
+
+332. the minimum of bundle shall be routed in hydraulic compartment		Parse OK? : No
+
+
+
+
+333. sagging shall be taken into account following the figure below		Parse OK? : No
+
+
+
+
+334. after the loos of separators shall be left a clearance of 10mm		Parse OK? : No
+
+
+
+
+335. each single wire shall be bend 11 times outer diameter minimum		Parse OK? : No
+
+
+
+
+336. when overbraided bundle shall be installed with two derivation		Parse OK? : No
+
+
+
+
+337. bundle shall be attached to abs1576 peek ramp with abs1576-f02		Parse OK? : No
+
+
+
+
+338. bundle shall be attached to abs1576 peek ramp with a v-support		Parse OK? : No
+
+
+
+
+339. dedicated connector plate shall be provided for efcs connector		Parse OK? : No
+
+
+
+
+340. different sizes of flexible hose end unions should not be used		Parse OK? : No
+
+
+
+
+341. following standards shall be used for three - pipes tee-unions		Parse OK? : No
+
+
+
+
+342. following standards shall be used for three - pipes tee-unions		Parse OK? : No
+
+
+
+
+343. hydraulic system routings shall be segregated to other systems		Parse OK? : No
+
+
+
+
+344. hydraulic system routings shall be segregated to other systems		Parse OK? : No
+
+
+
+
+345. clearance shall be calculated considering movement of structure		Parse OK? : No
+
+
+
+
+346. g-route shall be segregated from conductive composite structure		Parse OK? : No
+
+
+
+
+347. p-route shall be segregated from conductive composite structure		Parse OK? : No
+
+
+
+
+348. pipes should be segregated with a basic clearance to each other		Parse OK? : No
+
+
+
+
+349. equipment shall be identified with label according to abs0724		Parse OK? : No
+
+
+
+
+350. abs 0887 convoluted conduit shall be installed with drain holes		Parse OK? : No
+
+
+
+
+351. harness shall be defined between two adjacent bends as follow colon		Parse OK? : No
+
+
+
+
+352. unions shall be installed after two fixation points after bends		Parse OK? : No
+
+
+
+
+353. each g-route shall be attached with a dedicated attachment point		Parse OK? : No
+
+
+
+
+354. each e-route shall be attached with a dedicated attachment point		Parse OK? : No
+
+
+
+
+355. en6049 split conduit shall be fixed within one attachment device		Parse OK? : No
+
+
+
+
+356. nsa935805 convoluted conduit shall be installed with drain holes		Parse OK? : No
+
+
+
+
+357. terminal lug shall be installed depending on routing to the vt colon		Parse OK? : No
+
+
+
+
+358. flexible hoses shall be defined with maximum one elbow fitting		Parse OK? : No
+
+
+
+
+359. clearance shall be calculated considering bundle growth potential		Parse OK? : No
+
+
+
+
+360. bundle protection shall be installed in line with the table below		Parse OK? : No
+
+
+
+
+361. nsa 937201 identification sleeve shall be used for identification		Parse OK? : No
+
+
+
+
+362. nsa 937201 identification sleeve shall be used for identification		Parse OK? : No
+
+
+
+
+363. en 3646 connector shall be used in flammable fluid leackage zones		Parse OK? : No
+
+
+
+
+364. connector shall be attached on structure like in the figure below		Parse OK? : No
+
+
+
+
+365. a virtual splice(vs)shall be attached with nsa 8420 lacing tape		Parse OK? : No
+
+
+
+
+366. unused coaxial connector shall be connected to stowage receptable		Parse OK? : No
+
+
+
+
+367. vn should be protected by drip loop except if installed inside vu		Parse OK? : No
+
+
+
+
+368. one terminal lug shall be installed on circuit breaker connection		Parse OK? : No
+
+
+
+
+369. spare provision shall be taken into account for overbraided bundle		Parse OK? : No
+
+
+
+
+370. efcs virtual terminal module(vt)shall be installed with stirr up		Parse OK? : No
+
+
+
+
+371. the failure of adhesive bonded bracket shall be taken into account		Parse OK? : No
+
+
+
+
+372. spare conduit shall be installed with a minimum conduit size of 9		Parse OK? : No
+
+
+
+
+373. clearance shall be calculated considering movement of other systems		Parse OK? : No
+
+
+
+
+374. nsa5527 spacer shall not be added on top of adhesive bonded bracket		Parse OK? : No
+
+
+
+
+375. each cable shall be identified as detailed in the figure below with		Parse OK? : No
+
+
+
+
+376. asne0176 protective cap should be attached with nsa8420 lacing tape		Parse OK? : No
+
+
+
+
+377. elbow back shell orientation shall be defined in definition dossier		Parse OK? : No
+
+
+
+
+378. nsa9117 identification label shall be defined in english language		Parse OK? : No
+
+
+
+
+379. routings shall be defined to allow the installation of repair pipes		Parse OK? : No
+
+
+
+
+380. abs1423 stand-off/colonette shall be installed in plastic version		Parse OK? : No
+
+
+
+
+381. abs 1339 p-clamp should be positioned as shown in the sketch below		Parse OK? : No
+
+
+
+
+382. connector segregation shall be provided by dedicated connector plate		Parse OK? : No
+
+
+
+
+383. connector shall be protected against missue by the following means colon		Parse OK? : No
+
+
+
+
+384. obstructive component/item/object shall not be installed in fuel tank		Parse OK? : No
+
+
+
+
+385. r-route(optical)shall not be routed taking into account cut of wire		Parse OK? : No
+
+
+
+
+386. nsa 934710 pressure seal can be installed with abs 0887 spare conduit		Parse OK? : No
+
+
+
+
+387. circular connector shall be installed with a minimum distance of 15mm		Parse OK? : No
+
+
+
+
+388. abs 0724 label shall be used inside vu to identify mounted on modules		Parse OK? : No
+
+
+
+
+389. component/item/object shall be qualified for continuous fuel immersion		Parse OK? : No
+
+
+
+
+390. a draw wire shall be installed inside closed/convoluted conduit/sleeve		Parse OK? : No
+
+
+
+
+391. printable wire shall be identified directly uv laser on the insulation		Parse OK? : No
+
+
+
+
+392. fin identification shall be installed on both sides of interface plate		Parse OK? : No
+
+
+
+
+393. unused coaxial receptable shall be protected by abs 0916 shrink sleeve		Parse OK? : No
+
+
+
+
+394. unused arinc receptable should be protected by asne0176 protective cap		Parse OK? : No
+
+
+
+
+395. asne0422 tr terminal lug shall not be installed yv type aluminium wire		Parse OK? : No
+
+
+
+
+396. pipes shall be installed in grommet at a 90 angle to crossed structure		Parse OK? : No
+
+
+
+
+397. unprotected bundle shall not be attached directly on metallic structure		Parse OK? : No
+
+
+
+
+398. each route category should be installed with dedicated attachment point		Parse OK? : No
+
+
+
+
+399. abs1500 saddle clamp can be used for the installation of flexible hoses		Parse OK? : No
+
+
+
+
+400. bundle shall be attached inside raceway either by cable retainer system		Parse OK? : No
+
+
+
+
+401. optical cable shall be identified with nsa 937201 identification sleeve		Parse OK? : No
+
+
+
+
+402. connector plate shall be defined with a spare provision for the cutouts		Parse OK? : No
+
+
+
+
+403. segregation shall be provided by dedicated nsa937901 virtual modul rail		Parse OK? : No
+
+
+
+
+404. connector shall be integrated electrically inuslated from structure for		Parse OK? : No
+
+
+
+
+405. unused rectangular connector shall be connected to a stowage receptable		Parse OK? : No
+
+
+
+
+406. flexible hoses shall be segregated to primary structure by 20mm minimum		Parse OK? : No
+
+
+
+
+407. abs2110 clamp-block may be used as a '' single-hole '' type clamp-block		Parse OK? : No
+
+
+
+
+408. as bundle tying device shall be used nsa 935401 cable tie in black color		Parse OK? : No
+
+
+
+
+409. abs 5342-02 flag datum marker shall be attached as shown in figure below		Parse OK? : No
+
+
+
+
+410. the fire extinguishing system should be installed by taking into account		Parse OK? : No
+
+
+
+
+411. equipment should be installed in rack laid out from left to right in the		Parse OK? : No
+
+
+
+
+412. pipes shall be defined with a minimum 5 mm additional gap between unions		Parse OK? : No
+
+
+
+
+413. pipes should be insulated from any structure by a non-conductive bracket		Parse OK? : No
+
+
+
+
+414. additional clearance shall be provided for sagging following this picture		Parse OK? : No
+
+
+
+
+415. printable wire shall be identified directly by uv laser on the insulation		Parse OK? : No
+
+
+
+
+416. the identification shall be installed on the wire along the entire length		Parse OK? : No
+
+
+
+
+417. each feeder wire shall be identified as detailed in the figure below with		Parse OK? : No
+
+
+
+
+418. abs 1569 terminal modul shall be identified with nsa 937901 clipped label		Parse OK? : No
+
+
+
+
+419. virtual splice(vs)shall not be installed in line with electrical bundle		Parse OK? : No
+
+
+
+
+420. nsa937901 virtual modul rail shall be locked by lock wire for efcs moduls		Parse OK? : No
+
+
+
+
+421. y-tee junction should be defined in the same way as single tee - junction		Parse OK? : No
+
+
+
+
+422. pipes should be defined with bend angles depending on the used material		Parse OK? : No
+
+
+
+
+423. abs1353 overbraiding shall be installed taken into account the table below		Parse OK? : No
+
+
+
+
+424. fin identification shall be identified near each electrical item on bundle		Parse OK? : No
+
+
+
+
+425. fin identification shall be identified near each electrical item on bundle		Parse OK? : No
+
+
+
+
+426. unused circular receptable shall be protected by en3646-009 protective cap		Parse OK? : No
+
+
+
+
+427. bended pipe shall be installed with bend radius in my opinion i think that		Parse OK? : No
+
+
+
+
+428. optional harness m-route may be installed by use of adhesive bonded bracket		Parse OK? : No
+
+
+
+
+429. non conductive traverse shall be attached to conductive composite structure		Parse OK? : No
+
+
+
+
+430. abs 0514 tube shall be installed instead of abs 0127 cable retainer in wing		Parse OK? : No
+
+
+
+
+431. abs 0121 connector shall be equipped with stainless steel en 2997 connector		Parse OK? : No
+
+
+
+
+432. relay shall be protected by asne0616 sealing plug when installed outside vu		Parse OK? : No
+
+
+
+
+433. grommet should be used to protect hydraulic pipes passing through structure		Parse OK? : No
+
+
+
+
+434. abs 0596 split conduit shall be fixed within one attachment device minimum		Parse OK? : No
+
+
+
+
+435. abs 0596 split conduit shall be used for local protection without derivation		Parse OK? : No
+
+
+
+
+436. route identification marker shall be installed indicating the route category		Parse OK? : No
+
+
+
+
+437. single optical cable shall be identified with asne 0248 identification label		Parse OK? : No
+
+
+
+
+438. abs 5342-02 flag datum marker shall be attached as shown in the figure below		Parse OK? : No
+
+
+
+
+439. abs 5342-02 flag datum marker shall be attached as shown in the figure below		Parse OK? : No
+
+
+
+
+440. antenna shall be protected with nsa 9504 boot see as well attached picture		Parse OK? : No
+
+
+
+
+441. switch shall be protected by asne0616 sealing plug when installed outside vu		Parse OK? : No
+
+
+
+
+442. terminal lug shall be installed by taking into account the following rules colon		Parse OK? : No
+
+
+
+
+443. unprotected single optical cable shall be protected with en6049 split conduit		Parse OK? : No
+
+
+
+
+444. unprotected single optical cable shall be attached with nsa 5107-b black tape		Parse OK? : No
+
+
+
+
+445. unprotected single optical cable shall be attached with nsa 5107-b black tape		Parse OK? : No
+
+
+
+
+446. pipes shall be segregated from cfrp - structure with a non-conductive bracket		Parse OK? : No
+
+
+
+
+447. twisted 3 core wire shall be identified with nsa 937201 identification sleeve		Parse OK? : No
+
+
+
+
+448. bonding/grounding bracket should be positioned as described in figure below		Parse OK? : No
+
+
+
+
+449. asne 0541 splice can be installed in line with electrical bundle when located		Parse OK? : No
+
+
+
+
+450. nsa937901 virtual modul rail shall be installed with a maximum pitch of 350mm		Parse OK? : No
+
+
+
+
+451. circuit breaker shall be installed on bus bar to be remobvable individually		Parse OK? : No
+
+
+
+
+452. connector for arinc shall be defined with the socket contact in the connector		Parse OK? : No
+
+
+
+
+453. optical multiway connector shall be protected inside back shell by asne5107-b		Parse OK? : No
+
+
+
+
+454. sagging shall be taken into account for vertical bundle following this picture		Parse OK? : No
+
+
+
+
+455. abs 0887 conduit shall not be connected together by screwing different sizes		Parse OK? : No
+
+
+
+
+456. pipes shall be defined without any low point in the fire extinguishing circuit		Parse OK? : No
+
+
+
+
+457. optical connector should be installed taking into account connector dimensions		Parse OK? : No
+
+
+
+
+458. unsued bases of relay shall be protected by end caps when installed outside vu		Parse OK? : No
+
+
+
+
+459. the label shall be positioned in a sufficient distance from the pipe extremity		Parse OK? : No
+
+
+
+
+460. bundle shall be attached on abs1576 peek ramp without touching the bold head by		Parse OK? : No
+
+
+
+
+461. each braided bundle shall be installed passing trhough its own mounting plate		Parse OK? : No
+
+
+
+
+462. twisted 3 core wire may not be identified with nsa 937201 identification sleeve		Parse OK? : No
+
+
+
+
+463. unused circular connector shall be connected to a en 3646-11 stowage receptable		Parse OK? : No
+
+
+
+
+464. sagging shall be taken into account for horizontal bundle following this picture		Parse OK? : No
+
+
+
+
+465. two-elbow flexible hoses shall not be used please refer to the attached figure		Parse OK? : No
+
+
+
+
+466. two adjajent clamp shall be installed in high vibration level installation areas		Parse OK? : No
+
+
+
+
+467. en 3645 shall be attached with two diametrical opposed screw in pressurized area		Parse OK? : No
+
+
+
+
+468. vg virtual ground should be protected by drip loop except if installed inside vu		Parse OK? : No
+
+
+
+
+469. unprotected single optical cable shall be attached with nsa 5539 protective bobbin		Parse OK? : No
+
+
+
+
+470. intermediate bracket shall be installed between the two existing attachment points		Parse OK? : No
+
+
+
+
+471. following standards shall be used for two titanium pipes unions by straight unions		Parse OK? : No
+
+
+
+
+472. g-route shall be connected to virtual terminal block(vt)located above cargo floor		Parse OK? : No
+
+
+
+
+473. the harness bend radius shall be defined as minimum 6 times outer bundle diameter		Parse OK? : No
+
+
+
+
+474. unprotected single optical cable shall be protected with nsa 5539 protective bobbin		Parse OK? : No
+
+
+
+
+475. new designed bracket shall be defined as master parts(parametric bracket design closesb		Parse OK? : No
+
+
+
+
+476. virtual terminal block(vt)shall be attached on structure like in the figure below		Parse OK? : No
+
+
+
+
+477. vu shall be identified by nsa9117 identification label as detailed in graphic below		Parse OK? : No
+
+
+
+
+478. following standards shall be used for two aluminium pipes unions by straight unions		Parse OK? : No
+
+
+
+
+479. bonding/grounding bracket should not be used as attachment/fixation point for bundle		Parse OK? : No
+
+
+
+
+480. p routes shall be attached on metallic stand-off/colonettes(asna2328/asna 2327 closesb		Parse OK? : No
+
+
+
+
+481. g-route shall be installed with abs5429 thermal protection on the primary instlation		Parse OK? : No
+
+
+
+
+482. en 3645 shall be attached with four diametrical opposed screw in un-pressurized area		Parse OK? : No
+
+
+
+
+483. separable hydraulic unions shall be equipped with spray cover in pressurized areas		Parse OK? : No
+
+
+
+
+484. bundle shall be installed taking into account loap from 0 to 360 for vertical routing		Parse OK? : No
+
+
+
+
+485. en6049 split conduit shall be attached to open backshell as defined in figure below		Parse OK? : No
+
+
+
+
+486. bundle shall be protected with nsa 937210 shrink sleeve 25mm to both sides of the gap		Parse OK? : No
+
+
+
+
+487. abs 5342-02 flag datum marker should be attached indicating the following information		Parse OK? : No
+
+
+
+
+488. abs0861 fire seal shall be integrated toguide bundle from fire areas to other areas		Parse OK? : No
+
+
+
+
+489. a abs0929-006 optical dummy receptable shall be installed near equipment on a bracket		Parse OK? : No
+
+
+
+
+490. bundle shall be identified inside large vu following the rules for normal ac wiring		Parse OK? : No
+
+
+
+
+491. spare provision shall be taken into account for overbraided bundle for back shell size		Parse OK? : No
+
+
+
+
+492. pipes shall be equipped with rigid coupling for pipe diameter from 0.250 to 0.625 inch		Parse OK? : No
+
+
+
+
+493. when more than one closed/convoluted conduit/sleeve shall be attached to one v-support		Parse OK? : No
+
+
+
+
+494. flexible hoses shall be protected by a chafing sheath if there is a risk of friction		Parse OK? : No
+
+
+
+
+495. fin identification shall be installed with blue background abs 0724 label on structure		Parse OK? : No
+
+
+
+
+496. pipes shall be equipped with flexible coupling for pipe diameter from 0.750 to 5.0 inch		Parse OK? : No
+
+
+
+
+497. the nsa 937201 identification sleeve shall be used white for non aluminium cables/wires		Parse OK? : No
+
+
+
+
+498. ejection port tee - junction should be defined in the same way as single tee - junction		Parse OK? : No
+
+
+
+
+499. size -04 to -32 pipes may be routed separately using '' single hole '' type clamp-block		Parse OK? : No
+
+
+
+
+500. spare provision shall be taken into account for overbraided bundle for attachment device		Parse OK? : No
+
+
+
+
+501. overbraided bundle shall be installed with maximum three derivation at a single position		Parse OK? : No
+
+
+
+
+502. bundle can be routed with other main routing when protected with en 6049-009 open sleeve		Parse OK? : No
+
+
+
+
+503. should be attached in front of virtual terminal block(vt)as shown in the picture below		Parse OK? : No
+
+
+
+
+504. non coded electrical component shall be integrated with given in the installation drawing		Parse OK? : No
+
+
+
+
+505. unless otherwise specified pipes shall be segregated to primary structure by 10mm minimum		Parse OK? : No
+
+
+
+
+506. pipes shall be attached by clamp with a maximum distance as defined in the attached table		Parse OK? : No
+
+
+
+
+507. multi-functional label shall be positioned as close as possible to pipe end extremities		Parse OK? : No
+
+
+
+
+508. unions shall be fixed on pipes at alternating positions as shown in the attached figure		Parse OK? : No
+
+
+
+
+509. abs 1339 p-clamp shall be used with nsa 935401 cable tie cable tie with the with of 4.8 mm		Parse OK? : No
+
+
+
+
+510. abs2083 combi bracket shall not be installed on stringer to replace insulation fasteners		Parse OK? : No
+
+
+
+
+511. coaxial cable shall be tied up together with nsa 5107-b black tape before attached to ramp		Parse OK? : No
+
+
+
+
+512. bundle shall be protected with mechanical protection in the dynaomic section of a bundle		Parse OK? : No
+
+
+
+
+513. nsa935805 convoluted condiut shall not be connected together by screwing different sizes		Parse OK? : No
+
+
+
+
+514. the nsa 937201 identification sleeve shall be used in grey colour for aluminium cable/wire		Parse OK? : No
+
+
+
+
+515. spare wire shall be identified by identification sleeve marqued with spare wire at each end		Parse OK? : No
+
+
+
+
+516. fireresistant connector shall be used in class e fire compartment for fire resistant bundle		Parse OK? : No
+
+
+
+
+517. rectangular connector shall be installed with a minimum distance given in the picture below		Parse OK? : No
+
+
+
+
+518. nsa 9504 boot should be positioned with a maximum angle + -60 referenced to aircraft axis		Parse OK? : No
+
+
+
+
+519. abs0455 backshell shall be installed with spacer to limit the loads applied to the bundle		Parse OK? : No
+
+
+
+
+520. asne 0248 identification label shall be installed to identify bundle in small vu except for		Parse OK? : No
+
+
+
+
+521. ata26 pipes shall be segregated to any other mechanical ata according to the attached table		Parse OK? : No
+
+
+
+
+522. pipes shall be labeled according to nsa0141 with a location as shown in the attached figure		Parse OK? : No
+
+
+
+
+523. virtual splice(vs)should be attached in line with electrical bundle ensuring that they are		Parse OK? : No
+
+
+
+
+524. route segregation shall be provided by dedicated virtual pressure seal(vp)for each route		Parse OK? : No
+
+
+
+
+525. umbrella shall be defined in non metallic material with dimensions shown in the figure below		Parse OK? : No
+
+
+
+
+526. the sio2 cable should be installed with a minimum clearance of 6mm to the aircraft structure		Parse OK? : No
+
+
+
+
+527. bundle shall be identified with yellow asne0646 identification sleeve inside in small vu for		Parse OK? : No
+
+
+
+
+528. electrical installation shall be installed taking into account pra(particular risk analysis closesb		Parse OK? : No
+
+
+
+
+529. p-route shall be attached with attachment device withstanding in peak condition minimum 150 c		Parse OK? : No
+
+
+
+
+530. abs 1576 peek ramp should not be installed with cantilever arm to support attachment devices.		Parse OK? : No
+
+
+
+
+531. pipes shall be labeled according to nsa0141 with a location as shown in the attached figure		Parse OK? : No
+
+
+
+
+532. attached pipes at flexible hoses shall be fixed with two clamp per side at section interfaces		Parse OK? : No
+
+
+
+
+533. splice shall be installed on bundle on normal installation in accordance with the figure below		Parse OK? : No
+
+
+
+
+534. 4s/5s shall be installed in case of crossing-route with a distance d greaterthan=50mm to other bundles		Parse OK? : No
+
+
+
+
+535. raceway shall be provided with max 80%fillrate including 20%capacity of growth in fuselage		Parse OK? : No
+
+
+
+
+536. rectangular connector should not be installed with an orientation shown in the picture below		Parse OK? : No
+
+
+
+
+537. any equipment shall be identified by a fin label which has to be located next to the equipment		Parse OK? : No
+
+
+
+
+538. current carrying screwed fastener shall be identified with red frangible paint after tightening		Parse OK? : No
+
+
+
+
+539. optical cable shall be protected with mechanical protection when routed in unpressurezied areas		Parse OK? : No
+
+
+
+
+540. the routings shall be defined in a way to have the low points are located at the nozzle level		Parse OK? : No
+
+
+
+
+541. abs 5342-02 flag datum marker shall be attached on dynamic bundle as shwon in the picture above		Parse OK? : No
+
+
+
+
+542. the first clamp shall be fixed on the sense-line as close as possible to the detector housing		Parse OK? : No
+
+
+
+
+543. pipes shall be segregated with a basic clearance to each other as shown in the attached figures		Parse OK? : No
+
+
+
+
+544. electrical component/item/object shall be locked with self-locking component as a first priority		Parse OK? : No
+
+
+
+
+545. self-locking component/item/object shall be identified with red frangible paint after tightening		Parse OK? : No
+
+
+
+
+546. cross connection should be avoided before virtual terminal block(vt)for g-route installation		Parse OK? : No
+
+
+
+
+547. pre stressed g-route shall be attached with p-clamp type c as 62200 when in bundle configuration		Parse OK? : No
+
+
+
+
+548. pipes shall be segregated with a minimum clearance to each other as shown in the attached figure		Parse OK? : No
+
+
+
+
+549. routings should be defined by taking zone specific parameters into account for clearances like colon		Parse OK? : No
+
+
+
+
+550. protected single optical cable can be attached to electrical bundle without additional protection		Parse OK? : No
+
+
+
+
+551. coaxial cable shall be installed in front of arinc 600 connector in the axis of the of the cavity		Parse OK? : No
+
+
+
+
+552. routings shall be installed in junction zones to not protrude beyond frames before the junction		Parse OK? : No
+
+
+
+
+553. each metallic part shall be equipped with abs0916 shrink sleeve when in direct contact with bundle		Parse OK? : No
+
+
+
+
+554. terminal lug shall be defined compatible with virtual terminal block(vt)see in the table below colon		Parse OK? : No
+
+
+
+
+555. nsa 935829 end fitting shall be installed at the end of abs 0887 conduit to prevent bundle damage		Parse OK? : No
+
+
+
+
+556. rigid pipes shall be segregated to fixed structure not less than 10 mm unless otherwise specified		Parse OK? : No
+
+
+
+
+557. fireresistant attachment device shall be used in class e fire compartment for fire resistant bundle		Parse OK? : No
+
+
+
+
+558. coaxial cable may be attached without nsa 5107-b black tape when protected with en6049 split conduit		Parse OK? : No
+
+
+
+
+559. fin identification shall be installed on structure by using asne0470 label near each electrical item		Parse OK? : No
+
+
+
+
+560. overbraided bundle shall be defined taking into account a pull back area of 250 mm before back shells		Parse OK? : No
+
+
+
+
+561. abs 0916 shrink sleeve shall be installed on large gauge contact when smal gauge wire are connected		Parse OK? : No
+
+
+
+
+562. reinforced saddle clamp shall be used for dash -20&-24 sizes where high deflection levels may occur		Parse OK? : No
+
+
+
+
+563. equipment shall be labeled with abs 0724 printed with '' caution high voltage inside '' see also below		Parse OK? : No
+
+
+
+
+564. nsa937901 virtual modul rail shall be fixed in a manner that the fixation is accesseable in any case		Parse OK? : No
+
+
+
+
+565. raceway shall be provided with max 80%fillrate including 20%capacity of growth in wing leading edge		Parse OK? : No
+
+
+
+
+566. shielding continuity connection shall be identified with nsa 937201 identification sleeve in pink color		Parse OK? : No
+
+
+
+
+567. abs 5342-02 flag datum marker shall be installed on bundle prrotected with nsa935805 convoluted conduit		Parse OK? : No
+
+
+
+
+568. two abs0916 shrink sleeve shall be installed in arinc 600 connector at outlets of contacts with reduced		Parse OK? : No
+
+
+
+
+569. clearance shall be calculated considering any possible position of bundle especially for dynamic bundles		Parse OK? : No
+
+
+
+
+570. raceway shall be provided with max 65%fillrate including 20%capacity of growth in wing trailing edge		Parse OK? : No
+
+
+
+
+571. flag datum marker shall be attached diect on bundle in light blue background with black line pre pronted		Parse OK? : No
+
+
+
+
+572. shall be positioned as well as the ground power plug that they can not get into contact with rainwater		Parse OK? : No
+
+
+
+
+573. spare wire should be protected with heat shrinkable cap placed on each end nsa936603(recommended solution closesb		Parse OK? : No
+
+
+
+
+574. spare provision shall be taken into account for overbraided bundle with a maximum of four kits per bundle		Parse OK? : No
+
+
+
+
+575. as bundle tying device shall be used nsa 935401 cable tie in red colour for bundle attachment in fuel tanks		Parse OK? : No
+
+
+
+
+576. harness shall be identified with asne 0248 near each harness extremity printed in black on white background		Parse OK? : No
+
+
+
+
+577. nsa935805 convoluted condiut shall be installed with two p-clamp in vibration area as shown in picture below		Parse OK? : No
+
+
+
+
+578. the average pitch between two attachment device shall be defined with 150 mm on bends on the support tubes		Parse OK? : No
+
+
+
+
+579. pin locking of connector shall be integrated with n polarization in relation to master key way orientation		Parse OK? : No
+
+
+
+
+580. bundle shall be identified by asne 0248 identification label when connected to the same standard equipment		Parse OK? : No
+
+
+
+
+581. repair over length shall be installed following the same installation philosophy than the normal installation		Parse OK? : No
+
+
+
+
+582. nsa5569 double clamp shall be used for independent parallel detection loops as defined in the attached figure		Parse OK? : No
+
+
+
+
+583. nsa 931025 metallic label shall be protected with varnish after printing when installed in unpressurized area		Parse OK? : No
+
+
+
+
+584. flexible hoses shall be segregated to fixed structure structure not less than 20 mm unless otherwise specified		Parse OK? : No
+
+
+
+
+585. abs 5342-02 flag datum marker shall be attached in combination with en 6049 split conduit directly on the bundle		Parse OK? : No
+
+
+
+
+586. where dynamic bundle installed with controlled relative movement a device to guide the harness shall be installed		Parse OK? : No
+
+
+
+
+587. unprotected single optical cable shall be attached with nsa 5107-b black tape to ramp see attached illustration		Parse OK? : No
+
+
+
+
+588. the nsa 937201 identification sleeve shall be used to be printed with identification characters in black colour		Parse OK? : No
+
+
+
+
+589. non-pre-stressed bundle shall be installed taking into account loap from 0 to 180 downwards for horizontal routing		Parse OK? : No
+
+
+
+
+590. bundle shall be attached when passing through mounting plate with a distance d=smallerthan 100mm from the circular grommet		Parse OK? : No
+
+
+
+
+591. nsa 937210 shrink sleeve shall be installed using a shrink temperature which is in line with the bundle temperature		Parse OK? : No
+
+
+
+
+592. flexible hoses shall be defined with at least one bend in the hose routing in order to accommodate length changes		Parse OK? : No
+
+
+
+
+593. conductive component/item/object shall be installed taking into account electro-chemical compatibility see attached table		Parse OK? : No
+
+
+
+
+594. dynamic bundle shall be installed to reduce relative movement to a minimum(e.g. fixation point close to rotation center closesb		Parse OK? : No
+
+
+
+
+595. the average pitch between two attachment device shall be defined with 200 to 250 mm on the support tubes straight parts		Parse OK? : No
+
+
+
+
+596. multi core wire shall be identified with nsa 937201 identification sleeve printed black on white background for each core		Parse OK? : No
+
+
+
+
+597. asne 0248 identification label shall be attached to optical cable with lacing tape printed in black on white background		Parse OK? : No
+
+
+
+
+598. abs0396 '' style a '' saddle clamp shall be used in temperature areas(e.g. fan area)cushion material:silicone rubber		Parse OK? : No
+
+
+
+
+599. en3660 backshell shall be installed with 2 nsa5527 spacer to limit the loads applied to the bundle in case of thick bundle		Parse OK? : No
+
+
+
+
+600. bundle shall be attached to frame with abs2083 combi bracket where burn through resistance is needed to be taken into account		Parse OK? : No
+
+
+
+
+601. twisted 3 core wire shall be identified with nsa 937201 identification sleeve placed behind the lug not on the crimped area		Parse OK? : No
+
+
+
+
+602. multi core wire shall be identified with nsa 937201 identification sleeve each core after untwisting over a length of l greaterthan 20cm		Parse OK? : No
+
+
+
+
+603. thermally isolated flanged bulkhead unions shall be used for case drain pipes which are fixed directly to composite structure		Parse OK? : No
+
+
+
+
+604. long straight pipes should be defined with a cranked tube section if the pipe is supposed to be affected by significant expansions		Parse OK? : No
+
+
+
+
+605. closed/convoluted conduit/sleeve shall be installed with fillingrate not exceeding 80%at aircraft delivery when length is below 2m		Parse OK? : No
+
+
+
+
+606. closed/convoluted conduit/sleeve shall be installed with fillingrate not exceeding 60%at aircraft delivery when length is longer 2m		Parse OK? : No
+
+
+
+
+607. anse 0354 connector shall be protected with asne 0126 shrink sleeve from base flange over a length of l=50mm + - 5mm after shrinking		Parse OK? : No
+
+
+
+
+608. optical dummy receptable shall be identified with label fitted near that receptable with white background printed in black as shown in the figure below		Parse OK? : No
+
+
+
+
+609. self-adhesive fin label shall be used the installation		Parse OK? : No
+
+
+
+
+610. they shall be located on adjacent structure so that the item of equipment is clearly identified		Parse OK? : No
+
+
+
+
+611. shall be integrated with a label abs 5342a01yl tape minimum l greaterthan 200mm from the rear of the coax contact showing a warning '' no tying beyond this point ''		Parse OK? : No
+
+
+
+
+612. abs1409/abs1408 single-hole clamp-block should be used for restricted access areas(e.g. in pylon zone in order to limit maintenance operations closesb		Parse OK? : No
+
+
+
+
+613. clampblock use is not allowed in hot&fire area		Parse OK? : No
+
+
+
+
+614. flexible hoses shall be segregated to movable components not less than 25 mm unless otherwise specified		Parse OK? : No
+
+
+
+
+615. attachment device shall be defined with a surface roughness less than 3,2 micrometer		Parse OK? : No
+
+
+
+
+616. all pipes shall be defined		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Talln0V-12.all_shall_be_defined (↓ TalphaNX-16.pipes 0.1))
+	Parsed Sentence = all pipes shall be defined
+
+	Semantics:[K0:exists(definedarg2inv semtop) A0:pipes(D0) V0:exists(definedarg2inv semtop) G0:subset(A0 V0) I0:and(defined K0)]
+	DL semantics =  SubClassOf(:pipes ObjectSomeValuesFrom(:definedarg2inv :semtop ) )
+
+	List of ConceptNames =  [:pipes]
+	List of RelationNames =  [:definedarg2inv, :semtop]
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was already added.
+
+
+
+
+
+617. 7 tape,flag datum marker		Parse OK? : No
+
+
+
+
+618. only pipe shall be installed		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tonlyn0V-6.only_shall_be_installed (↓ TalphaNX-16.pipe 0.1))
+	Parsed Sentence = only pipe shall be installed
+
+	Semantics:[A0:pipe(D0) L0:subset(H0 V1) J0:exists(installedarg2inv semtop) H0:exists(installedarg2inv semtop) G0:and(installed J0)]
+	DL semantics =  :pipe
+
+	List of ConceptNames =  [:pipe]
+	List of RelationNames =  []
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+619. 3 label,fin identification		Parse OK? : No
+
+
+
+
+620. 5 label,route identification		Parse OK? : No
+
+
+
+
+621. 1 sleeve,phase identification		Parse OK? : No
+
+
+
+
+622. 4 label,feeder identification		Parse OK? : No
+
+
+
+
+623. only flexible hoses shall be used		Parse OK? : No
+
+
+
+
+624. only unions,pipes shall be used in the apu zone		Parse OK? : No
+
+
+
+
+625. only male end unions shall be used		Parse OK? : No
+
+
+
+
+626. only the clamp-block shall be used		Parse OK? : No
+
+
+
+
+627. only standard bracket shall be used		Parse OK? : No
+
+
+
+
+628. only standard bracket should be used		Parse OK? : No
+
+
+
+
+629. only unions,pipes shall be used in the pylon zone		Parse OK? : No
+
+
+
+
+630. 8 label route identification marker		Parse OK? : No
+
+
+
+
+631. 9 label,fin identification marker		Parse OK? : No
+
+
+
+
+632. bundle,pipes shall be segregated		Parse OK? : Yes		Complete Parses? : Yes
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_segregated (✭ TcommaNX-7.comma_pipes 0.0) (↓ TalphaNX-16.bundle 0.0.0))
+	Parsed Sentence = bundle,pipes shall be segregated
+
+	Semantics:[V1:bundle(D0) V6:pipes(V4) K0:exists(segregatedarg2inv semtop) V2:subset(V8 V9) V8:conj(V7 V6) V9:exists(segregatedarg2inv I0) I0:and(segregated K0)]
+	DL semantics =  :bundle
+
+	List of ConceptNames =  [:bundle]
+	List of RelationNames =  []
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_segregated (↓ TalphaNX-16.bundle 0.0 (✭ TcommaNX-7.comma_pipes 0)))
+	Parsed Sentence = bundle,pipes shall be segregated
+
+	Semantics:[V4:pipes(V2) I0:and(segregated K0) V1:bundle(D0) V7:exists(segregatedarg2inv I0) V6:conj(V5 V4) K0:exists(segregatedarg2inv semtop) V9:subset(V6 V7)]
+	DL semantics =  :bundle
+
+	List of ConceptNames =  [:bundle]
+	List of RelationNames =  []
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+633. in general,routings shall be defined		Parse OK? : No
+
+
+
+
+634. all sense line,pipes shall be defined		Parse OK? : No
+
+
+
+
+635. pipes,flexible hoses should be routed		Parse OK? : No
+
+
+
+
+636. all box,panel shall be identified with nsa9117 identification label		Parse OK? : No
+
+
+
+
+637. duct,pipes shall be defined without contractions and expansions		Parse OK? : No
+
+
+
+
+638. bundle,harness,wire should not be attached onto moving components		Parse OK? : No
+
+
+
+
+639. 6 label,route identification neaar flag datum marker		Parse OK? : No
+
+
+
+
+640. only saddle clamp,grommet,clamp-block shall be used		Parse OK? : Yes		Complete Parses? : No
+
+
+	Derivation Tree = (♢ Tn0V-15.shall_be_used (↓ TalphaNX-16.clamp 0.0 (✭ TcommaNX-7.comma_grommet 0) (✭ TcommaNX-7.comma_clamp-block 0)))
+	Parsed Sentence = clamp,grommet,clamp-block shall be used
+
+	Semantics:[V1:clamp(D0) V9:clamp-block(V7) I0:and(used K0) V6:conj(V5 V4) V11:conj(V10 V9) V4:grommet(V2) V12:exists(usedarg2inv semtop) K0:exists(usedarg2inv semtop) V14:subset(V11 V12)]
+	DL semantics =  :clamp
+
+	List of ConceptNames =  [:clamp]
+	List of RelationNames =  []
+
+	Ontology Enrichment Remarks = 0 new class(es) added; 0 new relation(s) added; 1 old class(es) detected; 0 old relation(s) detected; the axiom was not added.
+
+
+
+
+
+641. g-route,p-route shall not be attached to circular rod		Parse OK? : No
+
+
+
+
+642. duct,pipes shall be defined with a bend radius		Parse OK? : No
+
+
+
+
+643. flexible hoses,pipes shall be installed		Parse OK? : No
+
+
+
+
+644. pipes,flexible hoses shall be segregated		Parse OK? : No
+
+
+
+
+645. pipes,flexible hoses shall be segregated		Parse OK? : No
+
+
+
+
+646. 2 sleeve,cable/wire identification high t		Parse OK? : No
+
+
+
+
+647. standard connector,unions shall be selected		Parse OK? : No
+
+
+
+
+648. g-route,p-route shall not be attached by combi bracket		Parse OK? : No
+
+
+
+
+649. 1000psi and 3000psi pipes shall be defined		Parse OK? : No
+
+
+
+
+650. all pipes shall be fixed by attachment device		Parse OK? : No
+
+
+
+
+651. all bolt shall be identical for any component		Parse OK? : No
+
+
+
+
+652. metallic label shall not be installed inside a box or panel		Parse OK? : No
+
+
+
+
+653. elongated or normal swaged unions should be defined		Parse OK? : No
+
+
+
+
+654. pipes shall be fixed by saddle clamp or clamp-block		Parse OK? : No
+
+
+
+
+655. dummy plugs shall be installed by chain or lanyard		Parse OK? : No
+
+
+
+
+656. in-situ swaging or flexible hoses shall be used		Parse OK? : No
+
+
+
+
+657. abs0369 saddle clamp should be used in all zones		Parse OK? : No
+
+
+
+
+658. lacing tape,bumpers,spacer shall not be used		Parse OK? : No
+
+
+
+
+659. parallel splice shall be used on copper wire only		Parse OK? : No
+
+
+
+
+660. both standard and elongated clamp-block may be used		Parse OK? : No
+
+
+
+
+661. repair over length shall be provided xm and kl cable		Parse OK? : No
+
+
+
+
+662. special clamp-block should not be used for flexible hoses and pipes		Parse OK? : No
+
+
+
+
+663. special clamp-block shall not be used for flexible hoses and pipes		Parse OK? : No
+
+
+
+
+664. adjacent raceway shall be installed with the same profile and size		Parse OK? : No
+
+
+
+
+665. en 3645 shall be attached by their own clip and snap technology		Parse OK? : No
+
+
+
+
+666. afdx data bus cable shall be integrated only in m and s-routes		Parse OK? : No
+
+
+
+
+667. separators shall be identified in drawing by type and location		Parse OK? : No
+
+
+
+
+668. the installation of flexible hoses,pipes shall be defined		Parse OK? : No
+
+
+
+
+669. the installation and location of a bracket shall be defined		Parse OK? : No
+
+
+
+
+670. pipes shall be defined with bend angle(s)between 0 and 90		Parse OK? : No
+
+
+
+
+671. pipes shall be bend with a bend radius between 3d and 5d		Parse OK? : No
+
+
+
+
+672. sharp edges and straight angle junction should be avoided		Parse OK? : No
+
+
+
+
+673. abs1576 peek ramp shall not be used in hot and fire zones		Parse OK? : No
+
+
+
+
+674. connector shall be protected with drip loop and umbrella		Parse OK? : No
+
+
+
+
+675. - size and length inside the drawing set _ x000d _		Parse OK? : No
+
+
+
+
+676. 4s and 5s shall be identified using abs 1475-01 label		Parse OK? : No
+
+
+
+
+677. back shell shall be used only on removable part of connector in pressurized areas		Parse OK? : No
+
+
+
+
+678. pipes shall be defined only in the sizes as defined in the attached table		Parse OK? : No
+
+
+
+
+679. sagging shall be taken into account between two bundle only one time		Parse OK? : No
+
+
+
+
+680. all pipes shall be fixed only by non-conductive bracket or grommet		Parse OK? : No
+
+
+
+
+681. the fqi bundle shall be installed as only bundle in the fuel tanks		Parse OK? : No
+
+
+
+
+682. pipes shall be equipped with flare less hydraulic junction only		Parse OK? : No
+
+
+
+
+683. nut shall be installed using un series thread type only		Parse OK? : No
+
+
+
+
+684. spare wire shall be used only on development aircraft		Parse OK? : No
+
+
+
+
+685. abs 1569 terminal modul should be attached in groups of four(maximum)comma		Parse OK? : No
+
+
+
+
+686. g-route,feeder wire shall be installed diametrically opposite each other		Parse OK? : No
+
+
+
+
+687. raceway shall be used which have a surface roughness greaterthan 3,2 micrometer		Parse OK? : No
+
+
+
+
+688. non pre stressed p-route,m-route,r-route shall be attached by p-clamp		Parse OK? : No
+
+
+
+
+689. flexible hoses,pipe shall be segregated to movable flexible hoses		Parse OK? : No
+
+
+
+
+690. g-route,p-route shall be installed with repair over length		Parse OK? : No
+
+
+
+
+691. p-clamp,saddle clamp,clamp-block shall be installed		Parse OK? : No
+
+
+
+
+692. single clamp-block,saddle clamp shall be positioned		Parse OK? : No
+
+
+
+
+693. hydraulic flexible hoses,pipes should not be routed		Parse OK? : No
+
+
+
+
+694. all coupling,pipes,flexible hoses shall be locked		Parse OK? : No
+
+
+
+
+695. only unions,pipes shall be used which are defined in the attached table		Parse OK? : No
+
+
+
+
+696. only pipes,unions shall be used which are defined in the attached table		Parse OK? : No
+
+
+
+
+697. only a single bend shall be provided in the flexible hoses routings		Parse OK? : No
+
+
+
+
+698. only pipes should be used which are defined in the attached table		Parse OK? : No
+
+
+
+
+699. only bolt shall be used able to resist applied mechanical loads		Parse OK? : No
+
+
+
+
+700. only pipes should be installed in a single clamp-block		Parse OK? : No
+
+
+
+
+701. only nsa 937201 identification sleeve shall be shrunk		Parse OK? : No
+
+
+
+
+702. saddle clamp,grommet may be used for the support of long flexible hoses		Parse OK? : No
+
+
+
+
+703. unless otherwise specified,pipes shall be segregated to fixed structure		Parse OK? : No
+
+
+
+
+704. unless otherwise specified,pipes shall be segregated to fixed structure		Parse OK? : No
+
+
+
+
+705. harness,bundle shall not be installed in the area of sharp edge of bracket		Parse OK? : No
+
+
+
+
+706. a draw wire shall be integrated with nsa 936601 crimped cap in hot areas comma		Parse OK? : No
+
+
+
+
+707. all connector shall be locked by self-locking component or by lock wire		Parse OK? : No
+
+
+
+
+708. pipes shall be fixed by on hole clamp-block or reinforced saddle clamp		Parse OK? : No
+
+
+
+
+709. p-clamp should be used with or without spacer or floating clamp-block		Parse OK? : No
+
+
+
+
+710. equipment shall be attached with lock wire or self-locking component		Parse OK? : No
+
+
+
+
+711. grommet should be installed between two clamp-block or saddle clamp		Parse OK? : No
+
+
+
+
+712. grommet shall be installed between two clamp-block or saddle clamp		Parse OK? : No
+
+
+
+
+713. asne0073 pressure seal shall be integrated for g route or e-route		Parse OK? : No
+
+
+
+
+714. inside equipment shall be used abs 1339 p-clamp or abs2195 clamp		Parse OK? : No
+
+
+
+
+715. asna0327 rivet shall not be installed inside panel or equipment		Parse OK? : No
+
+
+
+
+716. p-route shall be attached with p-clamp type a or p-clamp type b		Parse OK? : No
+
+
+
+
+717. bundle shall be connected to fuel probe or temperature sensor		Parse OK? : No
+
+
+
+
+718. air duct shall be segregated to fixed structure or equipment		Parse OK? : No
+
+
+
+
+719. r-route,s-route,p-route,r-route(optical closesb,t,u,v-route,m-route can be positioned with a distance to cfrp area d greaterthan=10 mm even on a length l greaterthan 10mm		Parse OK? : No
+
+
+
+
+720. g-route,p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be routed with drip loop before entering connections(e.g. vc,vt,vg,vn closesb		Parse OK? : No
+
+
+
+
+721. r-route(optical closesb,t,u,v-route,m-route,r-route,s-route,p-route can be positioned with a distance to cfrp area d greaterthan=10 mm		Parse OK? : No
+
+
+
+
+722. p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be installed taking into account cut of wire in horizontal direction		Parse OK? : No
+
+
+
+
+723. p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be installed taking into account cut of wire in vertical direction		Parse OK? : No
+
+
+
+
+724. t,u,v-route,m-route,s-route,p-route,r-route(optical closesb,r-route shall be installed with mechanical protection		Parse OK? : No
+
+
+
+
+725. all component/item/object shall be identified with red frangible paint after tightening		Parse OK? : No
+
+
+
+
+726. all removable unions shall be positioned to be accessible with a torque wrench		Parse OK? : No
+
+
+
+
+727. pipes shall be defined without contractions and expansions as far as possible		Parse OK? : No
+
+
+
+
+728. all movable panel shall be fixed with captive quick release fastener		Parse OK? : No
+
+
+
+
+729. all equipment,pipe shall be identified by adhesive labels or attachable labels		Parse OK? : No
+
+
+
+
+730. all equipment,pipe shall be identified by adhesive labels or attachable labels		Parse OK? : No
+
+
+
+
+731. fin identification shall be attached on a single bundle and not be group together the other-route		Parse OK? : No
+
+
+
+
+732. floating clamp-block shall be defined without sliding between the clamp-block and the biggest pipe		Parse OK? : No
+
+
+
+
+733. the cable should be routed straight between the first clamp and the end connector of the element		Parse OK? : No
+
+
+
+
+734. label shall be attached on vu at electrical interface showing functional item and the vu number		Parse OK? : No
+
+
+
+
+735. boxes and panel shall be locked with quick release fastener for visual inspection of locking		Parse OK? : No
+
+
+
+
+736. floating clamp-block shall be defined with sliding between the clamp-block and all the pipes		Parse OK? : No
+
+
+
+
+737. virtual terminal block(vt)shall be protected by drip loop and electrical shock protection		Parse OK? : No
+
+
+
+
+738. virtual terminal block(vt)shall be protected by drip loop and electrical shock protection		Parse OK? : No
+
+
+
+
+739. virtual terminal block(vt)shall be protected by drip loop and electrical shock protection		Parse OK? : No
+
+
+
+
+740. new design of bracket should be avoided and has to be justified by technical constraints		Parse OK? : No
+
+
+
+
+741. virtual pressure seal(vp)should be defined to permit free pass of connector and bundle		Parse OK? : No
+
+
+
+
+742. maximum pitch shall be provided between vn and attachment/fixation point		Parse OK? : No
+
+
+
+
+743. maximum pitch shall be provided between vn and attachment/fixation point		Parse OK? : No
+
+
+
+
+744. maximum pitch shall be provided between connector and attachment device		Parse OK? : No
+
+
+
+
+745. raceway shall be protected where in contact with cable with insulating material ptfe or peek		Parse OK? : No
+
+
+
+
+746. p-clamp type b should be positioned as shown in the sketch below(e.g. nsa5516 or as 62200 closesb		Parse OK? : No
+
+
+
+
+747. equipment bundle over length shall be integrated suitable to prevent damage or detoriation		Parse OK? : No
+
+
+
+
+748. guide identification shall be used to clearly define the p-clamp or floating clamp-block		Parse OK? : No
+
+
+
+
+749. non coded electrical component shall be attached adequately,e.g. to ramp or to bundle		Parse OK? : No
+
+
+
+
+750. spare conduit can be attached by abs 1339 p-clamp or nsa 5516bd beside the main routing		Parse OK? : No
+
+
+
+
+751. pipes shall be defined with a bend radius of 2d or 3d as shown in the attached figure		Parse OK? : No
+
+
+
+
+752. the raceway shall be installed in horizontal orientation or up side down orientation		Parse OK? : No
+
+
+
+
+753. pipes,flexible hoses,connector shall be segregated to structure or other systems		Parse OK? : No
+
+
+
+
+754. pipes shall be fixed with intermediate p-clamp or clamp-block to neighbouring pipes		Parse OK? : No
+
+
+
+
+755. abs 1571 pressure seal shall be installed with nsa 937502 shrink sleeve or abs 0916		Parse OK? : No
+
+
+
+
+756. non pre stressed p-route shall be attached by p-clamp e.g. nsa 5516bd or abs1339-d		Parse OK? : No
+
+
+
+
+757. en3739 rivet shall be installed inside panel or equipment see attached graphik		Parse OK? : No
+
+
+
+
+758. nsa 9504 boot shall be installed with nsa 935510 protective bobbin or nsa 5539		Parse OK? : No
+
+
+
+
+759. route identification marker shall be attached with nsa 935401 or nsa8420-7		Parse OK? : No
+
+
+
+
+760. the nsa 937201 identification sleeve shall be used for draw wire only draw wire shall be indicated on the sleeve		Parse OK? : No
+
+
+
+
+761. nsa 937201 identification sleeve shall be used for spare wire with only spare wire printed on the sleeve		Parse OK? : No
+
+
+
+
+762. only '' three-hole '' bulkhead unions shall be used for bulkhead connections		Parse OK? : No
+
+
+
+
+763. only electrical item shall be used inside power center which are non loosable or non remobale		Parse OK? : No
+
+
+
+
+764. rectangular connector should be installed with an orientation shown in the picture below,looking at the fixed connector from the front view comma		Parse OK? : No
+
+
+
+
+765. resistor shall be installed only on virtual terminal module(vt)in horitontal position and placed on either side of the end plate nsa 936809		Parse OK? : No
+
+
+
+
+766. fin identification shall be identified with asne 0248 label printed black on white background for all circuits except efcs and printed black on pink background for efcs		Parse OK? : No
+
+
+
+
+767. a draw wire shall be integrated with nsa 936603 shrincable cap in all areas except hot areas,with at least one removable end(e.g. connector,terminal,etc. closesb		Parse OK? : No
+
+
+
+
+768. abs1571 pressure seal shall be integrated except for g route and e-route for passing from pessurized to unpressurized area for all other-route		Parse OK? : No
+
+
+
+
+769. the nsa 937201 identification sleeve shall be used in pink colour for all the safety cables/wires(whatever the cable/wire material closesb		Parse OK? : No
+
+
+
+
+770. highly resistive unions should be used for all pipe routings passing through any fuel tank boundaries		Parse OK? : No
+
+
+
+
+771. grommet should be used for pipe routings through all other tank ribs(within fuel tanks)comma		Parse OK? : No
+
+
+
+
+772. asn53203 rupturing wire shall be installed on cockpit vu on all switch guard		Parse OK? : No
+
+
+
+
+773. connections on pipes,flexible hoses,wire,duct,cable shall be defined		Parse OK? : No
+
+
+
+
+774. emi protection shall be integrated by using abs 1353 emi conduit or en 4674 emi split conduit		Parse OK? : No
+
+
+
+
+775. clamp-block shall be used in hidden zones and within the fuel tank		Parse OK? : No
+
+
+
+
+776. flexible hoses shall be installed so that the movement shall not introduce torsion or tension forces		Parse OK? : No
+
+
+
+
+777. dynamic bundle shall be installed ensuring no contact with any structure or other items during movement		Parse OK? : No
+
+
+
+
+778. virtual pressure seal(vp)shall be defined to ensure 2.5 mm additional clearance between the bundle and		Parse OK? : No
+
+
+
+
+779. bonding lead shall be protected by nsa937210 heat shrink sleeve when contact to other bundle or structure is possible		Parse OK? : No
+
+
+
+
+780. dynamic bundle shall be installed with mechanical protection between the two fixpoints and secured with cable ties		Parse OK? : No
+
+
+
+
+781. fin identification shall be attached to bundle with asne 0248 label in white color or in pink color for efcs-route		Parse OK? : No
+
+
+
+
+782. one or two nsa937493 insulating sleeve shall be installed on virtual splice(vs)following the picture below		Parse OK? : No
+
+
+
+
+783. raceway shall be installed in horizontal orientation or up side down orientation see attached illustration		Parse OK? : No
+
+
+
+
+784. equipment shall be identified by plastic or metallic label on a/c structure as detailed in graphic below		Parse OK? : No
+
+
+
+
+785. nsa5590 or nsa5569 double clamp shall be used to guarantee the two independent parallels detection loops		Parse OK? : No
+
+
+
+
+786. bundle shall be installed passing through mounting plate straight at the exits,as illustrated in the sketch below		Parse OK? : No
+
+
+
+
+787. the cable shall be routed straight between the detector head and first fastening clamp of fire detection sensing circuit		Parse OK? : No
+
+
+
+
+788. raceway shall be protected where in contact with cable with insulating material like paint finish inline with spec tna00710003aa011,or pa6 .6 finish		Parse OK? : No
+
+
+
+
+789. non fire resistant component/item/object shall be protected in class e fire compartment with fire protection means,e.g. stainless steel boxes		Parse OK? : No
+
+
+
+
+790. terminal lug shall be integrated with a distance to virtual terminal block(vt)device(partition wall,terminal block covers,etc ... closesb		Parse OK? : No
+
+
+
+
+791. a draw wire shall not be used inside closed/convoluted conduit/sleeve with at least one removable end(e.g. connector,terminal,etc.		Parse OK? : No
+
+
+
+
+792. screw shall be used to fasten a electrical active item which are protuding 1,5 thread after tightening,see picture below		Parse OK? : No
+
+
+
+
+793. flexible hoses should be defined with a ptfe inner tube with single or multi-braid stainless steel,aramid,or equivalent reinforcement,with stainless steel or titanium alloy fittings		Parse OK? : No
+
+
+
+
+794. shielding ocntinuity connection shall be identified with nsa 937201 identification sleeve with a white background printed in black or with a pink background printed in black on safety wires		Parse OK? : No
+
+
+
+
+795. fin identification shall be attached to structure with asne0470 label or abs 0724 label in white color or in pink color for efcs-route		Parse OK? : No
+
+
+
+
+796. undle shall be protected with mechanical protection from the last attachment point to the connector of the equipment or panel		Parse OK? : No
+
+
+
+
+797. the fire-sensing element shall be segregated to any structure by at least 6mm the normal gap between the structure and the fire-sensing element should be 15 mm		Parse OK? : No
+
+
+
+
+798. label shall be used which are phosphate-ester hydraulic fluid -- resistant if it 's likely to be in contact with fuel or hydraulic fluid		Parse OK? : No
+
+
+
+
+799. diode shall be installed only on virtual terminal module(vt)in horitontal position and placed on either side of the end plate nsa 936809		Parse OK? : No
+
+
+
+
+800. a bundle shall be installed with interrupted closed/convoluted conduit/sleeve at nsa 934710 pressure seal and abs 1571 pressure seal		Parse OK? : No
+
+
+
+
+801. the connector cable should be fixed in a maximum distance of 41.9 mm between the first clamp and the end connector of the element		Parse OK? : No
+
+
+
+
+802. nsa 937201 identification sleeve shall be attached to multicore cable or twisted cable at maximum d smallerthan=150mm from cable end		Parse OK? : No
+
+
+
+
+803. metallic rigid conduit shall be integrated with clamp as near as possible to the conduit entrance and centered at the metallic rigid conduit outlet		Parse OK? : No
+
+
+
+
+804. asne0425 sealed vg shall be protected by drip loop and asne0616 sealing plug in all areas except inside vu		Parse OK? : No
+
+
+
+
+805. bundle shall be installed taking into account loap with clearance to structure given in this table and in siri application		Parse OK? : No
+
+
+
+
+806. pre stressed g-route shall be attached by low t bobbin and insulated bracket and metallic clamp asne 0033 _ x000d _		Parse OK? : No
+
+
+
+
+807. the pipes shall be routed as long as possible in pressurized and thermally regulated areas of the fuselage		Parse OK? : No
+
+
+
+
+808. unused cavities shall be protected by asne 0616 sealing plug and dummy contact as defined in the table below		Parse OK? : No
+
+
+
+
+809. non coded electrical component shall not be installed in line with bundle except splice and solder sleeve		Parse OK? : No
+
+
+
+
+810. the outer surface of duct shall be segregated to fixed structure or equipment where it is attached to		Parse OK? : No
+
+
+
+
+811. optical cable shall be identified(fin,route,cable identification)in the same way as electrical cable/wire and harnesses		Parse OK? : No
+
+
+
+
+812. the stud of virtual terminal block(vt)shall be defined allowing the electrical installation of one additional terminal lug		Parse OK? : No
+
+
+
+
+813. virtual terminal module(vt)should be installed inside nsa937901 virtual modul rail module 1 located at one rail extremity		Parse OK? : No
+
+
+
+
+814. virtual terminal module(vt)shall be protected by drip loop and asne0616 sealing plug and sealed modules shall be used		Parse OK? : No
+
+
+
+
+815. virtual terminal module(vt)should be installed providing space d for the access to the screws for fixation		Parse OK? : No
+
+
+
+
+816. a4-d spacer should be used between the bends for 2 successive(distance smallerthan 10 d)90 bends in the same plane		Parse OK? : No
+
+
+
+
+817. power virtual terminal block(vt)should not be installed in swamp and flammable fluid leackage zones		Parse OK? : No
+
+
+
+
+818. abs0455 backshell shall be installed with nsa935403 silicon tape or asne5107-b around the bundle		Parse OK? : No
+
+
+
+
+819. fin identification shall be identified with asne 0248 label or nsa 937201 identification sleeve		Parse OK? : No
+
+
+
+
+820. circular connector shall be positioned with the master key way in top orientation,see as well attached figure		Parse OK? : No
+
+
+
+
+821. m-route,r-route,e-route,s-route,t,u,v-route shall be installed with repair over length in drip loop		Parse OK? : No
+
+
+
+
+822. the minimum bend radius should be defined with 25,4 mm for silicon dioxide harness installation		Parse OK? : No
+
+
+
+
+823. all flexible hoses,pipes shall be segregated to component/item/object of the bleed air system		Parse OK? : No
+
+
+
+
+824. connector should not be installed vertical axis orientation,see as well attached figure		Parse OK? : No
+
+
+
+
+825. s-route,p-route,r-route(optical closesb,t,u,v-route,m-route,shall be installed with mechanical protection		Parse OK? : No
+
+
+
+
+826. connector shall be protected with removable blanket,when installed in the ceiling area		Parse OK? : No
+
+
+
+
+827. virtual splice(vs)shall not be used for basic design,except for can-bus technology		Parse OK? : No
+
+
+
+
+828. harness,bundle,cable shall be routed to avoid mechanical stress on the connection point		Parse OK? : No
+
+
+
+
+829. unblanked ventilation holes shall be identified by endible marking,see figure below		Parse OK? : No
+
+
+
+
+830. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall be segregated at the level of connector		Parse OK? : No
+
+
+
+
+831. optional part of p-route,m-route may be installed by use of adhesive bonded bracket		Parse OK? : No
+
+
+
+
+832. pipes,flexible hoses shall be segregated component/item/object of the bleed air system		Parse OK? : No
+
+
+
+
+833. barrels(i.e.:arinc 600 gauge 12 contact with gauge 24 to gauge 18 cables/wires)comma		Parse OK? : No
+
+
+
+
+834. back shell shall be used on movable part of connector on fixed part of connector in unpressurized areas		Parse OK? : No
+
+
+
+
+835. p-route,m-route,r-route,s-route,t,u,v-route shall be segregated at the level of virtual pressure seal(vp closesb		Parse OK? : No
+
+
+
+
+836. harness,bundle,wire shall be attached on blanket covered structure with maximum pitch of d smallerthan=350mm		Parse OK? : No
+
+
+
+
+837. hydraulic flexible hoses,pipes,unions,equipment should not be installed in fuel component areas		Parse OK? : No
+
+
+
+
+838. unless otherwise specified,flexible hoses,pipes shall be segregated to moving component/item/object		Parse OK? : No
+
+
+
+
+839. m-route,r-route,s-route,t,u,v-route shall be segregated from non flammable fluids or gases		Parse OK? : No
+
+
+
+
+840. unless otherwise sepcifed,pipes,flexible hoses shall be segregated movable component/item/object		Parse OK? : No
+
+
+
+
+841. g-route can be positioned with a distance to cfrp area d greaterthan=10 mm even on a length l greaterthan 10mm		Parse OK? : No
+
+
+
+
+842. closed/convoluted conduit/sleeve shall not be installed with length l greaterthan 3,5 mm		Parse OK? : No
+
+
+
+
+843. order 1,2,3,4,etc.,for an operator facing the panel whatever the position of the operator		Parse OK? : No
+
+
+
+
+844. m-route,r-route,s-route shall be segregated at the level of virtual terminal module(vt closesb		Parse OK? : No
+
+
+
+
+845. non-ata36 hot pipes,flexible hoses shall be segregated to any component/item/object		Parse OK? : No
+
+
+
+
+846. non ata36 hot pipes,flexible hoses shall be segregated to any component/item/object		Parse OK? : No
+
+
+
+
+847. unless otherwise specified,flexible hoses shall be segregated to fixed structure		Parse OK? : No
+
+
+
+
+848. differently sized pipes,unions shall be used even as the use of special unions		Parse OK? : No
+
+
+
+
+849. commercial p-route,m-route,r-route may be installed using adhesive bonded bracket		Parse OK? : No
+
+
+
+
+850. m-route,r-route,s-route shall be segregated at the level of virtual diode(vd closesb		Parse OK? : No
+
+
+
+
+851. non pre stressed m-route,r-route,s-route,t,u,v-route shall be attached by v-support		Parse OK? : No
+
+
+
+
+852. g-route shall not be installed with plastic spacer in hot and fire areas		Parse OK? : No
+
+
+
+
+853. cable,bundle shall be routed with a maximum diameter/section of 50mm(including margin closesb		Parse OK? : No
+
+
+
+
+854. cable,wire,bundle shall be installed inside spare conduit with a minimum of 20%of spare provision		Parse OK? : No
+
+
+
+
+855. 2 or more bundle may be routed together for 300mm maximum from the last attachment point to the connection		Parse OK? : No
+
+
+
+
+856. two bundle shall be segregated by the distance of the sum of the mechanical distance plus sagging/swelling		Parse OK? : No
+
+
+
+
+857. g-route,p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be routed with drip loop at both sides of pressure and fire seals		Parse OK? : No
+
+
+
+
+858. p-route,t,u,v-route,m-route,r-route,r-route(optical closesb,s-route should be connected above the cargo floor		Parse OK? : No
+
+
+
+
+859. m-route,r-route,r-route(optical closesb,s-route,t,u,v-route shall be segregated from conductive composite structure		Parse OK? : No
+
+
+
+
+860. g-route,p-route shall be segregated from metallic structure or non conductive structure below route		Parse OK? : No
+
+
+
+
+861. g-route,p-route shall be segregated from metallic structure or non conductive structure beside(horizontal)or above		Parse OK? : No
+
+
+
+
+862. g-route,p-route shall be segregated from metallic structure or non conductive structure by 20mm greaterthan=d greaterthan=10mm		Parse OK? : No
+
+
+
+
+863. m-route,r-route,e-route,s-route,t,u,v-route shall be segregated from metallic structure or non conductive structure		Parse OK? : No
+
+
+
+
+864. p-route,m-route,r-route,s-route,e-route,t,u,v-route shall be segregated from metallic structure or non conductive structure below the route		Parse OK? : No
+
+
+
+
+865. m-route,r-route,e-route,s-route,t,u,v-route shall be segregated from metallic structure or non conductive structure beside(horizontal)or above		Parse OK? : No
+
+
+
+
+866. g-route,p-route,e-route shall be segregated from aircraft skin by d greaterthan=50mm		Parse OK? : No
+
+
+
+
+867. g-route,p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be segregated from cabin furnishing equipment by d greaterthan=25mm		Parse OK? : No
+
+
+
+
+868. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall be segregated from flammable fluids		Parse OK? : No
+
+
+
+
+869. r-route(optical)shall be segregated from flammable fluids by d greaterthan=13mm		Parse OK? : No
+
+
+
+
+870. g-route,p-route,e-route,m-route,r-route,s-route,t,u,v-route,r-route(optical)shall be segregated from moving components or mechanical cable		Parse OK? : No
+
+
+
+
+871. g-route,p-route shall be segregated from non flammable fluids or gases by d greaterthan=50mm		Parse OK? : No
+
+
+
+
+872. g-route,p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be segregated from gaseous oxygen by 150mm greaterthan=d greaterthan=25mm		Parse OK? : No
+
+
+
+
+873. g-route,p-route,e-route,m-route,r-route,s-route,t,u,v-route shall be segregated from gaseous oxygen by d greaterthan=150mm		Parse OK? : No
+
+
+
+
+874. m-route,r-route,s-route,t,u,v-route shall be segregated from gaseous oxygen by 25mm greaterthan=d greaterthan=13mm		Parse OK? : No
+
+
+
+
+875. r-route(optical)shall be segregated from gaseous oxygen by d greaterthan=13mm		Parse OK? : No
+
+
+
+
+876. g-route,p-route,e-route,m-route,t,u,v-route shall be installed taking into account loap with a clearance		Parse OK? : No
+
+
+
+
+877. r-route,r-route(optical closesb,s-route shall be installed taking into account loap with a clearance		Parse OK? : No
+
+
+
+
+878. p-route shall not be routed taking into account cut of wire if protected with mechanical protection		Parse OK? : No
+
+
+
+
+879. electrical installation should not be installed on the frame between stringer p5,p0 and p5 '		Parse OK? : No
+
+
+
+
+880. g-route shall be segregated from fuel tank boundaries or structural part in fuel vapor area by d greaterthan=50mm		Parse OK? : No
+
+
+
+
+881. 4s and 5s-route shall be segregated from fuel tank boundaries or structural part in fuel vapor area by d greaterthan=25mm		Parse OK? : No
+
+
+
+
+882. double derivation shall be used when cable to be included in the derivation are routed from both sides of the main routing		Parse OK? : No
+
+
+
+
+883. bundle shall be installed taking into account loap with a clearance of d greaterthan=10mm after loss of attachment point to any part		Parse OK? : No
+
+
+
+
+884. pipes shall be defined without any low point in the fire extinguishing circuit as shown in the attached figure		Parse OK? : No
+
+
+
+
+885. pipes shall be defined with sufficient space for replacement in case of repair(see attached figures closesb		Parse OK? : No
+
+
+
+
+886. 4s and 5s-route shall be installed in case of crossing-route with a distance d greaterthan=25mm to other bundles		Parse OK? : No
+
+
+
+
+887. seletion of separators shall be provided following zone characteristics concerning the used material with priority colon		Parse OK? : No
+
+
+
+
+888. pipes shall be defined for convergent and divergent tapering,with a maximum cone angle of 10 measured from the pipe centre line		Parse OK? : No
+
+
+
+
+889. harness should not be grouped together that total weight of the harness is exceeding 80kg		Parse OK? : No
+
+
+
+
+890. optional technical and commercial m-route may be routed together to a single equipment on adhesive bonded bracket		Parse OK? : No
+
+
+
+
+891. spacer shall be used only with attachment device to increase distance with regards to structure,bundles or other systems		Parse OK? : No
+
+
+
+
+892. p-route,g-route,s-route,m-route,t,u,v-route,q-route,r-route(optical closesb,r-route,e-route shall be installed with metallic spacer in hot and fire areas		Parse OK? : No
+
+
+
+
+893. s-route,m-route,t,u,v-route,q-route,r-route(optical closesb,r-route,e-route,p-route,g-route shall not be installed with plastic spacer in hot and fire areas		Parse OK? : No
+
+
+
+
+894. nsa 935401 cable tie shall not be used inside braided/screened/emi open/split conduit/sleeve or closed/convoluted conduit/sleeve		Parse OK? : No
+
+
+
+
+895. abs 1353 emi conduit shall be tied up together with cable tie nsa935401 but in line with requirements dp_92_7 .2.3 _ 2356-2362		Parse OK? : No
+
+
+
+
+896. nsa 935805tshielded convoluted conduit shall be tied up together with cable tie nsa935401 but in line with requirements dp_92_7 .2.3 _ 2356-2362		Parse OK? : No
+
+
+
+
+897. harness twisting shall be defined in the definition dossier describing stection of the harness to be twisted as well as twisting pitch		Parse OK? : No
+
+
+
+
+898. harness,bundle,cable shall be installed avoiding relative movement between electrical connection and last attachment point		Parse OK? : No
+
+
+
+
+899. attachment device shall be able to withstand environmental constrain e.g. temperature of zones the bundle is installed in		Parse OK? : No
+
+
+
+
+900. g-route shall be attached before virtual terminal block(vt)with g - route attachment/fixation point or clamp		Parse OK? : No
+
+
+
+
+901. harness,bundle shall be installed at virtual pressure seal(vp)with maximum pitch d smallerthan=50mm away from pressure seal		Parse OK? : No
+
+
+
+
+902. harness,bundle shall be installed at virtual pressure seal(vp)with maximum pitch of d smallerthan=300 mm away from pressure seal		Parse OK? : No
+
+
+
+
+903. harness,bundle shall be installed at fire seal with maximum pitch of d smallerthan=50mm away fromfire seal		Parse OK? : No
+
+
+
+
+904. harness,bundle shall be installed at fire seal with maximum pitch of d smallerthan=300 mm away from fire seal		Parse OK? : No
+
+
+
+
+905. each electrical network shall be installed with dedicated attachment point(network 1 and network 2 closesb,see atatched figure		Parse OK? : No
+
+
+
+
+906. the size of bracket shall be taken into account that contact between bundle and bracket is impossible		Parse OK? : No
+
+
+
+
+907. r routes,q routes,s routes,t,u,v routes,r(optical)routes,m routes shall be attached on metallic stand-off/colonettes(asna2328/asna 2327)in hot and fire zones		Parse OK? : No
+
+
+
+
+908. m-route,r-route,r-route(optical closesb,s-route,t,u,v-route shall be attached on plastic stand-off/colonettes(asb1423 abs1424)exept in hot and fire zones		Parse OK? : No
+
+
+
+
+909. the failure of adhesive bonded bracket shall be taken into account for bonding brackets supporting an intermediate bracket		Parse OK? : No
+
+
+
+
+910. non pre stressed s-route shall be attached by p-clamp type b e.g. nsa 5516 cbf or nsa 5515 in carbon tank		Parse OK? : No
+
+
+
+
+911. non pre stressed p-route,m-route,r-route,s-route,t,u,v-route shall be attached by p-clamp nsa5516 cbd in swamp areas		Parse OK? : No
+
+
+
+
+912. pre stressed s-route,p-route,r-route,m-route shall be attached by p-clamp as 62200(not preferred)or nsa5516 cbd + mechanical protection on the bundle		Parse OK? : No
+
+
+
+
+913. non pre stressed r-route(optical closesb,r-route,p-clamp,m-route,s-route shall be attached by p-clamp type c 0r p-clamp type b nsa 5516 cbd with mechanical protection		Parse OK? : No
+
+
+
+
+914. pre stressed g-route shall be attached by p-clamp type c as 62200 when in bobbin configuration		Parse OK? : No
+
+
+
+
+915. pre stressed m-route,p-route,s-route,r-route(optical closesb,r-route shall be attached by p-clamp as 62200(not preferred)or nsa5516 cbd + mechanical protection on the bundle		Parse OK? : No
+
+
+
+
+916. pre stressed s-route,r-route,m-route shall be attached by p-clamp abs1339 - f when installed in fuel tank		Parse OK? : No
+
+
+
+
+917. pre stressed r-route,m-route,s-route,p-route shall be attached by p-clamp as 62200(not preferred)or nsa5516 cbj + mechanical protection on the bundle		Parse OK? : No
+
+
+
+
+918. pre stressed g-route shall be attached by low t bobbin and insulated bracket and metallic clamp asne 0033 _ x000d _		Parse OK? : No
+
+
+
+
+919. pre stressed g-route shall be attached p-clamp type c as 62200 when in bobbin configuration		Parse OK? : No
+
+
+
+
+920. pre stressed g-route shall be attached by high t bobbin and insulated bracket and metallic clamp asne 0033 _ x000d _		Parse OK? : No
+
+
+
+
+921. when bundle shall be installed on wedge type support,they shall be protected by asna 5107-b black tape at the level of the fixation		Parse OK? : No
+
+
+
+
+922. when bundle shall be installed on wedge type support nsa 935513-01 to 05,the maximum diameter d of the bundle is d smallerthan=10mm		Parse OK? : No
+
+
+
+
+923. when bundle shall be installed on asne 0435 bracket the maximum diamter d of each elementary bundle shall be d smallerthan=35mm		Parse OK? : No
+
+
+
+
+924. abs 1082 bracket,bracket should be used to attach bundles between floor panel and crossbeams in confined areas		Parse OK? : No
+
+
+
+
+925. loap shall be taken into account on ramp when loss of a single nsa 935401 cable tie would result in the loss of the attachment point		Parse OK? : No
+
+
+
+
+926. loap shall not be taken into account on ramp when loss of a single nsa 935401 cable tie would not result in the loss of the attachment point		Parse OK? : No
+
+
+
+
+927. m-route,r-route,s-route shall be installed on v-support and with a diameter d smallerthan=5mm protected by		Parse OK? : No
+
+
+
+
+928. m-route,r-route,s-route shall be installed with 2 layer nsa 5107-b black tape if installed on v-support and diameter d is d greaterthan=35mm		Parse OK? : No
+
+
+
+
+929. when m-route,r-route,s-route,t,u,v-route shall be installed on v-support,position b and c is only to be apllied for bundle with diamater d smallerthan=25mm		Parse OK? : No
+
+
+
+
+930. when m-route,r-route,s-route,t,u,v-route shall be installed on v-support		Parse OK? : No
+
+
+
+
+931. m-route,r-route,s-route,t,u,v-route shall be installed on v-support with two layer of nsa 5107-b black tape		Parse OK? : No
+
+
+
+
+932. flexible hoses shall be defined with a maximum length of 500 mm regardless of the diameter		Parse OK? : No
+
+
+
+
+933. abs2195(preferred for weight saving)or nsa5516j p-clamp shall be used for pipe fixation		Parse OK? : No
+
+
+
+
+934. rigid pipes shall be segregated to fixed structure by not less than 10 mm as shown in attached figures		Parse OK? : No
+
+
+
+
+935. flexible hoses shall be segregated to rigid component/item/object by not less than 20 mm as shown in attached figure		Parse OK? : No
+
+
+
+
+936. rigid pipes shall be segregated to movable component/item/object by not less than 10 mm as shown in attached figure		Parse OK? : No
+
+
+
+
+937. flexible hoses shall be segregated to movable component/item/object by not less than 25 mm as shown in attached figure		Parse OK? : No
+
+
+
+
+938. pipes shall be defined by taking into account a minimum straight distance between two successive bends of 25mm as shown in the attached figure and table		Parse OK? : No
+
+
+
+
+939. 3-hole bulkhead unions should be used for routings passing from pressurised zones to non-pressurised zones(or vice versa closesb		Parse OK? : No
+
+
+
+
+940. para-aramid braided non-metallic flexible hoses should be used at aircraft section interfaces(fuselage-wing and fuselage-htp/vtp closesb		Parse OK? : No
+
+
+
+
+941. separable unions should be equipped with a spray cover in a pressurized zone or close to electrical connectors		Parse OK? : No
+
+
+
+
+942. component/item/object shall be qualified to withstand temperature reached by the routes they are in contact with		Parse OK? : No
+
+
+
+
+943. r-route,r-route(optical closesb,s-route,p-route,m-route shall be routed with 20%of spare provision for the growth of the bundle section(max diameter=50mm closesb		Parse OK? : No
+
+
+
+
+944. s-route,m-route shall be protected with nsa935805 convoluted conduit under pax floor and above cwb and mlgb		Parse OK? : No
+
+
+
+
+945. s-route,m-route shall be protected with nsa935805 convoluted conduit behind cabin monuments such as galleys,lavatories or crew rest compartment		Parse OK? : No
+
+
+
+
+946. s-route,m-route shall be protected with nsa935805 convoluted conduit in any area where electrical routing modification leads to high maintenance workload		Parse OK? : No
+
+
+
+
+947. pre-stressed bundle shall be installed taking into account loap from 0 to 360 for horizontal routing(see rqt 3288 closesb		Parse OK? : No
+
+
+
+
+948. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall not be routed taking into account cut of wire if protected with raceway		Parse OK? : No
+
+
+
+
+949. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall not be routed taking into account cut of wire if protected with closed/convoluted conduit/sleeve		Parse OK? : No
+
+
+
+
+950. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall not be routed taking into account cut of wire if protected with open/split conduit/sleeve		Parse OK? : No
+
+
+
+
+951. p-route,s-route,p-route,t,u,v-route,m-route,e-route shall be segregated from fuel tank boundaries or structural part in fuel vapor area by d greaterthan=50mm		Parse OK? : No
+
+
+
+
+952. s-route,t,u,v-route,p-route,m-route,e-route,r-route shall be segregated from fuel tank boundaries or structural part in fuel vapor area by 50mm greaterthan=d greaterthan=25mm with an electrical protection or a secured routing case a or b		Parse OK? : No
+
+
+
+
+953. r-route,s-route,p-route,t,u,v-route,m-route,t,u,v routes shall be segregated from fuel tank boundaries or structural part in fuel vapor area by 25mm greaterthan=d greaterthan=10mm with an electrical protection or a secured routing case a or b and as well considering loss of one attachment point		Parse OK? : No
+
+
+
+
+954. when bundle shall be routed taking into account cut of wire a clearance of l +10 mm shall be provided between bundle and fuel tank wall		Parse OK? : No
+
+
+
+
+955. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall be installed in case of crossing-route except 4s and 5s-route a distance d greaterthan=25mm except 4s/5s		Parse OK? : No
+
+
+
+
+956. g-route,p-route,m-route shall be installed taking into account loap with a clearance of d greaterthan=10mm after loss of attachment point to cfrp surfaces(e.g. structures,pipes,etc. closesb		Parse OK? : No
+
+
+
+
+957. g-route,p-route,m-route shall be installed taking into account loap with a clearance of d greaterthan=10mm after loss of attachment point to pipes carrying flammable fluids or oxygen		Parse OK? : No
+
+
+
+
+958. equipment,clamp,bracket shall be fixed by nut or receptacles of a self-locking type throughout the entire pneumatic system if it can not be met,other locking method shall be used:castle nuts with split pins or drilled nuts with lock wire		Parse OK? : No
+
+
+
+
+959. saddle clamp,p-clamp,clamp-block shall be positioned with a distance to the next pipe bend with a clearance of at least 10mm as shown at the attached figure		Parse OK? : No
+
+
+
+
+960. air duct shall be connected to equipment by flange standard as-1895 or equivalent alternative standard		Parse OK? : No
+
+
+
+
+961. sense flexible hoses,pipes shall be routed without low point in '' u shape ''(see the attached picture closesb		Parse OK? : No
+
+
+
+
+962. coaxial cable,optical cable shall be installed in a bundle with nsa 935401 cable tie size 4		Parse OK? : No
+
+
+
+
+963. conduit,bundle,wire shall not be attached to pipes or removable equipment		Parse OK? : No
+
+
+
+
+964. unprotected modification kid shall not be tied up on bundle protected with heat shrinking sleeve		Parse OK? : No
+
+
+
+
+965. when bundle shall be tied up to a harness each single bundle shall be tied up with lacing tape		Parse OK? : No
+
+
+
+
+966. as bundle tying device shall be used nsa 935401 cable tie in black color or nsa8420-7 lacing tape		Parse OK? : No
+
+
+
+
+967. m-route,r-route,s-route,t,u,v-route should be attached to frame by combi bracket e.g. asne0663,anse0661,abs2083,when attaching ata 92 as well as ata 25		Parse OK? : No
+
+
+
+
+968. m-route,r-route,s-route,t,u,v-route shall be attached to circular rod using abs 1095 insulating bracket fixed with two asna0033 metallic clamps and black tape asna5107-b		Parse OK? : No
+
+
+
+
+969. m-route,r-route,s-route,t,u,v-route can be attached to circular rod with nsa 5516 p-clamp type b		Parse OK? : No
+
+
+
+
+970. bundle should not be installed between stringer p0 and p15 to reduce cuttings,incisions and holes to a minimum		Parse OK? : No
+
+
+
+
+971. when bundle shall be installed between stringer p0 and p15 sidp21a004d shall be applied to ensure insulation tightness		Parse OK? : No
+
+
+
+
+972. g-route,p-route,m-route,r-route,r-route(optical closesb,s-route,t,u,v-route may be installed with a distance to any structural part of minimum 10mm in case of colon		Parse OK? : No
+
+
+
+
+973. m-route,r-route,r-route(optical closesb,s-route,t,u,v-route,e-route may be installed with a distance to metallic structure or non conductive structure by 10mm greaterthan=d greaterthan 0mm		Parse OK? : No
+
+
+
+
+974. m-route,r-route,r-route(optical closesb,s-route,t,u,v-route may be installed with a distance to metallic structure 10mm greaterthan d greaterthan=0mm		Parse OK? : No
+
+
+
+
+975. p-route,r-route(optical closesb,r-route,e-route,s-route,m-route,t,u,v-route shall be installed with plastic spacer		Parse OK? : No
+
+
+
+
+976. when abs1576 peek ramp should be attached with torsion the bearings of the ramps system should span an area as detailed in picture below		Parse OK? : No
+
+
+
+
+977. ramp should be attached to structure in a way that they stay in position when bundle is removed		Parse OK? : No
+
+
+
+
+978. abs1576 peek ramp shall be attached to structure with two attachment/fixation point minimum		Parse OK? : No
+
+
+
+
+979. abs1576 peek ramp shall be attached to structure with no contect to metallic parts like shown in the picture below		Parse OK? : No
+
+
+
+
+980. abs5147 metallic ramp shall be attached to structure by clipping or on attachment device asne0664 type		Parse OK? : No
+
+
+
+
+981. bundle shall be installed on ramp by adding abs1576-f01 to preventing sliding and rotating		Parse OK? : No
+
+
+
+
+982. p-route,m-route,e-route,r-route,s-route,t,u,v-route shall be attached to conductive composite structure		Parse OK? : No
+
+
+
+
+983. conductive traverse shall be attached to conductive composite structure with a bonding link and by non conductive fixed bracket(a)as priority 2 solution inside fflz or inside fluel tank or when hv routes(230v)are mounted		Parse OK? : No
+
+
+
+
+984. pre stressed g-route shall be attached by low t bobbin and insulated bracket and metallic clamp asne 0033 _ x000d _		Parse OK? : No
+
+
+
+
+985. pipes shall be defined by considering free zones for repair in order to allow the replacement of the tube without having to modify the rest of the installation or to use specific procedures and tools		Parse OK? : No
+
+
+
+
+986. fin identification shall be attached to structure with nsa 931025 metallic label in white color or in red color for efcs-route on copper cables/wires or in pink color for efcs-route on alluminium cables/wires		Parse OK? : No
+
+
+
+
+987. spacer may be installed between p-clamp and bracket for specific cases as shown at the attached figure		Parse OK? : No
+
+
+
+

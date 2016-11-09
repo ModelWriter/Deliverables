@@ -1,0 +1,85 @@
+.header_row {
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.btn-success {
+    min-width: 110px;
+}
+.panel {
+    border-radius: 0px !important;
+}
+
+.panel-heading {
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #5bc0de !important;
+    border-color: #5bc0de;
+}
+
+.navbar-default {
+    background-color: #f9f9f9;
+    border-color: #f9f9f9;
+}
+
+.panel-body {
+    background-color: #f9f9f9;
+}
+
+/* Checkbox border*/
+.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    border-style: none;    
+}
+
+.btn-primary {
+    border-style: none;
+}
+
+/* Text box border*/
+.form-control {
+    border-radius: 0px; 
+}
+
+.footer{
+	min-height: 80px;
+}
+
+.footer_background {
+	background-color: #f5f5f5;
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

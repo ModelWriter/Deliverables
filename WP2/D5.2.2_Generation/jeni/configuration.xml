@@ -9,7 +9,7 @@
 
 <configurations>
 
-	<!-- the full default configuration, see GeneratorOption to have a description of each option  -->
+	<!-- the full default configuration for generation, see GeneratorOption to have a description of each option  -->
 	<config name="default">
 		<option name="generator" value="jeni"/>
 		
@@ -84,7 +84,8 @@
 		<option name="use_bit_semantics" value="false"/>
 		<option name="early_semantic_failure" value="false"/>
 		<option name="missing_lexem_policy" value="output_lemma"/>
-		<option name="beam_size" value="1"/>
+		<option name="beam_size" value="10"/>
+		<option name="use_filtering" value="false"/>
 	</config>
 	
 	<config name="probabilistic_demosuite" inherit="default" basedir="resources/probabilistic">
@@ -96,7 +97,8 @@
 		<option name="use_bit_semantics" value="false"/>
 		<option name="early_semantic_failure" value="false"/>
 		<option name="missing_lexem_policy" value="output_lemma"/>
-		<option name="beam_size" value="1"/>
+		<option name="beam_size" value="10"/>
+		<option name="use_filtering" value="false"/>
 	</config>
 
 

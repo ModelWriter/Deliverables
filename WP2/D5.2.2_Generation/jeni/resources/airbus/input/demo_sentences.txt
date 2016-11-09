@@ -1,0 +1,31 @@
+##Arity
+##Simple Intransitive 
+thermal variation shall be taken into account
+
+##PP arg
+spare wire shall be protected with crimped cap nsa936601
+
+##Coordination
+virtual terminal block (vt) shall be protected by drip loop and electrical shock protection
+grommet shall be installed between two clamp-block or saddle clamp
+
+##infinitival complement
+g-route shall not be installed to fuel tank boundaries
+
+##Logical operators
+##Negation
+spare wire shall not be provided for afdx bus link
+
+##Only in object position
+spare wire shall be used only on development aircraft
+
+##All in object position
+abs0369 saddle clamp should be used in all zones
+
+##Only in subject position (PP ** check with new grammar and lexicon **)
+only "three-hole" bulkhead unions shall be used for bulkhead connections
+
+
+##Conditions
+##When-condition
+nsa 931025 metallic label shall be protected with varnish after printing when installed in unpressurized area

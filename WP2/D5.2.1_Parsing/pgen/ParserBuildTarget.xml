@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse.ant.import?>
+<project name="project" default="default" basedir=".">
+	<target name="parser" depends="build">
+		<java classname="synalp.parsing.ParserMain" failonerror="true" fork="yes">
+			<classpath refid="jeni.classpath"/>
+			<arg line="${args}"/>
+			<jvmarg value="-Xmx3072m"/>
+		</java>
+	</target>
+</project>

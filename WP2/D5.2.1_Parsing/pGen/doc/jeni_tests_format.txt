@@ -1,0 +1,61 @@
+*** Jeni test suite format
+
+The format is the same than GenI except that:
+- comments start with #
+
+- special directives:
+	@strict : at the top of an entry, considers that exactly the same set of sentences need to be produced. 
+	@loose : this is the converse of @strict. At the top of an entry, considers that at least the given set
+			 of sentences need to be produced, more can be produced. The @loose mode shall be considered as
+			 the default one (maybe later add a global mode), hence if @loose or @strict is omitted, 
+			 the tests should be assumed to be @loose.		  
+			  
+	@only : at the top of an entry, only considers this entry, discards all other entries 
+	@ignore : at the top of an entry, discard it
+	@stop : do not consider entries after @stop
+	@start : do not consider entries before @start
+	@morph : at the top of an entry considers that sentences need to be morphologically compared, if absent
+			 it compares instead the lemmas
+	@first : insert the entry at the start of the entries, if there are multiple @first, they are inserted one before the other, if @first comes after @stop it is ignored
+
+For now these directives must be written in the following order  (to fix): 
+	@ignore > @first > @only > @morph > @stop > @start > @strict > @loose
+
+So: @first @morph would be ok but @morph @first would be not.
+
+Example:
+
+# Declarative
+@ignore
+bill-sleep
+semantics:[
+	event(e0) evttype(e0 sleep) relation(agent e0 p0)
+	participant(p0) objtype(p0 bill)]
+sentence:[bill sleep]
+
+a-man-sleep
+semantics:[
+	event(e0) evttype(e0 sleep) relation(agent e0 p0)
+	participant(p0) objtype(p0 man) reftype(p0 a)]
+sentence:[a man sleep]
+
+
+# Note that the second sentence is a S, we could filter that out with a rootfeat
+@first @strict
+a-dog-chase-a-cat
+semantics:[
+	event(e0) evttype(e0 chase) relation(agent e0 p0) relation(patient e0 p1)
+	participant(p0) objtype(p0 dog) reftype(p0 a)
+	participant(p1) objtype(p1 cat) reftype(p1 a)]
+sentence:[a dog chase a cat, a cat chase by a dog]
+
+@stop
+
+the-man-sleep
+semantics:[
+	event(e0) evttype(e0 sleep) relation(agent e0 p0)
+	participant(p0) objtype(p0 man) reftype(p0 the)]
+sentence:[the man sleep]
+
+
+It will do: a-dog-chase-a-cat, a-man-sleep and no more.

@@ -1,0 +1,9 @@
+% This fake_morph file was created to check the missing_lexem_policy=output_lemma option. Namely, I wanted to test that when a morph file is 
+% specified along with the option missing_lexem_policy=output_lemma, the defined morphemes (e.g. ate/mange for eat) are used but for those for 
+% which no such entry is present, the lexem itself is used (eg. Bill) instead of prepended missing tag (e.g. <missing:Bill>). 
+
+% Example execution is : 
+% ./run_generator.sh missing_lexem_policy=output_lemma -g resources/minimal/grammar.xml -l resources/minimal/lexicon.xml -s resources/minimal/test.jeni -m resources/minimal/fake_morph.mph 
+
+eat	ate	[]
+eat	mange	[]

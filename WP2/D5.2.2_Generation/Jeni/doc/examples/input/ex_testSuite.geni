@@ -1,0 +1,31 @@
+%% 1. Bill sleeps
+t1
+semantics:[A:sleep(B C)  G:bill(C)] 
+sentence:[Bill sleeps]
+
+%% 2. A man sleeps
+t2
+semantics:[A:sleep(B C)  D:a(C) E:man(C)] 
+sentence:[A man sleeps]
+
+%% 3. The man who sleeps snores
+t3
+semantics:[A:sleep(B C)  D:the(C) E:man(C) F:snore(G C)] 
+sentence:[The man who sleeps snores]
+
+%% 4. Sleep !
+t4
+semantics:[A:sleep(B you)  G:instruction(B)] 
+sentence:[sleep]
+
+%% 5. Bill bakes a cake
+t5
+semantics:[A:bake(B C D)  G:bill(C) H:a(D)  I:cake(D)] 
+sentence:[Bill bakes a cake]
+
+%% 6. The door closes
+t6
+semantics:[A:close(B C)  H:the(C)  I:door(C)] 
+sentence:[The door closes]
+
+

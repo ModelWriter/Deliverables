@@ -1,6 +1,0 @@
-
-A. Denis 15/10/2013
-
-This directory contains the semxtag2 grammar with few classes manually annotated with semantics. Since we realized it was too much work to do it on *all* the classes we tried
-an approach that annotates whole families thanks to their classes. The original XMG sources with the few bits of semantics have been kept in this directory to remember 
-how to setup semantics manually, so this is mostly for documentation purposes.

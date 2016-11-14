@@ -1,0 +1,5 @@
+The transsem resources:
+- grammar.geni, grammar in geni format, and its corresponding XML version ; we use now the xml version
+- lexicon.geni, lexicon in geni format, and the versions in LEX and XML formats ; we use the lex version or xml version
+- macros.mac, macros to use with the LEX format
+- test.geni, the testsuite in a geni-like format (except the handling of comments)

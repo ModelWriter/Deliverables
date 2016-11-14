@@ -1,0 +1,159 @@
+
+#
+# This file contains all the lexical semantics. The algorithm is as follows:
+# - for a given input, retrieve all the patterns that match (and their context of instantiation)
+# - for all matching patterns, filter out all templates that are unsatisfied, gather the selected trees
+# - for all selected trees, filter out trees whose semantics mismatch the input
+#
+# the order of preprocessing is important
+#
+	
+	
+### PREPROCESSING
+	
+# set imperative person to be 2 by default
+EventImperativePerson:
+for [event(?E) mode(?E imperative)]
+	assume [person(?E 2)]	
+	
+# assume tense, mode, number and person if not found, performs some rewriting
+EventAssumption:
+for [event(?E)]
+	assume [tense(?E pres) mode(?E ind) number(?E sing) person(?E 3)]
+	rewrite [tense(?E present)] by [tense(?E pres)]
+	rewrite [mode(?E gerund)] by [mode(?E ger)]
+	rewrite [mode(?E indicative)] by [mode(?E ind)]
+	rewrite [mode(?E imperative)] by [mode(?E imp)]
+	
+	
+ParticipantAssumption:
+for [participant(?P)]
+	assume [number(?P sing) person(?P 3) gender(?P m)]
+		
+		
+### ANCHORING	
+	
+ParticipantAnchoring:
+for [participant(?A) objtype(?A ?L) number(?A ?num) person(?A ?pers) gender(?A ?gen)]
+	select alphaNXN	
+	
+EventAnchoring:
+for [event(?A) evttype(?A ?L) mode(?A ?mode) number(?A ?num) tense(?A ?tense) person(?A ?pers)]
+	set anchor.top=[mode=?mode, num=?num, tense=?tense, pers=?pers]
+	select n0V when ?L:{sleep, snore, speak, dance}
+	select n0Vn1 when ?L:{chase, bake, eat, fascinate, like, love, plant}
+	select n0Vs1 when ?L:{want,like}
+	select s0V when ?L:{fascinate}
+	select n0VPn1 when ?L:{disapprove, approve}
+		set P1.top=[lemma=of]	
+	
+Reftype:
+for [reftype(?F ?type)]
+ 	select betaDnx with "a" when ?type:indefinite
+ 	select betaDnx with "the" when ?type:definite
+ 	
+Modifier:
+for [modifier(?F ?L)]
+	select betaAn
+		
+InterrogativePronoun:
+for [participant(?A) animacy(?A ?animacy) reftype(?A interrogative) number(?A ?num) person(?A 3)]
+	select alphaInterrogativePronoun with "who" when ?animacy:true
+	select alphaInterrogativePronoun with "what" when ?animacy:false
+	
+Pronoun:
+for [reftype(?F pronoun) participant(?1) person(?1 ?pers) number(?1 ?num) gender(?1 ?gen)]
+	set anchor.top=[pers=?pers, num=?num, gen=?gen]
+	select alphaPronoun with "he"
+	
+	
+### AUXILIARIES
+		
+		
+# "bill is sleeping"
+PresentProgressive:
+for [tense(?A present-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=ger]
+		
+
+# "bill was sleeping"
+PastProgressive:
+for [tense(?A past-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=past, num=?num, pers=?pers] foot.top=[mode=ger]
+
+		
+# "bill has spoken"
+PresentPerfect:
+for [tense(?A present-perfect) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ppart]
+	coselect betaVvx with "have"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers]
+
+		
+# "bill had spoken"
+PastPerfect:
+for [tense(?A past-perfect) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ppart]
+	coselect betaVvx with "have"
+		set anchor.top=[mode=ind, tense=past, num=?num, pers=?pers]
+
+
+# "bill has been sleeping"
+PresentPerfectProgressive:
+for [tense(?A present-perfect-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger] root.top=[mode=ind]
+	coselect betaVvx with "have" 
+		set anchor.bot=[mode=ind, tense=pres, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	coselect betaVvx with "be"
+		set anchor.bot=[mode=ppart] foot.bot=[mode=ger]
+		
+		
+# "bill had been sleeping"
+PastPerfectProgressive:
+for [tense(?A past-perfect-progressive) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=ger] root.top=[mode=ind]
+	coselect betaVvx with "have" 
+		set anchor.bot=[mode=ind, tense=past, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	coselect betaVvx with "be"
+		set anchor.bot=[mode=ppart] foot.bot=[mode=ger]
+
+
+# "bill will sleep"
+Future:
+for [tense(?A future) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=inf]
+	coselect betaVvx with "will"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.top=[mode=inf]
+
+
+# "bill is going to sleep"
+FutureGoingTo:
+for [tense(?A future-going-to) relation(agent ?A ?1) ~number(?1 ?num) ~person(?1 ?pers)]
+	set anchor.top=[mode=base]
+	coselect betaVvx with "to"
+		set anchor.top=[mode=inf] anchor.bot=[mode=inf] foot.bot=[mode=base]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=pres, num=?num, pers=?pers] foot.bot=[mode=ger]
+	coselect betaVvx with "go"
+		set anchor.top=[mode=ger] foot.bot=[mode=inf]
+		
+		
+### INFINITIVE - TO
+
+# "bill wants to sleep"
+WantTo:
+for [event(?A) event(?1) evttype(?1 want) relation(patient ?1 ?A) mode(?A ind)]
+	set anchor.top=[mode=base]
+	coselect betaVvx with "to"
+		set anchor.top=[mode=inf] anchor.bot=[mode=inf] foot.bot=[mode=base]
+		
+# "bill wants to be loved"
+WantToPassive:
+for [event(?A) event(?1) evttype(?1 want) relation(patient ?1 ?A) mode(?A ppart)]
+	set anchor.top=[mode=ppart]
+	coselect betaVvx with "to"
+		set anchor.top=[mode=inf] anchor.bot=[mode=inf] foot.bot=[mode=ppart]

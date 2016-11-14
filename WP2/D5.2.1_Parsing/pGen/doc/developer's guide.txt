@@ -1,0 +1,28 @@
+
+Developer's Guide
+
+This is some good practices for efficient team development.
+Development guidelines
+
+    Code changes should comply with Code Conventions for the Java Programming Language (http://www.oracle.com/technetwork/java/javase/documentation/codeconvtoc-136057.html)
+    Code development work-flow includes :
+    use BitBucket bug tracker to monitor progress (new development, bug fixing, etc.). Use the comment feature inside a ticket to give an overview of changes made.
+    include useful comments in natural language along blocks of code/algorithm. Comments should be understandable by other developers and not only by the reporter/commentator.
+    add/update Javadoc
+    add/update Unit tests and integration tests (and automated GUI testing ?)
+    publish to GIT with a comment
+    add/update BitBucket bug tracker specific documentation
+    add/update UML documentation if needed (after re-factoring for instance)
+    Java documentation
+    Check the How to Write Doc Comments for the Javadoc Tool (http://www.oracle.com/technetwork/java/javase/documentation/index-137868.html)
+    Document all methods not only public but private and protected ones (for future developers)
+    Document all class members not only public but private and protected ones (or at least for numerous common private members make a comment of their global use)
+
+Javadoc
+
+Setup Eclipse to check Javadoc : In Eclipse, open Preferences (Window > Preferences) and go to the Javadoc preference page (Java > Compiler > Javadoc).
+
+Check Process Javadoc comments and configure severity level to Warning for Private fields.
+Unit tests
+
+For unit tests please install and use a code coverage eclipse plug-in like EclEmma (http://www.eclemma.org/) or eCobertura (http://ecobertura.johoop.de/)

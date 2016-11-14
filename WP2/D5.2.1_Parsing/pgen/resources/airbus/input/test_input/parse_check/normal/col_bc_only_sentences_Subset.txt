@@ -1,2 +1,0 @@
-#Separators Shall be used following the table below
-Pipe shall be identified by labels

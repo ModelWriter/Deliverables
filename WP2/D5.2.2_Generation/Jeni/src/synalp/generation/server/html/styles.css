@@ -1,0 +1,23 @@
+.lemma {
+	color: blue;
+}
+
+.success_low:hover {
+	background-color: #99ff99;
+}
+
+.success_low {
+	background-color: #d6ffc2;
+}
+
+.fail_low:hover {
+	background-color: #ff3300;
+}
+
+.fail_low {
+	background-color: #ff9980;
+}
+
+.error {
+	color: red;
+}

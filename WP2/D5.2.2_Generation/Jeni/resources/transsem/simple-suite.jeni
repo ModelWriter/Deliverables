@@ -1,0 +1,5 @@
+
+
+s1.2.4-Je-suis-etudiante-a-l-universite-du-Texas-1
+semantics:[NP0:pronoun_q(J JR JS) NP1:pron(J) NP1:indiv(S1 J f sg 1) qeq(JR NP1) V:étudiant_n_rel(E J) V:event(S2 E pres indet ind) P1:à_p_rel(S1 E U) NP3:le_d(U UR US) NP4:indiv(S3 U f sg 3) qeq(UR NP4) NP4:universite_n_rel(U) P2:de_p_rel(S2 U T) L2:le_d(T RH SH) qeq(RH L3) L3:Texas_n_rel(T) L3:indiv(IS2 T m sg 3)]
+sentence:[_il_ _être_ _étudiant_ _à_ _le_ _universite_ _de_ _le_ _Texas_]

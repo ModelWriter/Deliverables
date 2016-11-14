@@ -7,23 +7,21 @@ reversible approach to the semantic processing of text. The parser
 (PGen, Generation Based Parsing) maps text to semantic representations
 and the generator maps semantic representations to text. In other
 words, BAFLING permits going back and forth between text and semantic
-representatons.
+representations.
+
 
 ## From Text to Meaning Representations (Parsing, PGen)
 
 The parser uses a generic grammar and a lexicon to map sentences into
 DL (Description Logic) formulae.
 
-The sources for PGen are in pgen/src/synalp/parsing/ParserMain.java
+The sources for PGen are in :
 
-## From Meaning Representations to Text (Generating, Jeni)
+ - pGen/src/synalp/parsing/
 
-The generator uses the same generic grammar and lexicon as the parser
-to map DL (Description Logic) formulae into text.
+The main class for executing the Parsing Module is at 
 
-The sources for Jeni are in:
-
- - jeni/src/synalp/generation/GeneratorMain.java
+ - pGen/src/synalp/parsing/ParserMain.java
 
 ## License
 
@@ -31,14 +29,6 @@ Bafling is distributed under the GPL license.
 
 ## Running the demos
 
-Parsing:
+Parsing: (See the file INSTALL for detail information)
 
-cd pgen
-./run_parser.sh parse_airbus_excellex_colbc_sentence
-
-
-Generating:
-
-cd jeni
-./run_generator.sh -c minimal
-
+java -jar pGen_13_Nov.jar parse_airbus_excellex_colbc_sentence

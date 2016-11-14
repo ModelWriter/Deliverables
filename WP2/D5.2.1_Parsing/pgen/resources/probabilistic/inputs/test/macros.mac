@@ -1,8 +1,0 @@
-binaryRel[arg1=?D0,rel=?B0]
-	 semantics:[?A0:?B0(?C0,?D0,?E0) ]
-	 interface:[arg0=?C0,arg1=?D0,arg2=?E0,label=?A0,rel=?B0]
-
-unaryState[arg1=?C0,rel=?B0]
-	 semantics:[?A0:?B0(?C0) ]
-	 interface:[arg1=?C0,label=?A0,rel=?B0]
-

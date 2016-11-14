@@ -1,0 +1,851 @@
+
+######### various trees #########
+
+event:
+for [event(?A) evttype(?A ?L) mode(?A ?mode) number(?A ?num) tense(?A ?tense) person(?A ?pers)]
+	select VerbalTop
+
+Reftype:
+for [reftype(?F ?type)]
+ 	select betaDnx
+
+Modifier:
+for [modifier(?F ?L)]
+	select betaAn
+		
+ParticipantAnchoring:
+for [participant(?A) objtype(?A ?L) number(?A ?num) person(?A ?pers) gender(?A ?gen)]
+	select alphaNXN
+	
+InterrogativePronoun:
+for [participant(?A) animacy(?A ?animacy) reftype(?A interrogative) number(?A ?num) person(?A 3) gender(?A ?gen)]
+	select alphaInterrogativePronoun
+	
+Pronoun:
+for [participant(?1) reftype(?1 pronoun) person(?1 ?pers) number(?1 ?num) gender(?1 ?gen)]
+	select alphaPronoun
+
+
+#########################
+######### n0V ###########
+#########################
+
+#class n0V
+#{
+#	Dian0V[] | Reln0V[]
+#}
+
+#class  Dian0V
+#{
+#        dian0Vactive[] 
+#}
+
+#class dian0Vactive
+#{
+#	{active[] ; Subject[]} | betaVn[]*=[vmode = ger]
+#}
+
+#class  Reln0V
+#{
+#        Dian0V[] ; RelativeAdjunct[]
+#}
+
+
+#### active, Subject
+
+# "the man sleeps"
+active_CanSubject:
+for [relation(agent ?A ?S0)]
+	select active, CanSubject
+
+# "who sleeps"	
+active_WhSubject:
+for [relation(agent ?A ?S0)]
+	select active, WhSubject
+	
+# "the man who sleeps"
+active_RelativeOvertSubject:
+for [relation(agent ?A ?F) focus(?A ?F)]
+	select active, RelativeOvertSubject
+	coselect alphaRelativePronoun with "who" 
+		set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+ 
+# "the man that sleeps"
+active_RelativeCovertSubject:
+for [relation(agent ?A ?F)]
+	select active, RelativeCovertSubject
+
+# "sleep!"
+active_ImperativeSubject:
+for []
+	select active, ImperativeSubject
+
+# "to sleep"	
+active_ProSubject:
+for []
+	select active, ProSubject
+
+# "the sleeping"
+active_DeterminerGerundSubject:
+for [the(?S0)]
+	select active, DeterminerGerundSubject
+
+### class NPGerundSubject	
+	
+# "the man sleeping"
+active_NPGerundSubjectCan:
+for [relation(agent ?A ?S0)]
+	select active, NPGerundSubjectCan
+	
+# "sleeping"
+active_NPGerundSubjectPro:
+for []
+	select active, NPGerundSubjectPro
+
+	
+### class betaVn
+
+# "the sleeping man" (it is not a VerbalTop hence all the features)	
+PrependedGerund:
+for [relation(agent ?A ?F) event(?A) evttype(?A ?L) mode(?A ?mode) number(?A ?num) tense(?A ?tense) person(?A ?pers)]
+	select betaVn	
+	
+
+
+### class RelativeAdjunct
+
+# "the house in which bill sleeps"
+active_RelativeAdjunctPiedPiping_CanSubject:
+for [relation(agent ?A ?S1) relation(?rel ?A ?F) focus(?A ?F)]
+	select active, CanSubject, RelativeAdjunctPied-Piping
+	coselect alphaPXPnx with ?rel when ?rel:in
+		set NP_s.top=[wh=+]
+			anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	coselect alphaRelativePronoun with "which" 
+		set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	
+# "the day bill sleeps"	
+active_RelativeAdjunctCovert:
+for [relation(agent ?A ?S0) relation(time ?A ?F)]
+	select active, RelativeAdjunctCovert
+	
+	
+	
+	
+#########################
+######### n0Vn1 #########
+#########################
+
+#class n0Vn1
+#{
+#        Dian0Vn1[] | Reln0Vn1[] 
+#}
+
+#class  Dian0Vn1
+#{
+#        dian0Vn1active[] 
+#        | dian0Vn1shortpassive[] 
+#        | dian0Vn1passive[] 
+#}
+	
+#class  dian0Vn1active
+#{
+#        {active[] ; Subject[] ; Object[]}
+#        	
+#        | betaVn[]*=[vmode = ppart] 
+#        | alphaAV[]
+#}
+
+#class  dian0Vn1shortpassive
+#{
+#        passive[] ; Subject[] 
+#}
+
+#class  dian0Vn1passive
+#{
+#       passive[] ; Subject[] ; ByAgent[]
+#}
+
+#class  Reln0Vn1
+#{
+#        Dian0Vn1[] ; RelativeAdjunct[]
+#}
+
+
+### active, Object
+
+# "the man bakes the cake"
+active_CanObject:
+for [relation(patient ?A ?S1)]
+	select active, CanObject
+
+# "what does the man bake"
+active_WhObject_Subject:
+for [relation(patient ?A ?S0) relation(agent ?A ?S1)]
+	select active, CanSubject, WhObject
+	set anchor.top=[mode=base]
+	coselect betaVs with "do"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=base]
+
+# "the cake that the man bakes"
+active_RelativeOvertObject:
+for [relation(patient ?A ?F) relation(agent ?A ?S1) that(?S0)]
+	select active, RelativeOvertObject
+
+# "the cake the man bakes"
+active_RelativeCovertObject:
+for [relation(patient ?A ?F)]
+	select active, RelativeCovertObject
+
+# "the baking of the cake"
+active_DeterminerGerundObject:
+for [the(?S0) relation(patient ?A ?S1)]
+	select active, DeterminerGerundObject
+
+
+### Object Interactions with Subject
+# Movements of the Subject interacts with semantics of the Object
+
+# "the man that bakes the cake"
+active_RelativeCovertSubject_CanObject:
+for [relation(agent ?A ?F) relation(patient ?A ?S0)]
+	select active, CanObject, RelativeCovertSubject
+
+# "bake the cake!"
+active_ImperativeSubject_CanObject:
+for [relation(patient ?A ?S0)]
+	select active, CanObject, ImperativeSubject
+
+# "to bake the cake"	
+active_ProSubject_CanObject:
+for [relation(patient ?A ?S0)]
+	select active, CanObject, ProSubject
+
+# "the sleeping"
+active_NPGerundSubjectPro_CanObject:
+for [relation(patient ?A ?S0)]
+	select active, CanObject, NPGerundSubjectPro
+
+
+#### {passive[] ; Subject[]}
+
+# "the cake is baked"
+passive_CanSubject:
+for [relation(patient ?A ?S0) ~tense(?A ?tense)]
+	select passive, CanSubject
+	coselect optional betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+# "what is baked"	
+passive_WhSubject:
+for [relation(patient ?A ?S0)]
+	select passive, WhSubject
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	
+# "the cake that is baked"
+passive_RelativeOvertSubject:
+for [relation(patient ?A ?F) that(?S0)]
+	select passive, RelativeOvertSubject
+ 
+# "the cake baked"
+passive_RelativeCovertSubject:
+for [relation(patient ?A ?F)]
+	select passive, RelativeCovertSubject
+
+# "beeing baked"	
+passive_ProSubject:
+for []
+	select passive, ProSubject
+	coselect betaVvx with "be" set anchor.top=[mode=ger, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+### passive, NPGerundSubject	
+	
+# "the cake baking"
+passive_NPGerundSubjectCan:
+for [relation(patient ?A ?S0)]
+	select passive, NPGerundSubjectCan
+	
+# "baked" (?)
+passive_NPGerundSubjectPro:
+for []
+	select passive, NPGerundSubjectPro
+
+
+### passive, ByAgent
+
+
+# "the cake is baked by the man"
+passive_CanByAgent:
+for [relation(agent ?A ?S1)]
+	select passive, CanByAgent
+
+# "by who was the cake baked"
+passive_WhByAgent_CanSubject:
+for [relation(agent ?A ?S0) relation(patient ?A ?S1)]
+	select passive, WhByAgent, CanSubject
+	coselect betaVs with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+# "who was the cake baked by"
+passive_WhAgentBy_CanSubject:
+for [relation(agent ?A ?S0) relation(patient ?A ?S1)]
+	select passive, WhAgentBy, CanSubject
+	coselect betaVs with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+# "the man who the cake is baked by"
+passive_RelativeOvertByAgent_CanSubject:
+for [relation(agent ?A ?F) relation(patient ?A ?S1) focus(?A ?F)]
+	select passive, RelativeOvertByAgent, CanSubject
+	coselect betaVvx with "be" set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	coselect alphaRelativePronoun with "who" set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+		
+# "the man the cake is baked by"
+passive_RelativeCovertByAgent_CanSubject:
+for [relation(agent ?A ?F) relation(patient ?A ?S0)]
+	select passive, RelativeCovertByAgent, CanSubject	
+	 
+# "the man by whom the cake is baked"
+passive_RelativeByAgent_CanSubject:
+for [relation(agent ?A ?F) relation(patient ?A ?S1) focus(?A ?F)]
+	select passive, RelativeByAgent, CanSubject
+	coselect betaVvx with "be" set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	coselect alphaRelativePronoun with "who" set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+
+
+### ByAgent Interactions with Subject (passive)
+# Movements of the Subject interacts with semantics of the ByAgent
+
+# "the cake baked by the man"
+passive_RelativeCovertSubject_CanByAgent:
+for [relation(patient ?A ?F) relation(agent ?A ?S0)]
+	select passive, CanByAgent, RelativeCovertSubject
+
+# "the cake beeing baked by the man"	
+passive_ProSubject_CanByAgent:
+for [relation(agent ?A ?S0)]
+	select passive, CanByAgent, ProSubject
+	coselect betaVvx with "be" set anchor.top=[mode=ger, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+# "the baking by the man"
+passive_NPGerundSubjectPro_CanByAgent:
+for [relation(agent ?A ?S0)]
+	select passive, CanByAgent, NPGerundSubjectPro
+	
+	
+### dian0Vn1active, RelativeAdjunct
+
+# "the house in which bill bakes a cake"
+active_RelativeAdjunctPiedPiping_CanObject:
+for [relation(agent ?A ?S1) relation(patient ?A ?S2) relation(?rel ?A ?F) focus(?A ?F)]
+	select active, RelativeAdjunctPied-Piping, CanSubject, CanObject
+	coselect alphaPXPnx with ?rel when ?rel:in
+		set NP_s.top=[wh=+]
+			anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	coselect alphaRelativePronoun with "which" 
+		set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	
+# "the day bill bakes a cake"	
+active_RelativeAdjunctCovert_CanObject:
+for [relation(agent ?A ?S0) relation(patient ?A ?S1) relation(time ?A ?F)]
+	select active, RelativeAdjunctCovert, CanObject
+	
+	
+### dian0Vn1shortpassive, RelativeAdjunct		
+		
+# "the house in which the cake is baked"
+passive_RelativeAdjunctPiedPiping_CanSubject:
+for [relation(patient ?A ?S1) relation(?rel ?A ?F) focus(?A ?F)]
+	select passive, RelativeAdjunctPied-Piping, CanSubject
+	coselect alphaPXPnx with ?rel when ?rel:in
+		set NP_s.top=[wh=+]
+			anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	coselect alphaRelativePronoun with "which" 
+		set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	
+# "the day the cake is baked"	
+passive_RelativeAdjunctCovert_CanSubject:
+for [relation(patient ?A ?S0) relation(time ?A ?F)]
+	select passive, RelativeAdjunctCovert, CanSubject		
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+### dian0Vn1passive, RelativeAdjunct		
+		
+# "the house in which the cake is baked by the man"
+passive_RelativeAdjunctPiedPiping_CanSubject_CanByAgent:
+for [relation(patient ?A ?S1) relation(agent ?A ?S2) relation(?rel ?A ?F) focus(?A ?F)]
+	select passive, RelativeAdjunctPied-Piping, CanSubject, CanByAgent
+	coselect alphaPXPnx with ?rel when ?rel:in
+		set NP_s.top=[wh=+]
+			anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	coselect alphaRelativePronoun with "which" 
+		set anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+	
+# "the day the cake is baked by the man"	
+passive_RelativeAdjunctCovert_CanSubjec_CanByAgentt:
+for [relation(patient ?A ?S0) relation(agent ?A ?S1) relation(time ?A ?F)]
+	select passive, RelativeAdjunctCovert, CanSubject, CanByAgent	
+	coselect betaVvx with "be"
+		set anchor.top=[mode=ind, tense=?tense, num=?num, pers=?pers] foot.bot=[mode=ppart]
+
+
+#########################
+######### n0VPn1 ########
+#########################
+
+
+#class  n0VPn1
+#{
+#        Dian0VPn1[] | Reln0VPn1[]
+#}
+
+#class  Dian0VPn1
+#{
+#        dian0VPn1active[] 
+#        | dian0VPn1passive[]
+#        | dian0VPn1shortpassive[]
+#}
+
+#class  Reln0VPn1
+#{
+#        Dian0VPn1[] ; RelativeAdjunct[]
+#}
+
+#class  dian0VPn1active
+#{
+#       active[] ; Subject[] ; PPIObjectAnchor[]
+#}
+
+#class  dian0VPn1passive
+#{
+#        passive[] ; Subject[] ; CanPPCoanchorExhaustive[] ;  ByAgent[]
+#}
+
+#class  dian0VPn1shortpassive
+#{
+#        passive[] ; Subject[] ; CanPPCoanchorExhaustive[]
+#}
+
+
+### active, PPIObjectAnchor
+
+# "the man depends on the woman"
+active_CanPPCoanchor:
+for [relation(patient ?A ?S1)]
+	select active, CanPPCoanchor
+
+# "on who does the man depend?"
+active_WhPPCoanchor_Subject:
+for [relation(patient ?A ?S0) relation(agent ?A ?S1)]
+	select active, Subject, WhPPCoanchor
+
+# "who does the man depend on?"
+active_WhPObjectCoanchor_Subject:
+for [relation(patient ?A ?S0) relation(agent ?A ?S1)]
+	select active, Subject, WhPObjectCoanchor
+
+# "the woman that the man depends on"
+active_RelativeOvertPPAnchor:
+for [relation(patient ?A ?F) relation(agent ?A ?S1) that(?S0)]
+	select active, RelativeOvertPPAnchor
+
+# "the woman the man depends on"
+active_RelativeCovertPPAnchor:
+for [relation(patient ?A ?F)]
+	select active, RelativeCovertPPAnchor
+
+# "the depending on the woman"
+active_DeterminerGerundPPAnchor:
+for [the(?S0) relation(patient ?A ?S1)]
+	select active, DeterminerGerundPPAnchor
+
+# "the woman on whom the man depends"	
+active_RelativePPAnchor_Subject:
+for [relation(patient ?A ?F) who(?S0) relation(agent ?A ?S1)]
+	select active, Subject, RelativePPAnchor
+
+
+	
+### PPCoanchor Interactions with Subject
+# Movements of the Subject interacts with semantics of the PPCoanchor
+
+# "the man that depends on the woman"
+active_RelativeCovertSubject_CanPPCoanchor:
+for [relation(agent ?A ?F) relation(patient ?A ?S0)]
+	select active, CanPPCoanchor, RelativeCovertSubject
+
+# "depend on the woman!"
+active_ImperativeSubject_CanPPCoanchor:
+for [relation(patient ?A ?S0)]
+	select active, CanPPCoanchor, ImperativeSubject
+
+# "to depend on the woman"	
+active_ProSubject_CanPPCoanchor:
+for [relation(patient ?A ?S0)]
+	select active, CanPPCoanchor, ProSubject
+
+# "depending on the woman"
+active_NPGerundSubjectPro_CanPPCoanchor:
+for [relation(patient ?A ?S0)]
+	select active, CanPPCoanchor, NPGerundSubjectPro
+
+
+### dian0VPn1active, RelativeAdjunct
+
+# "the house in which bill depends on the woman"
+active_RelativeAdjunctPiedPiping_CanPPCoanchor:
+for [relation(agent ?A ?S1) relation(patient ?A ?S2) relation(?rel ?A ?F) which(?S0)]
+	select active, RelativeAdjunctPied-Piping, CanPPCoanchor
+	
+# "the day bill depends on the woman"	
+active_RelativeAdjunctCovert_CanPPCoanchor:
+for [relation(agent ?A ?S0) relation(patient ?A ?S1) relation(?rel ?A ?F)]
+	select active, RelativeAdjunctCovert, CanPPCoanchor
+
+
+
+#########################
+######### s0V ###########
+#########################
+
+#class  s0V
+#{
+#        Dias0V[] | Rels0V[]
+#}
+
+#class  Dias0V
+#{
+#        dias0Vactive[]   
+#}
+
+#class  Rels0V
+#{
+#        Dias0V[] ; RelativeAdjunct[]
+#}
+
+#class  dias0Vactive
+#{
+#        SententialSubject[] ; active[]
+#}
+
+#class SententialSubject
+#{
+#        CanSententialSubject[] 
+#        | WhSententialSubject[]
+#}
+
+
+# "to sleep matters"
+active_CanSententialSubject:
+for [relation(agent ?A ?S0)]
+	select active, CanSententialSubject
+
+# "what matters?"	
+active_WhSententialSubject:
+for [relation(agent ?A ?S0)]
+	select active, WhSententialSubject
+
+# "the house in which sleep matters"
+active_RelativeAdjunctPiedPiping_Subject:
+for [relation(agent ?A ?S1) relation(?rel ?A ?F) focus(?S0 ?A)]
+	select active, CanSententialSubject, RelativeAdjunctPied-Piping
+	coselect alphaPXPnx with ?rel when ?rel:in 
+		set NP_s.top=[wh=+]
+			anchor.top=[idx=?F] anchor.bot=[idx=?F] root.top=[idx=?F] root.bot=[idx=?F]
+
+
+#########################
+######### s0Vn1 #########
+#########################
+
+# already covered
+
+
+
+#########################
+######### n0Vs1 #########
+#########################
+
+#class  n0Vs1
+#{
+#        Dian0Vs1[] | Reln0Vs1[]
+#}
+
+#class  Dian0Vs1
+#{
+#        dian0Vs1active[] 
+#}
+
+#class  Reln0Vs1
+#{
+#        Dian0Vs1[] ; RelativeAdjunct[]
+#}
+
+#class  dian0Vs1active
+#{
+#        active[] ; Subject[] ; SentComplement[]
+#}
+
+
+# "bill expects to sleep"
+CanSentComplementFoot:
+for [relation(patient ?A ?F)]
+	select CanSentComplementFoot
+	
+# "bill expects to sleep"
+CanSentComplementSubst:
+for [relation(patient ?A ?S1)]
+	select CanSentComplementSubst
+	
+# "what does bill expect"
+active_WhSentComplement_Subject:
+for [relation(patient ?A ?S0) relation(agent ?A ?S1)]
+	select active, Subject, WhSentComplement
+
+# DeterminerSentComplement
+# "the sleeping"
+active_DeterminerSentComplement:
+for [the(?S0) relation(patient ?A ?S1)]
+	select active, DeterminerSentComplement
+
+
+### SentComplement Interactions with Subject
+# Movements of the Subject interacts with semantics of the SentComplement
+
+# "the man that expects to sleep"
+active_RelativeCovertSubject_CanSentComplementSubst:
+for [relation(agent ?A ?F) relation(patient ?A ?S0)]
+	select active, CanSentComplementSubst, RelativeCovertSubject
+
+# "expect to sleep!"
+active_ImperativeSubject_CanSentComplementSubst:
+for [relation(patient ?A ?S0)]
+	select active, CanSentComplementSubst, ImperativeSubject
+
+# "to expect to sleep"	
+active_ProSubject_CanSentComplementSubst:
+for [relation(patient ?A ?S0)]
+	select active, CanSentComplementSubst, ProSubject
+
+# "expecting to sleep"
+active_NPGerundSubjectPro_CanSentComplementSubst:
+for [relation(patient ?A ?S0)]
+	select active, CanSentComplementSubst, NPGerundSubjectPro
+
+
+
+
+#class IObject
+#{
+#        CanIObject[]  
+#        | WhIObject[] 
+#        | RelativeOvertIObject[] 
+#        | RelativeCovertIObject[] 
+#        | DeterminerIObject[] 
+#}
+#
+#
+
+#
+#
+#class BEComplement
+#{
+#       CanBEComplement[]
+#        | WhObject[] 
+#        | RelativeOvertObject[] 
+#        | RelativeCovertObject[] 
+#}
+#
+
+#
+#class SubjectOuter
+#{
+#        SubjectOuterCan[] 
+#        | SubjectOuterPro[] 
+#        | RelativeOvertSubjectOuter[] 
+#        | RelativeCovertSubjectOuter[]
+#}
+#
+#
+#
+#
+#class PPIObjectSubst
+#{
+#        CanPPSubst[] 
+#        | WhPPSubst[] 
+#        | WhPObjectSubst[] 
+#        | RelativeOvertPPSubst[] 
+#        | RelativeCovertPPSubst[] 
+#        | RelativePPSubst[] 
+#        | DeterminerGerundPPSubst[]
+#}
+#
+
+#
+#class PPIObject
+#{
+#        CanPPIObject[] 
+#        | WhPPCoanchor[] 
+#        | WhPObjectCoanchor[] 
+#        | RelativeOvertPObject[] 
+#        | RelativeCovertPObject[] 
+#        | RelativePPObject[]
+#}
+#
+#class AdjComplement
+#{
+#        CanAdjComplement[] 
+#        | WhAdjective[] 
+#}
+#
+#class AdjComplementAnchor
+#{
+#        CanAdjAnchor[] 
+#        | WhAnchorAdjective[]
+#}
+#
+#class AdjComplementCoanchor
+#{
+#        AdjCoanchorCanR[] 
+#        | WhAdjCoanchorR[]
+#}
+#
+#
+#class ToObject
+#{
+#        CanToObject[] 
+#        | WhToObject[] 
+#        | WhObjectTo[] 
+#        | RelativeOvertToObject[] 
+#        | RelativeCovertToObject[] 
+#        | RelativeToObject[] 
+#        | DeterminerGerundToObject[]
+#}
+#
+#class Locative
+#{
+#        CanLocative[] 
+#        | WhLocative1[] 
+#        | WhLocative2[]
+#}
+#
+
+#
+#class SentComplementECM
+#{       
+#        CanSentComplementFootECM[] 
+#        | CanSentComplementSubstECM[] 
+#}
+#
+
+#
+#class NominalCleft
+#{
+#        CanonicalNominalCleft[] 
+#        | WhNominalCleft[] 
+#}
+#
+#class PPCleft
+#{
+#        CanonicalPPCleft[] 
+#        | WhPPCleft[] 
+#}
+#
+#class AdverbCleft
+#{
+#        CanonicalAdverbCleft[] 
+#        | WhAdverbCleft[] 
+#}
+#
+#class ObjectNCoanchor
+#{
+#        ObjectNCoanchorCan[] 
+#        |  DeterminerGerundObjectNCoanchor[]
+#}
+#
+#class SubjectNCoanchor
+#{
+#        SubjectNCoanchorCan[] 
+#        | SubjectNCoanchorNPGerund[]
+#}
+#
+#class ObjectAnchor
+#{
+#        CanObjectAnchor[] 
+#        | WhObjectAnchor[]
+#}
+#
+#class PPAnchorArgumentNP
+#{
+#        PPAnchorArgumentNPCan [] 
+#        | WhAnchorPP[] 
+#        | WhAnchorP[] 
+#        | RelativeOvertPPAnchorPied-Piping[] 
+#        | RelativeOvertPPAnchor-P[] 
+#        | RelativeCovertPPAnchor-P[]
+#}
+#
+#class PPAnchorExhaustive
+#{
+#        PPAnchorExhaustiveCan[] 
+#        | WhAnchorPPExhaustive[]
+#}
+#class ARBAnchorExhaustive
+#{
+#        ARBAnchorExhaustiveCan[] 
+#        | WhAnchorPPExhaustive[]
+#}
+#
+#class PPAnchorArgumentAdv
+#{
+#        PPAnchorArgumentAdvCan[] 
+#        | RelativeOvertPPAnchorArgumentAdv[]
+#        | RelativeCovertPPAnchorArgumentAdv[] 
+#        | WhAnchorPPAdv[]
+#        | WhAnchorPPArgumentAdv[]
+#}
+#
+#class PPAnchorArgumentAdj
+#{
+#        PPAnchorArgumentAdjCan[] 
+#        | RelativeOvertPPAnchorArgumentAdj[]
+#        | RelativeCovertPPAnchorArgumentAdj[] 
+#        | WhAnchorPPAdj[]
+#}
+#
+#class PPAnchorArgumentN
+#{
+#        PPAnchorArgumentNCan[] 
+#        | RelativeOvertPPAnchorArgumentN[]
+#        | RelativeCovertPPAnchorArgumentN[] 
+#        | RelativeOvertPPAnchorPied-Piping-N[]
+#        | WhAnchorPPN[]
+#        | WhAnchorPPArgumentN[]
+#}
+#
+#class PPAnchorArgumentP
+#{
+#        PPAnchorArgumentPCan[] 
+#        | RelativeOvertPPAnchorArgumentP[]
+#        | RelativeCovertPPAnchorArgumentP[] 
+#        | RelativeOvertPPAnchorPied-Piping-P[]
+#        | WhAnchorPPP[]
+#        | WhAnchorPPArgumentP[]
+#}
+#
+#class PPAnchorArgumentPNP
+#{
+#        PPAnchorArgumentPNPCan[]
+#        | RelativeOvertPPAnchorArgumentPNP[]
+#        | RelativeCovertPPAnchorArgumentPNP[]
+#        | RelativeOvertPPAnchorPied-Piping-PNP[]
+#        | WhAnchorPNP[]
+#        | WhAnchorPPArgumentPNP[]
+#}
+#

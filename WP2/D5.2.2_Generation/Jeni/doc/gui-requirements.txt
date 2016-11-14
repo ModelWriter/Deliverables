@@ -1,0 +1,55 @@
+
+*** Some needs/requirements for the gui ***
+
+We have to discuss the order in which these features have to be implemented.
+
+* Select the resources (grammar, syntactic lexicon, morph lexicon, test suite) 
+	- these can be provided as arguments of the main program as well
+
+* Select a test, ability to mark test directives such as @ignore, @only, @morph, @strict/@loose, etc.
+	- ability to save the test suite after changing the directives
+
+* Run a test, all tests, etc. (given test directives)
+
+* Explore results:
+	- lexical selection: what items are selected initially
+	- produced items throughout the generation
+	- the finally produced items
+	- the morph realization
+	- performances: time of generation, time per word, per selected item
+	
+* Ability to follow an item from lexical selection in all the operations that have been tried with it
+	
+* Ability to click on a tree name to see its structure
+	- see the tree structures including features
+	- tree explorer: ability to explore the trees by family, trace, anchors, etc.
+
+* Performing diagnostics
+	- representation of the covered sentence: it would be nice to have a representation of what is covered
+	in the test sentences. Idea: take the longest non-overlapping generated fragments and represent it as a String.
+	Ex: (bill eat) a (delicious cake)
+		- shows that "a" is not covered by lexical selection
+		- that the two fragments (bill eat) and (delicious cake) do not combine
+	- ability to jump directly to the combination operation
+	
+* Ability to edit the XMG sources, compile it, and run it on the test suite (regression testing)
+	- it could be done inside the GUI as a text editor, but probably first we just want: "compile and run button" which
+	performs XMG compilation, run on the test suite, and shows what tests pass and what tests fail
+	
+	
+* Ability to compare generators
+	- selection of the generator: Jeni or RTGEN, later a GenI wrapper
+	- comparison of the results and performance of all generators at once
+	
+	
+*** A first version ***
+
+For the first version we could have a basic wrapper of the logs augmented by a tree viewer:
+- run button (assuming all resources are given through command line)
+- explore: lexical selection, produced items, end items, morph realization, performance (whole time)
+	- look at jeni log to see what kind of information is available
+- basic tree explorer: click on a tree name, shows it with feature structures
+	- GenI was doing it with graphviz, see if we stick with that choice. Probably a standalone java one would be nice (JUNG?).
+
+Then the ability to select which tests to run is quite important.
+Then diagnostics, full tree explorer, regression testing.

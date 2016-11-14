@@ -1,0 +1,18 @@
+*** Probabilistic Jeni sub-project
+A Probability-based Java version of Geni
+
+
+*** Where is what?
+The probabilistic version of Jeni is contained on its own package separated of the rest of the project.
+
+src/.../probabilistic: Here are the sources file of Probabilistic Jeni:
+src/.../probabilistic/guidemo/: Graphic User Interface source files.
+resources/probabilistic: the probabilistic configuration/bundle with lexicon, grammar and testsuite files.
+
+*** How to run it?
+
+You can run a basic GUI of Probabilistic Jeni generator. If you exported anbd packaged Jeni into a jar "jeni.jar" then you can run that GUI by doing on command line:
+java -jar jeni.jar synalp.generation.probabilistic.guidemo.PJeniDemoApp
+
+*** Changing the prepared inputs of the GUI
+Replace src/.../probabilistic/guidemo/sample.geni 

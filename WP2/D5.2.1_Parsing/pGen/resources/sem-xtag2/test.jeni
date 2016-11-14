@@ -1,0 +1,831 @@
+
+
+# This is a test suite for sem-xtag2 with automatic semantics
+# The test sentences for verb families are mostly written according to msc-sb2008.pdf which should be found in resources/sem-xtag2/sources
+
+
+#########################################################################################
+### General purpose #####################################################################
+
+@morph @strict
+dog
+semantics:[participant(p) objtype(p dog)]
+sentence:[dog]
+
+@morph @strict
+a-dog
+semantics:[participant(p) objtype(p dog) reftype(p indefinite)]
+sentence:[a dog]
+
+@morph @strict
+a-small-dog
+semantics:[participant(p) objtype(p dog) reftype(p indefinite) modifier(p small)]
+sentence:[a small dog]
+
+@morph @strict
+a-small-black-dog
+semantics:[participant(p) objtype(p dog) reftype(p indefinite) modifier(p small) modifier(p black)]
+sentence:[a small black dog, a black small dog]
+
+
+
+#########################################################################################
+### Tense and Agreement #################################################################
+
+
+# bill speaks (simple present)
+@morph @strict
+bill-speaks
+semantics:[
+	event(e) evttype(e speak) tense(e present)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill speaks]
+
+
+# bill is speaking (present progressive)
+@morph @strict
+bill-is-speaking
+semantics:[
+	event(e) evttype(e speak) tense(e present-progressive)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill is speaking]
+
+
+# bill spoke (simple past)
+@morph @strict
+bill-spoke
+semantics:[
+	event(e) evttype(e speak) tense(e past)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill spoke]
+
+
+# bill was speaking (past progressive)
+@morph @strict
+bill-was-speaking
+semantics:[
+	event(e) evttype(e speak) tense(e past-progressive)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill was speaking]
+
+
+# bill has spoken (present perfect simple) 
+@morph @strict
+bill-has-spoken
+semantics:[
+	event(e) evttype(e speak) tense(e present-perfect)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill has spoken]
+
+
+# bill has been speaking (present perfect progressive)
+@ignore @morph @strict
+bill-has-been-speaking
+semantics:[
+	event(e) evttype(e speak) tense(e present-perfect-progressive)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill has been speaking]
+
+
+# bill had spoken (past perfect simple)
+@morph @strict
+bill-had-spoken
+semantics:[
+	event(e) evttype(e speak) tense(e past-perfect)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill had spoken]
+
+
+# bill had been speaking (past perfect progressive)
+@ignore @morph @strict
+bill-had-been-speaking
+semantics:[
+	event(e) evttype(e speak) tense(e past-perfect-progressive)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill had been speaking]
+
+
+# bill will speak (future I simple)
+@morph @strict
+bill-will-speak
+semantics:[
+	event(e) evttype(e speak) tense(e future)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill will speak]
+
+
+# bill is going to speak (future I simple going-to)
+@ignore @morph @strict
+bill-is-going-to-speak
+semantics:[
+	event(e) evttype(e speak) tense(e future-going-to)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill is going to speak]
+
+
+# bill will be speaking (future I progressive) 
+# future-progressive -> main-mode=participle, main-tense=present, aux=be, aux-tense=future 
+
+# bill will have spoken (future II simple)
+# future2 -> main-mode=participle, main-tense=past, aux=have, aux-tense=future
+
+# bill will have been speaking (future II progressive)
+# future2-progressive -> main-mode=participle, main-tense=present, aux=be, aux-tense=???
+
+# bill would speak (conditional I simple)
+# conditional -> main-mode=base, aux=would
+
+# bill would be speaking (conditional I progressive) 
+# conditional-progressive -> main-mode=participle, main-tense=present, aux=be, aux-tense=conditional
+
+# bill would have spoken (conditional II simple) 
+# conditional2 -> main-mode=participle, main-tense=past, aux=have, aux-tense=conditional
+
+# bill would have been speaking (conditional II progressive) 
+# conditional2-progressive -> main-mode=participle, main-tense=present,
+
+
+
+#########################################################################################
+### n0V #################################################################################
+
+### n0V - Declarative ################################
+# bill sleeps, a man sleeps, the man sleeps, he sleeps
+
+# given the semantic rules it is the default mode (indicative)
+@morph @strict
+bill-sleeps
+semantics:[
+	event(e) evttype(e sleep)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[bill sleeps]
+
+
+# literals arguments can be disjunctions: mode(e ind|ger) returns both modes
+# we need to discuss what to do with "bill sleeping", do we enable the auxiliary? do we force it?
+@morph @strict
+sleeping-bill
+semantics:[
+	event(e) evttype(e sleep) mode(e gerund)
+	participant(p) objtype(p bill)
+	relation(agent e p)]
+sentence:[sleeping bill, bill sleeping]
+
+
+@morph @strict
+a-man-sleeps
+semantics:[
+	event(e) evttype(e sleep)
+	participant(p) objtype(p man) reftype(p indefinite)
+	relation(agent e p)]
+sentence:[a man sleeps]
+
+
+# "he sleeping" sounds a bit weird
+@morph @strict
+he-sleeping
+semantics:[
+	event(e) evttype(e sleep) mode(e gerund)
+	participant(p) reftype(p pronoun)
+	relation(agent e p)]
+sentence:[he sleeping]
+
+
+### n0V - Wh-moved subject ################################
+# who sleeps? what sleeps?
+
+@morph @strict
+who-sleeps
+semantics:[
+	event(e) evttype(e sleep)
+	participant(p) reftype(p interrogative) animacy(p true|false)
+	relation(agent e p)]
+sentence:[who sleeps, what sleeps]
+
+
+# TODO: which man sleeps ? 
+
+
+### n0V - Subject relative clause with overt extracted wh-NP ###
+# the man who sleeps, the man whose wife sleeps
+
+@morph @strict
+the-man-who-sleep
+semantics:[
+	event(e) evttype(e sleep) focus(e p)
+	participant(p) objtype(p man) reftype(p definite)
+	relation(agent e p)]
+sentence:[the man who sleeps]
+
+
+# "the man snores who sleeps" is produced by covert extraction which should require a "that" but does not in the grammar
+# moreover, we ignored this test because of DerivationNode children representation
+# when children are a List, all sentences can be produced, when it is a Set, some cannot because of DerivationTree doublons
+# removing, however the Set provides many advantages, such as a very significant speed increase
+@morph @strict
+the-man-who-sleeps-snores
+semantics:[
+	event(e1) evttype(e1 sleep)  focus(e1|e2 p)
+	event(e2) evttype(e2 snore)
+	participant(p) objtype(p man) reftype(p definite)
+	relation(agent e1 p) relation(agent e2 p)]
+sentence:[the man who sleeps snores, the man who snores sleeps, the man snores who sleeps, the man sleeps who snores]
+
+
+# it produces too many! we could probably rule some of them out
+# warning: "the man sleeps who snores" comes from problematic co-indexed mode in the tree of sleep
+# there are more that are produced because of change in DerivationNode
+@ignore @morph @loose
+the-man-who-sleeps-snores
+semantics:[
+	event(e1) evttype(e1 sleep) mode(e1 indicative|gerund)
+	event(e2) evttype(e2 snore) mode(e2 indicative|gerund)
+	participant(p) objtype(p man) reftype(p definite)
+	relation(agent e1 p) relation(agent e2 p)]
+sentence:[
+	 the man sleeping who snores, 
+	 the man sleeping who snoring, 
+	 the man sleeps who snores,
+	 the man sleeps who snoring,
+	 the man snores who sleeping,
+	 the man snores who sleeps,
+	 the man snoring who sleeping,
+	 the man snoring who sleeps,
+	 the man who sleeping snores,
+	 the man who sleeping snoring,
+	 the man who sleeps snores,
+	 the man who sleeps snoring,
+	 the man who snores sleeping,
+	 the man who snores sleeps,
+	 the man who snoring sleeping,
+	 the man who snoring sleeps,
+	 the sleeping man snores,
+	 the sleeping man snoring,
+	 the sleeping man who snores,
+	 the sleeping man who snoring,
+	 the sleeping snoring man,
+	 the snoring man sleeping,
+	 the snoring man sleeps,
+	 the snoring man who sleeping,
+	 the snoring man who sleeps,
+	 the snoring sleeping man]
+
+
+
+### n0V - Subject relative clause with covert extracted wh-NP ################################
+# the man that sleeps, the man to sleep
+
+
+### n0V - Imperative ################################
+# Sleep!
+
+@morph @strict
+sleep
+semantics:[event(e1) evttype(e1 sleep) mode(e1 imperative)]
+sentence:[sleep]
+
+
+### n0V - Determiner Gerund ################################
+# Bill disapproves of [her dancing]
+
+# co-anchor test
+@morph @loose
+bill-disapproves-of-her
+semantics:[
+	event(e) evttype(e disapprove)
+	participant(p0) objtype(p0 bill)
+	participant(p1) reftype(p1 pronoun) gender(p1 f)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[bill disapproves of her]
+
+
+# we are forced to set the mode to gerund unfortunately!
+# and the possessive pronoun is not handled, hence "he" is a subject
+@morph @strict
+bill-disapproves-of-her-dancing
+semantics:[
+	event(e0) evttype(e0 disapprove)
+	event(e1) evttype(e1 dance) mode(e1 gerund)
+	participant(p0) objtype(p0 bill)
+	participant(p1) reftype(p1 pronoun)
+	relation(agent e0 p0) relation(patient e0 e1) relation(agent e1 p1)]
+sentence:[bill disapproves of he dancing, he dancing bill disapproves of]
+
+
+### n0V - NP Gerund ################################
+# Bill disapproved of [the cat dancing] (changed from "me dancing")
+
+# to do
+@ignore @strict
+bill-disapproves-of-the-cat-dancing
+semantics:[
+	event(e0) evttype(e0 disapprove)
+	event(e1) evttype(e1 dance) mode(e1 gerund)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 cat) reftype(cat definite)
+	relation(agent e0 p0) relation(patient e0 e1) relation(agent e1 p1)]
+sentence:[bill disapprove of the cat dance, the cat dance disapprove of by bill]
+
+
+### n0V - PRO subject ################################
+# Bill wants [PRO to sleep]
+
+
+@ignore @morph @strict
+bill-wants-to-sleep
+semantics:[
+	event(e0) evttype(e0 want)
+	event(e1) evttype(e1 sleep)
+	participant(p) objtype(p bill)
+	relation(agent e0 p) relation(patient e0 e1)]
+sentence:[bill wants to sleep]
+
+
+# add: "bill wants the man to sleep" (avec un evt de sleeping dont l'agent est "the man")
+# "the man that sleep"....
+
+
+### n0V - NP gerund with PRO subject ################################
+# [PRO dancing] fascinates Lisa.
+
+# "lisa dancing fascinates" => missing "that", it should be "lisa that dancing fascinates"
+@morph @strict
+dancing-fascinates-lisa
+semantics:[
+	event(e0) evttype(e0 dance) mode(e0 gerund)
+	event(e1) evttype(e1 fascinate)
+	participant(p) objtype(p lisa)
+	relation(agent e1 e0) relation(patient e1 p)]
+sentence:[dancing fascinates lisa, lisa dancing fascinates]
+
+
+### n0V - Adjunct (gap-less) relative clause with PP pied-piping ################################
+# the house in which Bill sleeps
+
+@morph @strict
+the-house-in-which-bill-sleeps
+semantics:[
+	event(e) evttype(e sleep) focus(e p1)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 house) reftype(p1 definite)
+	relation(agent e p0) relation(in e p1)]
+sentence:[the house in which bill sleeps]
+
+
+### n0V - Adjunct (gap-less) relative clause with covert extracted wh-NP ################################
+# the day Bill sleeps
+
+@morph @strict
+the-day-bill-sleeps
+semantics:[
+	event(e) evttype(e sleep)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 day) reftype(p1 definite)
+	relation(agent e p0) relation(time e p1)]
+sentence:[the day bill sleeps]
+
+
+
+### n0V - Pre-nominal participial modifier ################################
+# the sleeping man
+
+@morph @strict
+the-sleeping-man
+semantics:[
+	event(e) evttype(E sleep) mode(e gerund)
+	participant(p) objtype(p man) reftype(p definite)
+	relation(agent e p)]
+sentence:[the sleeping man, the man sleeping]
+
+
+
+#########################################################################################
+### En1v ################################################################################
+
+### En1v - Declarative ###
+# the snow melts
+
+### En1v - Wh-moved subject ###
+# what melted
+
+### ...
+
+
+
+#########################################################################################
+### n0Vn1 ###############################################################################
+
+### n0Vn1 - Declarative
+# Bill baked a cake, Bill loves Lisa
+
+@morph @strict
+bill-baked-a-cake
+semantics:[
+	event(e) evttype(e bake) tense(e past)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[bill baked a cake, a cake bill baked]
+
+
+### n0Vn1 - Wh-moved object
+# what did Bill bake
+# who does Bill like
+
+@ignore @morph @strict
+what-did-bill-bake
+semantics:[
+	event(e) evttype(e bake) tense(e past)
+	participant(p0) objtype(p0 bill)
+	participant(p1) reftype(p1 interrogative) animacy(p1 false)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[what did bill bake]
+
+@ignore @morph @strict
+who-does-bill-like
+semantics:[
+	event(e) evttype(e like) tense(e present)
+	participant(p0) objtype(p0 bill)
+	participant(p1) reftype(p1 interrogative) animacy(p1 true)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[who does bill like]
+
+
+### n0Vn1 - Wh-moved subject
+# who baked a cake
+
+@morph @strict
+who-baked-a-cake
+semantics:[
+	event(e) evttype(e bake) tense(e past)
+	participant(p0) reftype(p0 interrogative) animacy(p0 true)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[who baked a cake]
+
+
+### n0Vn1 - Imperative
+# bake the cake
+
+@morph @strict
+bake-the-cake
+semantics:[
+	event(e) evttype(e bake) mode(e imperative)
+	participant(p1) objtype(p1 cake) reftype(p1 definite)
+	relation(patient e p1)]
+sentence:[bake the cake]
+
+
+### n0Vn1 - Passive with by-phrase
+# a cake is baked by Bill
+# * a cake is bake by Bill
+
+# notice it's loose, it's because n0Vn1 trees with ppart are anchored
+@morph @loose
+a-cake-is-baked-by-bill
+semantics:[
+	event(e) evttype(e bake) mode(e ppart)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[a cake is baked by bill, a cake baked by bill]
+
+
+### n0Vn1 - Passive without by-phrase
+# a cake was baked
+
+@morph @strict
+a-cake-was-baked
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite)
+	relation(patient e p1)]
+sentence:[a cake was baked, a cake baked]
+
+
+
+### n0Vn1 - Passive with wh-moved subject and by-phrase
+# what was baked by Bill
+
+# note that "what did bill bake" is produce, we should find a way to force the passive
+# the mode=ppart does not seem to work!
+@ignore @morph @strict
+what-was-baked-by-bill
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p0) objtype(p0 bill)
+	participant(p1) reftype(p1 interrogative) animacy(p1 false)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[what was baked by bill, what did bill bake]
+
+
+### n0Vn1 - Passive with wh-moved subject and no by-phrase
+# what was baked
+
+@morph @strict
+what-was-baked
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p1) reftype(p1 interrogative) animacy(p1 false)
+	relation(patient e p1)]
+sentence:[what was baked]
+
+
+### n0Vn1 - Passive with wh-moved by-phrase
+# by whom was the cake baked
+
+# not exactly "by whom" but instead "by who", and note that "who baked the cake" should not be there!
+# moreover we cannot yet distinguish the two WhAgentBy and WhByAgent
+@morph @strict
+by-whom-was-the-cake-baked
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p0) reftype(p0 interrogative) animacy(p0 true)
+	participant(p1) objtype(p1 cake) reftype(p1 definite)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[who was the cake baked by, by who was the cake baked, who baked the cake]
+
+
+### n0Vn1 - Passive with wh-moved object out of the by-phrase
+# whom was the cake baked by
+# who was the cake baked by
+
+@morph @strict
+who-was-the-cake-baked-by
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p0) reftype(p0 interrogative) animacy(p0 true)
+	participant(p1) objtype(p1 cake) reftype(p1 definite)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[who was the cake baked by, by who was the cake baked, who baked the cake]
+
+
+### n0Vn1 - Object relative clause with overt extracted wh-NP
+# the cake whose cherries Bill likes
+# the cake which Bill baked
+
+# we need to consider the "whose"
+@ignore @morph @strict
+the-cake-whose-cherries-bill-likes
+semantics:[
+	event(e) evttype(e like)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 cherry)
+	participant(p2) objtype(p2 cake) reftype(p2 definite)
+	relation(agent e p0) relation(patient e p1) relation(of p1 p2)]
+sentence:[bill likes cherries of the cake, the cake whose cherries bill likes]
+
+
+### n0Vn1 - Object relative clause with covert extracted wh-NP
+# the cake that Bill bakes
+
+### n0Vn1 - Subject relative clause with overt extracted wh-NP
+# the man who ate the cake
+
+@morph @strict
+the-man-who-ate-the-cake
+semantics:[
+	event(e) evttype(e eat) tense(e past) focus(e p0)
+	participant(p0) objtype(p0 man) reftype(p0 definite)
+	participant(p1) objtype(p1 cake) reftype(p1 definite)
+	relation(agent e p0) relation(patient e p1)]
+sentence:[the man who ate the cake]
+
+### n0Vn1 - Subject relative clause with covert extracted wh-NP
+# the man that ate the cake
+
+### n0Vn1 - Adjunct (gap-less) relative clause with covert extracted wh-NP
+# the day Bill ate the cake
+
+@morph @strict
+the-day-bill-ate-the-cake
+semantics:[
+	event(e) evttype(e eat) tense(e past)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 day) reftype(p1 definite)
+	participant(p2) objtype(p2 cake) reftype(p2 definite)
+	relation(agent e p0) relation(patient e p2) relation(time e p1)]
+sentence:[the day bill ate the cake]
+
+
+### n0Vn1 - Adjunct (gap-less) relative clause with covert extracted wh-NP with passive with by-phrase
+# the day the cake was baked by Bill
+
+@morph @strict
+the-day-the-cake-was-baked-by-bill
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 day) reftype(p1 definite)
+	participant(p2) objtype(p2 cake) reftype(p2 definite)
+	relation(agent e p0) relation(patient e p2) relation(time e p1)]
+sentence:[the day the cake was baked by bill]
+
+
+### n0Vn1 - Adjunct (gap-less) relative clause with covert extracted wh-NP with passive without byphrase
+# the day the cake was baked
+
+@morph @strict
+the-day-the-cake-was-baked
+semantics:[
+	event(e) evttype(e bake) tense(e past) mode(e ppart)
+	participant(p1) objtype(p1 day) reftype(p1 definite)
+	participant(p2) objtype(p2 cake) reftype(p2 definite)
+	relation(patient e p2) relation(time e p1)]
+sentence:[the day the cake was baked]
+
+
+### n0Vn1 - Adjunct (gap-less) relative clause with PP pied-piping
+# the house in which Bill baked a cake
+
+@morph @strict
+the-house-in-which-bill-baked-a-cake
+semantics:[
+	event(e) evttype(e bake) tense(e past) focus(e p1)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 house) reftype(p1 definite)
+	participant(p2) objtype(p2 cake) reftype(p2 indefinite)
+	relation(agent e p0) relation(patient e p2) relation(in e p1)]
+sentence:[the house in which bill baked a cake]
+
+### n0Vn1 - Adjunct (gap-less) relative clause with PP pied-piping with passive with by-phrase
+# the house in which the tree was planted by Bill
+
+@morph @strict
+the-house-in-which-the-tree-was-planted-by-bill
+semantics:[
+	event(e) evttype(e plant) tense(e past) focus(e p1) mode(e ppart)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 house) reftype(p1 definite)
+	participant(p2) objtype(p2 tree) reftype(p2 definite)
+	relation(agent e p0) relation(patient e p2) relation(in e p1)]
+sentence:[the house in which the tree was planted by bill]
+
+### n0Vn1 - Adjunct (gap-less) relative clause with PP pied-piping with passive without by-phrase
+# the house in which the tree was planted
+
+@morph @strict
+the-house-in-which-the-tree-was-planted
+semantics:[
+	event(e) evttype(e plant) tense(e past) focus(e p1) mode(e ppart)
+	participant(p1) objtype(p1 house) reftype(p1 definite)
+	participant(p2) objtype(p2 tree) reftype(p2 definite)
+	relation(patient e p2) relation(in e p1)]
+sentence:[the house in which the tree was planted]
+
+### n0Vn1 - Passive with relative clause on subject and no by-phrase with overt extracted wh-NP
+# the cake whose cherries were eaten
+
+### n0Vn1 - Passive with relative clause on subject and no by-phrase with covert extracted wh-NP
+# the cake that was eaten
+
+### n0Vn1 - Passive with relative clause on subject and by-phrase with overt extracted wh-NP
+# the cake whose cherries were eaten by Bill
+
+### n0Vn1 - Passive with relative clause on subject and by-phrase with covert extracted wh-NP
+# the cake that was eaten by Bill
+
+
+### n0Vn1 - Passive with relative clause on object on the by-phrase with overt extracted wh-NP
+# the man who the tree was planted by
+@morph @strict
+the-man-who-the-tree-was-planted-by
+semantics:[
+	event(e) evttype(e plant) tense(e past) focus(e p0) mode(e ppart)
+	participant(p0) objtype(p0 man) reftype(p0 definite)
+	participant(p2) objtype(p2 tree) reftype(p2 definite)
+	relation(agent e p0) relation(patient e p2)]
+sentence:[the man who the tree was planted by, the man by who the tree was planted]
+
+
+### n0Vn1 - Passive with relative clause on object on the by-phrase with covert extracted wh-NP
+# the man that the tree was planted by
+
+### n0Vn1 - Passive with relative clause on object on the by phrase with with PP pied-piping
+# the man by whom the cake was baked
+# Lisa likes [the man by whom the tree was planted]
+# [the man by whom the tree was planted] likes Lisa
+
+# it produces other (valid) sentences, but it's very slow!
+@morph @loose
+lisa-likes-the-man-by-who-the-tree-was-planted
+semantics:[
+	event(e) evttype(e plant) tense(e past) focus(e p0) mode(e ppart)
+	participant(p0) objtype(p0 man) reftype(p0 definite)
+	participant(p2) objtype(p2 tree) reftype(p2 definite)
+	relation(agent e p0) relation(patient e p2)
+	participant(p3) objtype(p3 lisa)
+	event(e2) evttype(e2 like) relation(agent e2 p3) relation(patient e2 p0)]
+sentence:[lisa likes the man who the tree was planted by, lisa likes the man by who the tree was planted]
+
+
+### n0Vn1 - Determiner gerund
+# Lisa approves of [his baking of the cake]
+
+### n0Vn1 - NP gerund
+# Bill approved of [Lisa baking a cake]
+
+@morph @strict
+bill-approved-of-lisa-baking-a-cake
+semantics:[
+	event(e0) evttype(e0 approve) tense(e0 past)
+	event(e1) evttype(e1 bake) mode(e1 gerund)
+	participant(p0) objtype(p0 bill)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite)
+	participant(p2) objtype(p2 lisa)
+	relation(agent e0 p0) relation(patient e0 e1) relation(agent e1 p2) relation(patient e1 p1)]
+sentence:[bill approved of lisa baking a cake, lisa baking a cake bill approved of]
+
+### n0Vn1 - PRO subject
+# Bill wants [PRO to bake a cake]
+
+@ignore @morph @strict
+bill-wants-to-bake-a-cake
+semantics:[
+	event(e0) evttype(e0 want)
+	event(e1) evttype(e1 bake)
+	participant(p) objtype(p bill)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite)
+	relation(agent e0 p) relation(patient e0 e1) relation(patient e1 p1)]
+sentence:[bill wants to bake a cake]
+
+
+### n0Vn1 - NP gerund with PRO subject
+# Bill approved of [PRO baking a cake]
+@morph @strict
+bill-approved-of-baking-a-cake
+semantics:[
+	participant(p0) objtype(p0 bill)
+	event(e0) evttype(e0 approve) tense(e0 past) relation(agent e0 p0)
+	event(e1) evttype(e1 bake) mode(e1 gerund) relation(patient e0 e1)
+	participant(p1) objtype(p1 cake) reftype(p1 indefinite) relation(patient e1 p1)]
+sentence:[bill approved of baking a cake, baking a cake bill approved of]
+
+
+### n0Vn1 - Gerund passive with by-phrase with PRO subject
+# Lisa likes [PRO being loved by Bill]
+@morph @strict
+lisa-likes-being-loved-by-bill
+semantics:[
+	participant(p0) objtype(p0 lisa)
+	event(e0) evttype(e0 like) relation(agent e0 p0)
+	event(e1) evttype(e1 love) mode(e1 ppart) relation(patient e0 e1)
+	participant(p1) objtype(p1 bill) relation(agent e1 p1)]
+sentence:[lisa likes being loved by bill]
+
+
+### n0Vn1 - Gerund passive without by-phrase with PRO subject
+# Lisa likes [PRO being loved]
+@morph @strict
+lisa-likes-being-loved
+semantics:[
+	participant(p0) objtype(p0 lisa)
+	event(e0) evttype(e0 like) relation(agent e0 p0)
+	event(e1) evttype(e1 love) mode(e1 ppart) relation(patient e0 e1)]
+sentence:[lisa likes being loved]
+
+
+### n0Vn1 - Passive with by-phrase with PRO subject
+# Bill wants [PRO to be loved by Lisa]
+@ignore @morph @strict
+bill-wants-to-be-loved-by-lisa
+semantics:[
+	participant(p0) objtype(p0 bill)
+	event(e0) evttype(e0 want) relation(agent e0 p0) 
+	event(e1) evttype(e1 love) mode(e1 ppart) relation(patient e0 e1)
+	participant(p1) objtype(p1 lisa) relation(agent e1 p1)]
+sentence:[bill wants to be loved by lisa]
+
+
+### n0Vn1 - Passive without by-phrase with PRO subject
+# Bill wants [PRO to be loved]
+
+### n0Vn1 - Gerund passive with by-phrase
+# Bill being loved by Lisa
+
+### n0Vn1 - Gerund passive without by-phrase
+# Bill being loved
+
+### n0Vn1 - Pre-nominal participial modifier
+# the baked cake
+
+### n0Vn1 - Derived adjective
+# totally baked
+
+
+
+
+
+
+

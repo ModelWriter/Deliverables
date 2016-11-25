@@ -14,7 +14,6 @@ import synalp.generation.configuration.GeneratorOption;
  */
 public abstract class SkeletalParserConfiguration {
 	
-	protected boolean useCKYChartParsing;
 	protected boolean useProbability;
 	protected File grammarFile;
 	protected File uLexiconFile;
@@ -37,7 +36,6 @@ public abstract class SkeletalParserConfiguration {
 				GeneratorOption.setupField(field, optionName, config.getValue(optionName));
 		}
 		
-		useCKYChartParsing = config.getOption("use_cky_parse").equalsIgnoreCase("true")?true:false;
 		useProbability = config.getOption("use_probability").equalsIgnoreCase("true")?true:false;
 		
 		
@@ -52,11 +50,6 @@ public abstract class SkeletalParserConfiguration {
 	
 	
 	
-	public boolean isUseCKYChartParsing() {
-		return useCKYChartParsing;
-	}
-
-
 	public boolean isUseProbability() {
 		return useProbability;
 	}

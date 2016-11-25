@@ -41,6 +41,82 @@
 		
 	</config>
 
+
+	<config name="minimal" inherit="default" basedir="resources/minimal">
+		<resource name="grammar" file="grammar.xml"/>
+		<resource name="lexicon" file="lexicon.xml"/>
+		<resource name="testsuite" file="test.jeni"/>
+	</config>
+	
+	
+	<config name="french" inherit="default" basedir="resources/french">
+		<resource name="grammar" file="grammar.xml"/>
+		<resource name="lexicon" file="lexicon.xml"/>
+		<resource name="testsuite" file="test.jeni"/>
+	</config>
+	
+	
+	<config name="transsem" inherit="default" basedir="resources/transsem">
+		<resource name="grammar" file="grammar.xml"/>
+		<resource name="lexicon" file="lexicon.lex"/>
+		<resource name="testsuite" file="test.jeni"/>
+	</config>
+	
+
+	<config name="semxtag" inherit="default" basedir="resources/sem-xtag2">
+		<resource name="grammar" file="grammar.xml"/>
+		<resource name="testsuite" file="test.jeni"/>
+		<resource name="morph" file="morph.mph"/>
+		<option name="selection" value="pattern_selection">
+			<option name="use_bit_semantics" value="false"/>	<!-- disabled for now -->
+			<resource name="grammar_semantics" file="semantics.sem"/>
+			<resource name="lexical_semantics" file="lexicon.sem"/>
+		</option>
+	</config>
+
+
+	<config name="probabilistic" inherit="default" basedir="resources/probabilistic">
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="testsuite" file="test.geni"/>
+		<resource name="lexicon" file="koda-lexicon.lex"/>
+		<option name="generator" value="probabilistic"/>
+		<option name="proba_strategy_type" value="simple"/>
+		<option name="use_bit_semantics" value="false"/>
+		<option name="early_semantic_failure" value="false"/>
+		<option name="missing_lexem_policy" value="output_lemma"/>
+		<option name="beam_size" value="10"/>
+		<option name="use_filtering" value="false"/>
+	</config>
+	
+	<config name="probabilistic_demosuite" inherit="default" basedir="resources/probabilistic">
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="testsuite" file="koda.suite.28072015.geni"/>
+		<resource name="lexicon" file="koda.lexicon.28072015.lex"/>
+		<option name="generator" value="probabilistic"/>
+		<option name="proba_strategy_type" value="simple"/>
+		<option name="use_bit_semantics" value="false"/>
+		<option name="early_semantic_failure" value="false"/>
+		<option name="missing_lexem_policy" value="output_lemma"/>
+		<option name="beam_size" value="10"/>
+		<option name="use_filtering" value="false"/>
+	</config>
+
+
+	<config name="kbgen" inherit="default">
+		<option name="timeout" value="10000"/>
+		<option name="use_filtering" value="true"/>
+		<option name="use_bit_semantics" value="true"/>
+		<option name="allow_duplicates" value="false"/> <!-- disabled for now -->
+		<resource name="grammar" file="resources/kbgen/grammar.xml"/>
+		<resource name="lexicon" file="resources/kbgen/lexicon.lex"/>
+		<resource name="testsuite" file="resources/kbgen/test.jeni"/>
+		<option name="ranker" value="default_ranker">
+			<option name="beam_size" value="3"/>
+			<resource name="lmfile" file="resources/ranking/lm-genia-lemma"/>
+		</option>
+	</config>
+	
+	
 	
 	
 	<config name="default_parser" inherit="default"> <!-- Config for doing the semantic parse -->
@@ -54,7 +130,6 @@
 	
 	<config name="parser_airbus_core_options" inherit="default_parser">
 		<option name="use_filtering" value="false"/> <!-- For allowing root node of the tree to have any PoS category  -->
-		<option name="use_cky_parse" value="true"/>
 		<option name="use_probability" value="false"/>
 		<!-- The following are options to be implemented in future
 		<option name="use_ML_filtering" value="false"/> To prune out trees during parse using the decision of a ML model
@@ -82,20 +157,35 @@
 	</config>
 	
 	
-
-	<config name="parse_airbus_excellex_true_sentence" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
-		<resource name="sentences" file="airbus_sentences.txt"/>
-		<resource name="output" file="../output/airbus_parse_output/excellex_true_sentences/ParseResult.txt"/>
+	<config name="parse_airbus_truelex_simple_sentences_only" inherit="parse_airbus_truelex" basedir="resources/airbus/input">
+		<resource name="sentences" file="_simple_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/truelex_simple_sentences_only/ParseResult.txt"/>
 	</config>
-	<config name="parse_airbus_excellex_colbc_sentence" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
-		<resource name="sentences" file="col_bc_only_sentences.txt"/>
-		<resource name="output" file="../output/airbus_parse_output/excellex_colbc_sentences/ParseResult.txt"/>
+	<config name="parse_airbus_truelex_complex_sentences_only" inherit="parse_airbus_truelex" basedir="resources/airbus/input">
+		<resource name="sentences" file="complex_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/truelex_complex_sentences_only/ParseResult.txt"/>
+	</config>
+	<!-- Current Experiments are being made with fully specified lexicon -->
+	<!-- Simple Airbus Sentences only -->
+	<config name="parse_airbus_excellex_simple_sentences_only" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
+		<resource name="sentences" file="simple_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/excellex_simple_sentences_only/ParseResult.txt"/>
+	</config>
+	<!-- Complex Airbus Sentences only -->
+	<config name="parse_airbus_excellex_complex_sentences_only" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
+		<resource name="sentences" file="complex_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/excellex_complex_sentences_only/ParseResult.txt"/>
+	</config>
+	<!-- Simple + Complex ( = Total) Airbus Sentences -->
+	<config name="parse_airbus_excellex_all_sentences" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
+		<resource name="sentences" file="all_sentences.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/excellex_all_sentences/ParseResult.txt"/>
 	</config>
 	
 	
+	
+	
 
-	
-	
 	<config name="reverse_gen" inherit="default"> <!-- Config for generating from the output of semantic parse -->
 		<option name="early_semantic_failure" value="false"/> <!-- to fix cases of where Haskell Geni would generate but Jeni won't -->
 		<option name="missing_lexem_policy" value="output_lemma"/> <!-- The morph file for reverse generation is not specified; so we assume that the surface expression is the lemma itself. -->

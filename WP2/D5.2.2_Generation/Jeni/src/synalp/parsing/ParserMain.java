@@ -181,7 +181,7 @@ public class ParserMain {
 			logger.info(processingMessage);
 			System.out.println(processingMessage);
 			
-			Parser parser = getParseOfSingleInput(useMLModeltoParse, input.getSentence(), parseResultFile.getParentFile()+"/parseLogs/"+(i+1)+".log", grammar, fullySpecifiedLexicon, underSpecifiedLexicon, parserConfig.getGrammarFile().getParent(), morphs, parserConfig.isUseProbability(),parserConfig.isUseCKYChartParsing());
+			Parser parser = getParseOfSingleInput(useMLModeltoParse, input.getSentence(), parseResultFile.getParentFile()+"/parseLogs/"+(i+1)+".log", grammar, fullySpecifiedLexicon, underSpecifiedLexicon, parserConfig.getGrammarFile().getParent(), morphs, false);
 			
 			input.setParseResult(parser.getParseResults());
 			input.setNewLexicalItemsProposed(parser.getNewLexicalItemsProposed());
@@ -205,9 +205,9 @@ public class ParserMain {
 	/**
 	 * Needed for web interface where we want to input individual sentences and not the whole batch input 
 	 */
-	public static Parser getParseOfSingleInput(boolean useMLModeltoParse, Sentence sentence, String parseLogFileName, Grammar grammar, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, String macrosFilePath, Map<String, Set<String>> morphs, boolean useProbability, boolean useCKYChartParsing) throws Exception {
+	public static Parser getParseOfSingleInput(boolean useMLModeltoParse, Sentence sentence, String parseLogFileName, Grammar grammar, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, String macrosFilePath, Map<String, Set<String>> morphs, boolean useProbability) throws Exception {
 		Parser parser = new Parser(grammar, macrosFilePath);
-		parser.parse(useMLModeltoParse,sentence,fullySpecifiedLexicon,underSpecifiedLexicon,morphs,useProbability,useCKYChartParsing, parseLogFileName);
+		parser.parse(useMLModeltoParse,sentence,fullySpecifiedLexicon,underSpecifiedLexicon,morphs,useProbability, parseLogFileName);
 		return parser;
 	}
 	
@@ -256,14 +256,15 @@ public class ParserMain {
 		OntoModel ontModel = new OntoModel(parserConfig.getInputOntologyFile(), parseResultFile.getParentFile().getPath()+"/");
 		// Create the logger for ontology enrichment
 		ontModel.loggerConfiguration(parseResultFile.getParentFile().getPath()+"/");
-		
+		// setting reasoner to true slows down the pipeline (ca 1 sec per one axiom)
+		boolean useRealReasoner = false;
 		int totalInputSize = batch.getInputsCount();
 		for (int i=0; i<totalInputSize;i++) {
 			Input input = batch.getInputs().get(i);
 			String processingMessage = "\n###############Enriching ontology with DL semantics created from the parsed semantics of Input : "+(i+1)+" of "+totalInputSize+"##############";
 			logger.info(processingMessage);
 			System.out.println(processingMessage);
-			enrichOntologyForSingleInput(input, ontModel);
+			enrichOntologyForSingleInput(input, ontModel, useRealReasoner);
 		}
 		
 		if (ontModel!=null) {
@@ -272,12 +273,12 @@ public class ParserMain {
 	}
 	
 	/**
-	 * Enrich ontology with a given Input. (Note that enrichment is done with each parseresult obtained for the given input and that the input can have multiple parse results)
+	 * Enrich ontology with a given Input. (Note that enrichment is done with each parse result obtained for the given input and that the input can have multiple parse results)
 	 * @param input
 	 * @param ontModel
 	 * @throws OWLOntologyStorageException
 	 */
-	private void enrichOntologyForSingleInput(Input input, OntoModel ontModel) throws OWLOntologyStorageException {
+	private void enrichOntologyForSingleInput(Input input, OntoModel ontModel, boolean useRealReasoner) throws OWLOntologyStorageException {
 		for (ParseResult p:input.getParseResults()) {
 			p.createDLTree();				
 			/**
@@ -285,7 +286,7 @@ public class ParserMain {
 			 * and if we could only obtain the partial parse of "John eats"; it would contradict with the (partial) result (e.g. "John doesn't
 			 *  eat") from some other sentence like "John doesn't eat bananas". 
 			 */
-			enrichOntologyWithSingleParseResult(p, ontModel, parseResultFile.getParentFile().getPath()+"/");
+			enrichOntologyWithSingleParseResult(p, ontModel, parseResultFile.getParentFile().getPath()+"/", useRealReasoner);
 		}
 	}
 	
@@ -294,14 +295,16 @@ public class ParserMain {
 	 * Static method needed for Web interface
 	 * @throws OWLOntologyStorageException 
 	 */
-	public static void enrichOntologyWithSingleParseResult(ParseResult p, OntoModel ontModel, String outputDirectoryPath) throws OWLOntologyStorageException {
+	public static void enrichOntologyWithSingleParseResult(ParseResult p, OntoModel ontModel, String outputDirectoryPath, boolean useRealReasoner) throws OWLOntologyStorageException {
 		if (p.isResultTypeComplete()) {
 			if (ontModel!=null) {
-				p.getDLTree().doOntologyEnrichment(ontModel, outputDirectoryPath);
+				p.getDLTree().doOntologyEnrichment(ontModel, outputDirectoryPath, useRealReasoner);
 			}
 		}
 		else {
-			p.getDLTree().setOntologyEnrichmentStatusMessage("No ontology enrichment is performed with partial parse result.");
+			ArrayList<String> outputOntologyEnrichment = new ArrayList<String>();
+			outputOntologyEnrichment.add("No ontology enrichment is performed with partial parse result.");
+			p.getDLTree().setOntologyEnrichmentStatusMessage(outputOntologyEnrichment);
 		}
 	}
 	

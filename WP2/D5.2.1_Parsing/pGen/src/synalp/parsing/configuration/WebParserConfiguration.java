@@ -17,7 +17,6 @@ public class WebParserConfiguration extends SkeletalParserConfiguration{
 		text.append("\n\nInput Under Specified Lexicon FileName = " + uLexiconFile.getAbsolutePath());
 		text.append("\n\nInput Fully Specified Lexicon FileName = " + fLexiconFile.getAbsolutePath());
 		text.append("\n\nOther Options = \n"+GeneratorOption.getStatus());
-		text.append("\nCKY Parsing = "+useCKYChartParsing);
 		text.append("\nUse Probability = "+useProbability);
 		text.append("\n\n\n\n");
 		text.append("\n\n\n");

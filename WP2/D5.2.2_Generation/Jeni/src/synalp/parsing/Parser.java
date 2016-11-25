@@ -3,8 +3,6 @@ package synalp.parsing;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Logger;
 import org.apache.log4j.SimpleLayout;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -47,7 +45,6 @@ import synalp.parsing.Inputs.Sentence;
 import synalp.parsing.Inputs.Word;
 import synalp.parsing.ml.weka.FeatureVector;
 import synalp.parsing.treeCombinations.CKYChartCombinations;
-import synalp.parsing.treeCombinations.FullCombinations;
 import synalp.parsing.utils.CustomTextReplacement;
 import synalp.parsing.utils.OrderedCombinations;
 import synalp.parsing.utils.WordOrder;
@@ -121,7 +118,7 @@ public class Parser {
 
 	
 	
- 	public void parse(boolean useMLModeltoParse, Sentence inputSentence, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, Map<String,Set<String>> morphs, boolean useProbability, boolean useCKYChartParsing, String parseLogFileName) throws Exception {
+ 	public void parse(boolean useMLModeltoParse, Sentence inputSentence, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, Map<String,Set<String>> morphs, boolean useProbability, String parseLogFileName) throws Exception {
  		// setting up a FileAppender dynamically... for this current processing
  		logger.removeAllAppenders();//To remove appenders associated to the static logger from the past run.
 	    SimpleLayout layout = new SimpleLayout();    
@@ -275,7 +272,7 @@ public class Parser {
 		JeniChartItem.resetIdCount();
 		JeniChartItems parseChartItems = new JeniChartItems();
 		// After having the instantiated trees, need to combine them
-		parseChartItems.addAll(doParse(useMLModeltoParse, useCKYChartParsing,wordsToLexicalisedTrees,useProbability));
+		parseChartItems.addAll(doParse(useMLModeltoParse,wordsToLexicalisedTrees,useProbability));
 		
 		
 		
@@ -361,8 +358,15 @@ public class Parser {
 
 		logger.info("\n\n\n\nFinal Results to Display for the current Input ("+inputSentence+") = \n" + "\n");
 		for (int i=0; i<selectedParseResults.size(); i++){
-			String info = (i+1)+"--"+(selectedParseResults.get(i).isResultTypeComplete()==true?"CompleteParse":"PartialParse")+"--"+selectedParseResults.get(i).getSentenceofParseOutput()+"\n";
-			logger.info("\n" + info + selectedParseResults.get(i).getparseString() + "\n");
+			ParseResult currentParseResult = selectedParseResults.get(i); 
+			String info = (i+1)+"--"+(currentParseResult.isResultTypeComplete()==true?"CompleteParse":"PartialParse")+"--"+selectedParseResults.get(i).getSentenceofParseOutput()+"\n";
+			info = info + "\n" + info + currentParseResult.getparseString() + "\n";
+			info = info + "\n\tDerivationTree = "+currentParseResult.getDerivationTree()+"\n";
+			info = info + "\n\tDerivedTree = "+currentParseResult.getDerivationTree().getDerivedTree()+"\n";
+			info = info + "\n\tVariables Instance = "+currentParseResult.getVariablesInstance()+"\n";
+			info = info + "\n\n\nSemantics before top-bottom unification = "+currentParseResult.getSemanticsBeforeTopBottomUnification()+"\n";
+			info = info + "\nSemantics after top-bottom unification = "+currentParseResult.getparseString()+"\n";
+			logger.info(info);
 		}
 		logger.info("\n\n\n" + "\n");
 
@@ -643,14 +647,12 @@ public class Parser {
 
 			/* 
 			 * If equations apply, we need to make sure that the semantics of the grammar entry is well instantiated with
-			 * regards of the input semantics, the subsumption handles that. However we need to do the subsumption on the
-			 * lex entry since doing it on the input semantics may raise multiple instantiations which should have been
-			 * taken care of at the caller level, hence we can do the subsumption and take the first found context.
+			 * regards of the input semantics, the subsumption handles that. In parser, subsumption is not needed, thus the
+			 * instantiation context assigned to the resulting tree will be the context obtained after the unification code
+			 * above (i.e. the value of the newContext variable).
 			 */
 			if (applyEquations(newEntry, lexEntry.getEquations(), newContext))
 			{
-				Set<InstantiationContext> newContexts = newEntry.getSemantics().subsumes(lexEntry.getSemantics(), newContext);
-
 				// we enabled family anchoring, hence the lemma should have been specified by equations
 				Node mainAnchor = newEntry.getTree().getMainAnchor();
 				if (mainAnchor == null)
@@ -673,9 +675,7 @@ public class Parser {
 					continue;
 				}
 				
-				if (newContexts.iterator().hasNext()) {
-					newEntry.setContext(newContexts.iterator().next());
-				}
+				newEntry.setContext(newContext);
 
 				
 				// Assign word position from the input sentence to the anchor node. 
@@ -869,10 +869,9 @@ public class Parser {
 
 	// ToDo :: 1. Need to implement ML filtering in CKY approach
 	// 2. How to implement ML filtering for the cartesian combinations approach ???
-	private ArrayList<JeniChartItem> doParse(boolean useMLModeltoParse, boolean useCKY, Map<Word, GrammarEntries> wordsToLexicalisedTrees, boolean useProbability) {
+	private ArrayList<JeniChartItem> doParse(boolean useMLModeltoParse, Map<Word, GrammarEntries> wordsToLexicalisedTrees, boolean useProbability) {
 		ArrayList<JeniChartItem> result;
 		// 1. The CKY way -- dynamic programming approach
-		if (useCKY) {
 			logger.info("\n\n\n************************* Using the CKY Chart Parsing Combinations Approach *************************\n\n");
 			ArrayList<ArrayList<JeniChartItem>> CKY_InitialAgenda = new ArrayList<ArrayList<JeniChartItem>>();
 			for (Map.Entry<Word,GrammarEntries> entry:wordsToLexicalisedTrees.entrySet()) {
@@ -896,19 +895,6 @@ public class Parser {
 			logger.info("\n\n\nResults Row Items (Flattened) ="+cKYChartBuilder.getNonEmptyRowResultsAsFlatList());
 			logger.info("\n\n\n");
 			result = cKYChartBuilder.getNonEmptyRowResultsAsFlatList();
-		}
-		// 2. The normal way -- trying all combinations in brute force manner 
-		else {
-			logger.info("\n\n\n************************* Using the General Combinations Approach *************************\n\n");
-			GrammarEntries[] combinationEntries = new GrammarEntries[wordsToLexicalisedTrees.size()];
-			int counter = 0;
-			for (GrammarEntries x: wordsToLexicalisedTrees.values()) {
-				combinationEntries[counter] = x;
-				counter++;
-			}
-			FullCombinations parser = new FullCombinations(combinationEntries, logger);
-			result = parser.parse(useProbability);
-		}
 		if (result.isEmpty()) {
 			if (statusReport.isEmpty()) // if not already set (E.g. sometimes the parse proceeds even if the trees for not all of the words have been selected (to account for partial parse))
 				statusReport = "Selected Trees couldn't combine (or the results they produced had bad/null word index order or incomplete derivations)";
@@ -1023,7 +1009,7 @@ public class Parser {
 	
 	
 
-	// ToDo : remove this method and use the one below. It in not necessary to form ResultSemantics object to check usedInDerivation
+	// ToDo : remove this method and use the one below. It is not necessary to form ResultSemantics object to check usedInDerivation
 	/*
 	 * Checks if any of the grammar entries was used in the derivation of any of the parse results 
 	 */

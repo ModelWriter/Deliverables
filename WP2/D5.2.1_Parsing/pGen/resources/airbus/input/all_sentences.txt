@@ -1,0 +1,962 @@
+separators shall be used following the table below
+thermal variation shall be taken into account
+structural deformation shall be taken into account
+pressurization variation shall be taken into account
+component/item/object shall be qualified to withstand  temperature reached by the  routes they are in contact with
+conductive component/item/object shall be installed taking into account  electro-chemical compatibility see attached table
+nut shall be installed using un series thread  type only
+only bolt shall be used able to resist applied  mechanical loads
+current carrying screwed fastener shall be identified with red frangible paint after tightening
+obstructive component/item/object shall not be installed in fuel tank
+spare wire shall be used only on development aircraft
+spare wire shall be identified by identification sleeve marqued with spare wire at each end
+spare wire shall not be provided for afdx bus link
+spare wire shall not be provided for optical cable
+spare wire shall not be provided for feeder wire
+spare wire should be protected with heat shrinkable cap placed on each end nsa936603 (recommended solution)
+spare wire shall be protected with crimped cap nsa936601
+cable, bundle shall be routed with a maximum diameter/section of 50mm (including margin)
+s-route, m-route shall be protected with nsa935805 convoluted conduit  under pax floor and above cwb and mlgb
+s-route, m-route shall be protected with nsa935805 convoluted conduit   behind cabin monuments such as galleys, lavatories or crew rest compartment
+s-route, m-route shall be protected with nsa935805 convoluted conduit in any area where electrical routing modification leads to high maintenance workload
+cable, wire, bundle shall be installed inside spare conduit with a minimum of 20% of spare provision
+spare conduit shall be installed with a minimum conduit size of 9
+g-route should be routed above the cargo floor
+g-route shall be connected to virtual terminal block (vt) located above cargo floor
+the minimum of bundle shall be routed in landing gear bay
+additional clearance shall be provided for sagging following this picture
+sagging shall be taken into account following the figure below
+sagging shall be taken into account for horizontal bundle following this picture
+sagging shall be taken into account for vertical bundle following this picture
+clearance shall be calculated considering any possible position of bundle especially for dynamic bundles
+clearance shall be calculated considering bundle growth potential
+clearance shall be calculated considering movement of  structure
+bundle shall be installed taking into account loap with clearance to structure given in this table and in siri application
+non-pre-stressed bundle shall be installed taking into account loap from 0 to 180Â° downwards for horizontal routing
+pre-stressed bundle shall be installed taking into account loap from 0Â° to 360Â° for horizontal routing. (see rqt 3288)
+bundle shall be installed taking into account loap from 0Â° to 360Â° for vertical routing
+p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be installed taking into account cut of wire in vertical direction
+p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be installed taking into account cut of wire in horizontal direction
+g-route shall not be routed taking into account cut of wire
+r-route (optical)   shall not be routed taking into account cut of wire
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall not be routed taking into account cut of wire if protected with raceway
+sagging shall be taken into account between two bundle only one time
+two bundle shall be segregated by the distance of the sum of the mechanical distance plus sagging/swelling
+after the loos of separators shall be left a clearance of 10mm
+separators shall be identified in drawing by type and location
+separators shall not be used for overlength management
+separators shall not be used at bundle crossings
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall be segregated at the level of connector
+m-route, r-route, s-route shall be segregated at the level of virtual terminal module (vt)
+p-route, m-route, r-route, s-route, t, u, v-route shall be segregated at the level of virtual pressure seal (vp)
+m-route, r-route, s-route shall be segregated at the level of virtual diode (vd)
+the harness bend radius shall be defined as minimum 6 times outer bundle diameter
+optical wire shall be bend 10 times outer diameter minimum
+coaxial wire shall be bend 10 times outer diameter minimum
+databus wire shall be bend 10 times outer diameter minimum
+electrical installation shall be installed taking into account pra (particular risk analysis)
+spare wire shall not be provided for coaxial cable
+spare provision shall be taken into account for  overbraided bundle
+spare provision shall be taken into account for  overbraided bundle for  attachment device
+spare provision shall be taken into account for  overbraided bundle for back shell size
+spare provision shall be taken into account for  overbraided bundle with a maximum of four kits per bundle
+r-route, r-route (optical)  , s-route, p-route, m-route shall be routed with 20% of spare provision for the growth of the bundle section (max. diameter = 50mm)
+electrical installation should not be installed on the  frame between stringer p5, p0 and p5'
+the fqi bundle shall be installed as only bundle in the fuel tanks
+g-route shall be segregated from fuel tank boundaries or  structural part in fuel vapor area by d>= 50mm
+p-route, s-route, p-route, t, u, v-route, m-route, e-route shall be segregated from fuel tank boundaries or  structural part in fuel vapor area by d>= 50mm
+s-route, t, u, v-route, p-route, m-route, e-route, r-route shall be segregated from fuel tank boundaries or  structural part in fuel vapor area by 50mm>=d>=25mm with an electrical protection or a secured routing case a or b
+r-route, s-route, p-route, t, u, v-route, m-route, t, u, v routes shall be segregated from fuel tank boundaries or  structural part in fuel vapor area by 25mm>=d>=10mm with an electrical protection or a secured routing case a or b and as well considering loss of one attachment point
+4s and 5s-route shall be segregated from fuel tank boundaries or  structural part in fuel vapor area by d>= 25mm
+g-route, p-route, e-route shall be segregated from aircraft skin by d>=50mm
+g-route, p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be segregated from cabin furnishing equipment by d>= 25mm
+r-route (optical)   shall be segregated from flammable fluids by d >= 13mm
+g-route, p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be segregated from gaseous oxygen by d>=150mm
+r-route (optical)   shall be segregated from gaseous oxygen by d >= 13mm
+bundle shall be installed taking into account loap with a  clearance of d>= 10mm after loss of attachment point to any part
+g-route, p-route, m-route shall be installed taking into account loap with a  clearance of d>= 10mm after loss of attachment point to cfrp surfaces (e.g. structures, pipes, etc.)
+g-route, p-route, m-route shall be installed taking into account loap with a  clearance of d>= 10mm after loss of attachment point to pipes carrying flammable fluids or oxygen
+p-route shall not be routed taking into account cut of wire if protected with mechanical protection
+when bundle shall be routed taking into account cut of wire a  clearance of l+10mm  shall be provided between bundle and fuel tank wall
+4s/5s shall be installed in case of crossing-route with  a distance d>=50mm to other bundles
+harness should not be grouped together that total weight of the harness is exceeding 80kg
+afdx data bus cable shall be integrated only in m and s-routes
+leaky line shall be bend minimum 80 mm up to 180Â°
+flexible bf type cable shall be bend 3x diameter minimum
+double derivation shall be used when  cable to be included in the derivation are routed from both sides of the main routing
+overbraided bundle shall be installed with maximum three derivation at a single position
+overbraided bundle shall be defined taking into account a pull back area of 250 mm before back shells
+repair over length shall not be provided for optical cable 
+repair over length shall be installed following the same installation philosophy than the normal installation
+as bundle tying device shall be used nsa 935401 cable tie in red colour for bundle attachment in fuel tanks
+sense pipes shall be provided with restrictor
+duct shall not be defined with a minimum bend radius of 2d
+pipes shall be defined for convergent and divergent tapering, with a maximum cone angle of 10Â° measured from the pipe centre line
+silicon seal shall not be used on pneumatic system
+air duct shall be connected to equipment by flange standard as-1895 or equivalent alternative standard
+equipment, clamp, bracket , shall be fixed by nut or receptacles of a self-locking type throughout the entire pneumatic system. if it can not be met, other locking method shall be used: castle nuts with split pins or drilled nuts with lock wire
+sense flexible hoses, pipes shall be routed without low point in â€œu shapeâ€ (see the attached picture)
+coaxial cable, optical cable shall be installed in a bundle with nsa 935401 cable tie size 4
+nsa 935401 cable tie shall not be used inside braided/screened/emi open/split conduit/sleeve or closed/convoluted conduit/sleeve
+unprotected modification kid shall not be tied up on bundle protected with heat shrinking sleeve
+when  bundle shall be tied up to a harness each single  bundle shall be tied up with lacing tape
+abs 1353 emi conduit shall be tied up together with cable tie nsa935401 but in line with requirements dp_92_7.2.3_2356-2362
+nsa 935805tshielded convoluted conduit shall be tied up together with cable tie nsa935401 but in line with requirements dp_92_7.2.3_2356-2362
+harness twisting shall be defined in the  definition dossier describing stection of the harness to be twisted as well as twisting pitch
+unprotected bundle shall not be attached directly on metallic structure
+conduit, bundle, wire shall not be attached to  pipes or removable equipment
+harness, bundle, cable shall be routed to avoid mechanical stress on the connection point
+harness, bundle, cable shall be installed avoiding relative movement between electrical connection and last attachment point
+attachment device shall be able to withstand environmental constrain e.g. temperature of zones the bundle is installed in
+g-route shall be attached before virtual terminal block (vt) with g- route attachment/fixation point  or clamp
+cross connection should be avoided before virtual terminal block (vt) for g-route installation
+efcs virtual terminal module (vt) shall be installed with stirr up
+each g-route shall be attached with a dedicated attachment point
+each electrical network shall be installed with  dedicated attachment point (network 1 and network 2), see atatched figure
+each route category should be installed with dedicated attachment point
+harness, bundle shall not be installed in the area of sharp edge of bracket
+g routes shall not be attached on stand-off / colonettes
+nsa5527 spacer shall not be added on top of  adhesive bonded bracket
+optional harness m-route may be installed by use of adhesive bonded bracket
+optional part of  p-route, m-route may be installed by use of adhesive bonded bracket
+spacer shall be used only with attachment device to increase distance with regards to structure, bundles or other systems
+p-route, g-route, s-route, m-route, t, u, v-route, q-route, r-route (optical)  , r-route, e-route shall be installed with metallic spacer in hot and fire areas
+s-route, m-route, t, u, v-route, q-route, r-route (optical)  , r-route, e-route, p-route, g-route shall not be installed with plastic spacer in hot and fire areas
+g-route shall be installed with metallic spacer
+g-route shall not be installed with plastic spacer in hot and fire areas
+p-route shall be installed with metallic spacer
+p-route, r-route (optical)  , r-route, e-route, s-route, m-route, t, u, v-route shall be installed with plastic spacer
+non pre stressed p-route shall be attached by p-clamp e.g. nsa 5516bd or abs1339-d
+pre stressed g-route shall be attached by low tÂ° bobbin and insulated bracket and metallic clamp asne 0033 
+non pre stressed s-route shall be attached by p-clamp type b e.g. nsa 5516 cbf or nsa 5515 in carbon tank
+non pre stressed p-route, m-route, r-route, s-route, t, u, v-route shall be attached by p-clamp  nsa5516 cbd in swamp areas
+pre stressed s-route, p-route, r-route, m-route shall be attached by p-clamp as 62200 (not preferred) or nsa5516 cbd + mechanical protection on the bundle
+non pre stressed r-route (optical) , r-route, p-clamp, m-route, s-route , shall be attached by p-clamp type c 0r p-clamp type b nsa 5516 cbd with mechanical protection
+pre stressed g-route shall be attached by p-clamp type c as 62200 when in bobbin configuration
+pre stressed m-route, p-route, s-route, r-route (optical) , r-route , shall be attached by p-clamp as 62200 (not preferred) or nsa5516 cbd + mechanical protection on the bundle
+pre stressed s-route, r-route, m-route , shall be attached by p-clamp abs1339 f when installed in fuel tank
+pre stressed r-route, m-route, s-route, p-route shall be attached by p-clamp as 62200 (not preferred) or nsa5516 cbj + mechanical protection on the bundle
+pre stressed g-route shall be attached by low tÂ° bobbin and insulated bracket and metallic clamp asne 0033 
+pre stressed g-route shall be attached p-clamp type c as 62200 when in bobbin configuration
+pre stressed g-route shall be attached by high tÂ° bobbin and insulated bracket and metallic clamp asne 0033 
+pre stressed g-route shall be attached with p-clamp type c as 62200 when in bundle configuration
+pre stressed g-route shall be attached by low tÂ° bobbin and insulated bracket and metallic clamp asne 0033 
+attachment device shall be defined with a  surface roughness less than 3,2 micrometer
+p-clamp type b should be positioned as shown in the sketch below (e.g. nsa5516 or as 62200)
+abs 1339 p-clamp shall be used with nsa 935401 cable tie cable tie with the with of 4.8mm
+abs 1339 p-clamp should be positioned as shown in the sketch below
+m-route, r-route, s-route shall be installed with 2 layer nsa 5107-b black tape if installed on v-support and diameter d is   d>= 35mm
+when m-route, r-route, s-route, t, u, v-route shall be installed on v-support , position b and c is only to be apllied for bundle with diamater d <= 25mm
+wedge type support shall be avoided for new design
+when bundle shall be installed on wedge type support , they shall be protected by asna 5107-b black tape at the level of the fixation
+when bundle shall be installed on wedge type support nsa 935513-01 to 05, the maximum diameter d of the bundle is d<=10mm
+when bundle shall be installed on asne 0435 bracket the maximum diamter d of each elementary bundle shall be d <= 35mm
+abs 1082 bracket, bracket should be used to attach bundles between floor panel and crossbeams in confined areas
+loap shall be taken into account on ramp when loss of a single nsa 935401 cable tie would result in the loss of the attachment point
+loap shall not be taken into account on ramp when loss of a single nsa 935401 cable tie would not result in the loss of the attachment point
+abs1576 peek ramp shall not be used in hot and fire zones
+p-route shall not be attached on abs1576 peek ramp
+abs 1576 peek ramp should not be installed with  cantilever arm to support attachment devices
+g-route shall not be attached on abs 1576 peek ramp
+when abs1576 peek ramp should be attached with torsion the bearings of the ramps system should span an area as detailed in picture below
+abs1576 peek ramp shall be attached to structure with two attachment/fixation point minimum
+abs1576 peek ramp shall be attached to structure with no contect to metallic parts like shown in the picture below
+abs5147 metallic ramp shall be attached to structure by clipping or on attachment device asne0664 type
+conductive traverse shall be attached to conductive composite structure with a bonding link and by non conductive fixed bracket (a) as priority 2 solution inside fflz or inside fluel tank or when hv routes (230v) are mounted
+pipes should be segregated with a basic clearance to each other
+g routes shall not be installed on ramps
+g routes shall be installed with two level of insulation
+g-route shall not be installed to  fuel tank boundaries
+m-route, r-route, s-route, t, u, v-route should be attached to  frame by combi bracket e.g. asne0663, anse0661, abs2083, when attaching ata 92 as well as ata 25
+g-route, p-route shall not be attached by combi bracket
+harness, bundle, wire shall be attached on blanket covered structure with maximum pitch of d <= 350mm
+bundle shall be attached to frame with abs2083 combi bracket where burn through resistance is needed to be taken into account
+abs2083 combi bracket shall not be installed on stringer to replace insulation fasteners
+g-route, p-route shall not be attached to circular rod
+m-route, r-route, s-route, t, u, v-route shall be attached to circular rod using abs 1095 insulating bracket fixed with two asna0033 metallic clamps and black tape asna5107-b
+bundle should not be installed between  stringer p0 and p15 to reduce cuttings, incisions and holes to a minimum
+when bundle shall be installed between  stringer p0 and p15 sidp21a004d shall be applied to ensure insulation tightness
+bundle shall be installed passing through mounting plate straight at the exits, as illustrated in the sketch below
+bundle shall be attached when passing through mounting plate with a distance d =< 100mm from the circular grommet
+each braided bundle shall be installed passing trhough its own mounting plate 
+dynamic bundle shall be installed to reduce relative movement to a minimum (e.g. fixation point close to rotation center)
+dynamic bundle shall be attached by nsa 5516 p-clamp type b
+dynamic bundle shall be installed ensuring no contact with any structure or other items during movement
+where dynamic bundle installed with controlled relative movement a device to guide the harness shall be installed
+abs 0596 split conduit shall be fixed within one attachment device minimum
+nsa935805 convoluted condiut shall be installed with two p-clamp in vibration area as shown in picture below
+when more than one closed/convoluted conduit/sleeve shall be attached to one v-support
+emi protection shall be integrated by using  abs 1353 emi conduit or en 4674 emi split conduit
+metallic rigid conduit shall be integrated with  clamp as near as possible to the conduit entrance and centered at the metallic rigid conduit outlet
+spare conduit should be attached with the main routings
+spare conduit can be attached by  abs 1339 p-clamp or nsa 5516bd beside the main routing
+p-route shall be attached with  p-clamp type a or p-clamp type b
+p routes should not be attached directly to  ramps
+protected single optical cable can be attached to electrical bundle without additional protection
+unprotected single  optical cable shall be attached with  nsa 5107-b black tape to ramp see attached illustration
+coaxial cable may be attached without nsa 5107-b black tape when protected with en6049 split conduit
+optical cable shall be protected with mechanical protection when routed in unpressurezied areas
+s-route, p-route, r-route (optical) , t, u, v-route, m-route , shall be installed with mechanical protection
+bundle shall be protected with mechanical protection in the dynaomic section of a bundle
+bundle protection shall be defined in 
+bundle protection shall be installed in line with the table below
+abs 0596 split conduit shall be used for local protection without derivation
+closed/convoluted conduit/sleeve shall be installed with fillingrate not exceeding 80% at aircraft delivery when length is below 2m
+closed/convoluted conduit/sleeve shall be installed with fillingrate not exceeding 60% at aircraft delivery when length is longer 2m
+closed/convoluted conduit/sleeve shall not be installed with length l >3,5mm
+nsa935805 convoluted condiut shall not be connected togehter by screwing different sizes
+abs 0887 conduit shall not be connected togehter by screwing different sizes
+nsa 935829 end fitting shall be installed at the end of abs 0887 conduit to prevent bundle damage
+nsa 937210 shrink sleeve shall be installed using a shrink temperature which is in line with the bundle temperature
+en6049 split conduit shall be attached to open backshell as defined in figure below
+nsa5590 or nsa5569 double clamp shall be used to guarantee the two independent parallels detection loops
+pipes should be defined as short as possible
+only pipes should be used which are defined in the attached table
+flexible hoses shall be segregated to fixed structure structure not less than 20 mm unless otherwise specified
+flexible hoses shall be segregated to movable components not less than 25 mm unless otherwise specified
+flareless hydraulic unions shall be used exclusivesly
+duct,  pipes shall be defined without contractions and expansions
+abs0369 saddle clamp should be used in all zones
+abs0396 "style a" saddle clamp shall be used in temperature areas (e.g. fan area). cushion material: silicone rubber
+abs1409/abs1408 single-hole  clamp-block should be used for restricted access areas (e.g. in pylon zone in order to limit maintenance operations) clampblock use is not allowed in hot & fire area
+abs1500 saddle clamp can be used for the installation of  flexible hoses
+raceway shall be used which have a surface roughness >3,2micrometer
+pipes shall be defined without any low point in the fire extinguishing circuit
+the routings shall be defined in a way to have the low points are located at the nozzle level
+pipes shall be defined by considering free zones for repair in order to allow the replacement of the tube without having to modify the rest of the installation or to use specific procedures and tools
+long straight  pipes should be defined with a cranked tube section if the pipe is supposed to be affected by significant expansions
+unions shall not be installed in expansion zones
+flexible hoses should be defined with a ptfe inner tube with single or multi-braid stainless steel, aramid, or equivalent reinforcement, with stainless steel or titanium alloy fittings
+flexible hoses shall be defined with at least one bend in the hose routing in order to accommodate length changes
+flexible hoses shall be installed so that the movement shall not introduce torsion or tension forces
+two-elbow  flexible hoses shall not be used please refer to the attached figure
+flexible hoses shall be protected by a chafing sheath if there is a risk of friction
+only "three-hole" bulkhead  unions shall be used for bulkhead connections
+pipes shall be labeled according to nsa0141 with a location as shown in the attached figure
+self-adhesive fin label shall be used the installation. they shall be located on adjacent structure so that the item of equipment is clearly identified
+equipment shall be identified with  label according to abs0724
+label shall be used which are phosphate-ester hydraulic fluid â€“resistant if itâ€™s likely to be in contact with fuel or hydraulic fluid
+new design of  bracket should be avoided and has to be justified by technical constraints
+new designed  bracket shall be defined as master parts (parametric bracket design)
+all removable  unions shall be positioned to be accessible with a torque wrench
+the fire-sensing element shall be segregated to any  structure by at least 6mm. the normal gap between the structure and the fire-sensing element should be 15 mm
+the average pitch between two  attachment device shall be defined with 200 to 250 mm on the support tubes straight parts
+the average pitch between two  attachment device shall be defined with 150 mm on bends on the support tubes
+the minimum  bend radius should be defined with 25,4 mm for silicon dioxide harness installation 
+the connector cable should be fixed in a maximum distance of 41.9 mm between the first clamp and the end connector of the element
+the cable should be routed straight between the first clamp and the end connector of the element
+the raceway shall be installed in horizontal orientation or up side down orientation
+raceway shall be installed in horizontal orientation or up side down orientation see attached illustration
+bundle shall be attached inside raceway either by cable retainer system
+nsa 935401 shall not be used inside raceway
+adjacent raceway shall be installed with the same profile and size
+raceway shall be provided with max 80% fillrate including 20% capacity of growth in fuselage
+raceway shall be provided with max 80% fillrate including 20% capacity of growth in wing leading edge
+raceway shall be provided with max 65% fillrate including 20% capacity of growth in wing trailing edge
+raceway breakout shall be attached with breakout bracket
+a draw wire shall not be used inside closed/convoluted conduit/sleeve with at least one removable end (e.g. connector, terminal, etc
+a draw wire shall be integrated with nsa 936603 shrincable cap in all areas except hot areas, with at least one removable end (e.g. connector, terminal, etc.)
+a draw wire shall be integrated with nsa 936601 crimped cap in hot areas,
+a bundle shall be installed with interrupted closed/convoluted conduit/sleeve at nsa 934710 pressure seal and abs 1571 pressure seal
+abs1353 overbraiding shall be installed taken into account the table below
+bundle can be routed with other main routing when protected with en 6049-009 open sleeve
+fireresistant attachment device shall be used in class e fire compartment for fire resistant bundle
+fireresistant connector shall be used in class e fire compartment for fire resistant bundle
+unused cavity shall be sealed in class e fire compartment
+non fire resistant component/item/object shall be protected in class e fire compartment with fire protection means, e.g. stainless steel boxes
+printable wire shall be identified directly uv laser on the insulation
+printable wire shall be identified directly by uv laser on the insulation
+the identification shall be installed on the wire along the entire length
+the nsa 937201 identification sleeve shall be used in pink colour for all the safety cables/wires (whatever the cable/wire material)
+the nsa 937201 identification sleeve shall be used in grey colour for aluminium cable/wire
+the nsa 937201 identification sleeve shall be used white for non aluminium cables/wires
+the nsa 937201 identification sleeve shall be used to be printed with identification characters in black colour
+the nsa 937201 identification sleeve shall be used for draw wire only draw wire shall be indicated on the sleeve
+nsa 937201 identification sleeve shall be used for spare wire with only spare wire printed on the sleeve
+optical cable shall be identified with nsa 937201 identification sleeve
+fin identification shall be attached to bundle with asne 0248 label in white color or in pink color for efcs-route
+fin identification shall be attached to structure with asne0470 label or abs 0724 label in white color or in pink color for efcs-route
+fin identification shall be attached to structure with nsa 931025 metallic label in white color or in red color for efcs-route on copper cables / wires or in pink color for efcs-route on alluminium cables / wires
+nsa 937201 identification sleeve shall be attached to multicore cable or twisted cable at maximum d<=150mm from cable end
+twisted 3 core wire shall be identified with nsa 937201 identification sleeve placed behind the lug not on the crimped area
+multi core wire shall be identified with nsa 937201 identification sleeve each core after untwisting over a length of l>20cm
+shielding ocntinuity connection shall be identified with nsa 937201 identification sleeve with a white background printed in black or with a pink background printed in black on safety wires
+each feeder wire shall be identified as detailed in the figure below with
+fin identification shall be identified with asne 0248 label or nsa 937201 identification sleeve
+fin identification shall be identified with asne 0248 label printed black on white background for all circuits except efcs and printed black on pink background for efcs
+nsa 931025 metallic label shall be protected with varnish after printing when installed in unpressurized area
+route identification marker shall be attached with nsa 935401 or nsa8420-7
+optical cable shall be identified (fin, route, cable identification) in the same way as electrical cable/wire and harnesses
+asne 0248 identification label shall be attached to optical cable with  lacing tape printed in black on white background
+flag datum marker shall be attached diect on bundle in light blue background with black line pre pronted
+abs 5342-02 flag datum marker shall be attached
+abs 5342-02 flag datum marker shall be installed on bundle prrotected with  nsa935805 convoluted conduit
+abs 5342-02 flag datum marker shall be attached in  combination with  en 6049 split conduit directly on the  bundle
+abs 5342-02 flag datum marker shall be attached on dynamic bundle as shwon in the picture above
+optical dummy receptable shall be identified with label fitted near that receptable with white background printed in black as shown in the figure below
+abs 1569 terminal modul shall be identified with  nsa 937901 clipped label
+unblanked ventilation holes shall be identified by endible marking, see figure below
+en 3545 connector shall be used
+abs 0121  connector shall be equipped with stainless steel  en 2997 connector
+back shell shall be used only on removable part of connector in pressurized areas
+back shell shall be used on movable part of connector on fixed part of connector in unpressurized areas
+connector should not be installed vertical axis orientation, see as well attached figure
+circular connector shall be positioned with the  master key way in top orientation, see as well attached figure
+pin locking of connector shall be integrated with n polarization in relation to master key way orientation
+the cable shall be routed straight between the detector head and first fastening clamp of fire detection sensing circuit
+optical  connector should be installed taking into account connector dimensions
+power virtual terminal block (vt) should not be installed in swamp and flammable fluid leackage zones
+virtual terminal module (vt) should be installed providing space d for the access to the screws for fixation
+abs 1569 terminal modul should be attached in groups of four (maximum),
+bonding/ grounding bracket should be positioned as described in figure below
+virtual pressure seal (vp) should be defined to permit free pass of connector and bundle
+virtual pressure seal (vp) shall be defined to ensure 2.5 mm additional clearance between the bundle and
+abs1571 pressure seal shall be integrated except for  g route and e-route for passing from pessurized to unpressurized area for all other-route
+abs0861 fire seal shall be integrated toguide bundle from fire areas to other areas
+non coded electrical component shall not be installed in line with bundle except splice and solder sleeve
+virtual splice (vs) shall not be used for basic design, except for can-bus technology
+virtual splice (vs) shall not be used in efcs circuits
+resistor shall be installed only on  virtual terminal module (vt) in horitontal position and placed on either side of the end plate nsa 936809
+diode shall be installed only on  virtual terminal module (vt) in horitontal position and placed on either side of the end plate nsa 936809
+parallel splice shall be used on copper wire only
+dedicated  connector plate shall be provided for efcs connector
+nsa937901 virtual modul rail shall be installed with a maximum pitch of 350mm
+nsa937901 virtual modul rail shall be fixed in a manner that the fixation is accesseable in any case
+route segregation shall be provided by dedicated virtual pressure seal (vp) for each route
+support tubes shall be installed with sufficient bracket
+connector shall be attached on structure like in the figure below
+virtual terminal block (vt) shall be attached on structure like in the figure below
+en 3645 shall be attached with two diametrical opposed screw in pressurized area
+en 3645 shall be attached with four diametrical opposed screw in un-pressurized area
+en 3645 shall be attached by their own clip and snap technology
+jam nut connector shall be used inside fuel tanks
+nsa937901 virtual modul rail shall be locked by lock wire for efcs moduls
+virtual terminal block (vt) shall be locked by lock wire
+non coded electrical component shall be integrated with  given in the installation drawing
+non coded electrical component shall be attached adequately, e.g. to  ramp or to  bundle
+circuit breaker shall be installed on  bus bar to be remobvable individually
+protection means shall be defined in  drawing
+umbrella shall be defined in non metallic material with dimensions shown in the figure below
+the sio2 cable should be installed with a minimum clearance of 6mm to the aircraft  structure
+ejection port tee- junction should be defined in the same way as single tee- junction
+nsa 9504 boot should be positioned with a maximum angle +-60Â° referenced to aircraft axis
+connector shall be protected with removable blanket, when installed in the ceiling area
+unused circular receptable shall be protected by en3646-009 protective cap
+unused coaxial  receptable shall be protected by abs 0916 shrink sleeve
+unused coaxial  connector shall be connected to stowage receptable
+unused arinc receptable should be protected by  asne0176 protective cap
+asne0176 protective cap should be attached with  nsa8420 lacing tape
+virtual terminal module (vt) shall be protected by drip loop and  asne0616 sealing plug and sealed modules shall be used
+virtual terminal block (vt) shall be protected by drip loop and  electrical shock protection
+vn should be protected by drip loop except if installed inside vu
+vg virtual ground should be protected by drip loop except if installed inside vu
+asne0425 sealed vg shall be protected by drip loop and   asne0616 sealing plug in al area except inside vu
+asne0425 sealed vg shall be protected by drip loop inside vu
+relay shall be protected by asne0616 sealing plug when installed outside vu
+unsued bases of relay shall be protected by end caps when installed outside vu
+switch shall be protected by asne0616 sealing plug when installed outside vu
+soldered connection shall be protected by conduit
+bonding lead shall be protected by nsa937210 heat shrink sleeve when contact to other bundle or structure is possible
+screw shall be used to fasten a electrical active item which are protuding 1,5 thread after tightening, see picture below
+socket shall be installed to the loose connector (plug)
+connector for arinc shall be defined with the socket contact in the  connector
+abs 0916 shrink sleeve shall be installed on large gauge  contact when smal gauge wire are connected
+two abs0916 shrink sleeve shall be installed in arinc 600 connector at outlets of contacts with reduced
+abs0455 backshell shall be installed with nsa935403 silicon tape or  asne5107-b arounfd the bundle
+abs0455 backshell shall be installed with spacer to limit the loads applied to the bundle
+en3660 backshell shall be installed with 2  nsa5527 spacer to limit the loads applied to the bundle in case of thick bundle
+all connector shall be locked by self-locking component or by lock wire
+optical multiway  connector shall be protected inside back shell by asne5107-b
+terminal lug shall be defined compatible with  virtual terminal block (vt) see in the table below:
+aluminium terminal lug shall not be bend
+feeder lugs shall be protected with  abs0916 shrink sleeve
+asna2553 spring washer shall be used for bus bar fixation
+one or two  nsa937493 insulating sleeve shall be installed on virtual splice (vs) following the picture below
+boxes and panel shall be locked with quick release fastener for visual inspection of locking
+all movable panel shall be fixed with captive quick release fastener
+equipment shall be attached with  lock wire or self-locking component
+en3739 rivet shall be installed inside panel or equipment see attached graphik
+asna0327 rivet shall not be installed inside panel or equipment
+only electrical item shall be used inside power center which are non loosable or non remobale
+lock wire should not be used inside power center
+asn53203 rupturing wire shall be installed on cockpit vu on all  switch guard
+metallic label shall not be installed inside a box or panel
+all box, panel shall be identified with nsa9117 identification label
+nsa9117 identification label shall be defined in english  language
+vu shall be identified by  nsa9117 identification label as detailed in graphic below
+label shall be attached on vu at electrical interface showing functional item and the vu number
+bundle shall be identified inside large vu following the rules for normal ac wiring
+unless otherwise specified pipes shall be segregated to primary structure by 10mm minimum
+flexible hoses shall be segregated to primary structure by 20mm minimum
+pipes shall be segregated with a basic clearance to each other as shown in the attached figures
+pipes shall be segregated with a minimum clearance to each other as shown in the attached figure
+ata26 pipes shall be segregated to any other mechanical ata according to the attached table
+pipes shall be equipped with flare less hydraulic junction only
+pipes shall be defined with bend angle(s) between 0Â° and 90Â°
+pipes shall be defined with a bend radius of 2d or 3d as shown in the attached figure
+nsa5569 double  clamp shall be used for independent parallel detection loops as defined in the attached figure
+pipes shall be attached by clamp with a maximum distance as defined in the attached table
+saddle clamp, p-clamp, clamp-block shall be positioned with a distance to the next pipe  bend with a clearance of at least 10mm as shown at the attached figure
+pipes shall be defined without any low point in the fire extinguishing circuit as shown in the attached figure
+pipes shall be defined with sufficient space for replacement in case of repair. (see attached figures)
+flexible hoses shall be defined with maximum one elbow fitting
+only  unions, pipes shall be used which are defined in the attached table
+only  pipes, unions shall be used which are defined in the attached table
+pipes shall be labeled according to nsa0141 with a location as shown in the attached figure
+washer shall not be used in the fuel-tank
+pipes shall be defined only in the sizes as defined in the attached table
+all pipes shall be fixed only by non-conductive  bracket or  grommet
+clamp-block shall be used in hidden zones and within the fuel tank
+p-clamp shall not be used to fix  pipes onto  structure
+reinforced saddle clamp shall be used for dash 20 & 24 sizes where high deflection levels may occur
+pipes shall be defined with a minimum 5 mm additional gap between unions
+unions shall be installed after two fixation points after bends
+unions shall not be installed at bending branches of pipes
+double thread unions shall not be used
+separable hydraulic unions shall be equipped with spray cover in pressurized areas
+suction pipes shall not be used inside fuel tank
+flexible hoses shall not be used inside fuel tank
+multi-functional label shall be positioned as close as possible to pipe end extremities
+glued label shall not be used in the fuel tank
+the label shall be positioned in a sufficient distance from the pipe extremity
+pipes should be defined with bend angles depending on the used material
+floating  clamp-block should be used instead of p-clamp
+size 04 to 32  pipes may be routed separately using "single hole" type  clamp-block
+special clamp-block shall not be used for flexible hoses and pipes
+maximum 5 pipes should be installed per clamp-block
+fully separable flying tee- unions should not be used
+3-hole bulkhead  unions should be used for  routings passing from pressurised zones to non-pressurised zones (or vice versa)
+2-hole bulkhead  unions may be used
+highly resistive  unions should be used in the fuel tanks
+hydraulic  flexible hoses, pipes, unions, equipment should not be installed in fuel component areas
+highly resistive  unions should be used for all pipe routings passing through any fuel tank boundaries
+flexible hoses shall not be defined with two elbow unions
+para-aramid braided non-metallic  flexible hoses should be used at aircraft section interfaces (fuselage-wing and fuselage-htp/vtp)
+separable  unions should be equipped with a  spray cover in a pressurized zone or close to electrical connectors
+the  drain bottle shall be installed in a vertical position
+abs2226 flexible hoses shall be used
+flexible hoses shall be defined with a maximum length of 500 mm regardless of the diameter
+abs2195 (preferred for weight saving) or nsa5516j  p-clamp shall be used for pipe fixation
+rigid pipes shall be segregated to fixed structure by not less than 10 mm as shown in attached figures
+flexible hoses shall be segregated to rigid component/item/object by not less than 20 mm as shown in attached figure
+rigid pipes shall be segregated to movable component/item/object by not less than 10 mm as shown in attached figure
+flexible hoses shall be segregated to movable component/item/object by not less than 25 mm as shown in attached figure
+unions shall be fixed on pipes at alternating positions as shown in the attached figure
+unions shall be positioned close to one fixation point
+abs5151d5-035 & abs5151d6-035 pipes shall be used
+abs5004-xxxx pipes shall be used
+the pipes shall be routed as long as possible in pressurized and thermally regulated areas of the fuselage
+pipes shall be bend with a bend radius between 3d and 5d
+pipes shall be defined by taking into account a minimum straight distance between two successive bends of 25mm as shown in the attached figure and table
+spacer may be installed between  p-clamp and bracket for specific cases as shown at the attached figure
+nsa5527  spacer shall be used
+grommet shall be installed between two clamp-block or saddle clamp
+pipes shall be installed in grommet at a 90Â° angle to crossed structure
+only a single bend shall be provided in the  flexible hoses routings
+bended pipe shall be installed with bend radius in my opinion i think that
+double staging clamp-block shall not be used
+special clamp-block should not be used for  flexible hoses and pipes
+all equipment, pipe shall be identified by adhesive labels or attachable labels according to abd0003 and abd100.2.9
+all equipment, pipe shall be identified by adhesive labels or attachable labels according to abd0003 and abd100.2.9
+electrical component/item/object shall be locked with self-locking component as a first priority with locking compound with activator on second priority  with lock wire on thrird priority
+all component/item/object shall be identified with red frangible paint after tightening when locked with locking compound
+component/item/object shall be qualified for continuous fuel immersion when installed inside fuel tank
+self-locking component/item/object shall be identified with red frangible paint after tightening when locked with locking compound
+the minimum of bundle shall be routed in hydraulic compartment except the ones which are directly connected to hydraulic systems
+clearance shall be calculated considering movement of  other systems e.g: hinge arms,  floor, panel, cabin equipments, galleys, hat racks
+g-route shall not be installed taking into account loap if attached with bobbin
+g-route shall be installed taking into account loap if attached with clamp
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall not be routed taking into account cut of wire if protected with closed/convoluted conduit/sleeve e.g. nsa935805 or  abs0887
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall not be routed taking into account cut of wire if protected with open/split conduit/sleeve or other types of en6049
+2 or more bundle may be routed together for 300mm maximum from the last attachment point to the connection when an electrical protection is fitted on one of the bundles, even if differ in route number(e.g. 1m and 2m) and/or route categorie (e.g. 1m and 1s)
+separators shall be used in a minimum and only, when segregation can not be ensured by attachment devices
+feeder of g-route shall be segregated by lacing tape when they may get into contact with each other
+g-route, feeder wire shall be installed  diametrically opposite each other when routed in g-route bobbin configuration as shown in the graphic above
+the bend radius shall be defined for g-route with 6 times bundle diameter minimum  when routed in bobbin configuration
+each single  wire shall be bend 6 times outer diameter minimum when awg is between 26 to 10
+each single  wire shall be bend 8 times outer diameter minimum when awg is between 8 to 4
+each single  wire shall be bend 11 times outer diameter minimum when awg is between 3 to 0000
+g-route, p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be routed with  drip loop before entering connections (e.g. vc, vt, vg, vn) except if the last attachment point is lower than the connection / sagging or termination
+g-route, p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be routed with  drip loop at both sides of pressure and fire seals except if the last attachment point is lower than the connection / sagging or termination
+p-route shall be attached with attachment device withstanding  in peak condition minimum 150°c if installed in boxes
+splice shall be installed on bundle on normal installation in accordance with the figure below where requested by flight test engineer
+p-route, t, u, v-route, m-route, r-route, r-route (optical)  , s-route should be connected above the cargo floor unless connected to systems located under cargo floor, e.g antenna..
+g-route shall be segregated from conductive composite structure by d>= 75mm without additional protectionor  75>= d>= 37mm   if there is an adidtional protection on the cfrp part or  by 37>= d>= 25mm  if there is an adidtional protection on the cfrp part  secoured routing case a or b
+p-route shall be segregated from conductive composite structure by  d>= 37mm without additional protectionor  by 37>= d>= 25mm  if there is an adidtional protection on the cfrp part  secoured routing case a or b
+m-route, r-route, r-route (optical)  , s-route, t, u, v-route shall be segregated from conductive composite structure by  d>= 20mm without protectionor  by 20mm >= d >10mm   if there is an adidtional protection on the cfrp part  secoured routing case a or b
+g-route, p-route shall be segregated from metallic structure or non conductive structure below route by d>=25mm
+g-route, p-route shall be segregated from metallic structure or non conductive structure beside (horizontal) or above by d>=20mm
+g-route, p-route shall be segregated from metallic structure or non conductive structure by 20mm >= d >= 10mm if secured routing case a, b or c is fullfilled
+m-route, r-route, e-route, s-route, t, u, v-route shall be segregated from metallic structure or non conductive structure by 20mm >= d >= 10mm if secured routing case a, b or cor  by 10mm >= d >= 0mm   if the bundle is mechanical protected  if there is no relative movement between structure and bundle  maximum surface roughness is 3,2 microns (ptfe)
+p-route, m-route, r-route, s-route, e-route, t, u, v-route shall be segregated from metallic structure or non conductive structure below the route by d>=25mm
+m-route, r-route, e-route, s-route, t, u, v-route shall be segregated from metallic structure or non conductive structure beside (horizontal) or above by d>=20mm
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall be segregated from flammable fluids by d >= 50mm wihtout additional protectionor  by 50>= d >= 25mm  if an electrical protection is applied or there is a secured routing case a or b
+g-route, p-route, e-route, m-route, r-route, s-route, t, u, v-route, r-route (optical)   shall be segregated from moving components or mechanical cable by d>= 50mmor  50>= d >= 25mm, iif an electrical protection is applied
+g-route, p-route shall be segregated from non flammable fluids or gases by  d >= 50mm d >= 37mm without additional protectionor  37mm >= d >= 25mm with and electr. protection on the pipe and secured routing case a or b
+g-route, p-route, e-route, m-route, r-route, s-route, t, u, v-route shall be segregated from gaseous oxygen by 150mm>= d >= 25mm if an electrical protection is applied or secured routing case a or b
+m-route, r-route, s-route, t, u, v-route shall be segregated from gaseous oxygen by 25mm>= d >= 13mm if an electrical protection is applied and secured routing case a or b
+g-route, p-route, e-route, m-route, t, u, v-route shall be installed taking into account loap with a  clearance of d>= 25mm after loss of attachment point to fuel tank wall
+r-route, r-route (optical)  , s-route shall be installed taking into account loap with a  clearance of d>= 10mm after loss of attachment point to fuel tank wall
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall be installed in case of crossing-route except  4s and 5s-route a distance d>=25mm except 4s/5s with a disnance of d>=25mm  d>=10mm in case of secured routing  and at least one harness is equipped with an electrical protection
+g-route shall be installed in case of crossing-route with a distance d>=50mm  d>=25mm to other bundles iin case of secured routing and at least one harness is equipped with an electrical protection
+4s and 5s-route shall be installed in case of crossing-route with  a distance d>=25mm to other bundles in case of secured routing
+seletion of  separators shall be provided following  zone characteristics concerning the used material with priority: 1. hot zone  2. swmap area  3. non-pressuized area  4. pressurized area
+spacer shall not be used in between clamp when p clamps in butterfly configuration are used as separators
+bundle shall be added on protected bundle only when carrying the same protection as the bundle attached on
+multi branch single derivation shall be used when  cable are mainly comming from one side
+when overbraided bundle shall be installed with two derivation the derivations shall be separated by 150mm
+derivation shall be defined from overbraided bundle having a minimum length of 250mm
+overbraided bundle shall be defined with  diameter/section between 5mm <= d <= 30mm
+repair over length shall be provided on copper bundle with gauges 26 to 12 by 14mm each end (for 2 repairs)
+repair over length shall be provided on aluminium bundle with gauges 26 to 12 by 14mm each end (for 2 repairs)
+repair over length shall be provided on copper bundle with gauges 10 to 04 by 20mm each end (for 1 repair)
+repair over length shall be provided on aluminium bundle with gauges 10 to 04 by 35mm each end (for 1 repair)
+repair over length shall be provided on copper bundle with gauges 03 to 0000 by 30mm each end (for 1 repair)
+repair over length shall be provided on aluminium bundle with gauges 03 to 0000 by 60mm each end (for 1 repair)
+repair over length shall be provided xm and kl  cable by 30mm each end (for 1 repair)
+repair over length shall be provided for coaxial cable with length and numbers of repairs defined by the system specialist
+bundle over length shall be provided for  equipment removal by adding 100mm + vu length to the wiring
+equipment  bundle over length shall be integrated suitable to prevent damage or detoriation when the equipment is in its installed position
+bundle over length shall be defined in such a way that individual removal of each instrument is possible without opening or removing any other adjacent item
+bundle over length shall be defined in such a way that individual removal of each equipment is possible without opening or removing any other adjacentstructure parts
+bundle shall be defined at moving components long enough to allow free movement of the mechanical part   but as short as possible
+all pipes shall be fixed by attachment device with a maximum distance like shown in the attached table
+bleed air pipes shall be segregated to each other by the minimum clearances like shown in the attached table
+bundle, pipes shall be segregated to other systems as defined in the attached table
+all sense line, pipes shall be defined with a maximum length of 2m
+all bolt shall be identical for any component. if it can not be met, bolts of different lengths shall not be interchangeable
+duct, pipes shall be defined with a  bend radius of 5xd
+pipes shall be defined by having no less than three support points
+all coupling, pipes, flexible hoses shall be locked in cases where wire locking cannot be avoided, the items should be designed to be locked together as a sub assembly outside the fuel tank
+all pipes shall be defined with an identification marking on each end of every pipe with the pattern edge towards the pipe end as near to the joint as possible without obstruction.  additional markings should be placed at any other point where it will facilitate the tracing and installation of a pipe run
+flexible hoses shall be identified with an impression-stamped identification band of cres steel on
+m-route, r-route, e-route, s-route, t, u, v-route shall be installed with repair over length in drip loop at interface areas or between last attachment point and connection
+g-route, p-route shall be installed with repair over length in defined area as shown in the attached graphic
+g-route shall not be installed in  a complete loop
+as bundle tying device shall be used nsa 935401 cable tie in red colour for bundle to be tied together in fuel tanks
+as bundle tying device shall be used nsa 935401 cable tie  in black color for temperatures between 55°c and 150°c for bundle attachment
+as bundle tying device shall be used nsa 935401 cable tie  in black color or nsa8420-7 lacing tape for temperatures between 55°c and 150°c in case of bundle to be tied togehter
+pipes, flexible hoses, connector shall be segregated to structure or other systems as mentioned in the attached table.   where other system tdd clearances are different, the larger clearance should be applied.  where the clearances cannot be achieved, a deviation shall be launched and the relevant coc responsible shall be contacted
+only male end unions shall be used according to the corresponding pipe material used and the interface style which are listed below:
+fuel pipes shall be installed . in a way that they will not receive loads due to structural deflections (worse case deflections, e.g. ultimate loads or installation loads)  manufacturing tolerances, thermal expansion or equipment operation.  they shall be calculated to guarantee stress free installation
+pipes shall be equipped with rigid coupling for pipe diameter from 0.250 to 0.625 inch. the following exceptions are allowed providing permission of the responsible coc is obtained:
+pipes up to 2.0 inches diameter may be made using rigid pipes and couplings, although these may require sliding unions or flexible hoses to accommodate the expected build tolerances and movements during operation. rigid couplings shall be sidp29 compliant
+pipes down to 0.5 inch diameter may use flexible couplings
+for straight runs in constricted spaces such as in the pylon area, flexible couplings may be needed
+pipes shall be equipped with flexible coupling for pipe diameter from 0.750 to 5.0 inch. the following exceptions are allowed providing permission of the responsible coc is obtained:
+pipes up to 2.0 inches diameter may be made using rigid pipes and couplings, although these may require sliding unions or flexible hoses to accommodate the expected build tolerances and movements during operation. rigid couplings shall be sidp29 compliant
+pipes down to 0.5 inch diameter may use flexible couplings
+as bundle tying device shall be used nsa8420-7 lacing tape for areas with temperatures  >150°c in case of bundle to be tied together
+as bundle tying device shall be used nsa 8420-9 lacing tape for fire areas in case of bundle to be tied together
+nsa 935401 cable tie shall not be used for tying bundles if there is a risk of harness to harness or cable tie head to harness contact
+each metallic part shall be equipped with abs0916 shrink sleeve when in direct contact with bundle  for all areas without hot ones and maximum bundle operationg temperature of 150°c.or  with surface roughness decreasing coating to specification asna2101; code 25 for all areas except hot and only for bundles with maximum operating temperatur of 150°c
+if bracket shall be used for ata 92 fixation point there shall be no other ata chapter (e.g. mechanical systems) be fixed on it
+bundle, harness, wire should not be attached onto moving components if these moving components have no relationship with the electrical wiring
+two attachment device shall be installed with maximum pitch of d <= 580mm in fuselage without protection
+two attachment device shall be installed with maximum pitch of d<= 350mm in pylon
+two attachment device shall be installed with maximum  pitch of 450mm in wing
+loap shall be taken into account by the application of a pitch between attachment points ensure minimum required clearance after loss of one attachment point.or  the installation of ramps, the bundle sould be tied on the ramp and the ramp should be attached independently.or  the attachment pooint shall be fail safe
+attachment device shall be positioned before and after the bend radius axes as shown in the picture below
+maximum pitch shall be provided between connector and attachment device by d <=300mm
+maximum pitch shall be provided between  vn and  attachment/fixation point of d <=300mm except for pylon
+maximum pitch shall be provided between  vn and  attachment/fixation point  of d <= 50mm in pylon
+harness, bundle shall be installed at virtual pressure seal (vp) with maximum  pitch d<= 50mm away from pressure seal when no backshell is mounted on the pressure seal
+harness, bundle shall be installed at virtual pressure seal (vp) with maximum pitch of d <=300 mm away from pressure seal when a backshell is mounted on the pressure seal
+harness, bundle shall be installed at fire seal with maximum pitch of d<= 50mm away fromfire seal when no backshell is mounted on the fire seal
+harness, bundle shall be installed at fire seal with maximum  pitch of d <=300 mm away from fire seal when a backshell is mounted on the fire seal
+attachment device shall be positioned  that increasing bundle diameter do not affect segregation distances
+each e-route shall be attached with a dedicated attachment point when routed alone
+bonding/ grounding bracket should not be used as attachment/fixation point for bundle not electrically connected to the bracket
+the size of bracket shall be taken into account that contact between bundle and bracket is impossible. for d  <   10mm: shall be d <= d.   for d >= 10mm: normal segregation rules apply
+p routes shall be attached on metallic stand-off / colonettes (asna2328 / asna 2327) if stand-off / colonette is used
+r routes, q routes, s routes, t, u, v routes, r(optical) routes  , m routes shall be attached on metallic stand-off / colonettes (asna2328 / asna 2327) in hot and fire zones if stand-off / colonette is used
+m-route, r-route, r-route (optical)  , s-route, t, u, v-route shall be attached on plastic stand-off / colonettes (asb1423 abs1424) exept in hot and fire zones if stand-off / colonette is used
+stand-off / colonettes shall be installed compliant with bundle routing characteristics, e.g. stress
+adhesive bonded bracket may be installed in areas where rivited or bolded brackets can not be installed
+the failure of adhesive bonded bracket shall be taken into account by keeping a minimum distance of 10mm  to adjacent structureor  other parts after occurance of failure of one attachment point (loap)
+the failure of adhesive bonded bracket shall be taken into account for bonding brackets supporting an intermediate bracket by keeping a minimum distance of 10mm  to adjacent structureor   other parts after occurance of failure of one attachment point (loap)
+adhesive bonded bracket shall be used in hydraulic areas in a primed version
+commercial  p-route, m-route, r-route may be installed using adhesive bonded bracket limited to branches derivated from main bundle
+optional technical and commercial  m-route may be routed togehter to a single  equipment on  adhesive bonded bracket when electrical equipment is designed with one connector only
+non pre stressed m-route, r-route, s-route, t, u, v-route shall be attached by v-support  e.g. nsa 935504 for bundlediameter d<48mm or  asne 0435 for bundle d>48mm
+non pre stressed p-route, m-route, r-route shall be attached by p-clamp nsa5516 cbdor  as62200 (not preferred)
+v-support shall be installed by boltor  rivetor  clip
+m-route, r-route, s-route shall be installed on v-support and with a diameter  d<=5mm protected by asna5107-b black tapeor  protective bobbin nsa5539
+when m-route, r-route, s-route, t, u, v-route shall be installed on v-support the bundle diameter shall not be greater then the width of the v-support  taking into account 20% of bundle growth potential
+m-route, r-route, s-route, t, u, v-route shall be installed on v-support with two layer of nsa 5107-b black tape if they are protected by conduit (e.g. abs0887, nsa 935805)
+bundle shall be attached on abs1576 peek ramp without touching the bold head by appropreate routing or  apllication of attachment device at the level of the bold head,   see attached picture
+abs1576 peek ramp should not be attached with  torsion when using abs1576-d01
+abs1576 peek ramp should not be attached with  torsion when using abs1576-e01
+ramp should be attached to structure in a way that they stay in position when bundle is removed: usind attachment devices allowing the removal of the bundle without removing the ramp (e.g. abs0774),or  using dedicated fasteners for the attachment device and the ramp, or  using an axis fastenernsa 5159
+bundle shall be attached to abs1576 peek ramp with abs1576-f02 when the bundle  is crossing the ramp
+bundle shall be attached to abs1576 peek ramp with a v-support when branching off, see as well below picture
+bundle shall be installed on ramp by adding abs1576-f01 to preventing sliding and rotating, when routed on top or on side of a ramp
+p-route, m-route, e-route, r-route, s-route, t, u, v-route shall be attached to  conductive composite structure by non conductive fixed bracket (a) as priority 1 solution,or  by non conductive fixed bracket (a) and non conductive bracket (b)  as priority 2 solutionor  by non conductive fixed bracket (a) and bonded conductive bracket (b) as priority 3 solutionor  by conductive fixed bracket (a) and non conductive bracket (b) as priority 4 solution
+non conductive traverse shall be attached to  conductive composite structure by non conductive fixed bracket (a) as priority 1 solutionor  by non conductive fixed bracket (a) as priority 2 solution
+when g-route shall be installed below cargo floor with d-temple abs 1089 togehter with abs1088 bobbin and asne 0033
+g-route shall be installed with intermediate bobbin in the middle of two frames   in curves with small bent radius
+pipes should be segregated with a minimum  clearance to each other as shown in the attached figure
+m-route, r-route, s-route, t, u, v-route can be attached to circular rod with nsa 5516 p-clamp type b and black tape asna5107 on the rod  and abs 1339 on the bundlel,   if the bundle has less than 25mm diameter
+g-route, p-route, m-route, r-route, r-route (optical)  , s-route, t, u, v-route may be installed with a  distance to any structural part of minimum 10mm in case of: the bundle is crossing structureal edges and  the thickness of the structure at the edge is equal or less than 12,7mm  the bundle is attached as detailed in firgure below
+m-route, r-route, r-route (optical)  , s-route, t, u, v-route, e-route may be installed with a  distance to metallic structure or non conductive structure by 10mm >= d >0mm. when the bundle is crossing structural edges
+m-route, r-route, r-route (optical)  , s-route, t, u, v-route may be installed with a  distance to  metallic structure 10mm > d >= 0mm when the surface is flat   no relative movement between surface and bundle ( attachment pitch less than 200mm)  the bundle is fitted with protection sleeve providing mechanical and electrical protectionor  the structure is fitted with an electrical protection layer with a roughness less than 3,2 micron ( e.g. self adhesive tape ptfe dan 269)
+g-route shall be installed with  abs5429 thermal protection on the primary instlation when direct contact between g-route and primary insulation can not be avoided
+bundle shall be installed with  abs 1020 grommet if vapour protectionor  projection contamination protection is needed, see figure below
+position of derivation shall be integrated between 150mm >d >= 20mm from the attachemnt device of the bundle
+bundle shall be installed in front of fire seal in a straight routing for 20mm (100mm for new design) on both sides by applying  in first priorty a back shellor  in second priority an attachment point in line with the fire seal
+dynamic bundle shall be attached with  double clamping for bundle diameter d >25 mm
+dynamic bundle shall be installed with a guiding device when movement can not be controlled
+bundle shall not be attached on  movable component  type a last attachment point shall be located on the fixed structure
+when bundle shall be installed at hinge no contact with any structure or other item during bundle movement shall occur
+dynamic bundle shall be installed with  mechanical protection between the two fixpoints and secured with cable ties when the movement can not be secured
+dynamic bundle shall be protected with shielded conduit in unpressurited areas
+dynamic bundle may be protected with  overbraiding when the bundle stays inside a 10° cone form the last attachment point
+en6049 split conduit shall be fixed within one attachment device when used for protection of bundle  with at least d <= 20mm within the clamp, see attached graphik
+nsa935805 convoluted condiut shall be attached by p-clamp as
+emi protection shall be installed using abs0513 backshell  nsa5516or  abs1339
+shielded bundle shall be protected by nsa937210 shrink sleeveor   abs 5330 ptfe tapeor  abs 0294or  ansa 5107-b wrapped twice around the bundle
+modification kid shall be attached on overbraided bundle when repair or modification of overbraided bundle is necessary
+unprotected single  optical cable shall be protected with  en6049 split conduit when routed seperatley with a pitch p >=150mm
+unprotected single  optical cable shall be protected with  nsa 5539 protective bobbin when routed seperatley with a pitch p <=150mm
+unprotected single  optical cable shall be attached with  nsa 5107-b black tape when routed inside electrical bundle. on attachment point level
+unprotected single  optical cable shall be attached with  nsa 5107-b black tape when routed outside on electrical bundle. on attachment point level
+unprotected single  optical cable shall be attached with  nsa 5539 protective bobbin when routed outside on electrical bundle on bundle  level
+coaxial cable shall be attached in line with the table below
+coaxial cable shall be tied up togehter with nsa 5107-b black tape before attached to ramp for number of coax n >=1
+coaxial cable shall be installed in front of  arinc 600 connector in the axis of the of the cavity when fitted with asne 0201 contacts
+t, u, v-route, m-route, s-route, p-route, r-route (optical) , r-route shall be installed with mechanical protection when routed in swamp, hydraulic, fflz- zones or in fuel tanks
+bundle shall be protected with mechanical protection when consisting of 1 wire of gauge 20 or gauge 22 or gauge 24 with a length l>=150mm
+bundle shall be protected with mechanical protection when consisting of 1 bifilar wire of gauge 22 or gauge 24 or gauge 26 with a length l>=150mm
+bundle shall be protected with mechanical protection when consisting of 2 wires of gauge 22 or gauge 24 or gauge 26 with a length l>=150mm
+bundle shall be protected with mechanical protection when consisting of 1 wires of gauge 20 and 1 wire gauge 22 or gauge 24 or gauge 26 with a length l>=150mm
+bundle shall not be protected with mechanical protection when linked to vn or vg
+bundle shall be protected with mechanical protection when hidden by removable mechanical items (e.g. hatracks, fuel pump fairings,...) and which are liable to be damaged
+bundle shall be protected with mechanical protection from the last attachment point to the connector of the equipment or panel. when connected to equipment or panels removed from the front side
+bundle shall be protected with electrical protection when identified with additional digit g (e.g. 1mg). split conduit en 60497 is recommended
+r-route (optical) , t, u, v-route, m-route, r-route, s-route, p-route can be positioned with a distance to cfrp area d >=10 mm when the bundle is passing cfrp on a length <= 10mm <br />- the bundle is securely routed <br />- electrical protection is provided
+g-route can be positioned with a distance to cfrp area d >=10 mm even on a length l >10mm when there is an additional protection (peek) attached on the cfrp with a thickness >=3mm <br />- the bundle is securely routed
+r-route, s-route, p-route, r-route (optical) , t, u, v-route, m-route can be positioned with a distance to cfrp area d >=10 mm even on a length l >10mm when there is an additional protection (pa6.6) attached on the cfrp with a thickness >=2mm <br />- the bundle is securely routed and
+first  clamp shall be positioned less than 150 mm from the end connector of the element (to be checked for each type of detection)
+rigid pipes shall be segregated to fixed structure not less than 10 mm unless otherwise specified. in some cases clearance can be smaller: if a fastening mean located at the place of smallest clearance between rigid pipe and structure can guarantee a constant clearance, then the lower limit can drop down to 5 mm as shown on the following figure
+pipes shall be segregated from cfrp- structure with a non-conductive bracket the clearance between the conductive clamp and the structure shall be at least 25 mm
+pipes shall be bend in the range between 0° and 90°
+raceway shall be protected where in contact with cable with insulating material ptfe or peek when zonal or cable temperature is t>150°c
+raceway shall be protected where in contact with cable with insulating material like paint finish inline with spec tna00710003aa011, or pa6.6 finish when zonal or cable temperature is t<150°c
+only  unions, pipes shall be used in the pylon zone which are defined in the attached table
+only  unions, pipes shall be used in the apu zone which are defined in the attached table
+support tubes should be attached on straight parts. at a maximum distance of 254mm
+support tubes should be attached on bends at a maximum distance of 152,4mm
+bundle shall be protected with nsa 937210 shrink sleeve 25mm to both sides of the gap when installed in raceways  <br />- the gap between raceways in g>=3mm
+abs 0514 tube shall be installed instead of abs 0127 cable retainer in wing when access to raceways is limited due to installation behind structure
+abs 0887 convoluted conduit shall be installed with drain holes when installed in non pressurized <br />or<br /> when installed in pressurized hazardous areas
+nsa935805 convoluted conduit shall be installed with drain holes when installed in non pressurized <br />or<br /> when installed in pressurized hazardous areas
+a draw wire shall be installed inside closed/convoluted conduit/sleeve when conduit longer l>0,5m <br />or<br /> the conduit has significant bends
+abs 1571 pressure seal shall be installed with nsa 937502 shrink sleeve or abs 0916 if inside the pressure seal a segregation of e.g. m to mg is required
+nsa 934710 pressure seal can be installed with abs 0887 spare conduit the spare conduit shall be installed on the bundles <br />- the spare conduit lenght outside the bundle shall be 60mm <br />- the ends of the conduit shall be sealed by compount according to tna 0710010 <br />- the section of the spare conduit shall be at least 20% of thebundle section
+bundle shall be protected with en 6049-009 open sleeve defined in tdd92s002d as to be protected and when routed in class e fire compartment
+wire may not be identified when wire length is less than l<=75mm <br />or<br /> they are monitoring cables between circuit breakers
+wire shall be identified with uv laser when possible
+nsa 937201 identification sleeve shall be used for identification when cables can not be printed by uv laser
+nsa 937201 identification sleeve shall be used for identification at the end of the cable/wire
+only nsa 937201 identification sleeve shall be shrunk when installed in power centers  <br />- when the length l of the wire is less than l<=2,5m
+twisted 3 core wire may not be identified with nsa 937201 identification sleeve when having different color. identification is as follows: phase a: red  <br />- phase b: yellow <br />- phase c: blue
+twisted 3 core wire shall be identified with nsa 937201 identification sleeve when having the same color. identification is as follows: phase a: red sleeve <br />- sleeve <br />- sleeve. and
+multi core wire shall be identified with nsa 937201 identification sleeve printed black on white background for each core identifying by a number, characterising all conductors and located at each end  <br />or<br /> identifying by individual numbers for each constituent conductors and located at each end
+shielding continuity connection shall be identified with nsa 937201 identification sleeve in pink color when made with several wires containing at least one safety wire. <br />or<br /> with a pink background printed in black on safety wires
+each cable shall be identified as detailed in the figure below with 1. cable/wire identification and 2. label, fin identification and 3. label, harness identification and 4. label, route identification and 5. label, route identification near flag datum marker and 6. tape, flag datum marker
+fin identification shall be identified near each electrical item on bundle for connectors (vc): a label vc on fixed receptable and vca on moving plugs. or for terminal blocks (vt): a label vt or for grounding modules (vg) or grounding point (vn): a label with the fin/ grounding / bonding / shielding type and voltage or for pressure seals (vp): a label on both sides or for diode blocks (vd) dismantled equipment: a label on both sides or for dismantled splices (vs): a label near the derivation
+fin identification shall be identified near each electrical item on bundle for arinc 600/404 connectors: a label on both sides. or for terminal modules (vt): a label  or for equipment: a label or for circuit breakers: no label required
+fin identification shall be attached on a single bundle and not be group togehter the other-route. when segregation is required
+fin identification shall be installed on structure by using asne0470 label near each electrical item for each component vc, vd, vg, vc, vn, vt, e.t.c with the same identification as on bundle ends. and labels shall be white on black background or labels shall be black or white on red background for efcs circuits
+fin identification shall be installed on both sides of interface plate at pressure seals (vp) and fie seals (vp) or on both sides of interface for vc  or on one side if visible from both sides for vc
+fin identification shall be installed with blue background  abs 0724 label on structure printed in blackor  with blue background label abs 0724 for efcs printed in pink
+harness shall be identified with asne 0248 near each harness extremity printed in black on white background part number  vb number
+route identification marker shall be installed indicating the route category at each harness extremity  all along the harness every 2 meter  in zones of high wiring density
+route identification marker shall be installed showing the route number  the route category  all the code digits except the 5th digit
+spare conduit shall be identified with asne 0248 printed in black on yellow background  containing "spare conduit" 
+4s and 5s shall be identified using abs 1475-01 label along the hanress every 1.2m maximum pitch in straight line harness  close to pressure seal, floor, etc... for hanress passing through  close to extremity components  not applicable inside fuel tanks
+single optical cable shall be identified with  asne 0248 identification label printed with "optical cable" like in the attached figure  along the hanress every 2m  close to pressure seal  close to extremity components  close to optical cable exit  close to route identification labels
+abs 5342-02 flag datum marker should be installed along the hanress in order to manage sagging (dersigner sppreciation)  at the interface connection, at the last attachment point  at harnesses passing through different area (e.g. cabin through cargo floor)  for optical harnesses at the last attachment point before connection
+abs 5342-02 flag datum marker shall be attached as shown in figure below when routed in y-axis
+abs 5342-02 flag datum marker shall be attached as shown in the figure below when routed in z axis
+abs 5342-02 flag datum marker shall be attached as shown in the figure below when routed in x direction
+abs 5342-02 flag datum marker should be attached indicating the following information the frame number by the marking (e.g. fr 74)or  the stringer reference by the marking stxx( e.g. st 6) if needed.or  the coordinate y-axis by the maring y+-xxx (e.g. y+350) if neededor  the word clamp if the datum is a clamp and not directly the structure element
+equipment shall be labeled with  abs 0724 printed with "caution high voltage inside" see also below when containing parts exceeding 42v
+electrical active item shall not be positioned equipment. under removable pipe couplingor  under hydraulic equipment
+connector plate shall be defined with a  spare provision for the cutouts for commercial connector plates 20% for main vu interfaces  for technical connector plates 20% for miain vu interfaces
+connector plate shall be defined with  spare provision for commercial connector plates 30% in pressurized areas  for technical connector plates 15% in pressurized areas
+connector plate shall be defined with  spare provision for commercial connector plates 10% for unpressurized areas  for technical connector plates 10% for unpressurized areas
+en 3646 connector shall be used in small vu class a if electrical shell continuity is not requiredor  class rs if electrical shell continuity is required
+en 3646 connector shall be used in large  vu unsealed for copper   sealed for aluminium cables
+en 3646 connector shall be used in hydraulic zones class a if shell conductivity is not recommendedor  class rs if shell conductivity is recommendedor  en 2997 connector class rs if shell conductivity is recommended
+en 3545 connector shall be used on interface areas class e (sealed) version
+en 2997 connector shall be used in vibration zones class rs is mandatory for p routes up to 23amps  class rs is recommended for other routes
+en 2997 connector shall be used in hot zones class se
+abs 0504 shall be used in fuel immersion zones or abs 0497 + abs 0498
+en 3646 connector shall be used in flammable fluid leackage zones class aor  en 2997 class rs if shell electrical continuity is requiredor  en 3646 class rs if shell electrical continuity is required
+en 3646 connector shall be used in swamp area class aor  en 2997 class rs if shell electrical continuity is requiredor  en 3646 class rs if shell electrical continuity is required
+en 2997 connector shall be used in fire area class se for hot buses and critical circuits
+en 3646 connector shall be used in fire area class a except  for hot buses and critical circuitsor  en 2997 class rs if shell electrical continuity is requiredor  en 3646 class rs if shell electrical continuity is required
+back shell may be used inside vu when cable are not sufficiently supported by clamps, e.g. fear of chaffing or mechanical damage
+rectangular  connector should be installed with an  orientation shown in the picture below, looking at the fixed connector from the front view, if the fixed connector is mounted with pin contacts (en3545xxxm), then pin1 shall be positioned at bottom left corner,or  if the fixed connector is mounted with socket contacts (en3545xxxf), then the socket contact no.1 shall be positioned at bottom right corner
+rectangular  connector should not be installed with an  orientation shown in the picture below. if a horizontal positon can not be avoided, tha backshell shall always be on the bottom
+virtual terminal module (vt) should be installed inside nsa937901 virtual modul rail module 1 located at one rail extremity when the rail is in vertical position, module 1 should be installed on the top.or  when the rail is in horizontal position, module 1 should be installed on the left, when operator is facing the terminal
+asne0073 pressure seal shall be integrated for  g route or e-route alternatively, abs1128 can be used
+abs1571 pressure seal shall be installed with backshell abs1358/59/60 in pressurized area, when electrical continuity is needed  abs1358/59/60 in pressurized area, when electrical continuity is needed  en3600 in pressurized area, when electrical continuity is not needed
+virtual splice (vs) shall not be installed in line with electrical bundle  inside of closed conduits (braided or not),or  under of attachment devices (e.g. clamps...) or cable ties,or  inside of connector back shellsor  in dynamic bundles (type a, b and c) (e.g. bundles at hinges),or  in bended sections of bundles.or  in zones below toilets and galleys
+asne 0541 splice can be installed in line with electrical  bundle  when located in swamp areasor  in hazardous areasor  underneath of removable pipe couplings carrying fluids
+virtual splice (vs) should be attached in line with electrical  bundle ensuring that they are staggered along a harness to avoid contact between them,  located in an accessible area (e.g. in the pullback area for obb),  identified (outside of the conduit if used)
+parallel splice shall not be used for thermocouple cables   gauge differences d>3, e.g. awg16 to awg 20
+circular connector shall be installed with a minimum distance of 15mm to housing of other circular connectors  other obstacles, e.g. structure
+fastening  clamp shall be used in distances as defined in the attached table according to the diameter of pipes
+p-clamp, saddle clamp, clamp-block shall be installed with a minimum clearance of 10mm to the next pipe bending
+rectangular connector shall be installed with a minimum distance given in the picture below to housing of other circular connectors  other obstacles, e.g. structure
+connector segregation shall be provided by dedicated connector plate belonging to different network (network 1 to network 2) on first priority (see also attached picture)or  on one connector plate with dedicated cut outs and increased bundle segregation on second priorityor  on one connector plate with dedicated cut outs and decreased bundle segregation on third priority not recommended
+segregation shall be provided by dedicated nsa937901 virtual modul rail for route category segregation  for network segregation  segregation of efcs from other routing
+two adjajent clamp shall be installed in high vibration level installation areas in a maximum distance of 4 inches (101.6mm)
+strain relief shall be bend with a radius of 6” (152mm) (strain relief corresponds to the manifold tube shown in the attached figure)
+harness shall be defined between two adjacent bends as follow: - if the two bends are in the same plane: 0.625 inches (15.875mm) straight from the end of the first bend to the beginning of the second bend. if a clamp must be located between two bends, a minimum straight length of 1.44 inches (36.576mm) shall be met.or  - if the two bends are in different planes: 2.25 inches (57.15mm) from the end of the first bend to the beginning of the second bend
+the first clamp shall be fixed on the sense-line as close as possible to the detector housing. in no case this distance shall exceed 4 inches (101.6mm)
+fire detector assembly shall be installed with sufficient clearance from surrounding engine/nacelle or pylon components and structure, at least 19 mm clearance (3/4 inches)
+connector shall be integrated electrically inuslated from  structure for mh system (passenger entertainment video)or  mk system (pes: passenger entertainment music)or  mm system (pvis: passernger information video system)or  rd system (telephone)  rf system (cpms cabin and passenger management system
+virtual pressure seal (vp) shall be installed on interface mounting plate with two half parts in order to facilitate removal.on interface mounting plate with  the mounting plate shall be installed on the pressurized side.  the flange of the pressure seals shall be installed on the pressurized side.  the design shall take into account the need to install and remove the pressure seal. refer to aips 07-05-046 and aips 07-05-007
+a virtual splice (vs) shall be attached with  nsa 8420 lacing tape when in line with electrical wires
+unused cavities shall be protected by asne 0616 sealing plug and dummy contact as defined in the table below when protection is necessary
+connector shall be protected outside vu with sealed connector (grommet)  dummy contacts  sealing plugs  in hazardous zones connectors, which can not be sealed, shall be provided with umbrellas
+connector shall be protected outside vu with sealed connector  dummy contacts  sealing plugs  in hazardous zones connectors, which can not be sealed, shall be provided with umbrellas
+connector shall be protected inside vu with cu cable drip loop  sealed connector (grommet)  dummy contacts
+connector shall be protected inside vu with alu cable sealed connector
+connector shall be protected outside vu with sealed connector  dummy contacts
+only pipe shall be installed which sizes are defined in the attached table
+geometry definintion for  support should be defined in accordance with system specialist requirements
+specific nsa5590 double- clamp can be used for adaptation on dedicated support
+bending radii for support should be defined in accordance with standard nsa 4571
+connector shall be protected with drip loop when installed in vertical axis
+connector shall be protected with drip loop and  umbrella when installed in vertical axis
+the fire extinguishing  system should be installed by taking into account strain / distortion / deflection  routing geometry / chains of tolerance
+bend should be used only where unavoidable
+low point shall be avoided along the piping. if not possible, low point shall be drained to avoid potential clogging by ice
+the interface of the drained hole  shall be defined as per as21921
+the definition of flexible hoses shall be submitted to system responsible
+a4-d spacer should be used between the bends for 2 successive (distance < 10 d) 90° bends in the same plane. for 2 successive (distance < 10 d) 90° bends combined at 90°, a spacer of length:  4d must inserted between two bends if r/d =2or  0d (no spacer) between two bends if r/d =3
+piping should be defined to avoid contractions and expansions.  if it is not possible to avoid contractions and expansions the conical geometry as shown in the attached figure should ensure that:  n is constraint by the relation 2n/d1 > 5  d2/d1 < 2
+sharp edges and straight angle  junction should be avoided if straight angle junction is absolutely unavoidable a centreline to diameter ratio r/d should be at least 0.5 as shown in attached figure
+single tee- junction should be defined with a low bifurcation angle [45°  60°], especially for 90° angles.  this should be combined with r/d >2 as shown in attached figure
+y-tee junction should be defined in the same way as single tee- junction y angle should stay in the range : 0<  phi <120°, optimally 90° as shown in attached figure
+cross- junction should be avoided as much as possible.  four way dividing junction: same requirements as single junction,   a low angle junction (45< phi <60°) should be used combined on the left and right leg with a bend with r/d >2 as shown in attached figure
+pipes should be defined by maintaining a straight pipes section between two bends as defined in the attached table
+the ends of tubing shall be defined with flared outlets as per as4330 design standard, with diameters defined on piping network sketch
+anse 0354 connector shall be protected with asne 0126 shrink sleeve from base flange over a length of l=50mm +- 5mm after shrinking
+antenna shall be protected with nsa 9504 boot see as well attached picture. when installed under cargo floor
+nsa 9504 boot shall be installed without overbending the top  to avoid water ingress in the boot  the top of the boot shall be oriented downwards to ensure drip loop
+nsa 9504 boot shall be installed long enough to allow antenna removal without deinstalling the boot
+nsa 9504 boot shall be attached to the  structure by two tieraps nsa 935401or  asna 0033 metallic clamp
+nsa 9504 boot shall be installed with  nsa 935510 protective bobbin or nsa 5539 when the bundle diameter is different to the nsa 9504 boot diameter
+connector shall be protected with abs 0916 shrink sleeve when installed under cargo floor   connected to antennas
+unused connector shall be protected against contamination dummy recetpable should be installed instead of functional recepabletor  dummy plugs when receptable have to be protected
+dummy plugs shall be installed by chain or lanyard for optical connectorsor  connectors for test  optinaonal used connectors (full provisions)
+unused rectangular connector shall be connected to a stowage receptable equipped with dummy contacts and sealing plugs
+unused circular connector shall be connected to a en 3646-11 stowage receptable equipped with dummy contacts and sealing plugs
+where asne0176 protective cap cannot be used a sealed plug with sealed plug and dummy contacts should be used
+a abs0929-006 optical dummy receptable shall be installed near equipment on a  bracket in order to store the plug during maintenance
+connector shall be protected against missue by the following means: use different connector types in size, coding keyway or contact arrangement in first priorityor  the length of cable/wire shall be sufficient reduced to prevent incorrect connection in second priority, see figure below.or  small chain or leads shall be provided to prevent cross connection as not recommended solution , see figure below
+virtual terminal block (vt) shall be protected by drip loop and  electrical shock protection and an umbrella in unpressurized and hazardous areas
+virtual terminal block (vt) shall be protected by drip loop and  electrical shock protection and in fflz and swamp: closed cover preventing from risk of fod on phases
+virtual terminal block (vt) should be installed above bundle and in fflz and swamp: closed cover preventing from risk of fod on phases
+bundle shall be connected to  fuel probe or temperature sensor usinf spade lugs
+two  wire shall not be installed in one single  contact except for pin programming and circuit breaker monitoring in pressurized, non hazardous area
+connector shall be defined with socket on the  plug and the pin on the receptable
+elbow back shell orientation shall be defined in definition dossier at the connector contacts side (front face)  locating pin positioned at the top
+back shell shall be locked on shielded harness self-locking device and locking display in first priorityor  lock wire after they had been tightened with the applicable torque on second priority
+terminal lug shall be integrated with a  distance to  structure by min d>=5mm. this distance shall be ensured even when the terminal lug orientation is reversed.or  or by min d>=3mm with an additional protection
+terminal lug shall be integrated with a  distance to  virtual terminal block (vt) device (partition wall, terminal block covers, etc…) by min d>=2mm
+terminal lug shall be installed putting the one with the largest surface first on the stud  the feeder lug shall be positioned in between distribution lugs.  the copper terminal lug should be positioned unter the nut, when different material lugs integrated on one stud
+the stud of virtual terminal block (vt) shall be defined allowing the  electrical installation of one additional terminal lug this applies to all type of routes, except g routes
+terminal lug shall be installed by taking into account the following rules: putting the one with the largest surface first on the stud  the feeder lug shall be positioned in between distribution lugs.  the copper terminal lug should be positioned unter the nut, when different material lugs integrated on one stud
+terminal lug shall be installed depending on routing to the vt: if the connected wires are routed in opposed directions (e.g. on a terminal block): method shown in case 1 or case 3 of figure below shall be used  if the terminal is such that the connected wires are routed in the same direction: method shown in case 2 of figure below shall be used,  spacer shall not be used between g route terminal lugs
+copper terminal lug shall not be bend for more then  30° for gauge 10 to 0000    45° for gauge 12 to 24
+asna2553 spring washer shall be installed when attaching several aluminium bus barsor  aluminium or cooper terminal lugs with hole diamter 9.52mm
+terminal lug shall not be defined with more than 2 wires crimped to the lug  with wires of gauge 26
+asne0422 tr terminal lug shall not be installed yv type aluminium  wire without of installation of heat shrink sleeve onto the wire insulation prior to crimping
+maximum three terminal lug shall be connected to one vn the vn screw length shall allow installation of one additional terminal lug (for in-service needs).  this applies to all type of routes, except g
+one terminal lug shall be installed on circuit breaker connection in exceptional cases a maximum of two lugs can be installed on circuit breakers:  for contacts of monitoring cables  when designs foresee this application
+equipment should be positioned not in hazardous zones.  not underneath of removable pipe couplings, caring fluids  as to allow accessibility during maintenance,  and orientated in a direction that connectors do not face upwards.  taking into account heat dissipation  as to allow correct electrical installation
+equipment shall be protected with  umbrella in hazardous area  other areas were dripping fluids have to be anticipated
+inside equipment shall be used abs 1339 p-clamp or abs2195 clamp or nsa5516cbd clamp for stressed and big harnesses only
+equipment shall be identified by plastic or metallic label on a/c  structure as detailed in graphic below positioned above or left hand side of the equipment/standard item (when looking at the front side/facing connections)  other positions are permitted only when previous positions cannot be used.  they shall always be visible when the equipment is installed
+abs 0724 label shall be used inside  vu to identify mounted on modules resistor,  diodes,  condensers, see also graphic below
+label shall be installed for equipment  rack beside  connector asne0161or  asne0163or  asne0165or  asne0086or  asne0145or  asne0147 or derivative as detailed in figure below
+asne 0248 identification label shall be installed to identify bundle in small vu except for cut-off connectors (vc)or   modular terminal blocks (vt)or    ground connections (vn)or  lighted label connectors (lf) or  diodes and diode blocks (vd)or   relays,  breakers,  soldered selectors as shown in the figure below
+bundle shall be identified with yellow asne0646 identification sleeve inside in small vu for fixed cut-off connectors (vc)  modular terminal blocks (vt)   ground connections (vn)  lighted label connectors (lf)  diode modules (vd)
+bundle shall be identified by asne 0248 identification label when connected to the same standard equipment. when asne0248 cannot be installed sleeve nsa937201 shall be used.  the identification shall be printed vertically or horizontally in relation to the cable marker attachment holes as detailed in figure below:
+pipes shall be defined without contractions and expansions as far as possible if it is not possible to avoid contractions and expansions the conical geometry as shown in the attached figure shall ensure that: n is constraint by the relation 2n/d1 > 5d2/d1 < 2
+pipes shall be defined with a minimum straight length between bends as defined in the attached table
+pipes shall be segregated to each other as defined in the attached figure / table for maintenance & repair when required
+saddle clamp shall be used for the routing of one single pipe as preferred solution
+clamp-block shall be used for the routing of two or more pipes
+pipes shall be fixed by on hole clamp-block or reinforced saddle clamp for large pipe sizes (size ≥  20)
+double staging clamp-block shall not be used as well as superposing pipelines
+pipes shall be fixed by saddle clamp or  clamp-block in a distance given in the attached figure / table
+pipes shall be fixed with intermediate p-clamp or  clamp-block to neighbouring pipes if where the support distance dimension between the two attachment points is higher than maximum support distance of their nominal support dimension (as per attached figure)
+unions shall be positioned close to one fixation point to allow for axial movement a minimum clearance value (1) of 10 mm shall be guaranteed between unions and fixing points
+unions shall be fixed on pipes at alternating positions as shown in the attached figures
+routings shall be provided with repair zones if they are localised in specific areas (such as fuel tanks and pressurised zones)  in difficult access areas and that are assembled with permanent unions. please refer to the attached figure.  these repair zones shall be localised to allow the repair of pipes in such a way that they can cover any problem occurring in the identified zones without removing the entire pipe
+pipes shall be defined with a clearance between saddle clamps or clamp blocks and the beginning of a pipe bend of at least 10mm
+routings shall be defined by taking into account a minimum straight distance between two successive bends as shown in the attached table
+routings shall be defined by taking into account a maximum straight distance between two successive bends of 2500 mm
+a spacer shall be used between p-clamp for special case
+a spacer shall be used between p-clamp for special case
+the routings shall be defined to minimise pipe crossings within the same bundle and optimise the use of unions. see attached figure
+pipes shall be defined with an optimal length be ≤ 4 metres and a maximum length of 6 metres
+1000psi and 3000psi pipes shall be defined with a minimum length as defined in the attached figure and table
+5080 psi pipes shall be defined with a minimum length as defined in the attached figure and table
+flanged bulkhead unions shall be used for bulkhead connections
+thermally isolated flanged bulkhead  unions shall be used for case drain pipes which are fixed directly to composite structure.  see attached figure
+bulkhead unions shall be segregated with at least 5mm in addition to the specified clearances and distances between pipes
+the installation of  flexible hoses, pipes shall be defined such that it will not be possible that any cross connection of hoses and pipes to occur
+pipes shall be defined by taking the minimum straight distance containing an in-situ swaging between two bends into account
+hydraulic pipes shall be labeled in accordance with abs1472
+every pipe shall be labeled or marked
+any equipment shall be identified by a fin  label which has to be located next to the equipment  and readable when the equipment is installed
+the installation and location of a  bracket shall be defined by taking the basic clearance definition into account
+pipes should be insulated from any  structure by a non-conductive  bracket the clearance between the conductive clamp and the structure should be at least 25 mm (air-line distance 10 mm) as shown the attached figures
+pipes should be installed stress free
+saddle clamp should be fixed directly onto bracket which may then be fixed on to the aircraft structureor  on to a second intermediate bracket
+special grommet may be used for specific cases
+pipes should be installed in clamp-block from the smallest dash number to the largest (as far as possible)
+only pipes should be installed in a single clamp-block if they are from a single circuit (e.g. same colour code)
+small (dash number 04 to 08)  pipes should be fixed by using specifying fixation devices
+independant bracket shall be used for different sub-systems (different colour code)
+p-clamp should be used with or without spacer or floating clamp-block when clearance between pipes is less than the recommended values  to prevent chafing and vibration phenomenon for rigid pipes
+intermediate bracket shall be installed between the two existing attachment points if the distance between the attachment points is higher than the distance given in the relevant requirement (as shown in the attached figure)
+flexible hoses, pipes shall be installed such that no torsion or tension forces shall be introduced during the installation
+pipes shall be installed such that the installation introduces constructive design principles including:  saddle clamp and clamp blocks limitation.  bends limitation.  space gain.  reduction of pressure drop
+straight pipes shall not be used in routings which could possibly induce constraints between two fixed points
+pipes, flexible hoses should be routed in order to limit mechanical stress. refer to the attached figure for examples
+in general,  routings shall be defined in a way to take pipe routing, fixing point location and geometry orientation into account
+unions shall be selected depending on the type of connection to be realised,  the zone where the connection is located,  the material of the pipes to be connected,  the environmental conditions  the cost of the union
+permanent unions should be used wherever the installation does not require the removal of pipes
+standard connector, unions shall be selected taking into account cost & weight saving
+tee- unions shall be used if it is required to distribute fluid from a single source through several pipelines
+tee- unions should be fixed on at least one pipe at a position close to the tee-union by either a bulkhead or bracket, so as to minimise the loads on the union
+flying tee- unions should be avoided where possible
+different bulkhead  unions should be used as well as sealing principles depending on the specific zoning
+3-hole bulkhead  unions should be used for routings between two pressurised zones or  between two non-pressurised zones, in preference, however, 2 hole bulkhead connections may be used according to the structural environment  where insufficient space for 3 hole bulkhead connections exists.   additionally, 2 hole bulkhead connections are only permitted for metallic structure and are not permitted to be used in tank boundaries or  on composite structure
+connections on  pipes, flexible hoses, wire, duct, cable shall be defined such that reversed or crossed connection is impossible
+differently sized  pipes, unions shall be used even as the use of special  unions (such as line adaptors) as the preferred method of fool proofing
+spray cover should be used for the specific configuration where limited space does not permit sufficient clearance between hydraulic and electrical items (in particular for connections)
+spray cover should be used to prevent contamination of other systems in close proximity to the hydraulic connections   for locations where fluids are not drained
+grommet should be used for pipe  routings through all other tank ribs (within fuel tanks),  as per ans2125
+flexible hoses shall be defined by taken into account the functional movements of the hose and associated pipes
+elbow  unions shall be used for  flexible hoses only where absolutely necessary
+flexible hoses shall not be defined to the minimum permissible bend radius
+saddle clamp, grommet may be used for the support of long flexible hoses however, in these cases, the installation must be designed to take into account the functional movements
+flexible hoses shall be defined such that sliding of the hoses in the supports is not possible
+flexible hoses shall be defined such that both operational tolerances and installation tolerances are taken into account  under no circumstance will the tolerances cause the minimum hose bend radius rule to be broken
+pipes should be identified in the tank area by electro etching
+routings shall be defined by taking zone specific parameters into account for clearances like:  strain/distortion  deflection  routing geometry  chains of tolerance
+pipes, flexible hoses shall be segregated to each other as defined in the attached figure
+flexible hoses, pipe shall be segregated to movable  flexible hoses by taking the hose amplitude movements into account
+unions shall not be used in distortion areas for very long hydraulic pipes (longer than 4m)
+long straight  pipes shall be defined with expansion loop (for pipe sizes up to 12)
+long straight  pipes shall be defined with  flexible hoses (for pipe sizes larger 12)
+long straight pipes shall be defined with in situ swaging  if no other solution is selected
+p-clamp should be used only as a complementary fixing between two rigid fixed points
+pipes shall be defined to cause no leakage to the pipe itself or any other pipe on the flying tee-union in case of deflection
+two connections of a tee- unions shall be defined permanently swaged in order to accommodate pipe manufacture and installation tolerances
+four possible highly resistive  unions may be used abs2017  high pressure lines, non-fuel zone to fuel zone connection. (5000psi)or  abs2018  low pressure lines, fuel zone to fuel zone connection. (1000psi)or  abs2106  low pressure lines, non-fuel zone to fuel zone connection. (1000psi)or  abs2121  high pressure lines, fuel zone to fuel zone connection. (5000psi)
+flexible hoses should be defined with sufficiently different hose lengths
+different sizes of flexible hose end  unions should not be used to avoid faulty connection
+hydraulic  flexible hoses, pipes should not be routed above or near electrical routings or hot air (bleed or air conditioning) ducts
+each  bracket should be installed with the applicable positional tolerance
+each  bracket should be installed with the straightness tolerance with respect to its neighbouring brackets
+in-situ swaging or  flexible hoses shall be used for dealing with major potential misalignments
+identification label should be attached such that one label on a pipe extremity is visible at all times
+bulkhead unions shall be positioned in order to guarantee label accessibility and visibility from each side of the structural wall
+the elongation of  pipes shall be taken into account and is summarised in the attached table
+a flag note shall be added to indicate the protection needed on each electrical bonding symbol when using the rg20 code
+a flag note shall be added to indicate the protection needed on each electrical bonding symbol when using the rg20 code
+in-situ swaged unions shall be positioned to provide sufficient space for tool access and, as far as possible, sufficient accessibility for people comfort during the operation.   particular caution shall be taken concerning the order of swaging union operations
+in-situ swaged  pipes shall be segregated to each other with sufficient clearance between pipes for specific tool access.   for these particular cases, additional clearance shall be included to ease pipe routing arrangements and tooling clearances
+routings shall be installed in junction zones to not protrude beyond frames before the junction. hydraulic installation shall be achieved after seaming
+2 pipes may be used in junction zones between the pipes coming from the two fuselages parts and the connecting flexible hose to assist in the creation of the union between the two sections
+pipes shall be fixed by respecting the maximum distance between two consecutive brackets which is defined in the attached table
+following  standards shall be used for two aluminium pipes unions by straight unions connection:  sleeve nsa855034-0x  straight union nsa855010gv0x   nut asna3769wx
+following  standards shall be used for two titanium pipes  unions by straight unions connection:  sleeve asna3759va6  straight union asna3760va6  nut asna3769t6
+following standards shall be used for three- pipes tee-unions connections:  nut asna3769 code "w"  sleeve nsa855034 code "-"  straight union nsa855010 code "gv"  tee union in code w: as21905, nas1763 or nsa855115
+following standards shall be used for three- pipes tee-unions connections:  nut asna3769 code "w"  sleeve nsa855034 code "-"  straight union nsa855010 code "gv"  tee union abs0464 code "-"
+following standards shall be used for bulkhead unions sleeve nsa855034 code "-"  nut asna3769 code " w"  elbow nas1762 code "j"  union abs1491 code "t"
+g-route shall be segregated from e-route by d>=25mmor  by d>=10mm when routed in bobbin configuration
+g-route shall be segregated from m-route by d>=25mm
+g-route shall be segregated from s-route by d>=25mm
+only standard bracket shall be used which are specified in the bracketing design principles catalogue v00me0805619.or  the bst (bracket selection tools) shall be used to select standard brackets specified in the ls0701118 "standard selection list"
+the outer surface of duct shall be segregated to fixed structure or equipment where it is attached to be at least 6 mm
+air duct shall be segregated to fixed structure or equipment by at least 12 mm
+existing drawn bracket may be used if standard bracket are not available
+pipes shall be bend either with 3d, 4d or 5d
+all flexible hoses, pipes shall be segregated to component/item/object of the bleed air system at all times for 50mm for crossing linesor  at all times for 100mm for lines running in parallel.or  at all times for 200mm for hydraulic equipment
+unless otherwise specified,  pipes shall be segregated to fixed  structure by not less than 10 mm as depicted in the attached figure
+unless otherwise specified,  flexible hoses shall be segregated to fixed structure by not less than 20 mm as depicted in the attached figure
+unless otherwise specified,  flexible hoses, pipes shall be segregated to moving component/item/object by not less than depicted in the attached figure
+non-ata36 hot pipes, flexible hoses shall be segregated to any component/item/object with the same values as given for the bleed air system in x-dp-29-7.2.2-0002-0001-a
+guide identification shall be used to clearly define the  p-clamp or floating  clamp-block attachment positions on the pipe. guide identification is only required on one of the pipes in the attached pair
+lacing tape, bumpers, spacer shall not be used for intermediate pipe connection. exception: spacer nsa5527 together with p-clamps
+single clamp-block, saddle clamp shall be positioned alternating
+clamp shall be positioned to guarantee sufficient clearance between the axes of pipes
+the saddle clamp shall be positioned in order to prevent distortion due to mechanical effort and movement. there shall be no connections/fittings in this area
+flexible hoses shall not be installed in an omega shape
+flexible hoses shall be defined in a single plane
+flexible hoses shall be defined such that it does not introduce any torsion forces
+flexible hoses shall be defined such that it does not introduce any tension forces
+kevlar flexible hoses shall be installed without any kink
+para-aramid flexible hoses shall be installed without any kink
+flexible hoses shall be protected by a  chafing sheath if there is a risk of friction
+flexible hoses shall be defined with a larger  bend radius than the required minimum during the complete hardware installation procedure.  the hoses shall never be designed to the minimum bend radius  this shall be respected during modelling of the hoses
+adjustable bracket shall be used to deal with minor potential misalignments
+attached pipes at flexible hoses shall be fixed with two clamp per side at section interfaces as shown in the attached figures
+elongated or normal swaged unions should be defined according to tolerance analysis results
+routings shall be defined to allow the installation of repair  pipes in case of damage
+hexagonal bolt shall be used for the mechanical fixation of mobile supports on to structure
+m-route, r-route, s-route, t, u, v-route shall be segregated from  non flammable fluids or gases by d >= 13mm without additional protection  13>= d >= 10mm with electrical protection and secured routing case a or b
+only standard bracket should be used which are listed in the bst (bracket selection tools)
+if standard bracket cannot be used an existing drawn bracket may be used
+bracket should not be defined new.  if a new bracket design will be done it is required to be justified by technical constraints
+new bracket should be defined by using master part design (parametric bracket design)
+the bracket shall be sized (calculated for stress) to withstand the forces applied by:  the hydraulic system (weight effect, internal pressure,...);  application of tightening torques;  vibration;  loads due to acceleration
+fixed bracket should be manufactured in a homogeneous way
+pipes shall be attached in accordance with pipes with high fluid acceleration requirements if they could be subject to water hammer
+pipes shall be defined only in the sizes as defined in the attached tables
+pipes shall be bend either with 3d, 4d or 5d
+pipes shall be defined by using one radius value only
+the minimum / maximum bend angle(s) shall be defined in accordance with attached table
+only flexible hoses shall be used which are defined in the attached table
+flexible hoses should be defined with a bend radius for installation larger than the required minimum.   to ensure this, the hoses shall never be designed to the minimum bend radius. this shall be respected during modeling of the hoses
+routings should be defined by taking zone specific parameters into account for clearances like: strain/distortion  deflection  routing geometry  chains of tolerance
+pipes, flexible hoses shall be segregated to each other as defined in the attached figure
+unless otherwise specified, pipes shall be segregated to fixed structure by not less than 10 mm as depicted in the attached figure
+pipes may be segregated to fixed structure as depicted in the attached figure / table if the clamp is located at the place of smallest clearance between a rigid pipe and a structure and can guarantee a constant clearance
+pipes may be segregated to fixed structure as depicted in the attached figure / table for pipe routings where the clamps are directly attached to fixed structure
+unless otherwise sepcifed, pipes, flexible hoses shall be segregated movable  component/item/object by not less than as depicted in the attached figures
+pipes, flexible hoses shall be segregated component/item/object of the  bleed air system at all times for 50mm for crossing linesor  at all times for 100mm for lines running in parallelor  at all times for 200mm for hydraulic equipment
+non ata36 hot pipes, flexible hoses shall be segregated to any  component/item/object with the same values as given for the bleed air system in f-dp-29-7.2.2-0007-0001-a / sisd_par_1280
+hydraulic system routings shall be segregated to other systems with the same relative movement by a minimum of 15 mm (except electrics and bleed air)
+hydraulic system routings shall be segregated to other systems with a different relative movement by a minimum of 25 mm (except electrics and bleed air)
+pipes shall be segregated to each other as defined in the attached figures / tables
+pipes shall be defined with a minimum 5 mm additional gap between unions. see attached figure
+routings shall be defined to allow the repair of hydraulic lines with swaged fittings in situ
+swaged  unions should be positioned in order to ensure sufficient space for maintenance and repair
+only saddle clamp, grommet, clamp-block shall be used for the fixation of pipes which are listed in tdd29a001f table b.1 "pipe fixations/bonding clamps" of appendix b
+saddle clamp shall be used for the  routings of single pipes as preferred solution
+clamp-block shall be used for the routing of two or more pipes
+saddle clamp should be fixed directly onto bracket which may then be fixed onto the aircraft structure or onto a second intermediate bracket
+clamp-block shall be fixed directly onto bracket which may then be fixed onto the aircraft structureor  onto a second intermediate bracket
+only the clamp-block shall be used which are listed:  abs2110 – multi-hole (1 to 5) standard solution, for operating temperatures < 100°c
+abs2110 clamp-block may be used as a “single-hole” type  clamp-block solution or as a “multi-hole” type clamp block solution
+the bolts for clamp-block shall be defined with a torque tightening value of 2.1±10% nm
+both standard and elongated clamp-block may be used however elongated clamp blocks may only be used to allow in-situ swaging
+floating clamp-block shall be defined without sliding between the  clamp-block and the biggest pipe (or at least one of the biggest pipes where there is more than one pipe with the largest diameter)
+floating clamp-block shall be defined with sliding between the  clamp-block and all the  pipes which are not affected by “sisd_par_1344 / f-dp-29-7.2.4-0012-0001-a”
+grommet should be used to protect hydraulic pipes passing through structure structure as well as protecting the structure itself
+grommet should be installed between two  clamp-block or  saddle clamp when they are used to pass through structure as shown in the attached figure
+abs1423 stand-off / colonette shall be installed in plastic version when installed on cfrp
+clamp shall be attached by bolt to nnnnnor  not

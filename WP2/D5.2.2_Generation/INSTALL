@@ -1,16 +1,10 @@
-1. How to run Jeni (The Generation module)
-	An executable jar file named Jeni_13_Nov.jar has been updated as of 13th Nov, 2016.
+How to run Jeni (The Generation module)
+
+1. cd Jeni	
 	
-	Run it as java -jar Jeni_13_Nov.jar -g grammarFileName -l lexiconFileName -s testsuiteFileName -m morphologyFileName -o OutputFolderName
-	
-	The last argument is optional. When absent, the output is displayed in the console. When present, the output is written both to the console and to the folder OutputFolderName.
-	
-	Example Usage : java -jar Jeni_13_Nov.jar -g grammar.xml -l lexicon.xml -s test.jeni -m morph.mph -o genOutput
+2. ./run_generator.sh -g resources/minimal/grammar.xml -l resources/minimal/lexicon.xml -s resources/minimal/test.jeni
 
 
-Note : 
-
-1) To execute this jar, the file configuration.xml and log4j.xml also need to be at the same folder as the jar itself. So, if copying this jar to other folder, do copy the configuration.xml and the log4j.xml files too.
-
-2) Several examples of grammar, lexicon and test suites fit for different use cases are available inside the folder Jeni/resources
+Note :
+Several examples of grammar, lexicon and test suites fit for different use cases are available inside the folder resources/*/
 

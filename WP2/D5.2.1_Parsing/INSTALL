@@ -1,19 +1,12 @@
 How to run pGen (The Parser module)
-	An executable jar has been updated as of 13 November, 2016 named pGen_13_Nov.jar.
-	
-	Run it as java -jar pGen_13_Nov.jar configName
-	
-	The argument configName should be one of the configNames present in the configuration.xml file. For the airbus use case, 2 different parsing configurations have been defined -- parse_airbus_excellex_colbc_sentence (for executing on simple sentences) and parse_airbus_excellex_true_sentence (for executing the parser on complex sentences). Accordingly, the following commands can be executed :
 
-A) java -jar pGen_13_Nov.jar parse_airbus_excellex_colbc_sentence
-	The output is written to the folder resources/airbus/output/airbus_parse_output/excellex_colbc_sentences/
-	Output :
-		Summary info is displayed in the console. A detailed info with result statistics is also written to the resources/airbus/output/airbus_parse_output/excellex_colbc_sentences directory. 
+1. cd pGen
 
-B) java -jar pGen_13_Nov.jar parse_airbus_excellex_true_sentence
-	The output is written to the folder resources/airbus/output/airbus_parse_output/excellex_true_sentences/
-	Output :
-		Summary info is displayed in the console. A detailed info with result statistics is also written to the resources/airbus/output/airbus_parse_output/excellex_true_sentences directory.
-	 
+For the airbus use case, 2 different parsing configurations have been defined -- parse_airbus_excellex_simple_sentences_only (for executing on simple sentences) and parse_airbus_excellex_complex_sentences_only (for executing the parser on complex sentences). Accordingly, the following commands can be executed :
 
+2. 
+	A) ./run_parser.sh parse_airbus_excellex_simple_sentences_only
+		The output is written to the folder resources/airbus/output/airbus_parse_output/excellex_simple_sentences_only/
 
+	B) ./run_parser.sh parse_airbus_excellex_complex_sentences_only
+		The output is written to the folder resources/airbus/output/airbus_parse_output/excellex_complex_sentences_only/

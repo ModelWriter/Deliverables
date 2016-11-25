@@ -231,9 +231,12 @@ public class Batch {
 				batchResults.append("\tList of ConceptNames =  "+p.getDLTree().getConceptNames()+"\n");
 				batchResults.append("\tList of RelationNames =  "+p.getDLTree().getRelationNames()+"\n\n");
 				
-				batchResults.append("\tOntology Enrichment Remarks = "+p.getDLTree().getOntologyEnrichmentStatus()+"\n\n");
+				batchResults.append("\tOntology Enrichment Remarks = \n");
+				for (String item:p.getDLTree().getOntologyEnrichmentStatus()) {
+					batchResults.append("\t\t\t" + item + "\n");
+				}
 				
-				batchResults.append("\t\t\tGeneration : \n");
+				batchResults.append("\tGeneration : \n");
 				parseGenSentences.append("\t\t\tGeneration : \n");
 				for (String x:p.getGeneratedSentences()) {
 					batchResults.append("\t\t\t\t"+x+"\n");

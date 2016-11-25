@@ -66,10 +66,9 @@ import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
 
 import synalp.parsing.utils.FileOperations;
 /**
- * ATTENTION!
- * To check ontology consistency and save the enriched ontology to the file,
- * uncomment several lines in the getOntologyEnrichmentRemarks function!
- * (we commented them as those processes are time-consuming)
+ * This module performs the ontology enrichment and consistency checking.
+ * Multi-word expressions must be represented with the "_+_" symbol.
+ * For example, "spare wire" is "spare_+_wire".
  *
  */
 
@@ -515,6 +514,11 @@ public class OntoModel {
 	    		entitiesToUri.put(conceptNameNoColon, cls.toString());
 	    		log.log(Level.FINER, "class exists in the ontology: " + conceptNameNoColon);
 	    		existingConceptsInAxiom.add(cls.toString());
+	    		// add the individual belonging to this existing class
+	    		// this is done to enable the consistency checking
+	    		IRI individIRI = IRI.create(nameSpaces.get("xml:base") + cls.toString() + "1");
+	    		OWLIndividual newIndivid = dataFactory.getOWLNamedIndividual(individIRI);
+	    		addClassAssertionAxiom(cls, newIndivid);
 	    	}
 	    }
 	    return new Object[]{existingConceptsInAxiom, newConceptsInAxiom};
@@ -545,7 +549,8 @@ public class OntoModel {
 	}
 	
 	
-	public String getOntologyEnrichmentRemarks(String axiomStringNoUri, Set<String> conceptNames, Set<String> relationNames, String outputFolderName) throws OWLOntologyStorageException {
+	public ArrayList<String> getOntologyEnrichmentRemarks(String axiomStringNoUri, Set<String> conceptNames, Set<String> relationNames, String outputFolderName, boolean useRealReasoner) throws OWLOntologyStorageException {
+		ArrayList<String> message = new ArrayList<String>();
 		countProcessedAxioms++;
 		log.log(Level.FINER,"#### Ontology Enrichment: handling axiom " + countProcessedAxioms +" ####");
 		log.log(Level.FINER, "axiom " + countProcessedAxioms + " from parsing: " + axiomStringNoUri);
@@ -553,7 +558,7 @@ public class OntoModel {
 		countExistingConcepts = 0;
 		countNewRelations = 0;
 		countExistingRelations = 0;
-		StringBuilder message = new StringBuilder();
+		// StringBuilder message = new StringBuilder();
 		// store entity names and their URIs: Pipe - <http://airbus-group.installsys/component#Pipe>
 		// (couldn't find implementation for that in owl api (maybe PrefixManager??))
 		entitiesToUri = new HashMap<String,String>();
@@ -573,73 +578,76 @@ public class OntoModel {
 	    // Add axiom if it isn't present in the ontology
 	 	Set<OWLAxiom> axioms = getOntologyAxioms();
 	    OWLAxiom axiom = getAxiomFromString(axiomString);
-	    message.append("\n\t" + countNewConcepts + " new class(es) added: " + concepts[1].toString() + "\n\t");
-	    message.append(countNewRelations + " new relation(s) added: " + relations[1].toString() + "\n\t");
-	    message.append(countExistingConcepts + " old class(es) detected: " + concepts[0].toString() + "\n\t");
-	    message.append(countExistingRelations + " old relation(s) detected: " + relations[0].toString() + "\n");
+	    message.add(countNewConcepts + " new class(es) added: " + concepts[1].toString());
+	    message.add(countNewRelations + " new relation(s) added: " + relations[1].toString());
+	    message.add(countExistingConcepts + " old class(es) detected: " + concepts[0].toString());
+	    message.add(countExistingRelations + " old relation(s) detected: " + relations[0].toString());
 
 	    if (axiom != null) {
 		 	if (!axioms.contains(axiom)) {
 		 		addAxiom(axiom);
 		 		countNewAxioms++;
-		 		message.append("\tThe SIDP axiom was added.\n");
+		 		message.add("The SIDP axiom was added.");
 		 	}
 		 	else {// check if the axiom was present in the initial ontology
 		 		if(initialAxioms.contains(axiom)) {
 		 			log.log(Level.FINER, "The SIDP axiom exists in the initial ontology: " + axiom.toString());
 		 			countAxiomsRejectedRedundInitOnt++;
-		 			message.append("\tThe SIDP axiom exists in the initial ontology.\n");
-		 			return message.toString();
+		 			message.add("The SIDP axiom exists in the initial ontology.");
+		 			return message;
 		 		}
 		 		else {
 			 		log.log(Level.FINER, "The SIDP axiom was already added (i.e. it is in the ontology): " + axiom.toString());
 			 		countAxiomsRejectedRedund++;
-			 		message.append("\tThe SIDP axiom was already added.\n");
-			 		return message.toString();
+			 		message.add("The SIDP axiom was already added.");
+			 		return message;
 		 		}
 		 	}
 	    }
 	    else {
-	    	message.append("\tThe SIDP axiom was not added.\n");
-	    	return message.toString();
+	    	message.add("The SIDP axiom was not added.");
+	    	return message;
+	    }
+	    
+	    // Use a real reasoner (will slow down the pipeline! ca 1 sec per a parsed axiom)
+	    if(useRealReasoner) {
+		    log.log(Level.FINER, "checking consistency...");
+		    reasoner.flush();
+		    boolean consistency = checkOntologyConsistency(ontology);
+		 	// if not consistent, remove axiom; otherwise, save the ontology
+		 	if(consistency) {
+			 	// Uncomment this to save the enriched ontology
+			    File file = new File(outputFolderName+"ontology_enrichment/component-03072015_changed_enriched.rdf");
+			    saveOntologyCopy(file);
+			    message.add("The ontology is consistent.");
+		 	}
+		 	else {
+		 		removeAxiom(axiom);
+		 		reasoner.flush();
+		 		countNewAxioms--;
+		 		message.add("Later it was removed, as it caused inconsistency.");
+		 		boolean consistencyDoubleCheck = checkOntologyConsistency(ontology);
+		 		if (!consistencyDoubleCheck)
+		 			System.out.println("Warning! The removed axiom was not removed properly, and the ontology is still inconsistent!");
+		 	}
 	    }
 	    // for all new concepts, give suggestions for superclasses
 	    if (countNewConcepts > 0) {
 		    ConceptSearch cs = ConceptSearch.getInstance();
-		    message.append("\tSuggestions for superclasses:\n\t\t");
+		    message.add("Suggestions for superclasses:");
 		    @SuppressWarnings("unchecked")
 			ArrayList<String> newConcepts = (ArrayList<String>)concepts[1];
 		    for (String concept : newConcepts) {
 		    	ArrayList<String> suggestions = cs.getSuggestions(concept);
 				if (suggestions.isEmpty()) {
-					message.append(concept + ": no suggestions found.\n\t\t");
+					message.add(concept + ": no suggestions found.");
 				}
 				else {
-					message.append(concept + ": " + suggestions.toString() + "\n\t\t");
+					message.add(concept + ": " + suggestions.toString());
 				}
 		    }
 	    }
-	    
-	    // Uncomment this to use a real reasoner (will slow down the pipeline! ca 1 sec per a parsed axiom)
-	    /*log.log(Level.FINER, "checking consistency...");
-	    reasoner.flush();
-	    boolean consistency = checkOntologyConsistency(ontology);
-	 	// if not consistent, remove axiom; otherwise, save the ontology
-	 	if(consistency) {
-		 	// Uncomment this to save the enriched ontology
-		    File file = new File(outputFolderName+"ontology_enrichment/component-03072015_changed_enriched.rdf");
-		    saveOntologyCopy(file);
-	 	}
-	 	else {
-	 		removeAxiom(axiom);
-	 		reasoner.flush();
-	 		countNewAxioms--;
-	 		message.append(" Later it was removed, as it caused inconsistency.");
-	 		boolean consistencyDoubleCheck = checkOntologyConsistency(ontology);
-	 		if (!consistencyDoubleCheck)
-	 			System.out.println("Warning! The removed axiom was not removed properly, and the ontology is still inconsistent!");
-	 	}*/
-		return message.toString();
+	    return message;
 	}
 	
 	

@@ -43,7 +43,7 @@ public class ParseResult {
 	
 
 	private Semantics parseSemantics;  // This is NOT the true result -- it is not instantiated (top-bottom unified)
-	private String parseString = ""; // Stores the instantiated (top-bottom unified) string representation of parse semantics. The true result.
+	private String parseString = ""; // Stores the (top-bottom unified) string representation of parse semantics. The true result.
 	private InstantiationContext variablesInstance;
 	
 	private DLTree dlTree;
@@ -320,5 +320,19 @@ public class ParseResult {
 		return formattedSentence;
 	}
  	
+
+ 	public InstantiationContext getVariablesInstance() {
+ 		return variablesInstance;
+ 	}
+ 	
+ 	
+ 	/**
+ 	 * For testing purposes only; not to be used in production.
+ 	 * The output semantics to be used in production is returned by the method getparseString()
+ 	 * @return The parse Sematics obtained after derivation but before top-bottom feature unification.
+ 	 */
+ 	public String getSemanticsBeforeTopBottomUnification() {
+ 		return parseSemantics.toString();
+ 	}
  	
 }

@@ -34,6 +34,7 @@ import synalp.parsing.ParserMain;
 import synalp.parsing.dummy.DummyGenerator;
 import synalp.parsing.ontology.OntoModel;
 import synalp.parsing.utils.FileOperations;
+import synalp.parsing.utils.JavaScriptFunctions;
 
 /**
  * Servlet implementation class HelloServlet
@@ -81,7 +82,6 @@ public class ParserServlet extends HttpServlet {
 		
 		macros_fileDir = parserConfig.getGrammarFile().getParent();
 		useProbability = parserConfig.isUseProbability();
-		useCKYParsing = parserConfig.isUseCKYChartParsing();
 		
 		reverseGenConfig = GeneratorConfigurations.getConfig("reverse_gen_airbus");
 		
@@ -139,7 +139,7 @@ public class ParserServlet extends HttpServlet {
 				//if ()
 					// getParseOfSingleInput(true, ...
 				//else
-				Parser p = ParserMain.getParseOfSingleInput(false, new Sentence(inputText),"parseLogs/webInterface/"+inputText+".log", grammar, fullySpecifiedLexicon, underSpecifiedLexicon, macros_fileDir, parse_morphs, useProbability, useCKYParsing);
+				Parser p = ParserMain.getParseOfSingleInput(false, new Sentence(inputText),"parseLogs/webInterface/"+inputText+".log", grammar, fullySpecifiedLexicon, underSpecifiedLexicon, macros_fileDir, parse_morphs, useProbability);
 				parseResults = p.getParseResults();
 				
 				// Get the lexical entries used for this parse and then write them to the file so as to be used by generation task
@@ -191,12 +191,17 @@ public class ParserServlet extends HttpServlet {
 			result.put("RelationNames", relationNames);
 			
 			try {
-				ParserMain.enrichOntologyWithSingleParseResult(res, ontModel, "");
+				ParserMain.enrichOntologyWithSingleParseResult(res, ontModel, "", true);
 			} catch (OWLOntologyStorageException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			result.put("OntoEnrichStat", res.getDLTree().getOntologyEnrichmentStatus());
+			JSONArray ontoEnrichMessages = new JSONArray(); // The list of all messages available after ontology Enrichment.
+			for (String ontoMessage:res.getDLTree().getOntologyEnrichmentStatus()) {
+				ontoEnrichMessages.add(ontoMessage);
+			}
+			result.put("OntoEnrichStatMessages",ontoEnrichMessages);
+			
 			
 			
 			
@@ -214,37 +219,17 @@ public class ParserServlet extends HttpServlet {
 		output.put("results", resultsList);
 		
 
-		String jsonResultsString = javascript_skip_characters(output.toJSONString());
+		String jsonResultsString = output.toJSONString();
+		jsonResultsString = JavaScriptFunctions.get_escape_JS_symbols(jsonResultsString);
 		System.out.println("Server Response ="+jsonResultsString);
-		
 		request.setAttribute("parseResults", jsonResultsString);
-		request.setAttribute("inputSentence", request.getParameter("parseInput"));
+		
+		String inputSentence = request.getParameter("parseInput");
+		inputSentence = JavaScriptFunctions.get_escape_JS_symbols(inputSentence);
+		request.setAttribute("inputSentence", inputSentence);
+		
 		request.getRequestDispatcher("ParserGenerator.jsp").forward(request, response);		
 	}
 
-	private String javascript_skip_characters(String input) {
-		Map<String,String> replacements = new HashMap<String,String>();
-		replacements.put("\"", "\\\""); // Replace " by \"
-		replacements.put("\\n", "\\\\n"); // Replace \n by \\n
-		replacements.put("\\t", "\\\\t"); // Replace \t by \\t
-		replacements.put("\\r", "\\\\r"); // Replace \r by \\r
-		replacements.put("\\b", "\\\\b"); // Replace \t by \\t
-		replacements.put("\\f", "\\\\f"); // Replace \t by \\t
-		replacements.put("/", "\\/"); // Replace / by \/
-		/* There are many more than this including Unicode Characters!! Todo in future
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);
-		replacements.put(key, value);*/
-		
-		for (Map.Entry<String, String> entry:replacements.entrySet()) {
-			input = input.replace(entry.getKey(), entry.getValue());
-		}
-		return input;
-	}
+	
 }

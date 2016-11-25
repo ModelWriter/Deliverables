@@ -115,5 +115,88 @@
 			<resource name="lmfile" file="resources/ranking/lm-genia-lemma"/>
 		</option>
 	</config>
+	
+	
+	
+	
+	<config name="default_parser" inherit="default"> <!-- Config for doing the semantic parse -->
+		<option name="timeout" value="0"/> <!-- This means no timeout -->
+		<option name="use_bit_semantics" value="false"/> <!-- Don't know why but otherwise generates an error -->
+		<option name="filtering_categories" value="s"/> <!-- We want the root category to be of type S if not otherwise specified (i.e. if use_filtering is not set to false by the subclass inheriting this class ) -->
+		<option name="allow_duplicates" value="false"/> <!-- We don't want to store intermediate/final results that have the same exact syntax and semantics -->
+	</config>
+
+
+	
+	<config name="parser_airbus_core_options" inherit="default_parser">
+		<option name="use_filtering" value="false"/> <!-- For allowing root node of the tree to have any PoS category  -->
+		<option name="use_probability" value="false"/>
+		<!-- The following are options to be implemented in future
+		<option name="use_ML_filtering" value="false"/> To prune out trees during parse using the decision of a ML model
+		<option name="trained_ML_model_filename" value="someFileName to save the trained model"/>
+		<option name="ML_training_resource_filename" value="someFileName to save the file which describes the same examples as those used for training"/>
+		 -->
+	</config>
+	
+
+
+	<!-- Todo : Place the option of underspecified/fullyspecified lexicon and check for this option in the code to look for and use only that lexicon during parsing. For now, using fake empty file "no_underspecified_lexicon"-->
+	<config name="parse_airbus_truelex" inherit="parser_airbus_core_options" basedir="resources/airbus/input">
+		<resource name="fslexicon" file="true_fullyspecified_lexicon.lex"/>
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="lexicon" file="underspecified_lexicon.lex"/> <!-- Underspecified lexicon -->
+		<resource name="morph" file="parser_morph.mph"/>
+		<resource name="ontology" file="ontology/component-03072015_changed.rdf"/>
+	</config>
+	<config name="parse_airbus_excellex" inherit="parser_airbus_core_options" basedir="resources/airbus/input">
+		<resource name="fslexicon" file="excelSheet_fullyspecified_lexicon.lex"/>
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="lexicon" file="no_underspecified_lexicon.lex"/> <!-- Underspecified lexicon -->
+		<resource name="morph" file="parser_morph.mph"/>
+		<resource name="ontology" file="ontology/component-03072015_changed.rdf"/>
+	</config>
+	
+	
+	<config name="parse_airbus_truelex_simple_sentences_only" inherit="parse_airbus_truelex" basedir="resources/airbus/input">
+		<resource name="sentences" file="_simple_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/truelex_simple_sentences_only/ParseResult.txt"/>
+	</config>
+	<config name="parse_airbus_truelex_complex_sentences_only" inherit="parse_airbus_truelex" basedir="resources/airbus/input">
+		<resource name="sentences" file="complex_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/truelex_complex_sentences_only/ParseResult.txt"/>
+	</config>
+	<!-- Current Experiments are being made with fully specified lexicon -->
+	<!-- Simple Airbus Sentences only -->
+	<config name="parse_airbus_excellex_simple_sentences_only" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
+		<resource name="sentences" file="simple_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/excellex_simple_sentences_only/ParseResult.txt"/>
+	</config>
+	<!-- Complex Airbus Sentences only -->
+	<config name="parse_airbus_excellex_complex_sentences_only" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
+		<resource name="sentences" file="complex_sentences_only.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/excellex_complex_sentences_only/ParseResult.txt"/>
+	</config>
+	<!-- Simple + Complex ( = Total) Airbus Sentences -->
+	<config name="parse_airbus_excellex_all_sentences" inherit="parse_airbus_excellex" basedir="resources/airbus/input">
+		<resource name="sentences" file="all_sentences.txt"/>
+		<resource name="output" file="../output/airbus_parse_output/excellex_all_sentences/ParseResult.txt"/>
+	</config>
+	
+	
+	
+	
+
+	<config name="reverse_gen" inherit="default"> <!-- Config for generating from the output of semantic parse -->
+		<option name="early_semantic_failure" value="false"/> <!-- to fix cases of where Haskell Geni would generate but Jeni won't -->
+		<option name="missing_lexem_policy" value="output_lemma"/> <!-- The morph file for reverse generation is not specified; so we assume that the surface expression is the lemma itself. -->
+	</config>	
+
+	<config name="reverse_gen_airbus" inherit="reverse_gen" basedir="resources/airbus/input">
+		<option name="use_filtering" value="false"/> <!-- For obtaining partial generation results, root tree can have any node category  -->
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="lexicon" file="newLexicon.lex"/>
+		<resource name="morph" file="generation_morph.mph"/>
+	</config>
+
 
 </configurations>

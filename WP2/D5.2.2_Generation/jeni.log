@@ -7,46 +7,46 @@ DEBUG JeniLexicalSelection - Entry subsumes input in context {?A0_1=a0_1, ?C0_1=
 INFO  DLXFiltering - Starting DLX filtering (2 initial entries)
 DEBUG DLXFiltering - After packing (2 packs)
 INFO  DLXFiltering - All solutions after solving (1 solutions)
-INFO  DLXFiltering - End of DLX filtering (149ms, 1 groups of entries)
-DEBUG JeniLexicalSelection - Tn0V-8-1.[sleep] Tnoun-14-0.[Bill]
+INFO  DLXFiltering - End of DLX filtering (27ms, 1 groups of entries)
+DEBUG JeniLexicalSelection - Tnoun-14-0.[Bill] Tn0V-8-1.[sleep]
 INFO  JeniGenerator - Starting generation of input: {0, 1}:[a0_1:sleep(e0 a0), a0_1:bill(a0)]
 INFO  JeniGenerator - --- initial agenda : 2 items
 DEBUG JeniGenerator - 
-Item-0 [sleep]
-	s@I7/@E7(np↓@L7.a0 vp@E7/@R7.e0(v♦sleep@R7.e0))
-	(♢ Tn0V-8-1.sleep)
+Item-0 [Bill]
+	np@C0.a0(n♦Bill)
+	(♢ Tnoun-14-0.Bill)
 DEBUG JeniGenerator - 
  probability: 0.0
 DEBUG JeniGenerator - 
-Item-1 [Bill]
-	np@C0.a0(n♦Bill)
-	(♢ Tnoun-14-0.Bill)
+Item-1 [sleep]
+	s@I7/@E7(np↓@L7.a0 vp@E7/@R7.e0(v♦sleep@R7.e0))
+	(♢ Tn0V-8-1.sleep)
 DEBUG JeniGenerator - 
  probability: 0.0
 INFO  JeniGenerator - *** Substitution phase
 DEBUG JeniGenerator - *** substitution step, agenda size: 2
 DEBUG JeniGenerator - *** substitution step, agenda size: 1
-DEBUG TreeCombiner - Testing substitution of Item-1 [Bill] into Item-0 [sleep]
-DEBUG TreeCombiner - The idx of Item-1 and Item-0 are perfectly compatible (EARLY SEMANTIC FAILURE)
+DEBUG TreeCombiner - Testing substitution of Item-0 [Bill] into Item-1 [sleep]
+DEBUG TreeCombiner - The idx of Item-0 and Item-1 are perfectly compatible (EARLY SEMANTIC FAILURE)
 DEBUG TreeCombiner - Substitution of
-Item-1 [Bill]
+Item-0 [Bill]
 into
-Item-0 [sleep]:
+Item-1 [sleep]:
 leads to new item:
 Item-2 [Bill sleep]
 DEBUG JeniGenerator - *** substitution step, agenda size: 1
-DEBUG JeniGenerator - Ruling out Item-0 [sleep]
+DEBUG JeniGenerator - Ruling out Item-1 [sleep]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - --- agenda
-DEBUG JeniGenerator - Item-1 [Bill]
+DEBUG JeniGenerator - Item-0 [Bill]
 DEBUG JeniGenerator - Item-2 [Bill sleep]
 INFO  JeniGenerator - *** Adjunction phase (chart: 0, agenda: 2)
 DEBUG JeniGenerator - *** adjunction step, agenda size: 2
 DEBUG JeniGenerator - --- agenda
-DEBUG JeniGenerator - Item-1 [Bill]
+DEBUG JeniGenerator - Item-0 [Bill]
 DEBUG JeniGenerator - Item-2 [Bill sleep]
 DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Coverage failure for item Item-1 [Bill]
+DEBUG JeniGenerator - Coverage failure for item Item-0 [Bill]
 item:[]
 input:[]
 DEBUG JeniGenerator - *** adjunction step, agenda size: 1
@@ -74,7 +74,7 @@ DEBUG JeniLexicalSelection - Entry subsumes input in context {?A0_1=a0_1, ?C0_1=
 INFO  DLXFiltering - Starting DLX filtering (3 initial entries)
 DEBUG DLXFiltering - After packing (3 packs)
 INFO  DLXFiltering - All solutions after solving (1 solutions)
-INFO  DLXFiltering - End of DLX filtering (0ms, 1 groups of entries)
+INFO  DLXFiltering - End of DLX filtering (1ms, 1 groups of entries)
 DEBUG JeniLexicalSelection - TbetaDn-15-0.[a] Tn0V-8-2.[sleep] Tnoun-14-1.[cake]
 INFO  JeniGenerator - Starting generation of input: {0, 1, 2}:[a0_1:cake(a0), a0_1:a(a0), a0_1:sleep(e0 a0)]
 INFO  JeniGenerator - --- initial agenda : 3 items
@@ -184,129 +184,130 @@ DEBUG JeniLexicalSelection - Entry subsumes input in context {?A0_1=a0_1, ?C0_1=
 INFO  DLXFiltering - Starting DLX filtering (4 initial entries)
 DEBUG DLXFiltering - After packing (4 packs)
 INFO  DLXFiltering - All solutions after solving (1 solutions)
-INFO  DLXFiltering - End of DLX filtering (4ms, 1 groups of entries)
-DEBUG JeniLexicalSelection - Tn0Vn1-1-3.[eat] Tnoun-14-0.[Bill] TbetaDn-15-1.[a] Tnoun-14-2.[cake]
+INFO  DLXFiltering - End of DLX filtering (0ms, 1 groups of entries)
+DEBUG JeniLexicalSelection - TbetaDn-15-1.[a] Tnoun-14-2.[cake] Tnoun-14-0.[Bill] Tn0Vn1-1-3.[eat]
 INFO  JeniGenerator - Starting generation of input: {0, 1, 2, 3}:[a0_1:eat(e0 a0 a1), a0_1:a(a1), a0_1:bill(a0), a0_1:cake(a1)]
 INFO  JeniGenerator - --- initial agenda : 4 items
 DEBUG JeniGenerator - 
-Item-0 [eat]
-	s@M0/@C0(np↓@O0.a0 vp@C0/@U0.e0(v♦eat@U0.e0 np↓@D1.a1))
-	(♢ Tn0Vn1-1-3.eat)
-DEBUG JeniGenerator - 
- probability: 0.0
-DEBUG JeniGenerator - 
-Item-1 [Bill]
-	np@C0.a0(n♦Bill)
-	(♢ Tnoun-14-0.Bill)
-DEBUG JeniGenerator - 
- probability: 0.0
-DEBUG JeniGenerator - 
-Item-2 [a]
+Item-0 [a]
 	np@C13.a1(det♦a np✭@C13.a1)
 	(♢ TbetaDn-15-1.a)
 DEBUG JeniGenerator - 
  probability: 0.0
 DEBUG JeniGenerator - 
-Item-3 [cake]
+Item-1 [cake]
 	np@C0.a1(n♦cake)
 	(♢ Tnoun-14-2.cake)
+DEBUG JeniGenerator - 
+ probability: 0.0
+DEBUG JeniGenerator - 
+Item-2 [Bill]
+	np@C0.a0(n♦Bill)
+	(♢ Tnoun-14-0.Bill)
+DEBUG JeniGenerator - 
+ probability: 0.0
+DEBUG JeniGenerator - 
+Item-3 [eat]
+	s@M0/@C0(np↓@O0.a0 vp@C0/@U0.e0(v♦eat@U0.e0 np↓@D1.a1))
+	(♢ Tn0Vn1-1-3.eat)
 DEBUG JeniGenerator - 
  probability: 0.0
 INFO  JeniGenerator - *** Substitution phase
 DEBUG JeniGenerator - *** substitution step, agenda size: 4
 DEBUG JeniGenerator - *** substitution step, agenda size: 3
-DEBUG TreeCombiner - Testing substitution of Item-1 [Bill] into Item-0 [eat]
-DEBUG TreeCombiner - The idx of Item-1 and Item-0 are perfectly compatible (EARLY SEMANTIC FAILURE)
+DEBUG JeniGenerator - *** substitution step, agenda size: 2
+DEBUG JeniGenerator - *** substitution step, agenda size: 1
+DEBUG TreeCombiner - Testing substitution of Item-1 [cake] into Item-3 [eat]
 DEBUG TreeCombiner - Substitution of
-Item-1 [Bill]
+Item-1:
+np@C0.a1(n♦cake)
+in Item-3:
+s@M0/@V6(np↓@O0.a0 vp@V6/@U0.e0(v♦eat@U0.e0 np↓@D1.a1))
+fails because of EARLY SEMANTIC FAILURE:
+top=[case:nom control:@V3 idx:@O0.a0 label:@P0 num:@V1 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@A0 definite:@B0 idx:@C0.a1 label:@D0.a0_1 num:@E0 pers:@F0 wh:@G0]
+DEBUG TreeCombiner - Testing substitution of Item-2 [Bill] into Item-3 [eat]
+DEBUG TreeCombiner - The idx of Item-2 and Item-3 are perfectly compatible (EARLY SEMANTIC FAILURE)
+DEBUG TreeCombiner - Substitution of
+Item-2 [Bill]
 into
-Item-0 [eat]:
+Item-3 [eat]:
 leads to new item:
 Item-4 [Bill eat]
-DEBUG JeniGenerator - *** substitution step, agenda size: 3
-DEBUG JeniGenerator - *** substitution step, agenda size: 2
-DEBUG TreeCombiner - Testing substitution of Item-3 [cake] into Item-0 [eat]
-DEBUG TreeCombiner - Substitution of
-Item-3:
-np@V5.a1(n♦cake)
-in Item-0:
-s@M0/@C0(np↓@O0.a0 vp@C0/@U0.e0(v♦eat@U0.e0 np↓@D1.a1))
-fails because of EARLY SEMANTIC FAILURE:
-top=[case:nom control:@B0 idx:@O0.a0 label:@P0 num:@F0 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@V7 definite:@V6 idx:@V5.a1 label:@V4.a0_1 num:@V3 pers:@V2 wh:@V1]
 DEBUG JeniGenerator - *** substitution step, agenda size: 1
-DEBUG TreeCombiner - Testing substitution of Item-3 [cake] into Item-4 [Bill eat]
-DEBUG TreeCombiner - The idx of Item-3 and Item-4 are perfectly compatible (EARLY SEMANTIC FAILURE)
+DEBUG TreeCombiner - Testing substitution of Item-1 [cake] into Item-4 [Bill eat]
+DEBUG TreeCombiner - The idx of Item-1 and Item-4 are perfectly compatible (EARLY SEMANTIC FAILURE)
 DEBUG TreeCombiner - Substitution of
-Item-3 [cake]
+Item-1 [cake]
 into
 Item-4 [Bill eat]:
 leads to new item:
 Item-5 [Bill eat cake]
 DEBUG JeniGenerator - *** substitution step, agenda size: 1
-DEBUG JeniGenerator - Ruling out Item-0 [eat]
+DEBUG JeniGenerator - Ruling out Item-3 [eat]
 DEBUG JeniGenerator - Ruling out Item-4 [Bill eat]
 DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-0 [a]
 DEBUG JeniGenerator - --- agenda
-DEBUG JeniGenerator - Item-1 [Bill]
-DEBUG JeniGenerator - Item-3 [cake]
+DEBUG JeniGenerator - Item-1 [cake]
+DEBUG JeniGenerator - Item-2 [Bill]
 DEBUG JeniGenerator - Item-5 [Bill eat cake]
 INFO  JeniGenerator - *** Adjunction phase (chart: 1, agenda: 3)
 DEBUG JeniGenerator - *** adjunction step, agenda size: 3
 DEBUG JeniGenerator - --- agenda
-DEBUG JeniGenerator - Item-1 [Bill]
-DEBUG JeniGenerator - Item-3 [cake]
+DEBUG JeniGenerator - Item-1 [cake]
+DEBUG JeniGenerator - Item-2 [Bill]
 DEBUG JeniGenerator - Item-5 [Bill eat cake]
 DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Item-2 [a]
-DEBUG JeniGenerator - Coverage failure for item Item-1 [Bill]
+DEBUG JeniGenerator - Item-0 [a]
+DEBUG JeniGenerator - Coverage failure for item Item-1 [cake]
 item:[]
 input:[]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-1 [Bill]
+DEBUG TreeCombiner - Testing adjunction of Item-0 [a] onto Item-1 [cake]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
-np@C13.a1(det♦a np✭@C13.a1)
-with Item-1:
-np@V5.a0(n♦Bill)
-node np@V5(n♦Bill)
-fails because of EARLY SEMANTIC FAILURE:
-top=[] bot=[case:@V7 definite:@V6 idx:@V5.a0 label:@V4.a0_1 num:@V3 pers:@V2 wh:@V1.- phon:ne]
-DEBUG JeniGenerator - *** adjunction step, agenda size: 2
-DEBUG JeniGenerator - --- agenda
-DEBUG JeniGenerator - Item-3 [cake]
-DEBUG JeniGenerator - Item-5 [Bill eat cake]
-DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Item-2 [a]
-DEBUG JeniGenerator - Coverage failure for item Item-3 [cake]
-item:[]
-input:[]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-3 [cake]
-DEBUG TreeCombiner - Adjunction of
-Item-2 [a]
+Item-0 [a]
 onto
-Item-3 [cake]:
+Item-1 [cake]:
 leads to new item:
 Item-6 [a cake]
+DEBUG JeniGenerator - *** adjunction step, agenda size: 3
+DEBUG JeniGenerator - --- agenda
+DEBUG JeniGenerator - Item-2 [Bill]
+DEBUG JeniGenerator - Item-5 [Bill eat cake]
+DEBUG JeniGenerator - Item-6 [a cake]
+DEBUG JeniGenerator - --- chart
+DEBUG JeniGenerator - Item-0 [a]
+DEBUG JeniGenerator - Coverage failure for item Item-2 [Bill]
+item:[]
+input:[]
+DEBUG TreeCombiner - Testing adjunction of Item-0 [a] onto Item-2 [Bill]
+DEBUG TreeCombiner - Adjunction of
+Item-0:
+np@C13.a1(det♦a np✭@C13.a1)
+with Item-2:
+np@C0.a0(n♦Bill)
+node np@C0(n♦Bill)
+fails because of EARLY SEMANTIC FAILURE:
+top=[] bot=[case:@A0 definite:@B0 idx:@C0.a0 label:@D0.a0_1 num:@E0 pers:@F0 wh:@G0.- phon:ne]
 DEBUG JeniGenerator - *** adjunction step, agenda size: 2
 DEBUG JeniGenerator - --- agenda
 DEBUG JeniGenerator - Item-5 [Bill eat cake]
 DEBUG JeniGenerator - Item-6 [a cake]
 DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-0 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-5 [Bill eat cake]
 item:[]
 input:[]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-5 [Bill eat cake]
+DEBUG TreeCombiner - Testing adjunction of Item-0 [a] onto Item-5 [Bill eat cake]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
+Item-0:
 np@C13.a1(det♦a np✭@C13.a1)
 with Item-5:
-s@M0/@C0(np@O0.a0(n♦Bill) vp@C0/@U0.e0(v♦eat@U0.e0 np@D1.a1(n♦cake)))
+s@M0/@V6(np@O0.a0(n♦Bill) vp@V6/@U0.e0(v♦eat@U0.e0 np@D1.a1(n♦cake)))
 node np@O0/@V13(n♦Bill)
 fails because of EARLY SEMANTIC FAILURE:
-top=[case:nom control:@B0 idx:@O0.a0 label:@P0 num:@F0 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@V8 definite:@V14 idx:@V13.a0 label:@V12.a0_1 num:@V11 pers:@V10 wh:@V9.- phon:ne]
+top=[case:nom control:@V3 idx:@O0.a0 label:@P0 num:@V1 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@V14 definite:@V10 idx:@V13.a0 label:@V9.a0_1 num:@V12 pers:@V8 wh:@V11.- phon:ne]
 DEBUG TreeCombiner - Adjunction of
-Item-2 [a]
+Item-0 [a]
 onto
 Item-5 [Bill eat cake]:
 leads to new item:
@@ -316,7 +317,7 @@ DEBUG JeniGenerator - --- agenda
 DEBUG JeniGenerator - Item-6 [a cake]
 DEBUG JeniGenerator - Item-7 [Bill eat a cake]
 DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-0 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-6 [a cake]
 item:[]
 input:[]
@@ -324,19 +325,19 @@ DEBUG JeniGenerator - *** adjunction step, agenda size: 1
 DEBUG JeniGenerator - --- agenda
 DEBUG JeniGenerator - Item-7 [Bill eat a cake]
 DEBUG JeniGenerator - --- chart
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-0 [a]
 DEBUG JeniGenerator - Coverage success for item Item-7 [Bill eat a cake]
 DEBUG JeniGenerator - --- results before filtering
 DEBUG JeniGenerator - Item-7 [Bill eat a cake]
 INFO  JeniGenerator - --- results : 1 items
 DEBUG JeniGenerator - 
 Item-7 [Bill eat a cake]
-	s@M0/@C0.e0(np@O0.a0(n♦Bill) vp@C0.e0(v♦eat@U0.e0 np@D1.a1(det♦a ✗np@V5.a1(n♦cake))))
+	s@M0/@V6.e0(np@O0.a0(n♦Bill) vp@V6.e0(v♦eat@U0.e0 np@D1.a1(det♦a ✗np@C0.a1(n♦cake))))
 	(♢ Tn0Vn1-1-3.eat (↓ Tnoun-14-0.Bill 0.0) (↓ Tnoun-14-2.cake 0.1.1) (✭ TbetaDn-15-1.a 0.1.1))
 DEBUG JeniGenerator - 
  probability: 1.0
 INFO  DefaultMorphRealizer - Starting morph realization of [Bill, eat, a, cake]
-INFO  DefaultMorphRealizer - End morph realization: [[<missing:Bill>, ate, <missing:a>, <missing:cake>], [<missing:Bill>, mange, <missing:a>, <missing:cake>]]
+INFO  DefaultMorphRealizer - End morph realization: [[<missing:Bill>, mange, <missing:a>, <missing:cake>], [<missing:Bill>, ate, <missing:a>, <missing:cake>]]
 INFO  JeniGenerator - ************* Performing generation of a0_1:eat(e0 a0 a1) a0_1:free(f a1) a0_1:bill(a0) a0_1:cake(a1) a0_1:a(a1) *************
 DEBUG JeniGenerator - After rewriting by rules: a0_1:eat(e0 a0 a1) a0_1:free(f a1) a0_1:bill(a0) a0_1:cake(a1) a0_1:a(a1)
 DEBUG JeniLexicalSelection - Doing lexical selection with input: a0_1:eat(e0 a0 a1) a0_1:free(f a1) a0_1:bill(a0) a0_1:cake(a1) a0_1:a(a1)
@@ -348,8 +349,8 @@ DEBUG JeniLexicalSelection - Entry subsumes input in context {?A0_1=a0_1, ?C0_1=
 INFO  DLXFiltering - Starting DLX filtering (5 initial entries)
 DEBUG DLXFiltering - After packing (5 packs)
 INFO  DLXFiltering - All solutions after solving (1 solutions)
-INFO  DLXFiltering - End of DLX filtering (1ms, 1 groups of entries)
-DEBUG JeniLexicalSelection - TEpithAnte-317-4.[free] Tnoun-14-2.[cake] TbetaDn-15-1.[a] Tnoun-14-0.[Bill] Tn0Vn1-1-3.[eat]
+INFO  DLXFiltering - End of DLX filtering (0ms, 1 groups of entries)
+DEBUG JeniLexicalSelection - TEpithAnte-317-4.[free] Tnoun-14-2.[cake] Tnoun-14-0.[Bill] TbetaDn-15-1.[a] Tn0Vn1-1-3.[eat]
 INFO  JeniGenerator - Starting generation of input: {0, 1, 2, 3, 4}:[a0_1:eat(e0 a0 a1), a0_1:free(f a1), a0_1:bill(a0), a0_1:cake(a1), a0_1:a(a1)]
 INFO  JeniGenerator - --- initial agenda : 5 items
 DEBUG JeniGenerator - 
@@ -365,15 +366,15 @@ Item-1 [cake]
 DEBUG JeniGenerator - 
  probability: 0.0
 DEBUG JeniGenerator - 
-Item-2 [a]
-	np@C13.a1(det♦a np✭@C13.a1)
-	(♢ TbetaDn-15-1.a)
+Item-2 [Bill]
+	np@C0.a0(n♦Bill)
+	(♢ Tnoun-14-0.Bill)
 DEBUG JeniGenerator - 
  probability: 0.0
 DEBUG JeniGenerator - 
-Item-3 [Bill]
-	np@C0.a0(n♦Bill)
-	(♢ Tnoun-14-0.Bill)
+Item-3 [a]
+	np@C13.a1(det♦a np✭@C13.a1)
+	(♢ TbetaDn-15-1.a)
 DEBUG JeniGenerator - 
  probability: 0.0
 DEBUG JeniGenerator - 
@@ -396,19 +397,19 @@ into
 Item-4 [eat]:
 leads to new item:
 Item-5 [cake eat]
-DEBUG TreeCombiner - Testing substitution of Item-3 [Bill] into Item-4 [eat]
-DEBUG TreeCombiner - The idx of Item-3 and Item-4 are perfectly compatible (EARLY SEMANTIC FAILURE)
+DEBUG TreeCombiner - Testing substitution of Item-2 [Bill] into Item-4 [eat]
+DEBUG TreeCombiner - The idx of Item-2 and Item-4 are perfectly compatible (EARLY SEMANTIC FAILURE)
 DEBUG TreeCombiner - Substitution of
-Item-3 [Bill]
+Item-2 [Bill]
 into
 Item-4 [eat]:
 leads to new item:
 Item-6 [Bill eat]
 DEBUG JeniGenerator - *** substitution step, agenda size: 2
-DEBUG TreeCombiner - Testing substitution of Item-3 [Bill] into Item-5 [cake eat]
-DEBUG TreeCombiner - Despite idx clash, the substitution of Item-3 into Item-5 is possible because there exists an idx altering item: Item-0 [free] context: {@O0=a0, @V9=a0_1, @V13=a1, @U0=e0, @D0=a0_1, @D1=a1, @C0=a0}
+DEBUG TreeCombiner - Testing substitution of Item-2 [Bill] into Item-5 [cake eat]
+DEBUG TreeCombiner - Despite idx clash, the substitution of Item-2 into Item-5 is possible because there exists an idx altering item: Item-0 [free] context: {@O0=a0, @V9=a0_1, @V13=a1, @U0=e0, @D0=a0_1, @D1=a1, @C0=a0}
 DEBUG TreeCombiner - Substitution of
-Item-3 [Bill]
+Item-2 [Bill]
 into
 Item-5 [cake eat]:
 leads to new item:
@@ -429,22 +430,22 @@ DEBUG JeniGenerator - Ruling out Item-5 [cake eat]
 DEBUG JeniGenerator - Ruling out Item-6 [Bill eat]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - --- agenda
 DEBUG JeniGenerator - Item-1 [cake]
-DEBUG JeniGenerator - Item-3 [Bill]
+DEBUG JeniGenerator - Item-2 [Bill]
 DEBUG JeniGenerator - Item-7 [cake eat Bill]
 DEBUG JeniGenerator - Item-8 [Bill eat cake]
 INFO  JeniGenerator - *** Adjunction phase (chart: 2, agenda: 4)
 DEBUG JeniGenerator - *** adjunction step, agenda size: 4
 DEBUG JeniGenerator - --- agenda
 DEBUG JeniGenerator - Item-1 [cake]
-DEBUG JeniGenerator - Item-3 [Bill]
+DEBUG JeniGenerator - Item-2 [Bill]
 DEBUG JeniGenerator - Item-7 [cake eat Bill]
 DEBUG JeniGenerator - Item-8 [Bill eat cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-1 [cake]
 item:[]
 input:[]
@@ -455,37 +456,37 @@ onto
 Item-1 [cake]:
 leads to new item:
 Item-9 [free cake]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-1 [cake]
+DEBUG TreeCombiner - Testing adjunction of Item-3 [a] onto Item-1 [cake]
 DEBUG TreeCombiner - Adjunction of
-Item-2 [a]
+Item-3 [a]
 onto
 Item-1 [cake]:
 leads to new item:
 Item-10 [a cake]
 DEBUG JeniGenerator - *** adjunction step, agenda size: 5
 DEBUG JeniGenerator - --- agenda
-DEBUG JeniGenerator - Item-3 [Bill]
+DEBUG JeniGenerator - Item-2 [Bill]
 DEBUG JeniGenerator - Item-7 [cake eat Bill]
 DEBUG JeniGenerator - Item-8 [Bill eat cake]
 DEBUG JeniGenerator - Item-9 [free cake]
 DEBUG JeniGenerator - Item-10 [a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
-DEBUG JeniGenerator - Coverage failure for item Item-3 [Bill]
+DEBUG JeniGenerator - Item-3 [a]
+DEBUG JeniGenerator - Coverage failure for item Item-2 [Bill]
 item:[]
 input:[]
-DEBUG TreeCombiner - Testing adjunction of Item-0 [free] onto Item-3 [Bill]
+DEBUG TreeCombiner - Testing adjunction of Item-0 [free] onto Item-2 [Bill]
 DEBUG TreeCombiner - Adjunction of
 Item-0 [free]
 onto (fs in merged context)
-Item-3 [Bill]:
+Item-2 [Bill]:
 fails because fs bot failure on node np@C0(n♦Bill)
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-3 [Bill]
+DEBUG TreeCombiner - Testing adjunction of Item-3 [a] onto Item-2 [Bill]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
+Item-3:
 np@C13.a1(det♦a np✭@C13.a1)
-with Item-3:
+with Item-2:
 np@C0.a0(n♦Bill)
 node np@C0(n♦Bill)
 fails because of EARLY SEMANTIC FAILURE:
@@ -498,7 +499,7 @@ DEBUG JeniGenerator - Item-9 [free cake]
 DEBUG JeniGenerator - Item-10 [a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-7 [cake eat Bill]
 item:[]
 input:[]
@@ -508,9 +509,9 @@ Item-0 [free]
 onto (fs in merged context)
 Item-7 [cake eat Bill]:
 fails because fs bot failure on node np@D1/@C0(n♦Bill)
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-7 [cake eat Bill]
+DEBUG TreeCombiner - Testing adjunction of Item-3 [a] onto Item-7 [cake eat Bill]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
+Item-3:
 np@C13.a1(det♦a np✭@C13.a1)
 with Item-7:
 s@M0/@V6(np@O0.a0/@V13.a1(n♦cake) vp@V6/@U0.e0(v♦eat@U0.e0 np@D1.a1/@C0.a0(n♦Bill)))
@@ -518,7 +519,7 @@ node np@O0/@V13(n♦cake)
 fails because of EARLY SEMANTIC FAILURE:
 top=[case:nom control:@V3 idx:@O0.a0 label:@P0 num:@V1 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@V14 definite:@V10 idx:@V13.a1 label:@V9.a0_1 num:@V12 pers:@V8 wh:@V11.- phon:ne]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
+Item-3:
 np@C13.a1(det♦a np✭@C13.a1)
 with Item-7:
 s@M0/@V6(np@O0.a0/@V13.a1(n♦cake) vp@V6/@U0.e0(v♦eat@U0.e0 np@D1.a1/@C0.a0(n♦Bill)))
@@ -532,7 +533,7 @@ DEBUG JeniGenerator - Item-9 [free cake]
 DEBUG JeniGenerator - Item-10 [a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-8 [Bill eat cake]
 item:[]
 input:[]
@@ -543,9 +544,9 @@ onto
 Item-8 [Bill eat cake]:
 leads to new item:
 Item-11 [Bill eat free cake]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-8 [Bill eat cake]
+DEBUG TreeCombiner - Testing adjunction of Item-3 [a] onto Item-8 [Bill eat cake]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
+Item-3:
 np@C13.a1(det♦a np✭@C13.a1)
 with Item-8:
 s@M0/@V6(np@O0.a0(n♦Bill) vp@V6/@U0.e0(v♦eat@U0.e0 np@D1.a1(n♦cake)))
@@ -553,7 +554,7 @@ node np@O0/@V13(n♦Bill)
 fails because of EARLY SEMANTIC FAILURE:
 top=[case:nom control:@V3 idx:@O0.a0 label:@P0 num:@V1 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@V14 definite:@V10 idx:@V13.a0 label:@V9.a0_1 num:@V12 pers:@V8 wh:@V11.- phon:ne]
 DEBUG TreeCombiner - Adjunction of
-Item-2 [a]
+Item-3 [a]
 onto
 Item-8 [Bill eat cake]:
 leads to new item:
@@ -566,13 +567,13 @@ DEBUG JeniGenerator - Item-11 [Bill eat free cake]
 DEBUG JeniGenerator - Item-12 [Bill eat a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-9 [free cake]
 item:[]
 input:[]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-9 [free cake]
+DEBUG TreeCombiner - Testing adjunction of Item-3 [a] onto Item-9 [free cake]
 DEBUG TreeCombiner - Adjunction of
-Item-2 [a]
+Item-3 [a]
 onto
 Item-9 [free cake]:
 leads to new item:
@@ -585,7 +586,7 @@ DEBUG JeniGenerator - Item-12 [Bill eat a cake]
 DEBUG JeniGenerator - Item-13 [a free cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-10 [a cake]
 item:[]
 input:[]
@@ -604,13 +605,13 @@ DEBUG JeniGenerator - Item-13 [a free cake]
 DEBUG JeniGenerator - Item-14 [free a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-11 [Bill eat free cake]
 item:[]
 input:[]
-DEBUG TreeCombiner - Testing adjunction of Item-2 [a] onto Item-11 [Bill eat free cake]
+DEBUG TreeCombiner - Testing adjunction of Item-3 [a] onto Item-11 [Bill eat free cake]
 DEBUG TreeCombiner - Adjunction of
-Item-2:
+Item-3:
 np@C13.a1(det♦a np✭@C13.a1)
 with Item-11:
 s@M0/@V6(np@O0.a0(n♦Bill) vp@V6/@U0.e0(v♦eat@U0.e0 np?a1(adj♦free ✗np?a1(n♦cake))))
@@ -618,7 +619,7 @@ node np@O0/@V13(n♦Bill)
 fails because of EARLY SEMANTIC FAILURE:
 top=[case:nom control:@V3 idx:@O0.a0 label:@P0 num:@V1 pers:@I0 scopeL:@Q0 wh:-] bot=[case:@V14 definite:@V10 idx:@V13.a0 label:@V9.a0_1 num:@V12 pers:@V8 wh:@V11.- phon:ne]
 DEBUG TreeCombiner - Adjunction of
-Item-2 [a]
+Item-3 [a]
 onto
 Item-11 [Bill eat free cake]:
 leads to new item:
@@ -631,7 +632,7 @@ DEBUG JeniGenerator - Item-14 [free a cake]
 DEBUG JeniGenerator - Item-15 [Bill eat a free cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-12 [Bill eat a cake]
 item:[]
 input:[]
@@ -650,7 +651,7 @@ DEBUG JeniGenerator - Item-15 [Bill eat a free cake]
 DEBUG JeniGenerator - Item-16 [Bill eat free a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-13 [a free cake]
 item:[]
 input:[]
@@ -661,7 +662,7 @@ DEBUG JeniGenerator - Item-15 [Bill eat a free cake]
 DEBUG JeniGenerator - Item-16 [Bill eat free a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage failure for item Item-14 [free a cake]
 item:[]
 input:[]
@@ -671,14 +672,14 @@ DEBUG JeniGenerator - Item-15 [Bill eat a free cake]
 DEBUG JeniGenerator - Item-16 [Bill eat free a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage success for item Item-15 [Bill eat a free cake]
 DEBUG JeniGenerator - *** adjunction step, agenda size: 1
 DEBUG JeniGenerator - --- agenda
 DEBUG JeniGenerator - Item-16 [Bill eat free a cake]
 DEBUG JeniGenerator - --- chart
 DEBUG JeniGenerator - Item-0 [free]
-DEBUG JeniGenerator - Item-2 [a]
+DEBUG JeniGenerator - Item-3 [a]
 DEBUG JeniGenerator - Coverage success for item Item-16 [Bill eat free a cake]
 DEBUG JeniGenerator - --- results before filtering
 DEBUG JeniGenerator - Item-15 [Bill eat a free cake]
@@ -699,4 +700,4 @@ DEBUG JeniGenerator -
 INFO  DefaultMorphRealizer - Starting morph realization of [Bill, eat, a, free, cake]
 INFO  DefaultMorphRealizer - End morph realization: [[<missing:Bill>, mange, <missing:a>, <missing:free>, <missing:cake>], [<missing:Bill>, ate, <missing:a>, <missing:free>, <missing:cake>]]
 INFO  DefaultMorphRealizer - Starting morph realization of [Bill, eat, free, a, cake]
-INFO  DefaultMorphRealizer - End morph realization: [[<missing:Bill>, ate, <missing:free>, <missing:a>, <missing:cake>], [<missing:Bill>, mange, <missing:free>, <missing:a>, <missing:cake>]]
+INFO  DefaultMorphRealizer - End morph realization: [[<missing:Bill>, mange, <missing:free>, <missing:a>, <missing:cake>], [<missing:Bill>, ate, <missing:free>, <missing:a>, <missing:cake>]]

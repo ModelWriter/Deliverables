@@ -77,7 +77,7 @@
     <div class="container">
  	<div class="row header_row">
 	  <div class="col-md-6"><a href="/"><img width="180" class="logo" src="http://www.loria.fr/wp-content/themes/loria2016/medias/logo_loria_complet.jpg" alt="" /></a></div>
-	  <div class="col-md-6"><h1>Semantic Parser/Generator</h1></div>
+	  <div class="col-md-6"><h1>Semantic Parser And Generator</h1></div>
 	</div>
   	<div class="row" >
   	<div class="col-md-10 col-md-offset-1" >
@@ -85,18 +85,7 @@
 	    	<div class="panel panel-default">
 			  <!-- Default panel contents -->
 			
-			  <div class="panel-heading">
-			  	<div class="row text-center"><!-- Center radio buttons -->
-				  	<div class="btn-group" data-toggle="buttons">
-					  <label class="btn btn-primary active">
-					    <input type="radio" name="options" id="parsing" autocomplete="off" checked> Parsing
-					  </label>
-					  <label class="btn btn-primary">
-					    <input type="radio" name="options" id="generation" autocomplete="off"> Generation
-					  </label>
-					</div> 
-				</div>
-			  </div> <!-- Parsing/Generation radio buttons -->
+			  
 			  
 			  <div class="panel-body">
 			  	<div class="col-md-10 col-md-offset-1"><!-- Column sentence -->
@@ -109,7 +98,7 @@
 					</select>
 					<br>
 					<label>Selected sentence</label>
-					<textarea class="form-control" rows="1" id="selectedparseInputDisplayBox" name="selectedparseInputDisplayBox" onload="setprevparseInputValue();"></textarea>
+					<textarea class="form-control" rows="1" id="selectedparseInputDisplayBox" name="selectedparseInputDisplayBox"></textarea>
 				</div><!-- Column sentence -->
 			
 				<form action="ParserServlet" method="post" onsubmit="return parseInputRequired()">	
@@ -149,7 +138,7 @@
 						<br>
 						Details : 
 						<br>
-						<textarea class="form-control" rows="5" id="selectedparseResultDisplayBox" name="selectedparseResultDisplayBox"></textarea>
+						<textarea class="form-control" rows="14" id="selectedparseResultDisplayBox" name="selectedparseResultDisplayBox"></textarea>
 						</div>
 				  </div>
 				  <div class="col-md-12 text-center">
@@ -165,9 +154,9 @@
 					</select>
 					<br>
 					<br>
-						Details : 
+						Selected Result : 
 					<br>
-					<textarea class="form-control" rows="5" id="selectedreverseGenResultDisplayBox" name="selectedreverseGenResultDisplayBox"></textarea>
+					<textarea class="form-control" rows="2" id="selectedreverseGenResultDisplayBox" name="selectedreverseGenResultDisplayBox"></textarea>
 					</div><!-- Column sentence -->
 				  </div>
 			</div> <!-- panel  -->
@@ -340,10 +329,12 @@
 					{
 						detailsString = detailsString + currentResult.RelationNames[rNameIndex] + "\t";
 					}
-					detailsString = detailsString + "\n\n";
+					detailsString = detailsString + "\n";
 					detailsString = detailsString + "\nOntology Enrichment Info :\n";
-					detailsString = detailsString + currentResult.OntoEnrichStat;
 					
+					for (ontoMessageIndex in currentResult.OntoEnrichStatMessages) {
+						detailsString = detailsString + currentResult.OntoEnrichStatMessages[ontoMessageIndex]+"\n";
+					}
 					
 					setHTMLElementValue(selectedparseResultDisplayBox.id,detailsString);
 	  			}

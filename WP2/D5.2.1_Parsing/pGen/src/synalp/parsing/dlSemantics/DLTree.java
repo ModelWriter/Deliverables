@@ -28,7 +28,7 @@ public class DLTree {
 	private Set<String> conceptNames;
 	private Set<String> relationNames;
 	
-	private String ontologyEnrichmentStatus;
+	private ArrayList<String> ontologyEnrichmentStatus;
 	
 	
 	// Mappings proposed on OWL Functional Syntax.
@@ -73,8 +73,8 @@ public class DLTree {
 		
 		conceptNames = new HashSet<String>();
 		relationNames = new HashSet<String>();
-		
-		ontologyEnrichmentStatus = "No action performed."; // Deafult Message
+		ontologyEnrichmentStatus = new ArrayList<String>();
+		ontologyEnrichmentStatus.add("No action performed."); // Default Message
 	}
 	
 	
@@ -158,15 +158,15 @@ public class DLTree {
 	}
 
 
-	public void doOntologyEnrichment(OntoModel ontoModel, String outputFolderName) throws OWLOntologyStorageException {
-		ontologyEnrichmentStatus = ontoModel.getOntologyEnrichmentRemarks(axiomString, conceptNames, relationNames, outputFolderName);
+	public void doOntologyEnrichment(OntoModel ontoModel, String outputFolderName, boolean useRealReasoner) throws OWLOntologyStorageException {
+		ontologyEnrichmentStatus = ontoModel.getOntologyEnrichmentRemarks(axiomString, conceptNames, relationNames, outputFolderName, useRealReasoner);
 	}
 	
-	public String getOntologyEnrichmentStatus() {
+	public ArrayList<String> getOntologyEnrichmentStatus() {
 		return ontologyEnrichmentStatus;
 	}
 	
-	public void setOntologyEnrichmentStatusMessage(String s) {
+	public void setOntologyEnrichmentStatusMessage(ArrayList<String> s) {
 		ontologyEnrichmentStatus = s;
 	}
 	

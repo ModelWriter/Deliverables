@@ -33,7 +33,6 @@ public class DesktopParserConfiguration extends SkeletalParserConfiguration {
 		text.append("\n\nInput Sentences FileName = " + sentencesFile.getAbsolutePath());
 		text.append("\n\nOutput File = " + parseResultFile.getAbsolutePath());
 		text.append("\n\nOther Options = \n"+GeneratorOption.getStatus());
-		text.append("\nCKY Parsing = "+useCKYChartParsing);
 		text.append("\nUse Probability = "+useProbability);
 		text.append("\n\n\n\n");
 		text.append("\n\n\n");

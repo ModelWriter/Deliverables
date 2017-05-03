@@ -24,14 +24,12 @@ public class CKYChartCombinations<T> {
 	private ArrayList<ArrayList<ArrayList<T>>> fullchart;
 	private ArrayList<ArrayList<T>> initial_agenda;
 	private Logger logger;
-	private boolean useMLModeltoParse;
 	
-	public CKYChartCombinations(boolean useMLModeltoParse, ArrayList<ArrayList<T>> initial_agenda, Logger logger) {
+	public CKYChartCombinations(ArrayList<ArrayList<T>> initial_agenda, Logger logger) {
 		fullchart = new ArrayList<ArrayList<ArrayList<T>>>();
 		this.initial_agenda = initial_agenda;
 		fullchart.add(initial_agenda);
 		this.logger = logger;
-		this.useMLModeltoParse = useMLModeltoParse;
 	}
 	
 	// By default, allows addition of duplicate items in arraylist of each row. For JeniChartItem, this has been prohibited by using instance of JeniChartItems class. 

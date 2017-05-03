@@ -167,6 +167,7 @@
 		<resource name="output" file="../output/airbus_parse_output/truelex_complex_sentences_only/ParseResult.txt"/>
 	</config>
 	
+	
 	<!-- Current Experiments are being made with fully specified lexicon -->
 	<!-- Simple Airbus Sentences only -->
 	<config name="parse_airbus_excellex_simple_sentences_only" inherit="parse_airbus_excellex" basedir="resources/airbus/input">

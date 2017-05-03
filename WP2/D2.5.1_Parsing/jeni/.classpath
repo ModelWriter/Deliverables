@@ -81,9 +81,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/stanford-corenlp-3.6.0.jar"/>
 	<classpathentry kind="lib" path="lib/stanford-corenlp-3.6.0-models.jar"/>
-	<classpathentry kind="lib" path="lib/mallet-deps.jar"/>
-	<classpathentry kind="lib" path="lib/mallet.jar" sourcepath="lib/mallet_sources"/>
-	<classpathentry kind="lib" path="lib/weka.jar" sourcepath="lib/weka-src"/>
 	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

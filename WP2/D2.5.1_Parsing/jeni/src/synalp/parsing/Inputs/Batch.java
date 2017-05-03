@@ -1,24 +1,16 @@
 package synalp.parsing.Inputs;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.Set;
 
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 import synalp.parsing.ParseResult;
-import synalp.parsing.dlSemantics.DLTree;
-import synalp.parsing.ml.weka.FeatureVector;
 import synalp.parsing.utils.FileOperations;
 
 public class Batch {
@@ -186,166 +178,6 @@ public class Batch {
 			}
 		}
 		FileOperations.writeToFile(failureFile, str.toString());
-	}
-	
-	
-	public void writeMLDataToFile(File mlDataFile, FeatureVector MLFeaturesSchema) throws UnsupportedEncodingException, FileNotFoundException, IOException {
-		StringBuilder text = new StringBuilder("% This is an ARFF formatted file. Lines beginning with % are comments.\n");
-		text.append("% ARFF files have two distinct sections. The first section is the Header information, which is followed the Data information.\n");
-		text.append("% See https://weka.wikispaces.com/ARFF+%28book+version%29 \n");
-		text.append("% \n");
-		text.append("% \n");
-		text.append("% \n");
-		text.append("@RELATION \"Good/Bad Derivations\" \n");
-		text.append("% \n");
-		text.append("% \n");
-		
-		text.append(MLFeaturesSchema.getARFFStringRepresentation());
-		
-		
-		text.append("% \n");
-		text.append("% \n");
-		text.append("% \n");
-		text.append("% \n");
-		text.append("% \n");
-		text.append("% \n");
-		text.append("@DATA");
-		
-		for (Input in:allInputs) {
-			text.append("%\n%\n%\n%\n"+in.getMLDataString());
-		}
-		FileOperations.writeToFile(mlDataFile, text.toString());
-	}
-	
-	
-	public void write_DeepLearning_DataToFile(File baseDir) throws IOException, ClassNotFoundException {
-		// TODO : Also store real words in a separate file; run on a batch containing few sentences and check manually that the indices 
-		// written to real encoder and decoder inputs/output are correct. 
-		
-		// TODO : the baseDir name should reflect if the data is for (simple or complex or all) and (complete or partial parse).
-		
-		// Delete the output directory from the past execution, if any.
-		FileOperations.deleteFileOrFolder(baseDir);
-		
-		// Using all the words seen in all the inputs and outputs sequence of all examples in this batch, 
-		// we will build a vocab need for the DL data. For each word ("key") in the vocab, we will assign a unique integer value.
-		// For easy computing, the value assigned to the "key" shall reflect the index of that key in the LinkedHashMap order.
-		LinkedHashMap<String,Integer> vocab = new LinkedHashMap<String,Integer>(); 
-		// Initialise and put the sentence start (i.e. go) and end (i.e. "eos") tokens in the vocabulary. I am preparing this dataset for seq2seq DL model.
-		vocab.put("go", 0);
-        vocab.put("eos", 1);
-		
-		String encoder_input_subdir = baseDir+"/encoder_input/";
-		FileOperations.createNewFolder(encoder_input_subdir);
-		
-		String decoder_input_subdir = baseDir+"/decoder_input/";
-		FileOperations.createNewFolder(decoder_input_subdir);
-		
-		String decoder_output_subdir = baseDir+"/decoder_output/";
-		FileOperations.createNewFolder(decoder_output_subdir);
-		
-		
-		// TODO : The names of concepts/relations in NLPhrase and corresponding DL axioms are different because axioms use ":" character in addition. This will hamper the vocabulary -- we need to say that they should be the same.
-		// TODO : Also the relevant concepts/relations should be encoded as C_1..C_n and R_1...R_n rather than with their actual lexicalisations.
-		for (int idx=0; idx<allInputs.size(); idx++) { // There will be 1 encoder_input, 1 decoder_input and 1 decoder_output file per example.
-			Input in = allInputs.get(idx);
-			if (in.isParseSuccess()) { // We can create the data only when the parse was successful.z
-				String encoder_input_filename = encoder_input_subdir + "encoder_input_"+(idx+1)+".csv";
-				String decoder_input_filename = decoder_input_subdir + "decoder_input_"+(idx+1);
-				String decoder_output_filename = decoder_output_subdir + "decoder_output_"+(idx+1);
-						
-				StringBuilder encoder_input_str = new StringBuilder("This is comment. One file = 1 sentence info."
-						+ " Place input at each timestep (here, in reverse order) in a new line here. We will use the actual input values here. "
-						+ "Inside the program, we can specify whether we want to have a one-hot representation of this input or not.");
-				StringBuilder encoder_input_str_true_word = new StringBuilder("Do not use this file. This Sentence nb. in original corpus = "+(idx+1)+". "+"Contents are in reverse timestep order here. Created only for helping with manual verification of the content written for the DL encoder input file.");
-				
-				
-				// Write the encoder input. For the encoder input, it is better to store the timesteps (= words) in reverse.
-				for (int k=in.getSentence().getAllWords().size()-1; k>-1; k--) {
-					Word w = in.getSentence().getAllWords().get(k);
-					String encoder_input_at_timestep_t = w.getToken(); 
-					if (!vocab.containsKey(encoder_input_at_timestep_t)) {
-						int to_put = vocab.size(); // This gives existing max. index + 1
-                        vocab.put(encoder_input_at_timestep_t,to_put); // Place the new word with the value reflecting the index of its placement.
-                        // For the dataset, we write the index of the word in the vocab, rather than the word itself.
-                       	encoder_input_str.append("\n"+to_put);
-                    }
-					else {
-						int existing_index = vocab.get(encoder_input_at_timestep_t);
-						// In this case, don't need to update the vocab but still need to write the value to the file.
-						encoder_input_str.append("\n"+existing_index);
-					}
-					encoder_input_str_true_word.append("\n"+encoder_input_at_timestep_t);
-				}
-				FileOperations.writeToFile(new File(encoder_input_filename), encoder_input_str.toString());
-				FileOperations.writeToFile(new File(encoder_input_filename+"_don't_use"), encoder_input_str_true_word.toString());
-				
-				
-				// Write the decoder input and decoder output at the same time.
-				// Note: There could be more than one parse (DL axiom) for this input. For now, I will write all of these results to separate files and later when using the blue ranking, will choose the one
-				// with the best score as the default file to be fed to DeepLearning framework. An important issue to take into account is that for DeepLearning purposes, all the parseresults can't probably be
-				// used. Before considering all parse outputs for creating the dataset for Deep Learning, it is also important to
-				// consider the effects of doing so. Although the multiple outputs will be of same type (either all complete or all partial because I designed my program to store results of one type only; and the
-				// storage of complete type preferred over storage of partial type outputs), they will be different i.e. for the same input a, we have 2 outputs, say b and c, our training dataset will specify
-				// that a is equal b (at some time) and a is equal to c (at another time). In that case, what should the network learn?? Is "a" equal to "b" or "c"? Maybe some literature reading on parapharase
-				// learning will be needed.
-				for (int resultCount = 0; resultCount<in.getParseResults().size(); resultCount++){
-					StringBuilder decoder_input_str = new StringBuilder("This is comment. One file = 1 sentence info."
-							+ " Place input at each timestep in a new line here. We will use the actual input values here. "
-							+ "Inside the program, we can specify whether we want to have a one-hot representation of this input or not.");
-					StringBuilder decoder_input_str_true_word = new StringBuilder("Do not use this file. This Sentence nb. in original corpus = "+(idx+1)+". "+"Created only for helping with manual verification of the content written for the DL decoder input file.");
-					
-					
-					StringBuilder decoder_output_str = new StringBuilder("This is comment. One file = 1 sentence info."
-							+ " Place input at each timestep in a new line here. We will use the actual input values here. "
-							+ "Inside the program, we can specify whether we want to have a one-hot representation of this input or not.");
-					StringBuilder decoder_output_str_true_word = new StringBuilder("Do not use this file. This Sentence nb. in original corpus = "+(idx+1)+". "+"Created only for helping with manual verification of the content written for the DL decoder output file.");
-
-					ParseResult currentResult = in.getParseResults().get(resultCount);
-					DLTree currentResult_DLTree = currentResult.getDLTree();
-					ArrayList<String> currentResult_AxiomWords = currentResult_DLTree.getAxiom_DeLexicalised(baseDir+"/delexicalisedConceptsVocab.ser", baseDir+"/delexicalisedRelationsVocab.ser");
-					
-					decoder_input_str.append("\n"+vocab.get("go"));
-					decoder_input_str_true_word.append("\n"+"go");
-					for (int k=0;k<currentResult_AxiomWords.size(); k++) {
-						String w = currentResult_AxiomWords.get(k);
-						if (!vocab.containsKey(w)) {
-							int to_put = vocab.size(); // This gives existing max. index + 1
-	                        vocab.put(w,to_put); // Place the new word with the value reflecting the index of its placement.
-							// For the dataset, we write the index of the word in the vocab, rather than the word itself.
-							decoder_input_str.append("\n"+to_put);
-							decoder_output_str.append("\n"+to_put);
-						}
-						else {
-							int existing_index = vocab.get(w);
-							// In this case, don't need to update the vocab but still need to write the value to the file.
-							decoder_input_str.append("\n"+existing_index);
-							decoder_output_str.append("\n"+existing_index);
-						}
-						decoder_input_str_true_word.append("\n"+w);
-						decoder_output_str_true_word.append("\n"+w);
-					}
-					decoder_output_str.append("\n"+vocab.get("eos"));
-					decoder_output_str_true_word.append("\n"+"eos");
-					
-					
-					FileOperations.writeToFile(new File(decoder_input_filename+"_result_"+resultCount+".csv"), decoder_input_str.toString());
-					FileOperations.writeToFile(new File(decoder_input_filename+"_result_"+resultCount+"_don't_use"+".csv"), decoder_input_str_true_word.toString());
-					
-					FileOperations.writeToFile(new File(decoder_output_filename+"_result_"+resultCount+".csv"), decoder_output_str.toString());
-					FileOperations.writeToFile(new File(decoder_output_filename+"_result_"+resultCount+"_don't_use"+".csv"), decoder_output_str_true_word.toString());
-				}
-			}
-		}
-		
-		// Also need to serialise the vocab to the file -- for later need in the DL framework.
-		String vocab_serialize_FileName = baseDir+"/vocab.ser";
-		FileOutputStream fos=new FileOutputStream(new File(vocab_serialize_FileName));
-		ObjectOutputStream oos=new ObjectOutputStream(fos);
-		oos.writeObject(vocab);
-		oos.flush();
-        oos.close();
-        fos.close();
 	}
 	
 	

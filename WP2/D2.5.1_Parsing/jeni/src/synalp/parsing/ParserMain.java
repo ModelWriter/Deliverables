@@ -31,13 +31,8 @@ import synalp.parsing.Inputs.Sentence;
 import synalp.parsing.configuration.DesktopParserConfiguration;
 import synalp.parsing.configuration.SkeletalParserConfiguration;
 import synalp.parsing.configuration.WebParserConfiguration;
-import synalp.parsing.ml.weka.FeatureVector;
-import synalp.parsing.ml.weka.FeatureVector1;
-import synalp.parsing.ml.weka.FeatureVector2;
-import synalp.parsing.ml.weka.WekaClassifier;
 import synalp.parsing.ontology.OntoModel;
 import synalp.parsing.utils.FileOperations;
-import weka.core.Instances;
 
 
 
@@ -67,25 +62,19 @@ public class ParserMain {
 			System.out.println("Too less or two few arguments. Run this program as \"java ParserMain c\" where c is the one of the configuration names defined in configuration.xml file");
 		}
 		else {
-			ParserMain p = new ParserMain(args[0], false);
-			// ToDo : read this parameter from the config file
-			// Put logger info in useMLModel set to true/false. Also print info to console.
-			p.doMain(false);
+			ParserMain p = new ParserMain(args[0]);
+			p.doMain();
 		}
 	}
 
 	
-	public ParserMain(String parseConfigName, boolean WebVersion) throws IOException {
-		if (WebVersion) {
-			parserConfig = new WebParserConfiguration(GeneratorConfigurations.getConfig(parseConfigName));
-		}
-		else {
+	public ParserMain(String parseConfigName) throws IOException {
 			parserConfig = new DesktopParserConfiguration(GeneratorConfigurations.getConfig(parseConfigName));
 			inputSentencesFile = ((DesktopParserConfiguration)parserConfig).getSentencesFile();
 			parseResultFile = ((DesktopParserConfiguration)parserConfig).getParseResultFile();
 			// Delete the output directory from the past execution, if any.
 			FileOperations.deleteFileOrFolder(parseResultFile.getParentFile());
-		}
+
 		System.out.println(parserConfig.getParseConfigInfo());
 		grammar = GeneratorConfiguration.loadGrammar(parserConfig.getGrammarFile(), false); // this grammar will be common to both parsing and reverse generation
 		
@@ -113,18 +102,12 @@ public class ParserMain {
 	}
 	
 	
-	public void doMain(boolean useMLModeltoParse) throws Exception {
+	public void doMain() throws Exception {
 			
 			long startExecutionTime = System.nanoTime();
 			logger.info(parserConfig.getParseConfigInfo());
 			
-			if (!useMLModeltoParse) { // Here, I try to create the reference ML model from small set of (manually selected short) sentences. 
-				int countSentencestoParse = 987; // First batch of successful parse short sentences without help from ML classifier. These will make up the pure training examples.
-				batch = new Batch(inputSentencesFile, countSentencestoParse); 
-			}
-			else {
-				batch = new Batch(inputSentencesFile);
-			}
+			batch = new Batch(inputSentencesFile);
 
 			
 			// The problem with GrammarEntries (the grammar object) is that it is a set and not a list. For ML Features, we want to have feature values aligned correctly to respective grammar entry across all inputs.
@@ -135,23 +118,9 @@ public class ParserMain {
 			for (String name:sortedEntriesNameList) {
 				sortedEntries.add(grammar.getEntries().getEntriesByNames().get(name));
 			}
-			// Also need to make the FeatureVector1 for ML using the sortedEntries Info at the same time
-			FeatureVector MLFeaturesSchema = new FeatureVector2();
-			MLFeaturesSchema.setRelName("Good/Bad Derivations");
-			MLFeaturesSchema.createAttributes(sortedEntries);
 			
+			doBatchParse(sortedEntries);
 			
-			doBatchParse(useMLModeltoParse, sortedEntries, MLFeaturesSchema);
-			
-			if (!useMLModeltoParse) {
-				System.out.print("\n\n\nWriting ML Training (Good and Bad) Examples to file ..... ");
-				// Write ML data (of all inputs in the batch) from the parsing phase to a file 
-				String mlDataFile = inputSentencesFile.getParentFile()+"/MLData.arff"; // I save this file to the input directory rather than the output. (Since this will act as a source for the reference ML model which will be later used in parsing with useMLModeltoParse flag)
-				batch.writeMLDataToFile(new File(mlDataFile), MLFeaturesSchema);
-				System.out.println("Done \n\n\n");
-			}
-			
-
 			writeNewLexicon(); // It is important to do this before doBatchReverseGen() because this lexicon is going to be used for that task.
 			
 			doBatchReverseGen(); // Takes a lot of time; can be disabled if batch reverse generation is not desired.
@@ -167,24 +136,11 @@ public class ParserMain {
 			// the writing should be different from computing info needed for results and the two writeReport functions below should be on one place.
 			writeReport(sortedEntries, executionDuration);
 			
-			
-			/*
-			if (!useMLModeltoParse) {
-				// Train the model using the data and save the trained model to a file for future use
-				System.out.println("\n\n\nML Training with examples created and writing the trained ML model to file\n\n\n");
-				trainAndSaveMLModel(MLFeaturesSchema);
-			}
-			*/
-			
-			
-			//Create dataset for Deep Learning -- Natural Phrase to OWL axiom. This dataset created here will be used independently and outside of this pGen framework. 
-			batch.write_DeepLearning_DataToFile(new File(parseResultFile.getParentFile()+"/NL2OWL_DataSet"));
-			System.out.println("\n\n\nDeep Learning Dataset created and written to file\n\n\n");
 	}
 	
 	
 	
-	private void doBatchParse(boolean useMLModeltoParse, ArrayList<GrammarEntry> sortedEntries, FeatureVector MLFeaturesSchema) throws Exception {
+	private void doBatchParse(ArrayList<GrammarEntry> sortedEntries) throws Exception {
 		// Do the Parsing Task
 		long startBatchParsingTime = System.nanoTime();
 		int totalInputSize = batch.getInputsCount();
@@ -194,14 +150,11 @@ public class ParserMain {
 			logger.info(processingMessage);
 			System.out.println(processingMessage);
 			
-			Parser parser = getParseOfSingleInput(useMLModeltoParse, input.getSentence(), parseResultFile.getParentFile()+"/parseLogs/"+(i+1)+".log", grammar, fullySpecifiedLexicon, underSpecifiedLexicon, parserConfig.getGrammarFile().getParent(), morphs, false);
+			Parser parser = getParseOfSingleInput(input.getSentence(), parseResultFile.getParentFile()+"/parseLogs/"+(i+1)+".log", grammar, fullySpecifiedLexicon, underSpecifiedLexicon, parserConfig.getGrammarFile().getParent(), morphs, false);
 			
 			input.setParseResult(parser.getParseResults());
 			input.setNewLexicalItemsProposed(parser.getNewLexicalItemsProposed());
 			input.setParseMessage(parser.getStatusReport());
-			
-			
-			input.setMLInstances(parser.getMLInstances(MLFeaturesSchema,sortedEntries));
 		}
 		long endBatchParsingTime = System.nanoTime();
 		long batchParsingDuration = (((endBatchParsingTime - startBatchParsingTime)/1000000)/1000); // The result is in seconds
@@ -218,9 +171,9 @@ public class ParserMain {
 	/**
 	 * Needed for web interface where we want to input individual sentences and not the whole batch input 
 	 */
-	public static Parser getParseOfSingleInput(boolean useMLModeltoParse, Sentence sentence, String parseLogFileName, Grammar grammar, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, String macrosFilePath, Map<String, Set<String>> morphs, boolean useProbability) throws Exception {
+	public static Parser getParseOfSingleInput(Sentence sentence, String parseLogFileName, Grammar grammar, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, String macrosFilePath, Map<String, Set<String>> morphs, boolean useProbability) throws Exception {
 		Parser parser = new Parser(grammar, macrosFilePath);
-		parser.parse(useMLModeltoParse,sentence,fullySpecifiedLexicon,underSpecifiedLexicon,morphs,useProbability, parseLogFileName);
+		parser.parse(sentence,fullySpecifiedLexicon,underSpecifiedLexicon,morphs,useProbability, parseLogFileName);
 		return parser;
 	}
 	
@@ -399,30 +352,4 @@ public class ParserMain {
 		System.out.println("\n\nOverall Parse Results: Success("+batch.getCountParseSuccess()+") [Complete Parse Success="+batch.getCountParseCompleteSuccess()+", Partial Parse Success="+batch.getCountParsePartialSuccess()+"], Failure("+batch.getCountParseFailures()+")");		
 	}
 
-
-	private void trainAndSaveMLModel(FeatureVector MLFeaturesSchema) throws Exception {
-		WekaClassifier xt = new WekaClassifier();
-		
-		// Set Training Examples from the output file written
-		//xt.makeTrainingInstancesFromFile(parserConfig.getSentencesFile().getParentFile()+"/MLData.arff");
-		
-		// Set Training Examples from the instances directly.
-		Instances instances = new Instances(MLFeaturesSchema.getRelName(), MLFeaturesSchema.getAttributes(), 0); // create empty instances list
-		for (Input input:batch.getInputs()) {
-			instances.addAll(input.getMLInstances());
-		}
-		xt.setTrainingExamples(instances);
-		
-		
-		if (!instances.isEmpty()) {
-			xt.TrainClassifier();
-			// ToDo : this should be replaced by output fileName from ParserConfig.
-			weka.core.SerializationHelper.write(inputSentencesFile.getParentFile()+"/trained"+xt.getClassifierName()+".model", xt.getTrainedModel()); // write model to file
-		}
-		else {
-			// ToDo : echo warning and log to file
-		}
-		// To load model from a file, do :
-		//Classifier cls = (Classifier) weka.core.SerializationHelper.read("/some/where/j48.model");
-	}
 }

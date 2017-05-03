@@ -43,14 +43,11 @@ import synalp.generation.jeni.JeniRealization;
 import synalp.generation.jeni.TreeCombiner;
 import synalp.parsing.Inputs.Sentence;
 import synalp.parsing.Inputs.Word;
-import synalp.parsing.ml.weka.FeatureVector;
 import synalp.parsing.treeCombinations.CKYChartCombinations;
 import synalp.parsing.utils.CustomTextReplacement;
 import synalp.parsing.utils.OrderedCombinations;
 import synalp.parsing.utils.WordOrder;
 import synalp.parsing.utils.nlptools.PoS;
-import weka.core.Attribute;
-import weka.core.Instances;
 
 /**
  * A. All derivations obtained by combining input Trees (two intermediate trees at a time in case of CKY based combination and all input trees in case of cartesian combinations)
@@ -118,7 +115,7 @@ public class Parser {
 
 	
 	
- 	public void parse(boolean useMLModeltoParse, Sentence inputSentence, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, Map<String,Set<String>> morphs, boolean useProbability, String parseLogFileName) throws Exception {
+ 	public void parse(Sentence inputSentence, SyntacticLexicon fullySpecifiedLexicon, SyntacticLexicon underSpecifiedLexicon, Map<String,Set<String>> morphs, boolean useProbability, String parseLogFileName) throws Exception {
  		// setting up a FileAppender dynamically... for this current processing
  		logger.removeAllAppenders();//To remove appenders associated to the static logger from the past run.
 	    SimpleLayout layout = new SimpleLayout();    
@@ -257,11 +254,6 @@ public class Parser {
 		
 		
 		
-		if (useMLModeltoParse) {
-			// ToDo : the selected trees should be pruned using the ML model.
-		}
-				
-		
 		// At this point, we need to filter out the lexicalised trees (selected for successive word) whose lexical items were already
 		// fully contained in the lexicalised trees (selected for the previous word).
 		// This I have to do because of Prep trees that might be available as distinct adjoining tree or as coanchor node of a verb tree.
@@ -281,7 +273,7 @@ public class Parser {
 		JeniChartItem.resetIdCount();
 		JeniChartItems parseChartItems = new JeniChartItems();
 		// After having the instantiated trees, need to combine them
-		parseChartItems.addAll(doParse(useMLModeltoParse,wordsToLexicalisedTrees,useProbability));
+		parseChartItems.addAll(doParse(wordsToLexicalisedTrees,useProbability));
 		
 		
 		
@@ -936,7 +928,7 @@ public class Parser {
 	
 	// ToDo :: 1. Need to implement ML filtering in CKY approach
 	// 2. How to implement ML filtering for the cartesian combinations approach ???
-	private ArrayList<JeniChartItem> doParse(boolean useMLModeltoParse, Map<Word, GrammarEntries> wordsToLexicalisedTrees, boolean useProbability) {
+	private ArrayList<JeniChartItem> doParse(Map<Word, GrammarEntries> wordsToLexicalisedTrees, boolean useProbability) {
 		ArrayList<JeniChartItem> result;
 		// 1. The CKY way -- dynamic programming approach
 			logger.info("\n\n\n************************* Using the CKY Chart Parsing Combinations Approach *************************\n\n");
@@ -952,7 +944,7 @@ public class Parser {
 					CKY_InitialAgenda.add(aList);
 				}
 			}
-			CKYChartCombinations<JeniChartItem> cKYChartBuilder = new CKYChartCombinations<JeniChartItem>(useMLModeltoParse, CKY_InitialAgenda, logger);
+			CKYChartCombinations<JeniChartItem> cKYChartBuilder = new CKYChartCombinations<JeniChartItem>(CKY_InitialAgenda, logger);
 			logger.info("\nChart Before Building = \n"+cKYChartBuilder);
 			logger.info("\n\nTop Item ="+cKYChartBuilder.getTopItem()+"\n\n");
 			logger.info("Displaying the results of Chart at each Row ...........\n");
@@ -1150,25 +1142,6 @@ public class Parser {
 	}
 	
 
- 	public Instances getMLInstances(FeatureVector MLFeaturesSchema, ArrayList<GrammarEntry> sortedEntries) {
-		ArrayList<Attribute> MLAttributes = MLFeaturesSchema.getAttributes();
-		Instances instances = new Instances(MLFeaturesSchema.getRelName(), MLAttributes, 0); // create empty instances list
-		instances.setClassIndex(instances.numAttributes() - 1); // to say that the last attribute is the classification label.
-		
-		for (JeniChartItem bad:MLBadExamples) {
-			instances.add(MLFeaturesSchema.makeMLInstance(bad, sortedEntries, "no"));
-		}
-		
-		for (JeniChartItem good:MLGoodExamples) {
-			instances.add(MLFeaturesSchema.makeMLInstance(good, sortedEntries, "yes"));
-		}
-		return instances;
-	}
-
-
-
-
-	
 	
 	public String getStatusReport() {
 		return statusReport==""?"Unkown; not logged":statusReport;

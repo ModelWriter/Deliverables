@@ -49,7 +49,7 @@ public class CKYChartCombinationsTester {
 		
 		
 		@SuppressWarnings({ "rawtypes", "unchecked" })
-		CKYChartCombinations cKYChartCombinations = new CKYChartCombinations(false,initial_agenda, logger); // The first parameter is only for compatibility reasons; doesn't make sense in this code.
+		CKYChartCombinations cKYChartCombinations = new CKYChartCombinations(initial_agenda, logger); // The first parameter is only for compatibility reasons; doesn't make sense in this code.
 		System.out.println("\nChart Before Building = \n"+cKYChartCombinations);
 		System.out.println("\nTop Item ="+cKYChartCombinations.getTopItem());
 		cKYChartCombinations.buildChart(null, null, false); // The parameters are for compatibility reasons; not going to be used for String and Integers.

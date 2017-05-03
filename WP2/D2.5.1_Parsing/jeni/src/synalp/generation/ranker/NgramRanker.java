@@ -12,7 +12,6 @@ import java.util.TreeMap;
 import synalp.commons.input.Lemma;
 import synalp.commons.utils.*;
 import synalp.generation.ChartItem;
-import edu.stanford.nlp.lm.SRILanguageModel;
 
 /**
  * @author apoorvi
@@ -30,7 +29,6 @@ public class NgramRanker implements Ranker
 	private int beamsize;
 	String ngramtype;
 
-	private SRILanguageModel sriLM;
 
 
 	/**
@@ -45,7 +43,6 @@ public class NgramRanker implements Ranker
 		this.beamsize = beamsize;
 		this.ngramtype = ngramtype;
 
-		this.sriLM = new SRILanguageModel(new File(lmfile), 3);
 	}
 
 
@@ -146,7 +143,8 @@ public class NgramRanker implements Ranker
 			List<String> words = new ArrayList<String>();
 			for(Lemma lemma : item.getLemmas())
 				words.add(lemma.toString());
-			ret.put(item, sriLM.getSentenceLogProb(words));
+			//ret.put(item, sriLM.getSentenceLogProb(words));
+			ret.put(item, 1.00); // Edited here so as to avoid the SRILM library -- EPL issues (wanted to get rid of GPL libraries as much as possible and for ModelWriter project, we are not using a probabilistic generation anyway).
 		}
 		return ret;
 	}

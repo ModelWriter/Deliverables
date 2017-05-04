@@ -68,6 +68,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/stanford-corenlp-3.6.0.jar"/>
-	<classpathentry kind="lib" path="lib/stanford-corenlp-3.6.0-models.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

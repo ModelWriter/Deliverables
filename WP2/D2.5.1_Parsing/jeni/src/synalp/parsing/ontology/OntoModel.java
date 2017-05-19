@@ -17,9 +17,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
-import org.semanticweb.owlapi.AddClassExpressionClosureAxiom;
+import org.semanticweb.owlapi.change.AddClassExpressionClosureAxiom;
+import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.AxiomType;
 import org.semanticweb.owlapi.model.IRI;
@@ -51,7 +51,7 @@ import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.semanticweb.owlapi.reasoner.*;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.search.EntitySearcher;
-import org.semanticweb.HermiT.Reasoner.ReasonerFactory;
+import org.semanticweb.HermiT.ReasonerFactory;
 import org.coode.owlapi.functionalparser.OWLFunctionalSyntaxParser;
 import org.coode.owlapi.functionalparser.ParseException;
 import org.semanticweb.HermiT.Configuration;
@@ -62,8 +62,6 @@ import static org.semanticweb.owlapi.search.EntitySearcher.getAnnotationObjects;
 
 import javax.annotation.Nonnull;
 
-import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
-import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
 
 import synalp.parsing.utils.FileOperations;
 /**
@@ -137,7 +135,7 @@ public class OntoModel {
 		rejectedInconsistentAxioms = new StringBuilder();
 		newAxioms = new StringBuilder();
 		
-        ReasonerFactory factory = new Reasoner.ReasonerFactory() {
+        ReasonerFactory factory = new ReasonerFactory() {
             protected OWLReasoner createHermiTOWLReasoner(org.semanticweb.HermiT.Configuration configuration, OWLOntology ontology) {
                 // don't throw an exception since otherwise we cannot compute explanations 
                 configuration.throwInconsistentOntologyException = false;
@@ -257,7 +255,7 @@ public class OntoModel {
 	private void saveOntologyCopy(File file) throws OWLOntologyStorageException {
 		IRI newOntologyIRI = IRI.create(file.toURI());
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
-		manager.saveOntology(ontology,  new RDFXMLOntologyFormat(),  newOntologyIRI);
+		manager.saveOntology(ontology,  new RDFXMLDocumentFormat(),  newOntologyIRI);
 	}
 	
 	
@@ -398,7 +396,7 @@ public class OntoModel {
 	
 	
 	private OWLAxiom getAxiomFromString(String axiomString) {
-		InputStream in = new ByteArrayInputStream(axiomString.getBytes());
+		InputStream in = new ByteArrayInputStream(axiomString.getBytes());		
 		OWLFunctionalSyntaxParser parser = new OWLFunctionalSyntaxParser(in);
 	    parser.setUp(ontology, new OWLOntologyLoaderConfiguration());
 	    if (axiomString.startsWith("SubClassOf")||axiomString.startsWith("EquivalentClasses")) {

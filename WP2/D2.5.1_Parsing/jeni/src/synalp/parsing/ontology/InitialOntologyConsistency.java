@@ -15,9 +15,10 @@ import javax.swing.text.html.HTMLDocument.Iterator;
 
 import org.semanticweb.HermiT.Configuration;
 import org.semanticweb.HermiT.Reasoner;
-import org.semanticweb.HermiT.Reasoner.ReasonerFactory;
+import org.semanticweb.HermiT.ReasonerFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
-import org.semanticweb.owlapi.io.RDFXMLOntologyFormat;
+import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
+import org.semanticweb.owlapi.formats.RDFXMLDocumentFormat;
 import org.semanticweb.owlapi.io.SystemOutDocumentTarget;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.AxiomType;
@@ -310,7 +311,7 @@ public class InitialOntologyConsistency {
 			//FileOperations.writeToFile(new File(OntFileName), out);
 			
 			// Save ontology
-			manager.saveOntology(ontology,  new RDFXMLOntologyFormat(),  newOntologyIRI);
+			manager.saveOntology(ontology,  new RDFXMLDocumentFormat(),  newOntologyIRI);
 			
 			int axiomsCount = ontology.getAxiomCount();
 			System.out.println("Count of axioms in new ontology: " + axiomsCount);
